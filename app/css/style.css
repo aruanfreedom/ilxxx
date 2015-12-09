@@ -101,9 +101,15 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
   height: 100%;
   width: 100%; }
+
+#svg {
+  background: #000;
+  width: 100%; }
+  #svg image {
+    height: 100%;
+    width: 100%; }
 
 #menu {
   position: fixed;
