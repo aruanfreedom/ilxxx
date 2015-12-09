@@ -1,0 +1,294 @@
+#canvas {
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+
+#home {
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%; }
+  #home table .center-td {
+    vertical-align: middle; }
+  #home #dynamic-text {
+    color: #fff;
+    font-size: 2em;
+    height: 40px; }
+  #home table {
+    border-collapse: collapse;
+    height: 59.7em; }
+  #home h1 {
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 100;
+    font-family: "Drugs", sans-serif; }
+  #home #bg2 {
+    background: url("../img/bg2.png") no-repeat center center;
+    background-size: cover;
+    animation: logo 4s ease-in 1; }
+  #home #logo {
+    background: url("../img/logo.png") no-repeat center center;
+    background-size: 100%;
+    animation: logo 4s ease-in 1;
+    margin: 0 auto;
+    height: 421px;
+    width: 400px; }
+    #home #logo:before {
+      content: "";
+      background: url("../img/shine.png") no-repeat center center;
+      background-size: 100%;
+      animation: shine 2s linear 5s 1;
+      height: 31%;
+      position: absolute;
+      margin-left: -38%;
+      margin-top: 126%;
+      top: 0;
+      left: 50%;
+      width: 0; }
+
+@keyframes logo {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes shine {
+  0% {
+    margin-left: -75%;
+    margin-top: 54%;
+    width: 100%; }
+  20% {
+    margin-left: -31%;
+    margin-top: 43%; }
+  30% {
+    margin-left: -7%;
+    margin-top: 48%; }
+  40% {
+    margin-left: 15%;
+    margin-top: 64%; }
+  50% {
+    margin-left: 27%;
+    margin-top: 86%;
+    width: 80%; }
+  60% {
+    margin-left: 22%;
+    margin-top: 124%;
+    width: 66%; }
+  70% {
+    margin-left: -11%;
+    margin-top: 146%;
+    width: 50%; }
+  80% {
+    margin-left: -41%;
+    margin-top: 126%;
+    width: 10%; }
+  90% {
+    margin-left: -38%;
+    margin-top: 126%;
+    width: 0; } }
+
+#group {
+  fill: #2b414d;
+  stroke: red;
+  stroke-width: 5px;
+  width: 100%; }
+
+.logo {
+  width: 100%; }
+
+/*End Animation*/
+/*Menu*/
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%; }
+
+#menu {
+  position: fixed;
+  background: url("../img/menu-bg.jpg") no-repeat top;
+  background-size: cover;
+  height: 73px;
+  width: 100%;
+  z-index: 2; }
+  #menu nav {
+    margin: 0 auto;
+    width: 80%; }
+    #menu nav ul {
+      float: left;
+      padding: 0; }
+      #menu nav ul.left li.center-v {
+        margin-left: 5px; }
+      #menu nav ul.center li.center-v {
+        padding-top: 10px; }
+        #menu nav ul.center li.center-v a {
+          padding: 20px; }
+          #menu nav ul.center li.center-v a:hover {
+            background: url("../img/light-cursor.png") no-repeat center center;
+            background-size: 100%; }
+      #menu nav ul.center li a {
+        font-family: "FiraSans-Thin", sans-serif; }
+      #menu nav ul.right li.center-v {
+        padding-top: 5px; }
+        #menu nav ul.right li.center-v a {
+          padding: 0 10px; }
+          #menu nav ul.right li.center-v a:hover {
+            background: url("../img/light-lang.png") no-repeat center center;
+            background-size: cover; }
+      #menu nav ul.right li.btn-yellow {
+        background: #d0a114;
+        border-radius: 3px;
+        padding: 3% 0;
+        margin-left: 30px;
+        text-align: center;
+        width: 150px; }
+        #menu nav ul.right li.btn-yellow:hover {
+          cursor: pointer; }
+        #menu nav ul.right li.btn-yellow a:hover {
+          background: none; }
+      #menu nav ul li {
+        color: #fff;
+        float: left;
+        font-family: "FiraSans-Regular", sans-serif;
+        font-size: 16px;
+        list-style: none;
+        margin-left: 15px; }
+        #menu nav ul li.center-v {
+          padding-top: 5px; }
+        #menu nav ul li.logo-min {
+          margin-top: -8px; }
+        #menu nav ul li a {
+          color: #fff;
+          font-size: 13px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: "FiraSans-Regular", sans-serif; }
+    #menu nav .right {
+      float: right; }
+    #menu nav .left {
+      float: left; }
+    #menu nav .center {
+      float: none;
+      position: absolute;
+      font-size: 13px;
+      left: 38%; }
+
+#about {
+  background: url("../img/bg-2.jpg") no-repeat center top #111519;
+  background-size: cover;
+  position: relative;
+  top: 73px;
+  height: 92.4%;
+  width: 100%;
+  z-index: 1; }
+  #about section {
+    padding-top: 60px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    width: 50%; }
+    #about section h2 {
+      margin: 0;
+      font-family: "FiraSans-SemiBold", sans-serif;
+      font-weight: 100;
+      font-size: 36px;
+      text-transform: uppercase; }
+    #about section .yellow-text {
+      color: #e6b41d; }
+    #about section p {
+      font-family: "FiraSans-UltraLight", sans-serif;
+      font-size: 18px;
+      margin-bottom: 0; }
+      #about section p.yellow-text {
+        position: relative;
+        padding-top: 45%;
+        bottom: 0; }
+    #about section #bisnesman-1 {
+      background: url("../img/bisnesman-1.png") no-repeat center center;
+      position: absolute;
+      left: 50px;
+      bottom: 0px;
+      text-align: center;
+      height: 520px;
+      width: 343px; }
+      #about section #bisnesman-1 .punkt-1, #about section #bisnesman-1 .punkt-2, #about section #bisnesman-1 .punkt-3 {
+        animation: punkt 3s ease-in-out;
+        background: url("../img/puncts/punkt-1.png") no-repeat right;
+        position: absolute;
+        right: 254px;
+        overflow: hidden;
+        height: 115px;
+        width: 453px; }
+        #about section #bisnesman-1 .punkt-1 h3, #about section #bisnesman-1 .punkt-2 h3, #about section #bisnesman-1 .punkt-3 h3 {
+          animation: punkt-text 3s ease-in-out 3s;
+          font-family: "FiraSans-Medium", sans-serif;
+          font-weight: 100;
+          opacity: 0;
+          text-transform: uppercase;
+          font-size: 22px;
+          margin: 15px 0; }
+        #about section #bisnesman-1 .punkt-1 span, #about section #bisnesman-1 .punkt-2 span, #about section #bisnesman-1 .punkt-3 span {
+          animation: punkt-text 3s ease-in-out 3s;
+          font-size: 16px;
+          opacity: 0;
+          font-family: "FiraSans-Book", sans-serif; }
+      #about section #bisnesman-1 .punkt-2 {
+        background: url("../img/puncts/punkt-2.png") no-repeat right;
+        top: 190px;
+        right: 220px; }
+        #about section #bisnesman-1 .punkt-2 h3 {
+          margin: 5px 0;
+          margin-top: 30px; }
+      #about section #bisnesman-1 .punkt-3 {
+        background: url("../img/puncts/punkt-3.png") no-repeat right;
+        top: 350px;
+        right: 235px; }
+        #about section #bisnesman-1 .punkt-3 h3 {
+          margin: 5px 0;
+          margin-top: 59px;
+          margin-left: -100px; }
+        #about section #bisnesman-1 .punkt-3 span {
+          margin-left: -100px; }
+    #about section #bisnesman-2 {
+      background: url("../img/bisnesman-2.png") no-repeat center center;
+      position: absolute;
+      right: 150px;
+      bottom: 10px;
+      height: 498px;
+      width: 144px; }
+    #about section img {
+      animation: arrow-bottom 1s ease-in-out infinite; }
+
+/* Animation puncts*/
+@keyframes punkt {
+  0% {
+    opacity: 0;
+    width: 8px; }
+  50% {
+    opacity: 1;
+    width: 8px; }
+  100% {
+    width: 453px; } }
+
+@keyframes punkt-text {
+  0% {
+    display: none;
+    opacity: 0; }
+  100% {
+    display: block;
+    opacity: 1; } }
+
+/* End Animation puncts */
+/* Animation arrow-bottom*/
+@-webkit-keyframes arrow-bottom {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.1, 1.1); }
+  100% {
+    transform: scale(1, 1); } }
+
+/* End Animation arrow-bottom*/
+/*Menu End*/

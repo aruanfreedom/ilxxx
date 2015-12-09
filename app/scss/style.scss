@@ -1,0 +1,412 @@
+$regular: 'Drugs', sans-serif;
+$fira-regular: 'FiraSans-Regular', sans-serif;
+$fira-thin: 'FiraSans-Thin', sans-serif;
+$fira-ultra-light: 'FiraSans-UltraLight', sans-serif;
+$fira-semi-bold: 'FiraSans-SemiBold', sans-serif;
+$fira-medium: 'FiraSans-Medium', sans-serif;
+$fira-book: 'FiraSans-Book', sans-serif;
+
+#canvas {
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#home {
+
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+
+  table .center-td {
+    vertical-align: middle;
+  }
+
+  #dynamic-text {
+    color: #fff;
+    font-size: 2em;
+    height: 40px;
+  }
+  table {
+    border-collapse: collapse;
+    height: 59.7em;
+  }
+  h1 {
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 100;
+    font-family: $regular;
+  }
+  #bg2 {
+    background: url("../img/bg2.png") no-repeat center center;
+    background-size: cover;
+    animation: logo 4s ease-in 1;
+  }
+  #logo {
+    background: url("../img/logo.png") no-repeat center center;
+    background-size: 100%;
+    animation: logo 4s ease-in 1;
+    margin: 0 auto;
+    height: 421px;
+    width: 400px;
+
+    &:before {
+      content: "";
+      background: url("../img/shine.png") no-repeat center center;
+      background-size: 100%;
+      animation: shine 2s linear 5s 1;
+      height: 31%;
+      position: absolute;
+      margin-left: -38%;
+      margin-top: 126%;
+      top: 0;
+      left: 50%;
+      width: 0;
+    }
+  }
+}
+
+///*Animation*/
+//
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shine {
+  0% {
+    margin-left: -75%;
+    margin-top: 54%;
+    width: 100%;
+  }
+  20% {
+    margin-left: -31%;
+    margin-top: 43%;
+  }
+  30% {
+    margin-left: -7%;
+    margin-top: 48%;
+  }
+  40% {
+    margin-left: 15%;
+    margin-top: 64%;
+  }
+  ////  40%{
+  ////    margin-left: 20%;
+  ////  }
+  50% {
+    margin-left: 27%;
+    margin-top: 86%;
+    width: 80%;
+  }
+  60% {
+    margin-left: 22%;
+    margin-top: 124%;
+    width: 66%;
+  }
+  70% {
+    margin-left: -11%;
+    margin-top: 146%;
+    width: 50%;
+  }
+  80% {
+    margin-left: -41%;
+    margin-top: 126%;
+    width: 10%;
+  }
+  90% {
+    margin-left: -38%;
+    margin-top: 126%;
+    width: 0;
+  }
+}
+
+#group {
+  fill: #2b414d;
+  stroke: red;
+  stroke-width: 5px;
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+}
+
+/*End Animation*/
+
+/*Menu*/
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#menu {
+  position: fixed;
+  background: url("../img/menu-bg.jpg") no-repeat top;
+  background-size: cover;
+  height: 73px;
+  width: 100%;
+  z-index: 2;
+
+  nav {
+    margin: 0 auto;
+    width: 80%;
+    ul {
+      float: left;
+      padding: 0;
+      &.left {
+        li {
+          &.center-v {
+            margin-left: 5px;
+          }
+        }
+      }
+      &.center {
+        li {
+          &.center-v {
+            padding-top: 10px;
+            a{
+              padding: 20px;
+              &:hover{
+                background: url("../img/light-cursor.png") no-repeat center center;
+                background-size: 100%;
+              }
+            }
+
+          }
+          a {
+            font-family: $fira-thin;
+          }
+        }
+      }
+      &.right {
+        li {
+          &.center-v {
+            padding-top: 5px;
+            a{
+              padding: 0 10px;
+              &:hover{
+                  background: url("../img/light-lang.png") no-repeat center center;
+                  background-size: cover;
+              }
+            }
+          }
+        }
+        li.btn-yellow {
+          background: #d0a114;
+          border-radius: 3px;
+          padding: 3% 0;
+          margin-left: 30px;
+          text-align: center;
+          width: 150px;
+          &:hover {
+            cursor: pointer;
+          }
+          a{
+            &:hover{
+              background: none;
+            }
+          }
+        }
+      }
+      li {
+        color: #fff;
+        float: left;
+        font-family: $fira-regular;
+        font-size: 16px;
+        list-style: none;
+        margin-left: 15px;
+        &.center-v {
+          padding-top: 5px;
+        }
+        &.logo-min {
+          margin-top: -8px;
+        }
+        a {
+          color: #fff;
+          font-size: 13px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: $fira-regular;
+        }
+      }
+    }
+    .right {
+      float: right;
+    }
+    .left {
+      float: left;
+    }
+    .center {
+      float: none;
+      position: absolute;
+      font-size: 13px;
+      left: 38%;
+    }
+  }
+}
+
+#about{
+  background: url("../img/bg-2.jpg") no-repeat center top #111519;
+  background-size: cover;
+  position: relative;
+  top: 73px;
+  height: 92.4%;
+  width: 100%;
+  z-index: 1;
+
+  section{
+    padding-top: 60px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    width: 50%;
+
+    h2{
+      margin: 0;
+      font-family: $fira-semi-bold;
+      font-weight: 100;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+
+    .yellow-text{
+      color: #e6b41d;
+    }
+
+    p{
+      font-family: $fira-ultra-light;
+      font-size: 18px;
+      margin-bottom: 0;
+      &.yellow-text{
+        position: relative;
+        padding-top: 45%;
+        bottom: 0;
+      }
+    }
+    #bisnesman-1{
+      background: url("../img/bisnesman-1.png") no-repeat center center;
+      position: absolute;
+      left: 50px;
+      bottom: 0px;
+      text-align: center;
+      height: 520px;
+      width: 343px;
+      .punkt-1, .punkt-2, .punkt-3{
+        animation: punkt 3s ease-in-out;
+        background: url("../img/puncts/punkt-1.png") no-repeat right;
+        position: absolute;
+        right: 254px;
+        overflow: hidden;
+        height: 115px;
+        width: 453px;
+        h3{
+          animation: punkt-text 3s ease-in-out 3s;
+          font-family: $fira-medium;
+          font-weight: 100;
+          opacity: 0;
+          text-transform: uppercase;
+          font-size: 22px;
+          margin: 15px 0;
+        }
+        span{
+          animation: punkt-text 3s ease-in-out 3s;
+          font-size: 16px;
+          opacity: 0;
+          font-family: $fira-book;
+        }
+      }
+      .punkt-2{
+        background: url("../img/puncts/punkt-2.png") no-repeat right;
+        top: 190px;
+        right: 220px;
+        h3{
+          margin: 5px 0;
+          margin-top: 30px;
+        }
+      }
+      .punkt-3{
+        background: url("../img/puncts/punkt-3.png") no-repeat right;
+        top: 350px;
+        right: 235px;
+        h3{
+          margin: 5px 0;
+          margin-top: 59px;
+          margin-left: -100px;
+        }
+        span{
+          margin-left: -100px;
+        }
+      }
+    }
+    #bisnesman-2{
+      background: url("../img/bisnesman-2.png") no-repeat center center;
+      position: absolute;
+      right: 150px;
+      bottom: 10px;
+      height: 498px;
+      width: 144px;
+    }
+    img{
+      animation: arrow-bottom 1s ease-in-out infinite;
+    }
+  }
+}
+
+/* Animation puncts*/
+
+@keyframes punkt {
+  0%{
+    opacity: 0;
+    width: 8px;
+  }
+  50%{
+    opacity: 1;
+    width: 8px;
+  }
+  100%{
+    width: 453px;
+  }
+}
+
+@keyframes punkt-text {
+  0%{
+    display: none;
+    opacity: 0;
+  }
+  100%{
+    display: block;
+    opacity: 1;
+  }
+}
+
+/* End Animation puncts */
+
+/* Animation arrow-bottom*/
+
+@-webkit-keyframes arrow-bottom {
+  0%{
+    transform: scale(1, 1);
+  }
+  50%{
+    transform: scale(1.1, 1.1);
+  }
+  100%{
+    transform: scale(1, 1);
+  }
+ }
+
+/* End Animation arrow-bottom*/
+
+/*Menu End*/
+
+@import "media";

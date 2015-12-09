@@ -1,0 +1,23 @@
+{
+  "name": "ilx",
+  "version": "0.1.0",
+  "dependencies": {
+    "foundation": "~4"
+  },
+  "authors": [
+    "aruanfreedom <aruanfreedom@outlook.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
