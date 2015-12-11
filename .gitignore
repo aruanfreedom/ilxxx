@@ -1,4 +1,6 @@
 .idea/.name
 .idea/deployment.xml
 *.xml
+*.iml
 .idea/ilx.iml
+*.iml
