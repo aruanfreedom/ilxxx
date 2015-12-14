@@ -32,19 +32,18 @@ html, body {
   #anim #logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
+    position: relative;
     margin: 0 auto;
     height: 421px;
     width: 400px; }
-    #anim #logo:before {
+    #anim #logo #shine {
       content: "";
       background: url("../img/shine.png") no-repeat center center;
       background-size: 100%;
       position: absolute;
-      margin-left: -82%;
-      margin-top: 30%;
-      top: 0;
-      left: 50%;
-      height: 36%;
+      top: -24%;
+      left: -30%;
+      height: 100%;
       width: 100%; }
 
 @keyframes logo {
