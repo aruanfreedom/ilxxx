@@ -1,4 +1,3 @@
-
     function animateText(id, text, i) {
         document.getElementById(id).innerHTML = text.substring(0, i);
         i++;
@@ -24,27 +23,6 @@
 
 
 $(document).ready(function() {
-
-    var animationBg = function(){
-      $("#anim").animate({
-              height: 0
-      }, 2000, function(){
-          $(this).css('display', 'none')
-      });
-    };
-
-    //setTimeout(animationBg, 10000);
-
-    var afterAnimBg = function(){
-      var pages = ['menu', 'about'],
-          i;
-        for(i = 0; pages.length > i; i++){
-            $('#' + pages[i]).show();
-        }
-    };
-
-    //setTimeout(afterAnimBg, 9000);
-
     var animText = function(){
         $("#bisnesman-1 h3, span").css("opacity", 1);
     };
@@ -135,9 +113,6 @@ $(document).ready(function() {
 
     logoAnim();
 
+    setTimeout(animText, 6000);
 });
-
-
-
-
 

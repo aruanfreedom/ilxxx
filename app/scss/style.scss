@@ -6,32 +6,30 @@ $fira-semi-bold: 'FiraSans-SemiBold', sans-serif;
 $fira-medium: 'FiraSans-Medium', sans-serif;
 $fira-book: 'FiraSans-Book', sans-serif;
 
-html, body {
-  margin: 0;
-  padding: 0;
-  //overflow: hidden;
+#canvas {
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
 
-#anim {
+#home {
+
   background: url("../img/bg.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
 
+  table .center-td {
+    vertical-align: middle;
+  }
+
   #dynamic-text {
     color: #fff;
     font-size: 2em;
-    text-align: center;
-    width: 400px;
     height: 40px;
-    transition: opacity 3s;
   }
   table {
     border-collapse: collapse;
-    vertical-align: middle;
-    position: relative;
-    margin: 0 auto;
     height: 59.7em;
   }
   h1 {
@@ -41,15 +39,16 @@ html, body {
     font-family: $regular;
   }
   #bg2 {
-    background: url("../img/bg2.png") no-repeat top;
+    background: url("../img/bg2.png") no-repeat center center;
     background-size: cover;
-    //animation: logo 4s ease-in 1;
+    animation: logo 4s ease-in 1;
   }
   #logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
     //animation: logo 4s ease-in 1;
+    animation: logo 4s ease-in 1;
     margin: 0 auto;
     height: 421px;
     width: 400px;
@@ -58,12 +57,18 @@ html, body {
       content: "";
       background: url("../img/shine.png") no-repeat center center;
       background-size: 100%;
-      //animation: shine 1s linear 10s 1;
+      animation: shine 2s linear 5s 1;
+      height: 31%;
       position: absolute;
       top: -24%;
       left: -30%;
       height: 100%;
       width: 100%;
+      margin-left: -38%;
+      margin-top: 126%;
+      top: 0;
+      left: 50%;
+      width: 0;
     }
   }
 }
@@ -81,55 +86,49 @@ html, body {
 
 @keyframes shine {
   0% {
-    margin-left: -82%;
-    margin-top: 30%;
+    margin-left: -75%;
+    margin-top: 54%;
     width: 100%;
   }
-  10% {
-    margin-left: -63%;
-    margin-top: 22%;
-  }
   20% {
-    margin-left: -45%;
-    margin-top: 25%;
+    margin-left: -31%;
+    margin-top: 43%;
   }
   30% {
-    margin-left: -22%;
-    margin-top: 35%;
-    width: 84%;
+    margin-left: -7%;
+    margin-top: 48%;
   }
   40% {
-    margin-left: -14%;
-    margin-top: 45%;
+    margin-left: 15%;
+    margin-top: 64%;
+  }
+  ////  40%{
+  ////    margin-left: 20%;
+  ////  }
+  50% {
+    margin-left: 27%;
+    margin-top: 86%;
     width: 80%;
   }
-  50% {
-    margin-left: 1%;
-    margin-top: 61%;
-    width: 72%;
-  }
   60% {
-    margin-top: 82%;
-    width: 60%;
+    margin-left: 22%;
+    margin-top: 124%;
+    width: 66%;
   }
   70% {
-    margin-left: -5%;
-    margin-top: 98%;
+    margin-left: -11%;
+    margin-top: 146%;
     width: 50%;
   }
   80% {
-    margin-left: -20%;
-    margin-top: 106%;
+    margin-left: -41%;
+    margin-top: 126%;
+    width: 10%;
   }
   90% {
-    margin-left: -43%;
-    margin-top: 106%;
-    width: 50%;
-  }
-  100% {
-    margin-left: -42%;
-    margin-top: 93%;
-    width: 10%;
+    margin-left: -38%;
+    margin-top: 126%;
+    width: 0;
   }
 }
 
@@ -147,11 +146,24 @@ html, body {
 /*End Animation*/
 
 /*Menu*/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#svg{
+  background: #000;
+  width: 100%;
 
+  image{
+    height: 100%;
+    width: 100%;
+  }
+}
 
 #menu {
   position: fixed;
-  display : none;
   background: url("../img/menu-bg.jpg") no-repeat top;
   background-size: cover;
   height: 73px;
@@ -259,7 +271,6 @@ html, body {
 #about{
   background: url("../img/bg-2.jpg") no-repeat center top #111519;
   background-size: cover;
-  display : none;
   position: relative;
   top: 73px;
   height: 92.4%;
@@ -305,7 +316,7 @@ html, body {
       height: 520px;
       width: 343px;
       .punkt-1, .punkt-2, .punkt-3{
-        animation: punkt 3s ease-in-out 1s;
+        animation: punkt 3s ease-in-out;
         background: url("../img/puncts/punkt-1.png") no-repeat right;
         position: absolute;
         right: 254px;
@@ -313,7 +324,7 @@ html, body {
         height: 115px;
         width: 453px;
         h3{
-          animation: punkt-text 3s ease-in-out 5s;
+          animation: punkt-text 3s ease-in-out 3s;
           font-family: $fira-medium;
           font-weight: 100;
           opacity: 0;
@@ -322,7 +333,7 @@ html, body {
           margin: 15px 0;
         }
         span{
-          animation: punkt-text 3s ease-in-out 5s;
+          animation: punkt-text 3s ease-in-out 3s;
           font-size: 16px;
           opacity: 0;
           font-family: $fira-book;
@@ -411,7 +422,5 @@ html, body {
 /* End Animation arrow-bottom*/
 
 /*Menu End*/
-
-
 
 @import "media";
