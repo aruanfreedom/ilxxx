@@ -5,13 +5,7 @@ $fira-ultra-light: 'FiraSans-UltraLight', sans-serif;
 $fira-semi-bold: 'FiraSans-SemiBold', sans-serif;
 $fira-medium: 'FiraSans-Medium', sans-serif;
 $fira-book: 'FiraSans-Book', sans-serif;
-
-#canvas {
-  background: url("../img/bg.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
+$blogger: 'BloggerSans', sans-serif;
 
 #home {
 
@@ -102,9 +96,6 @@ $fira-book: 'FiraSans-Book', sans-serif;
     margin-left: 15%;
     margin-top: 64%;
   }
-  ////  40%{
-  ////    margin-left: 20%;
-  ////  }
   50% {
     margin-left: 27%;
     margin-top: 86%;
@@ -152,15 +143,6 @@ html, body {
   height: 100%;
   width: 100%;
 }
-#svg{
-  background: #000;
-  width: 100%;
-
-  image{
-    height: 100%;
-    width: 100%;
-  }
-}
 
 #menu {
   position: fixed;
@@ -168,7 +150,7 @@ html, body {
   background-size: cover;
   height: 73px;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
 
   nav {
     margin: 0 auto;
@@ -187,14 +169,19 @@ html, body {
         li {
           &.center-v {
             padding-top: 10px;
-            a{
-              padding: 20px;
-              &:hover{
+            &.active {
+              a {
                 background: url("../img/light-cursor.png") no-repeat center center;
                 background-size: 100%;
               }
             }
-
+            a {
+              padding: 20px;
+              &:hover {
+                background: url("../img/light-cursor.png") no-repeat center center;
+                background-size: 100%;
+              }
+            }
           }
           a {
             font-family: $fira-thin;
@@ -205,11 +192,17 @@ html, body {
         li {
           &.center-v {
             padding-top: 5px;
-            a{
+            &.active {
+              a {
+                background: url("../img/light-cursor.png") no-repeat center center;
+                background-size: 100%;
+              }
+            }
+            a {
               padding: 0 10px;
-              &:hover{
-                  background: url("../img/light-lang.png") no-repeat center center;
-                  background-size: cover;
+              &:hover {
+                background: url("../img/light-lang.png") no-repeat center center;
+                background-size: cover;
               }
             }
           }
@@ -223,9 +216,11 @@ html, body {
           width: 150px;
           &:hover {
             cursor: pointer;
+            background: url("../img/light-lang.png") no-repeat center center #d0a114;
+            background-size: cover;
           }
-          a{
-            &:hover{
+          a {
+            &:hover {
               background: none;
             }
           }
@@ -268,16 +263,17 @@ html, body {
   }
 }
 
-#about{
+#section0 {
   background: url("../img/bg-2.jpg") no-repeat center top #111519;
   background-size: cover;
+  //display: none;
   position: relative;
   top: 73px;
   height: 92.4%;
   width: 100%;
   z-index: 1;
 
-  section{
+  section {
     padding-top: 60px;
     position: relative;
     text-align: center;
@@ -285,7 +281,7 @@ html, body {
     margin: 0 auto;
     width: 50%;
 
-    h2{
+    h2 {
       margin: 0;
       font-family: $fira-semi-bold;
       font-weight: 100;
@@ -293,21 +289,21 @@ html, body {
       text-transform: uppercase;
     }
 
-    .yellow-text{
+    .yellow-text {
       color: #e6b41d;
     }
 
-    p{
+    p {
       font-family: $fira-ultra-light;
       font-size: 18px;
       margin-bottom: 0;
-      &.yellow-text{
+      &.yellow-text {
         position: relative;
         padding-top: 45%;
         bottom: 0;
       }
     }
-    #bisnesman-1{
+    #bisnesman-1 {
       background: url("../img/bisnesman-1.png") no-repeat center center;
       position: absolute;
       left: 50px;
@@ -315,7 +311,7 @@ html, body {
       text-align: center;
       height: 520px;
       width: 343px;
-      .punkt-1, .punkt-2, .punkt-3{
+      .punkt-1, .punkt-2, .punkt-3 {
         animation: punkt 3s ease-in-out;
         background: url("../img/puncts/punkt-1.png") no-repeat right;
         position: absolute;
@@ -323,7 +319,7 @@ html, body {
         overflow: hidden;
         height: 115px;
         width: 453px;
-        h3{
+        h3 {
           animation: punkt-text 3s ease-in-out 3s;
           font-family: $fira-medium;
           font-weight: 100;
@@ -332,45 +328,80 @@ html, body {
           font-size: 22px;
           margin: 15px 0;
         }
-        span{
+        span {
           animation: punkt-text 3s ease-in-out 3s;
           font-size: 16px;
           opacity: 0;
           font-family: $fira-book;
         }
       }
-      .punkt-2{
+      .punkt-2 {
         background: url("../img/puncts/punkt-2.png") no-repeat right;
         top: 190px;
         right: 220px;
-        h3{
+        h3 {
           margin: 5px 0;
           margin-top: 30px;
         }
       }
-      .punkt-3{
+      .punkt-3 {
         background: url("../img/puncts/punkt-3.png") no-repeat right;
         top: 350px;
         right: 235px;
-        h3{
+        h3 {
           margin: 5px 0;
           margin-top: 59px;
           margin-left: -100px;
         }
-        span{
+        span {
           margin-left: -100px;
         }
       }
     }
-    #bisnesman-2{
+    #bisnesman-2 {
       background: url("../img/bisnesman-2.png") no-repeat center center;
       position: absolute;
       right: 150px;
       bottom: 10px;
       height: 498px;
       width: 144px;
+
+      .punkt-1, .punkt-2 {
+        animation: punkt 3s ease-in-out;
+        background: url("../img/puncts/punkt-4.png") no-repeat left;
+        position: absolute;
+        left: 150px;
+        top: 70px;
+        overflow: hidden;
+        height: 115px;
+        width: 453px;
+        h3 {
+          animation: punkt-text 3s ease-in-out 3s;
+          font-family: $fira-medium;
+          font-weight: 100;
+          opacity: 0;
+          text-transform: uppercase;
+          font-size: 22px;
+          margin: 15px 0;
+        }
+        span {
+          animation: punkt-text 3s ease-in-out 3s;
+          font-size: 16px;
+          opacity: 0;
+          font-family: $fira-book;
+        }
+      }
+      .punkt-2 {
+        background: url("../img/puncts/punkt-5.png") no-repeat left;
+        top: 220px;
+        right: 230px;
+        h3 {
+          margin: 5px 0;
+          margin-top: 30px;
+        }
+      }
     }
-    img{
+    img {
       animation: arrow-bottom 1s ease-in-out infinite;
     }
   }
@@ -379,25 +410,25 @@ html, body {
 /* Animation puncts*/
 
 @keyframes punkt {
-  0%{
+  0% {
     opacity: 0;
     width: 8px;
   }
-  50%{
+  50% {
     opacity: 1;
     width: 8px;
   }
-  100%{
+  100% {
     width: 453px;
   }
 }
 
 @keyframes punkt-text {
-  0%{
+  0% {
     display: none;
     opacity: 0;
   }
-  100%{
+  100% {
     display: block;
     opacity: 1;
   }
@@ -408,19 +439,420 @@ html, body {
 /* Animation arrow-bottom*/
 
 @-webkit-keyframes arrow-bottom {
-  0%{
+  0% {
     transform: scale(1, 1);
   }
-  50%{
+  50% {
     transform: scale(1.1, 1.1);
   }
-  100%{
+  100% {
     transform: scale(1, 1);
   }
- }
+}
 
 /* End Animation arrow-bottom*/
 
 /*Menu End*/
+
+#section1 {
+  background: #fbfbfb;
+  position: relative;
+  width: 100%;
+  top: 73px;
+
+  section {
+    padding-top: 60px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    h2 {
+      text-align: center;
+      color: #2e2e2f;
+      font-family: $fira-semi-bold;
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 36px;
+      margin: 0;
+      margin-bottom: 35px;
+    }
+    #wrapper {
+      .tabs-line {
+        display: inline-block;
+        margin-bottom: 50px;
+      }
+      h3 {
+        background: #a9a9a9;
+        border-radius: 5px;
+        padding: 5px 50px;
+        margin: 0 10px;
+        text-align: center;
+        color: #fff;
+        font-family: $fira-medium;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 36px;
+        transition: background .8s;
+      }
+      #bisness {
+        h3 {
+          &:hover {
+            cursor: pointer;
+            background: #65b5de;
+          }
+          &.active-services {
+            background: #65b5de;
+          }
+        }
+      }
+      #family {
+        h3 {
+          &:hover {
+            cursor: pointer;
+            background: #e6b41d;
+          }
+          &.active-services {
+            background: #e6b41d;
+          }
+        }
+      }
+      #turism {
+        h3 {
+          &:hover {
+            cursor: pointer;
+            background: #8dad40;
+          }
+          &.active-services {
+            background: #8dad40;
+          }
+        }
+      }
+    }
+    #wrapper .none {
+      display: none;
+    }
+    #wrapper.tab1 div.tab1 {
+      background: url("../img/bisness.png") no-repeat left top;
+      display: block;
+      width: 100%;
+    }
+    #wrapper.tab2 div.tab2 {
+      background: url("../img/family.png") no-repeat right top;
+      display: block;
+      width: 100%;
+    }
+    #wrapper.tab3 div.tab3 {
+      background: url("../img/turism.png") no-repeat left top;
+      display: block;
+      width: 100%;
+    }
+
+    #wrapper.tab1 h3.tab1 {
+      color: black;
+    }
+
+    #wrapper.tab2 h3.tab2 {
+      color: black;
+    }
+    #wrapper.tab3 h3.tab3 {
+      color: black;
+    }
+    .tab1, .tab2, .tab3 {
+      .description {
+        float: right;
+        padding: 30px 0;
+        padding-right: 90px;
+        width: 28%;
+        h4 {
+          color: #65b5de;
+          font-size: 24px;
+          font-weight: 100;
+          font-family: $fira-medium;
+          margin: 0;
+          text-transform: uppercase;
+        }
+        .description-item {
+          text-align: left;
+          padding-bottom: 30px;
+          img {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 20px;
+          }
+          p {
+            font-family: $fira-medium;
+            margin: 0;
+          }
+          small {
+            font-family: $fira-book;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .tab2 {
+      .description {
+        float: left;
+        padding-left: 160px;
+        h4 {
+          color: #e6b41d;
+        }
+      }
+    }
+    .tab2 {
+      .description {
+        h4 {
+          color: #8dad40;
+        }
+      }
+    }
+    .clearfix {
+      clear: both;
+    }
+  }
+}
+
+#section2 {
+  background: url("../img/car_park.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  top: 73px;
+  height: 100%;
+  width: 100%;
+  section {
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    #wrapper2 {
+      .tabs-line {
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-top: 75px;
+      }
+      h3 {
+        background: #a9a9a9;
+        border-radius: 5px;
+        padding: 5px 50px;
+        margin: 0 10px;
+        text-align: center;
+        color: #fff;
+        font-family: $fira-medium;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 36px;
+        transition: background .8s;
+        &:hover{
+          background: #c62b30;
+          cursor: pointer;
+        }
+      }
+    }
+    #wrapper2 .none {
+      display:none;
+    }
+    #wrapper2.tab1 div.tab1 {
+      background: url("../img/bisness.png") no-repeat left top;
+      display:block;
+      width:100%;
+    }
+    #wrapper2.tab2 div.tab2 {
+      background: url("../img/family.png") no-repeat right top;
+      display:block;
+      width:100%;
+    }
+    #wrapper2.tab3 div.tab3 {
+      background: url("../img/turism.png") no-repeat left top;
+      display: block;
+      width: 100%;
+    }
+
+    #wrapper2.tab1 h3.tab1 {
+      color: black;
+    }
+
+    #wrapper2.tab2 h3.tab2 {
+      color: black;
+    }
+    #wrapper2.tab3 h3.tab3 {
+      color: black;
+    }
+  }
+}
+
+#section3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  #form-left-bg {
+    background: url("../img/bid.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: -500px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  #form-right-bg {
+    background: url("../img/bid-right.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: 1200px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  #form {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 33px -2px rgba(0, 0, 0, 0.51);
+    position: relative;
+    margin: 0 auto;
+    font-family: $blogger;
+    padding: 3% 6%;
+    top: 30px;
+    width: 25%;
+    z-index: 2;
+    h2 {
+      color: #3f3f3f;
+      text-align: center;
+      font-family: $blogger;
+    }
+    form {
+      display: inline-block;
+      label {
+        color: #3c3c3c;
+        float: left;
+        text-align: right;
+        padding: 11px 0;
+        font-size: 1.1em;
+        width: 120px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      input {
+        border-radius: 3px;
+        border: 2px solid #ccc;
+        color: #b1b1b1;
+        height: 35px;
+        float: right;
+        padding-left: 10px;
+        margin: 6px 0;
+        font-size: 1em;
+        width: 68%;
+      }
+      #phone {
+        background: url("../img/icons/number.png") no-repeat;
+        background-position: 10px;
+        padding-left: 45px;
+        width: 60.4%;
+      }
+      textarea {
+        border-radius: 3px;
+        border: 2px solid #ccc;
+        padding-left: 10px;
+        color: #b1b1b1;
+        float: right;
+        height: 150px;
+        width: 67.4%;
+      }
+      .btn {
+        background: #a9a9a9;
+        border-radius: 3px;
+        color: #fff;
+        margin: 24px auto;
+        position: relative;
+        left: 50%;
+        padding: 10px 0;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        height: 57px;
+        width: 32%;
+      }
+      .red {
+        color: red;
+      }
+    }
+    p {
+      font-family: $blogger;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .clearfix {
+    clear: both;
+  }
+}
+
+#section4 {
+  background: url("../img/contact.png") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  #car {
+    background: url("../img/car.png") no-repeat center bottom;
+    margin: 0 auto;
+    height: 100%;
+    width: 50%;
+
+    #description-contact, #description-contact-2 {
+      padding: 17%;
+      padding-top: 25%;
+      font-family: $blogger;
+      color: #fff;
+      h2 {
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        font-family: $blogger;
+        font-size: 1.6em;
+      }
+      .line-info {
+        border-bottom: 2px solid #4e4e4e;
+        height: 25px;
+        font-size: 1em;
+        &.none-line {
+          border-bottom: none;
+        }
+        p {
+          clear: both;
+          height: 25px;
+        }
+        .left {
+          float: left;
+        }
+        .right {
+          float: right;
+          a {
+            color: #2e79cc;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    #description-contact-2 {
+      padding: 0 10%;
+    }
+    .clearfix {
+      clear: both;
+    }
+  }
+}
+
+#tel-icon {
+  background: url("../img/puncts/tel.png") no-repeat center center #78d843;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 150px;
+  height: 75px;
+  width: 75px;
+  z-index: 3;
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 @import "media";
