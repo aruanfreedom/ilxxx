@@ -21,6 +21,10 @@
     }
 
 $(document).ready(function() {
+
+    //gallery
+    jQuery("#gallery").unitegallery();
+
     var animText = function(){
         $("#bisnesman-1 h3, span").css("opacity", 1);
         $("#bisnesman-2 h3, span").css("opacity", 1);

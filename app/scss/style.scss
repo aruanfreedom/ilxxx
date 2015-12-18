@@ -547,15 +547,15 @@ html, body {
       width: 100%;
     }
 
-    #wrapper.tab1 h3.tab1 {
-      color: black;
+    #wrapper.tab1 .tab1 h3 {
+      background: #65b5de;
     }
 
-    #wrapper.tab2 h3.tab2 {
-      color: black;
+    #wrapper.tab2 .tab2 h3 {
+      background: #e6b41d;
     }
-    #wrapper.tab3 h3.tab3 {
-      color: black;
+    #wrapper.tab3 .tab3 h3 {
+      background: #8dad40;
     }
     .tab1, .tab2, .tab3 {
       .description {
@@ -624,22 +624,23 @@ html, body {
     height: 100%;
     width: 70%;
     #wrapper2 {
+      text-align: center;
       .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
-        margin-top: 75px;
+        margin-top: 120px;
       }
       h3 {
         background: #a9a9a9;
         border-radius: 5px;
-        padding: 5px 50px;
+        padding: 10px 20px;
         margin: 0 10px;
         text-align: center;
         color: #fff;
         font-family: $fira-medium;
         text-transform: uppercase;
         font-weight: 100;
-        font-size: 36px;
+        font-size: 1.7em;
         transition: background .8s;
         &:hover{
           background: #c62b30;
@@ -651,30 +652,33 @@ html, body {
       display:none;
     }
     #wrapper2.tab1 div.tab1 {
-      background: url("../img/bisness.png") no-repeat left top;
       display:block;
       width:100%;
     }
     #wrapper2.tab2 div.tab2 {
-      background: url("../img/family.png") no-repeat right top;
       display:block;
       width:100%;
     }
     #wrapper2.tab3 div.tab3 {
-      background: url("../img/turism.png") no-repeat left top;
       display: block;
       width: 100%;
     }
-
-    #wrapper2.tab1 h3.tab1 {
-      color: black;
+    #wrapper2.tab4 div.tab4 {
+      display: block;
+      width: 100%;
+    }
+    #wrapper2.tab1 .tab1 h3 {
+      background: #c62b30;
     }
 
-    #wrapper2.tab2 h3.tab2 {
-      color: black;
+    #wrapper2.tab2 .tab2 h3 {
+      background: #c62b30;
     }
-    #wrapper2.tab3 h3.tab3 {
-      color: black;
+    #wrapper2.tab3 .tab3 h3 {
+      background: #c62b30;
+    }
+    #wrapper2.tab4 .tab4 h3 {
+      background: #c62b30;
     }
   }
 }

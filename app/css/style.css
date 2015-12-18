@@ -391,12 +391,12 @@ html, body {
       background: url("../img/turism.png") no-repeat left top;
       display: block;
       width: 100%; }
-    #section1 section #wrapper.tab1 h3.tab1 {
-      color: black; }
-    #section1 section #wrapper.tab2 h3.tab2 {
-      color: black; }
-    #section1 section #wrapper.tab3 h3.tab3 {
-      color: black; }
+    #section1 section #wrapper.tab1 .tab1 h3 {
+      background: #65b5de; }
+    #section1 section #wrapper.tab2 .tab2 h3 {
+      background: #e6b41d; }
+    #section1 section #wrapper.tab3 .tab3 h3 {
+      background: #8dad40; }
     #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
       float: right;
       padding: 30px 0;
@@ -443,45 +443,49 @@ html, body {
     margin: 0 auto;
     height: 100%;
     width: 70%; }
-    #section2 section #wrapper2 .tabs-line {
-      display: inline-block;
-      margin-bottom: 50px;
-      margin-top: 75px; }
-    #section2 section #wrapper2 h3 {
-      background: #a9a9a9;
-      border-radius: 5px;
-      padding: 5px 50px;
-      margin: 0 10px;
-      text-align: center;
-      color: #fff;
-      font-family: "FiraSans-Medium", sans-serif;
-      text-transform: uppercase;
-      font-weight: 100;
-      font-size: 36px;
-      transition: background .8s; }
-      #section2 section #wrapper2 h3:hover {
-        background: #c62b30;
-        cursor: pointer; }
+    #section2 section #wrapper2 {
+      text-align: center; }
+      #section2 section #wrapper2 .tabs-line {
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-top: 120px; }
+      #section2 section #wrapper2 h3 {
+        background: #a9a9a9;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 0 10px;
+        text-align: center;
+        color: #fff;
+        font-family: "FiraSans-Medium", sans-serif;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 1.7em;
+        transition: background .8s; }
+        #section2 section #wrapper2 h3:hover {
+          background: #c62b30;
+          cursor: pointer; }
     #section2 section #wrapper2 .none {
       display: none; }
     #section2 section #wrapper2.tab1 div.tab1 {
-      background: url("../img/bisness.png") no-repeat left top;
       display: block;
       width: 100%; }
     #section2 section #wrapper2.tab2 div.tab2 {
-      background: url("../img/family.png") no-repeat right top;
       display: block;
       width: 100%; }
     #section2 section #wrapper2.tab3 div.tab3 {
-      background: url("../img/turism.png") no-repeat left top;
       display: block;
       width: 100%; }
-    #section2 section #wrapper2.tab1 h3.tab1 {
-      color: black; }
-    #section2 section #wrapper2.tab2 h3.tab2 {
-      color: black; }
-    #section2 section #wrapper2.tab3 h3.tab3 {
-      color: black; }
+    #section2 section #wrapper2.tab4 div.tab4 {
+      display: block;
+      width: 100%; }
+    #section2 section #wrapper2.tab1 .tab1 h3 {
+      background: #c62b30; }
+    #section2 section #wrapper2.tab2 .tab2 h3 {
+      background: #c62b30; }
+    #section2 section #wrapper2.tab3 .tab3 h3 {
+      background: #c62b30; }
+    #section2 section #wrapper2.tab4 .tab4 h3 {
+      background: #c62b30; }
 
 #section3 {
   position: relative;
