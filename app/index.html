@@ -9,38 +9,58 @@
     <!-- endbower -->
     <!-- Main:css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel='stylesheet' href='bower_components/unitegallery/package/unitegallery/css/unite-gallery.css' type='text/css' />
     <link rel="stylesheet" href="css/jquery.fullpage.min.css">
     <!-- endcss -->
     <!-- endbuild -->
-    <link rel="stylesheet" href="css/fonts/drags/styles.css"/>
-    <link rel="stylesheet" href="css/fonts/fira-sans/styles.css"/>
-    <link rel="stylesheet" href="css/fonts/fira-sans/thin/styles.css"/>
-    <link rel="stylesheet" href="css/fonts/fira-sans/ultra-light/styles.css"/>
-    <link rel="stylesheet" href="css/fonts/fira-sans/semi-bold/styles.css"/>
-    <link rel="stylesheet" href="css/fonts/fira-sans/medium/styles.css"/>
-    <link rel="stylesheet" href="css/fonts/fira-sans/book/styles.css"/>
-    <link rel="stylesheet" href="css/fonts/blogger-sans/styles.css"/>
+    <link rel="stylesheet" href="css/fonts/drags/styles.css" />
+    <link rel="stylesheet" href="css/fonts/fira-sans/styles.css" />
+    <link rel="stylesheet" href="css/fonts/fira-sans/thin/styles.css" />
+    <link rel="stylesheet" href="css/fonts/fira-sans/ultra-light/styles.css" />
+    <link rel="stylesheet" href="css/fonts/fira-sans/semi-bold/styles.css" />
+    <link rel="stylesheet" href="css/fonts/fira-sans/medium/styles.css" />
+    <link rel="stylesheet" href="css/fonts/fira-sans/book/styles.css" />
+    <link rel="stylesheet" href="css/fonts/blogger-sans/styles.css" />
+    <link rel="stylesheet" href="css/fonts/blogger-sans/medium/styles.css" />
+    <link rel="stylesheet" href="css/fonts/fira-sans/eight/styles.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
 <body>
-    <!--<div id="anim">-->
-        <!--<div id="bg2">-->
-            <!--<table>-->
-                <!--<tr>-->
-                    <!--<td class="center-td">-->
-                        <!--<div id="logo">-->
-                            <!--<div id="shine"></div>-->
-                        <!--</div>-->
-                        <!--<h1 id="dynamic-text" class="text-center"></h1>-->
-                    <!--</td>-->
-                <!--</tr>-->
-            <!--</table>-->
-        <!--</div>-->
-    <!--</div>-->
-
+    <div id="home">
+        <div id="bg2">
+            <table>
+                <tr>
+                    <td class="center-td">
+                        <div id="logo">
+                            <div id="shine"></div>
+                        </div>
+                        <h1 id="dynamic-text"></h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="alert-message">
+        <div class="black"></div>
+        <div class="message-box">
+            <h2>Заполняйте заявку и поехали!</h2>
+            <form action="#" method="post">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <label for="phone2">Номер
+                    <br/> телефона <span class="red">*</span></label>
+                <input type="text" name="phone" maxlength="11" class="phone" id="phone2" />
+                <input type="submit" name="button" class="btn" value="Отправить" disabled>
+                <p>Мы ответим на все Ваши вопросы
+                    <br/> в удобное для Вас время!</p>
+                <div class="clearfix"></div>
+            </form>
+            <div class="close"></div>
+        </div>
+    </div>
     <div id="menu">
         <nav class="top-actions">
             <ul class="title-area">
@@ -52,56 +72,58 @@
             </ul>
             <div class="top-bar-section">
                 <ul class="left">
-                    <li class="center-v"><a href="https://www.facebook.com/ILXtransport" target="_blank">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="31.7px" height="31.7px" viewBox="0 0 31.7 31.7" enable-background="new 0 0 31.7 31.7" xml:space="preserve">
-<g>
-	<path fill="#FFFFFF" d="M16.4,0.9c8.3,0,15,6.7,15,15c0,8.3-6.7,15-15,15c-8.3,0-15-6.7-15-15C1.4,7.6,8.1,0.9,16.4,0.9 M16.4,0
-		C7.6,0,0.5,7.1,0.5,15.9c0,8.8,7.1,15.9,15.9,15.9c8.8,0,15.9-7.1,15.9-15.9C32.3,7.1,25.1,0,16.4,0"/>
-</g>
-<rect x="10.9" y="5.8" fill="none" width="11" height="20.1"/>
-<text transform="matrix(1 0 0 1 10.8887 25.6885)" fill="#FFFFFF" font-family="'Arial'" font-size="28" font-weight="bold" style="text-transform: lowercase;">f</text>
-</svg>
-                    </a></li>
-                    <li class="center-v"><a href="https://www.instagram.com/ilx_transport" target="_blank" class="instagram">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="31.7px" height="31.7px" viewBox="0 0 31.7 31.7" enable-background="new 0 0 31.7 31.7" xml:space="preserve">
-<g>
-	<path fill="#FFFFFF" d="M20.9,12.2c-0.4,0-0.7-0.3-0.7-0.7V10c0-0.4,0.3-0.7,0.7-0.7h1.4c0.4,0,0.7,0.3,0.7,0.7v1.4
-		c0,0.4-0.3,0.7-0.7,0.7H20.9z"/>
-	<path fill="#FFFFFF" d="M15.9,13.7c-0.5,0-1,0.1-1.4,0.4c0.1,0,0.3-0.1,0.4-0.1c0.8,0,1.4,0.6,1.4,1.4c0,0.8-0.6,1.4-1.4,1.4
-		c-0.8,0-1.4-0.6-1.4-1.4c0-0.1,0-0.3,0.1-0.4c-0.3,0.4-0.4,0.9-0.4,1.4c0,1.5,1.2,2.7,2.7,2.7c1.5,0,2.7-1.2,2.7-2.7
-		C18.6,14.9,17.4,13.7,15.9,13.7"/>
-	<path fill="#FFFFFF" d="M15.9,12.2c2.4,0,4.3,1.9,4.3,4.3c0,2.4-1.9,4.3-4.3,4.3c-2.4,0-4.3-1.9-4.3-4.3
-		C11.6,14.1,13.5,12.2,15.9,12.2 M15.9,10.7c-3.2,0-5.7,2.6-5.7,5.7c0,3.2,2.6,5.7,5.7,5.7c3.2,0,5.7-2.6,5.7-5.7
-		C21.6,13.3,19,10.7,15.9,10.7"/>
-	<path fill="#FFFFFF" d="M21.7,7.1H10.1c-1.9,0-3.5,1.6-3.5,3.5v11.6c0,1.9,1.6,3.5,3.5,3.5h11.6c1.9,0,3.5-1.6,3.5-3.5V10.6
-		C25.2,8.7,23.6,7.1,21.7,7.1 M23.7,13.6h-4.7c0.7,0.8,1.1,1.8,1.1,2.9c0,2.4-1.9,4.3-4.3,4.3c-2.4,0-4.3-1.9-4.3-4.3
-		c0-1.1,0.4-2.1,1.1-2.9H8v-3c0-1.1,0.9-2.1,2.1-2.1h11.6c1.1,0,2.1,0.9,2.1,2.1V13.6z"/>
-	<path fill="#FFFFFF" d="M15.9,0.9c8.3,0,15,6.7,15,15c0,8.3-6.7,15-15,15c-8.3,0-15-6.7-15-15C0.9,7.6,7.6,0.9,15.9,0.9 M15.9,0
-		C7.1,0,0,7.1,0,15.9c0,8.8,7.1,15.9,15.9,15.9c8.8,0,15.9-7.1,15.9-15.9C31.7,7.1,24.6,0,15.9,0"/>
-</g>
-</svg>
-
-                    </a></li>
-                    <li class="center-v"><a href="http://vk.com/ILXtransportation" target="_blank">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="31.7px" height="31.7px" viewBox="0 0 31.7 31.7" enable-background="new 0 0 31.7 31.7" xml:space="preserve">
-<g>
-	<path fill="#FFFFFF" d="M15.9,0.9c8.3,0,15,6.7,15,15c0,8.3-6.7,15-15,15c-8.3,0-15-6.7-15-15C0.9,7.6,7.6,0.9,15.9,0.9 M15.9,0
-		C7.1,0,0,7.1,0,15.9c0,8.8,7.1,15.9,15.9,15.9c8.8,0,15.9-7.1,15.9-15.9C31.7,7.1,24.6,0,15.9,0"/>
-</g>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M15,23.9h1.5c0,0,0.4,0,0.7-0.3c0.2-0.2,0.2-0.6,0.2-0.6
-	s0-2,0.9-2.2c0.9-0.3,2,1.9,3.3,2.7c0.9,0.6,1.6,0.5,1.6,0.5l3.3,0c0,0,1.7-0.1,0.9-1.4c-0.1-0.1-0.5-1-2.4-2.8
-	c-2-1.9-1.8-1.6,0.7-4.9c1.5-2,2.1-3.2,1.9-3.7c-0.2-0.5-1.3-0.4-1.3-0.4l-3.7,0c0,0-0.3,0-0.5,0.1c-0.2,0.1-0.3,0.4-0.3,0.4
-	s-0.6,1.5-1.4,2.9c-1.6,2.8-2.3,2.9-2.6,2.8c-0.6-0.4-0.5-1.6-0.5-2.5c0-2.7,0.4-3.8-0.8-4.1C16.2,10,15.9,10,14.8,10
-	c-1.3,0-2.4,0-3,0.3c-0.4,0.2-0.7,0.7-0.5,0.7c0.2,0,0.8,0.1,1.1,0.5c0.4,0.5,0.4,1.7,0.4,1.7s0.2,3.2-0.5,3.6
-	c-0.5,0.3-1.2-0.3-2.6-2.8c-0.7-1.3-1.3-2.7-1.3-2.7S8.1,11,7.9,10.8c-0.2-0.2-0.6-0.2-0.6-0.2l-3.5,0c0,0-0.5,0-0.7,0.2
-	c-0.2,0.2,0,0.6,0,0.6s2.7,6.4,5.8,9.6C11.8,24.1,15,23.9,15,23.9"/>
-</svg>
-                    </a></li>
-
-                    <li>+7 (7172) 28 72 05 <br> +7 (701) 752 19 90</li>
+                    <li class="center-v">
+                        <a href="https://www.facebook.com/ILXtransport" target="_blank">
+                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.7px" height="31.7px" viewBox="0 0 31.7 31.7" enable-background="new 0 0 31.7 31.7" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M16.4,0.9c8.3,0,15,6.7,15,15c0,8.3-6.7,15-15,15c-8.3,0-15-6.7-15-15C1.4,7.6,8.1,0.9,16.4,0.9 M16.4,0
+        C7.6,0,0.5,7.1,0.5,15.9c0,8.8,7.1,15.9,15.9,15.9c8.8,0,15.9-7.1,15.9-15.9C32.3,7.1,25.1,0,16.4,0" />
+                                </g>
+                                <rect x="10.9" y="5.8" fill="none" width="11" height="20.1" />
+                                <text transform="matrix(1 0 0 1 10.8887 25.6885)" fill="#FFFFFF" font-family="'Arial'" font-size="28" font-weight="bold" style="text-transform: lowercase;">f</text>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="center-v">
+                        <a href="https://www.instagram.com/ilx_transport" target="_blank" class="instagram">
+                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.7px" height="31.7px" viewBox="0 0 31.7 31.7" enable-background="new 0 0 31.7 31.7" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M20.9,12.2c-0.4,0-0.7-0.3-0.7-0.7V10c0-0.4,0.3-0.7,0.7-0.7h1.4c0.4,0,0.7,0.3,0.7,0.7v1.4
+        c0,0.4-0.3,0.7-0.7,0.7H20.9z" />
+                                    <path fill="#FFFFFF" d="M15.9,13.7c-0.5,0-1,0.1-1.4,0.4c0.1,0,0.3-0.1,0.4-0.1c0.8,0,1.4,0.6,1.4,1.4c0,0.8-0.6,1.4-1.4,1.4
+        c-0.8,0-1.4-0.6-1.4-1.4c0-0.1,0-0.3,0.1-0.4c-0.3,0.4-0.4,0.9-0.4,1.4c0,1.5,1.2,2.7,2.7,2.7c1.5,0,2.7-1.2,2.7-2.7
+        C18.6,14.9,17.4,13.7,15.9,13.7" />
+                                    <path fill="#FFFFFF" d="M15.9,12.2c2.4,0,4.3,1.9,4.3,4.3c0,2.4-1.9,4.3-4.3,4.3c-2.4,0-4.3-1.9-4.3-4.3
+        C11.6,14.1,13.5,12.2,15.9,12.2 M15.9,10.7c-3.2,0-5.7,2.6-5.7,5.7c0,3.2,2.6,5.7,5.7,5.7c3.2,0,5.7-2.6,5.7-5.7
+        C21.6,13.3,19,10.7,15.9,10.7" />
+                                    <path fill="#FFFFFF" d="M21.7,7.1H10.1c-1.9,0-3.5,1.6-3.5,3.5v11.6c0,1.9,1.6,3.5,3.5,3.5h11.6c1.9,0,3.5-1.6,3.5-3.5V10.6
+        C25.2,8.7,23.6,7.1,21.7,7.1 M23.7,13.6h-4.7c0.7,0.8,1.1,1.8,1.1,2.9c0,2.4-1.9,4.3-4.3,4.3c-2.4,0-4.3-1.9-4.3-4.3
+        c0-1.1,0.4-2.1,1.1-2.9H8v-3c0-1.1,0.9-2.1,2.1-2.1h11.6c1.1,0,2.1,0.9,2.1,2.1V13.6z" />
+                                    <path fill="#FFFFFF" d="M15.9,0.9c8.3,0,15,6.7,15,15c0,8.3-6.7,15-15,15c-8.3,0-15-6.7-15-15C0.9,7.6,7.6,0.9,15.9,0.9 M15.9,0
+        C7.1,0,0,7.1,0,15.9c0,8.8,7.1,15.9,15.9,15.9c8.8,0,15.9-7.1,15.9-15.9C31.7,7.1,24.6,0,15.9,0" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="center-v">
+                        <a href="http://vk.com/ILXtransportation" target="_blank">
+                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.7px" height="31.7px" viewBox="0 0 31.7 31.7" enable-background="new 0 0 31.7 31.7" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M15.9,0.9c8.3,0,15,6.7,15,15c0,8.3-6.7,15-15,15c-8.3,0-15-6.7-15-15C0.9,7.6,7.6,0.9,15.9,0.9 M15.9,0
+        C7.1,0,0,7.1,0,15.9c0,8.8,7.1,15.9,15.9,15.9c8.8,0,15.9-7.1,15.9-15.9C31.7,7.1,24.6,0,15.9,0" />
+                                </g>
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M15,23.9h1.5c0,0,0.4,0,0.7-0.3c0.2-0.2,0.2-0.6,0.2-0.6
+    s0-2,0.9-2.2c0.9-0.3,2,1.9,3.3,2.7c0.9,0.6,1.6,0.5,1.6,0.5l3.3,0c0,0,1.7-0.1,0.9-1.4c-0.1-0.1-0.5-1-2.4-2.8
+    c-2-1.9-1.8-1.6,0.7-4.9c1.5-2,2.1-3.2,1.9-3.7c-0.2-0.5-1.3-0.4-1.3-0.4l-3.7,0c0,0-0.3,0-0.5,0.1c-0.2,0.1-0.3,0.4-0.3,0.4
+    s-0.6,1.5-1.4,2.9c-1.6,2.8-2.3,2.9-2.6,2.8c-0.6-0.4-0.5-1.6-0.5-2.5c0-2.7,0.4-3.8-0.8-4.1C16.2,10,15.9,10,14.8,10
+    c-1.3,0-2.4,0-3,0.3c-0.4,0.2-0.7,0.7-0.5,0.7c0.2,0,0.8,0.1,1.1,0.5c0.4,0.5,0.4,1.7,0.4,1.7s0.2,3.2-0.5,3.6
+    c-0.5,0.3-1.2-0.3-2.6-2.8c-0.7-1.3-1.3-2.7-1.3-2.7S8.1,11,7.9,10.8c-0.2-0.2-0.6-0.2-0.6-0.2l-3.5,0c0,0-0.5,0-0.7,0.2
+    c-0.2,0.2,0,0.6,0,0.6s2.7,6.4,5.8,9.6C11.8,24.1,15,23.9,15,23.9" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>+7 (7172) 28 72 05
+                        <br> +7 (701) 752 19 90</li>
                 </ul>
                 <ul class="center">
                     <li class="center-v active" data-menuanchor="about"><a href="#about">О нас</a></li>
@@ -121,79 +143,74 @@
                     <li class="center-v btn-yellow" data-menuanchor="bid"><a href="#bid">Подать заявку</a></li>
                 </ul>
             </div>
-
         </nav>
-
     </div>
-
     <div id="fullpage">
-    <!--2 page-->
-    <div class="section" id="section0">
-        <section>
-            <h2>Вот как мы работаем:</h2>
-            <p>Профессиональная команда нашей компании гарантированно позаботится о Вашем комфорте.
-            Вам понравится наш подход к ценообразованию и предоставлению дополнительных скидок.
-            Собственный разновидный автопарк нашей компании позволит Вам сделать правильный выбор для решения срочных, повседневных и других необходимых задач.</p>
-            <p>Ориентируясь на желания клиентов, мы ставим в приоритет долгосрочные и дружеские отношения, что способствует росту и развитию компании уже</p>
-            <h2 class="yellow-text">более 10 лет!</h2>
-            <div id="bisnesman-1">
-                <div class="punkt-1">
-                    <h3>без посредников</h3>
-                    <span>у нас собственный автопарк</span>
-                </div>
-                <div class="punkt-2">
-                    <h3>заботливо</h3>
-                    <span>ценим каждого клиента</span>
-                </div>
-                <div class="punkt-3">
-                    <h3>продуманно</h3>
-                    <span>оптимизируем Ваши затраты</span>
-                </div>
-            </div>
-            <div id="bisnesman-2">
-                <div class="punkt-1">
-                    <h3>официально</h3>
-                    <span>предоставляем все нужные <br /> отчетные документы</span>
-                </div> 
-                <div class="punkt-2">
-                    <h3>оперативно</h3>
-                    <span>работаем без посредников <br /> и моментально реагируем</span>
-                </div>
-            </div>
-            <p class="yellow-text">Современный мир так динамичен, но мы поможем Вам преуспеть: и в бизнесе, и в семье, и в отдыхе.</p>
-            <p data-menuanchor="services"><a href="#services"><img src="img/arrow-bottom.png" alt="arrow bottom"/></a></p>
-        </section>
-    </div>
-    <!--End 2 pade-->
-
-    <!--Start services-->
-    <div class="section" id="section1">
-        <section>
-            <h2>Вот какие у нас услуги:</h2>
-
-            <div id="wrapper" class="tab1">
-                <div class="tabs-line">
-                    <div class="tab1 tabs">
-                        <div id="bisness" class="bisness"><h3>Бизнес</h3></div>
+        <!--2 page-->
+        <div class="section" id="section0">
+            <section>
+                <h2>Вот как мы работаем:</h2>
+                <p>Профессиональная команда нашей компании гарантированно позаботится о Вашем комфорте. Вам понравится наш подход к ценообразованию и предоставлению дополнительных скидок. Собственный разновидный автопарк нашей компании позволит Вам сделать правильный выбор для решения срочных, повседневных и других необходимых задач.</p>
+                <p>Ориентируясь на желания клиентов, мы ставим в приоритет долгосрочные и дружеские отношения, что способствует росту и развитию компании уже</p>
+                <h2 class="yellow-text">более 10 лет!</h2>
+                <div id="bisnesman-1">
+                    <div class="punkt-1">
+                        <h3>без посредников</h3>
+                        <span>у нас собственный автопарк</span>
+                    </div>
+                    <div class="punkt-2">
+                        <h3>заботливо</h3>
+                        <span>ценим каждого клиента</span>
+                    </div>
+                    <div class="punkt-3">
+                        <h3>продуманно</h3>
+                        <span>оптимизируем Ваши затраты</span>
                     </div>
                 </div>
-                <div class="tabs-line">
-                    <div class="tab2 tabs">
-                        <div id="family" class="family"><h3>Семья</h3></div>
+                <div id="bisnesman-2">
+                    <div class="punkt-1">
+                        <h3>официально</h3>
+                        <span>предоставляем все нужные <br/> отчетные документы</span>
+                    </div>
+                    <div class="punkt-2">
+                        <h3>оперативно</h3>
+                        <span>работаем без посредников <br/> и моментально реагируем</span>
                     </div>
                 </div>
-
-                <div class="tabs-line">
-                    <div class="tab3 tabs">
-                        <div id="turism" class="turism"><h3>Туризм</h3></div>
+                <p class="yellow-text">Современный мир так динамичен, но мы поможем Вам преуспеть: и в бизнесе, и в семье, и в отдыхе.</p>
+                <p data-menuanchor="services">
+                    <a href="#services"><img src="img/arrow-bottom.png" alt="arrow bottom" /></a>
+                </p>
+            </section>
+        </div>
+        <!--End 2 pade-->
+        <!--Start services-->
+        <div class="section" id="section1">
+            <section>
+                <h2>Вот какие у нас услуги:</h2>
+                <div id="wrapper" class="tab1">
+                    <div class="tabs-line">
+                        <div class="tab1 tabs">
+                            <div id="bisness" class="bisness">
+                                <h3>Бизнес</h3></div>
+                        </div>
                     </div>
-                </div>
-
-
-                <div class="tab1 none">
-                    <!--<div class="bg-1">-->
+                    <div class="tabs-line">
+                        <div class="tab2 tabs">
+                            <div id="family" class="family">
+                                <h3>Семья</h3></div>
+                        </div>
+                    </div>
+                    <div class="tabs-line">
+                        <div class="tab3 tabs">
+                            <div id="turism" class="turism">
+                                <h3>Туризм</h3></div>
+                        </div>
+                    </div>
+                    <div class="tab1 none">
+                        <!--<div class="bg-1">-->
                         <!-- -->
-                    <!--</div>-->
+                        <!--</div>-->
                         <div class="description">
                             <h4>срочно</h4>
                             <div class="description-item">
@@ -228,323 +245,329 @@
                                 <small>У нас более 11 лет опыта работ и не менее 37 выгодных предложений</small>
                             </div>
                         </div>
-                    <div class="clearfix"></div>
+                        <div class="clearfix"></div>
                     </div>
-                <div class="tab2 none">
-                    <div class="description">
-                        <h4>торжества</h4>
-                        <div class="description-item">
-                            <img src="img/icons/family/people.png" alt="ilx people">
-                            <p>Встречи (аэропорт, ж/д вокзал)</p>
-                            <small>Встретим от 1-го до 750 человек за раз</small>
+                    <div class="tab2 none">
+                        <div class="description">
+                            <h4>торжества</h4>
+                            <div class="description-item">
+                                <img src="img/icons/family/people.png" alt="ilx people">
+                                <p>Встречи (аэропорт, ж/д вокзал)</p>
+                                <small>Встретим от 1-го до 750 человек за раз</small>
+                            </div>
+                            <div class="description-item">
+                                <img src="img/icons/family/rings.png" alt="ilx rings">
+                                <p>Часовая по городу</p>
+                                <small>Работаем от 3-х до 24-х часов в сутки</small>
+                            </div>
+                            <div class="description-item">
+                                <img src="img/icons/family/mount.png" alt="ilx mount">
+                                <p>Выезд за город</p>
+                                <small>Более 25 направлений</small>
+                            </div>
+                            <h4>забота</h4>
+                            <div class="description-item">
+                                <img src="img/icons/family/car.png" alt="ilx car">
+                                <p>Персональное авто для руководителей и сотрудников</p>
+                                <small>Обслужим от 1-го до 250 человек одновременно</small>
+                            </div>
+                            <div class="description-item">
+                                <img src="img/icons/family/person.png" alt="ilx person">
+                                <p>Развозка сотрудников</p>
+                                <small>Доставим каждого во все точки города</small>
+                            </div>
+                            <div class="description-item">
+                                <img src="img/icons/family/truck.png" alt="ilx truck">
+                                <p>Обслуживание делегаций</p>
+                                <small>У нас более 11 лет опыта работ и не менее 37 выгодных предложений</small>
+                            </div>
                         </div>
-                        <div class="description-item">
-                            <img src="img/icons/family/rings.png" alt="ilx rings">
-                            <p>Часовая по городу</p>
-                            <small>Работаем от 3-х до 24-х часов в сутки</small>
-                        </div>
-                        <div class="description-item">
-                            <img src="img/icons/family/mount.png" alt="ilx mount">
-                            <p>Выезд за город</p>
-                            <small>Более 25 направлений</small>
-                        </div>
-                        <h4>забота</h4>
-                        <div class="description-item">
-                            <img src="img/icons/family/car.png" alt="ilx car">
-                            <p>Персональное авто для руководителей и сотрудников</p>
-                            <small>Обслужим от 1-го до 250 человек одновременно</small>
-                        </div>
-                        <div class="description-item">
-                            <img src="img/icons/family/person.png" alt="ilx person">
-                            <p>Развозка сотрудников</p>
-                            <small>Доставим каждого во все точки города</small>
-                        </div>
-                        <div class="description-item">
-                            <img src="img/icons/family/truck.png" alt="ilx truck">
-                            <p>Обслуживание делегаций</p>
-                            <small>У нас более 11 лет опыта работ и не менее 37 выгодных предложений</small>
-                        </div>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="clearfix"></div>
-
+                    <div class="tab3 none">
+                        <div class="description">
+                            <h4>обслуживание</h4>
+                            <div class="description-item">
+                                <img src="img/icons/turism/bus.png" alt="ilx bus">
+                                <p>Трансферы</p>
+                                <small>Встретим от 1-го до 750 человек за раз</small>
+                            </div>
+                            <div class="description-item">
+                                <img src="img/icons/turism/bag.png" alt="ilx bag">
+                                <p>Экскурсии</p>
+                                <small>Не менее 9 ознакомительных программ по <br/> г. Астана и за ее пределами (на 3-х
+                                языках)
+                            </small>
+                            </div>
+                            <div class="description-item">
+                                <img src="img/icons/turism/fishing.png" alt="ilx fishing">
+                                <p>Отдых, здоровье, охота, рыбалка</p>
+                                <small>Более 25 направлений</small>
+                            </div>
+                            <h4>партнерство</h4>
+                            <div class="description-item">
+                                <img src="img/icons/turism/friend.png" alt="ilx friend">
+                                <p>Обеспечим любым автотранспортом везде</p>
+                                <small>Имеем представителей в 12 городах Казахстана</small>
+                            </div>
+                            <div class="description-item">
+                                <img src="img/icons/turism/rudder.png" alt="ilx rudder">
+                                <p>Чартерные поездки по Казахстану и СНГ</p>
+                                <small>Организуем индивидуальные и групповые перевозки</small>
+                            </div>
+                            <div class="description-item">
+                                <img src="img/icons/turism/services.png" alt="ilx services">
+                                <p>Сопровождение саммитов, выставок, крупных спортивных мероприятий</p>
+                                <small>У нас более 11 лет опыта работ и не менее 37 выгодных предложений</small>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
-                <div class="tab3 none">
-                    <div class="description">
-                        <h4>обслуживание</h4>
-                        <div class="description-item">
-                            <img src="img/icons/turism/bus.png" alt="ilx bus">
-                            <p>Трансферы</p>
-                            <small>Встретим от 1-го до 750 человек за раз</small>
-                        </div>
-                        <div class="description-item">
-                            <img src="img/icons/turism/bag.png" alt="ilx bag">
-                            <p>Экскурсии</p>
-                            <small>Не менее 9 ознакомительных программ по <br /> г. Астана и за ее пределами (на 3-х языках)</small>
-                        </div>
-                        <div class="description-item">
-                            <img src="img/icons/turism/fishing.png" alt="ilx fishing">
-                            <p>Отдых, здоровье, охота, рыбалка</p>
-                            <small>Более 25 направлений</small>
-                        </div>
-                        <h4>партнерство</h4>
-                        <div class="description-item">
-                            <img src="img/icons/turism/friend.png" alt="ilx friend">
-                            <p>Обеспечим любым автотранспортом везде</p>
-                            <small>Имеем представителей в 12 городах Казахстана</small>
-                        </div>
-                        <div class="description-item">
-                            <img src="img/icons/turism/rudder.png" alt="ilx rudder">
-                            <p>Чартерные поездки по Казахстану и СНГ</p>
-                            <small>Организуем индивидуальные и групповые перевозки</small>
-                        </div>
-                        <div class="description-item">
-                            <img src="img/icons/turism/services.png" alt="ilx services">
-                            <p>Сопровождение саммитов, выставок, крупных спортивных мероприятий</p>
-                            <small>У нас более 11 лет опыта работ и не менее 37 выгодных предложений</small>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
         <!--End services-->
-
-    <!-- Start car park-->
-    <div class="section" id="section2">
-        <section>
-            <div id="wrapper2" class="tab1">
-                <div class="tabs-line">
-                    <div class="tab1 tabs">
-                        <div id="cars" class="cars"><h3>Легковые</h3></div>
+        <!-- Start car park-->
+        <div class="section" id="section2">
+            <section>
+                <div id="wrapper2" class="tab1">
+                    <div class="tabs-line">
+                        <div class="tab1 tabs">
+                            <div id="cars" class="cars">
+                                <h3>Легковые</h3></div>
+                        </div>
+                    </div>
+                    <div class="tabs-line">
+                        <div class="tab2 tabs">
+                            <div id="microbus" class="microbus">
+                                <h3>Микроавтобусы</h3></div>
+                        </div>
+                    </div>
+                    <div class="tabs-line">
+                        <div class="tab3 tabs">
+                            <div id="bus" class="bus">
+                                <h3>Автобусы</h3></div>
+                        </div>
+                    </div>
+                    <div class="tabs-line">
+                        <div class="tab4 tabs">
+                            <div id="freight" class="freight">
+                                <h3>Грузовые</h3></div>
+                        </div>
+                    </div>
+                    <div class="tab1 none">
+                        <div id="gallery_avto">
+                            <div class="panel">
+                                <div class="status-description">
+                                    <h2>Эконом класс</h2>
+                                    <p>Это отличный выбор цены и качества. Вы получаете не только высокий уровень сервиса, но и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных вопросов и ряд других мероприятий. Отчет времени идет после непосредственной подачи авто в указанное место.</p>
+                                </div>
+                                <div class="big_transport">
+                                    <img src="img/cars/car_3_big.png" alt="Skoda Octavia">
+                                </div>
+                                <div class="description_transport">
+                                    <h2>Skoda Octavia</h2>
+                                    <div class="line-info">
+                                        <div class="left">Год выпуска:</div>
+                                        <div class="right">от 2010</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="line-info">
+                                        <div class="left">Кузов:</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="line-info">
+                                        <div class="left">Количество мест:</div>
+                                        <div class="right">11</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="line-info">
+                                        <div class="left">Салон:</div>
+                                        <div class="right">Велюр</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="line-info">
+                                        <div class="left">Комплектация:</div>
+                                        <div class="right">Мультимедия (DVD,CD,MP3 TV/Video) </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="line-info">
+                                        <div class="right">панорамные окна, регулируемые сидения, сиденья с ремнями, микрофон, индивидуальное освещение, индивидуальный обдув</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="line-info none-line">
+                                        <div class="left">Цена:</div>
+                                        <div class="right"><span class="red">30 000</span> тг/час</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="bottom_panel">
+                                    <div class="box_transport">
+                                        <h4 class="status_transport">Эконом</h4>
+                                        <img src="img/cars/car_1.png" alt="Toyota Corolla">
+                                        <h2 class="name_transport">Skoda Octavia</h2>
+                                        <ul>
+                                            <li>Кузов:</li>
+                                            <li>Количество мест: 3 - 4</li>
+                                            <li>Количество багажных мест: 1 - 2</li>
+                                            <li>Цена: <span class="red">30 000</span> тг/час</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box_transport">
+                                        <h4 class="status_transport">Эконом</h4>
+                                        <img src="img/cars/car_2.png" alt="Toyota Corolla">
+                                        <h2 class="name_transport">Skoda Octavia</h2>
+                                        <ul>
+                                            <li>Кузов:</li>
+                                            <li>Количество мест: 3 - 4</li>
+                                            <li>Количество багажных мест: 1 - 2</li>
+                                            <li>Цена: <span class="red">30 000</span> тг/час</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box_transport active">
+                                        <h4 class="status_transport">Эконом</h4>
+                                        <img src="img/cars/car_3.png" alt="Toyota Corolla">
+                                        <h2 class="name_transport">Skoda Octavia</h2>
+                                        <ul>
+                                            <li>Кузов:</li>
+                                            <li>Количество мест: 3 - 4</li>
+                                            <li>Количество багажных мест: 1 - 2</li>
+                                            <li>Цена: <span class="red">30 000</span> тг/час</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box_transport">
+                                        <h4 class="status_transport">Эконом</h4>
+                                        <img src="img/cars/car_4.png" alt="Toyota Corolla">
+                                        <h2 class="name_transport">Skoda Octavia</h2>
+                                        <ul>
+                                            <li>Кузов:</li>
+                                            <li>Количество мест: 3 - 4</li>
+                                            <li>Количество багажных мест: 1 - 2</li>
+                                            <li>Цена: <span class="red">30 000</span> тг/час</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box_transport">
+                                        <h4 class="status_transport">Эконом</h4>
+                                        <img src="img/cars/car_5.png" alt="Toyota Corolla">
+                                        <h2 class="name_transport">Skoda Octavia</h2>
+                                        <ul>
+                                            <li>Кузов:</li>
+                                            <li>Количество мест: 3 - 4</li>
+                                            <li>Количество багажных мест: 1 - 2</li>
+                                            <li>Цена: <span class="red">30 000</span> тг/час</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="tab2 none">
+                        tab2
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="tab3 none"> tab3
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="tab4 none">
+                        tab4
+                        <div class="clearfix"></div>
                     </div>
                 </div>
-                <div class="tabs-line">
-                    <div class="tab2 tabs">
-                        <div id="microbus" class="microbus"><h3>Микроавтобусы</h3></div>
-                    </div>
-                </div>
-
-                <div class="tabs-line">
-                    <div class="tab3 tabs">
-                        <div id="bus" class="bus"><h3>Автобусы</h3></div>
-                    </div>
-                </div>
-
-                <div class="tabs-line">
-                    <div class="tab4 tabs">
-                        <div id="freight" class="freight"><h3>Грузовые</h3></div>
-                    </div>
-                </div>
-                <div class="tab1 none">
-                    <div id="gallery" style="display:none;">
-
-                        <img alt="Preview Image 1"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb1.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image1.jpg"
-                             data-description="Preview Image 1 Description">
-
-                        <img alt="Preview Image 2"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb2.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image2.jpg"
-                             data-description="Preview Image 2 Description">
-
-                        <img alt="Youtube Video"
-                             data-type="youtube"
-                             data-videoid="A3PDXmYoF5U"
-                             data-description="You can include youtube videos easily!">
-
-                        <img alt="Preview Image 3"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb3.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image3.jpg"
-                             data-description="Preview Image 3 Description">
-
-                        <img alt="Vimeo Video"
-                             data-type="vimeo"
-                             src="http://i.vimeocdn.com/video/447294219_200x150.jpg"
-                             data-image="http://i.vimeocdn.com/video/447294219_640.jpg"
-                             data-videoid="73234449"
-                             data-description="This gallery can also play vimeo videos!">
-
-                        <img alt="Preview Image 4"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb4.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image4.jpg"
-                             data-description="Preview Image 4 Description">
-
-                        <img alt="Html5 Video"
-                             src="bower_components/unitegallery/package/images/thumbs/html5_video.png"
-                             data-type="html5video"
-                             data-image="http://video-js.zencoder.com/oceans-clip.png"
-                             data-videoogv="http://video-js.zencoder.com/oceans-clip.ogv"
-                             data-videowebm="http://video-js.zencoder.com/oceans-clip.webm"
-                             data-videomp4="http://video-js.zencoder.com/oceans-clip.mp4"
-                             data-description="This is html5 video demo played by mediaelement2 player">
-
-                        <img alt="Preview Image 5"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb1.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image1.jpg"
-                             data-description="Preview Image 5 Description">
-
-                        <img alt="Wistia Video"
-                             src="bower_components/unitegallery/package/images/thumbs/wistia_video.jpg"
-                             data-type="wistia"
-                             data-image="bower_components/unitegallery/package/images/big/wistia_video.jpg"
-                             data-videoid="9oedgxuciv"
-                             data-description="Hey, the gallery plays Wistia videos too!">
-
-                        <img alt="Preview Image 6"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb2.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image2.jpg"
-                             data-description="Preview Image 6 Description">
-
-
-                        <img alt="Sound Cloud Track"
-                             src="bower_components/unitegallery/package/images/thumbs/sound_cloud.jpg"
-                             data-type="soundcloud"
-                             data-image="bower_components/unitegallery/package/images/thumbs/sound_cloud.jpg"
-                             data-trackid="8390970"
-                             data-description="This gallery can play a soundcloud track">
-
-
-                        <img alt="Preview Image 7"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb3.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image3.jpg"
-                             data-description="Preview Image 7 Description">
-
-
-                        <img alt="Preview Image 8"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb4.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image4.jpg"
-                             data-description="Preview Image 8 Description">
-
-                        <img alt="Preview Image 9"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb1.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image1.jpg"
-                             data-description="Preview Image 9 Description">
-
-                        <img alt="Preview Image 10"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb2.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image2.jpg"
-                             data-description="Preview Image 10 Description">
-
-                        <img alt="Preview Image 11"
-                             src="bower_components/unitegallery/package/images/thumbs/thumb3.jpg"
-                             data-image="bower_components/unitegallery/package/images/big/image3.jpg"
-                             data-description="Preview Image 11 Description">
-
-                    </div>
+            </section>
+        </div>
+        <!-- End car park-->
+        <!-- Start bid-->
+        <div class="section" id="section3">
+            <div id="form">
+                <h2>Заполняйте заявку и поехали!</h2>
+                <form action="#" method="post">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name2" id="name" />
+                    <label for="email">Email</label>
+                    <input type="email" name="email2" id="email" />
+                    <label for="phone">Номер
+                        <br/> телефона <span class="red">*</span></label>
+                    <input type="text" name="phone2" class="phone" maxlength="11" id="phone" />
+                    <label for="message">Дополнительно</label>
+                    <textarea placeholder="Например, тип авто, время, пункт назначения" name="message" id="message"></textarea>
+                    <input type="submit" name="button" class="btn" value="Отправить" disabled>
+                    <p>Мы ответим на все Ваши вопросы
+                        <br/> в удобное для Вас время!</p>
                     <div class="clearfix"></div>
-                </div>
-                <div class="tab2 none">
-                    tab2
-
-                    <div class="clearfix"></div>
-
-                </div>
-                <div class="tab3 none">                    tab3
-
-                    <div class="clearfix"></div>
-                </div>
-                <div class="tab4 none">
-                    tab4
-                    <div class="clearfix"></div>
+                </form>
+            </div>
+            <div id="form-left-bg"></div>
+            <div id="form-right-bg"></div>
+        </div>
+        <!--End bid-->
+        <!--Start contact-->
+        <div class="section" id="section4">
+            <div id="car">
+                <div id="description-contact">
+                    <h2>Вот наши контакты!</h2>
+                    <h2>Звоните в любое время!</h2>
+                    <div class="line-info">
+                        <p><span class="left">Адрес:</span><span class="right">г. Астана, ул. Дарабоз, 29, оф. 18</span></p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="line-info">
+                        <p><span class="left">Телефон/факс:</span><span class="right">+7 (7172) 28 72 05</span></p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="line-info">
+                        <p><span class="left">Мобильный телефон:</span><span class="right">+7 701 752 19 90, +7 707 752 19 90</span>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="line-info">
+                        <p><span class="left">Email:</span><span class="right"><a href="mailto:ilxcompany@mail.ru">ilxcompany@mail.ru</a></span>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="line-info none-line">
+                        <p><span class="right"><a href="mailto:7521990@bk.ru">7521990@bk.ru</a></span></p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="description-contact-2">
+                        <h2>Наши представители в других городах:</h2>
+                        <div class="line-info">
+                            <p><span class="left">Алматы:</span><span class="right">+7 777 333 19 90</span></p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="line-info">
+                            <p><span class="left">Атырау, Актау:</span><span class="right">+7 775 144 97 88</span></p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="line-info">
+                            <p><span class="left">Павлодар, Семей, Усть-Каменогорск:</span><span class="right">+7 778 830 66 73</span>
+                            </p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="line-info">
+                            <p><span class="left">Главный координатор по Казахстану:</span><span class="right">+7 701 544 00 91</span>
+                            </p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <!-- End car park-->
-
-    <!-- Start bid-->
-    <div class="section" id="section3">
-        <div id="form">
-            <h2>Заполняйте заявку и поехали!</h2>
-            <form action="#" method="post">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name" />
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-                <label for="phone">Номер <br /> телефона <span class="red">*</span></label>
-                <input type="text" name="phone" id="phone" />
-                <label for="message">Дополнительно</label>
-                <textarea placeholder="Например, тип авто, время, пункт назначения" name="message" id="message"></textarea>
-                <button type="submit" name="button" class="btn">Отправить</button>
-                <p>Мы ответим на все Ваши вопросы <br /> в удобное для Вас время!</p>
-                <div class="clearfix"></div>
-            </form>
         </div>
-        <div id="form-left-bg"></div>
-        <div id="form-right-bg"></div>
-    </div>
-    <!--End bid-->
-
-
-
-    <!--Start contact-->
-    <div class="section" id="section4">
-        <div id="car">
-            <div id="description-contact">
-                <h2>Вот наши контакты!</h2>
-                <h2>Звоните в любое время!</h2>
-                <div class="line-info">
-                    <p><span class="left">Адрес:</span><span class="right">г. Астана, ул. Дарабоз, 29, оф. 18</span></p>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="line-info">
-                    <p><span class="left">Телефон/факс:</span><span class="right">+7 (7172) 28 72 05</span></p>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="line-info">
-                    <p><span class="left">Мобильный телефон:</span><span class="right">+7 701 752 19 90, +7 707 752 19 90</span></p>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="line-info">
-                    <p><span class="left">Email:</span><span class="right"><a href="mailto:ilxcompany@mail.ru">ilxcompany@mail.ru</a></span></p>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="line-info none-line">
-                    <p><span class="right"><a href="mailto:7521990@bk.ru">7521990@bk.ru</a></span></p>
-                    <div class="clearfix"></div>
-                </div>
-                <div id="description-contact-2">
-                    <h2>Наши представители в других городах:</h2>
-                    <div class="line-info">
-                        <p><span class="left">Алматы:</span><span class="right">+7 777 333 19 90</span></p>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="line-info">
-                        <p><span class="left">Атырау, Актау:</span><span class="right">+7 775 144 97 88</span></p>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="line-info">
-                        <p><span class="left">Павлодар, Семей, Усть-Каменогорск:</span><span class="right">+7 778 830 66 73</span></p>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="line-info">
-                        <p><span class="left">Главный координатор по Казахстану:</span><span class="right">+7 701 544 00 91</span></p>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End contact-->
-
+        <!--End contact-->
     </div>
     <!--icon tel-->
-        <div id="tel-icon"></div>
+    <div id="tel-icon"></div>
     <!--End tel-->
-
     <!-- build:js js/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/unitegallery/package/unitegallery/js/unitegallery.min.js"></script>
-    <script src="bower_components/unitegallery/package/unitegallery/themes/compact/ug-theme-compact.js"></script>
-    <!--<script src="js/jquery.fullpage.min.js"></script>-->
+    <script src="js/jquery.fullpage.min.js"></script>
     <!--<script src="bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>-->
-
     <script src="js/app.js"></script>
     <script src="js/tabs.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 </body>
-                                                                                                                                                                                                                                                                                                                                                                                  </html>
+
+</html>
