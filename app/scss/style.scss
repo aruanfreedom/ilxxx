@@ -97,7 +97,7 @@ $blogger-medium: 'BloggerSans-Medium', sans-serif;
         text-align: center;
       }
       .red {
-        color: red;
+        color: #ca272f;
       }
     }
   }
@@ -105,7 +105,9 @@ $blogger-medium: 'BloggerSans-Medium', sans-serif;
 #home {
   background: url("../img/bg.jpg") no-repeat center center;
   background-size: cover;
+  position: relative;
   height: 100%;
+  z-index: 105;
 
   table .center-td {
     vertical-align: middle;
@@ -154,7 +156,7 @@ $blogger-medium: 'BloggerSans-Medium', sans-serif;
       content: "";
       background: url("../img/shine.png") no-repeat center center;
       background-size: 100%;
-      animation: shine 1s linear 11s 1;      
+      animation: shine 1s linear 7s 1;
       height: 100%;
       position: absolute;
       top: 0;
@@ -225,7 +227,7 @@ $blogger-medium: 'BloggerSans-Medium', sans-serif;
 
 #group {
   fill: #2b414d;
-  stroke: red;
+  stroke: #ca272f;
   stroke-width: 5px;
   width: 100%;
 }
@@ -399,7 +401,7 @@ html, body {
       margin-bottom: 0;
       &.yellow-text {
         position: relative;
-        padding-top: 45%;
+        padding-top: 50%;
         bottom: 0;
       }
     }
@@ -407,9 +409,9 @@ html, body {
       background: url("../img/bisnesman-1.png") no-repeat center center;
       position: absolute;
       left: 50px;
-      bottom: 0px;
+      bottom: 0;
       text-align: center;
-      height: 520px;
+      height: 530px;
       width: 343px;
       .punkt-1, .punkt-2, .punkt-3 {
         animation: punkt 3s ease-in-out;
@@ -461,16 +463,16 @@ html, body {
     #bisnesman-2 {
       background: url("../img/bisnesman-2.png") no-repeat center center;
       position: absolute;
-      right: 150px;
+      right: 50px;
       bottom: 10px;
-      height: 498px;
-      width: 144px;
+      height: 518px;
+      width: 257px;
 
       .punkt-1, .punkt-2 {
         animation: punkt 3s ease-in-out;
         background: url("../img/puncts/punkt-4.png") no-repeat left;
         position: absolute;
-        left: 150px;
+        left: 200px;
         top: 70px;
         overflow: hidden;
         height: 115px;
@@ -699,7 +701,7 @@ html, body {
         }
       }
     }
-    .tab2 {
+    .tab3 {
       .description {
         h4 {
           color: #8dad40;
@@ -766,7 +768,7 @@ html, body {
                 margin: 0;
               }
               p{
-                font-family: $fira-eight;
+                font-family: $fira-thin;
                 color: #fff;
                 margin: 0;
                 line-height: 180%;
@@ -775,7 +777,7 @@ html, body {
             .big_transport{
               float: left;
               width: 40%;
-              padding: 80px 40px;
+              padding: 65px 40px;
             }
             .description_transport{
               float: left;
@@ -811,7 +813,7 @@ html, body {
                   font-family: $blogger-medium;
                 }
                 .red{
-                    color: red;
+                    color: #ca272f;
                     padding-top: 0px;
                     font-size: 2em;
                     font-family: $blogger-medium;
@@ -819,7 +821,7 @@ html, body {
                   }
                 .right {
                   font-size: 0.9em;
-                  font-family: $fira-eight;
+                  font-family: $fira-thin;
                   float: right;
                   width: 250px;
                   a {
@@ -834,16 +836,36 @@ html, body {
               bottom: 0;
               width: 100%;
               .box_transport{
-                border-radius: 5px;
+                border-radius: 8px;
                 background: #fff;
                 background: -webkit-linear-gradient(top, #ffffff 14%, #868ea1 100%);
                 box-shadow: 0 0 0 0 #fff;
-                padding: 10px 20px;
                 font-family: $blogger-medium;
                 float: left;
-                margin: 0 18px;
+                margin: 0 10px;
                 transition: background 0.8s, box-shadow 0.8s;
-                width: 15%;
+                width: 18%;
+
+                .des-small{
+                  padding: 10px 15px;
+                }
+
+                .status_transport{
+                  color: #fff;
+                  font-weight: 100;
+                  padding: 10px 10px;
+                  border-top-left-radius: 8px;
+                  border-top-right-radius: 8px;
+                  &.econom{
+                    background: #e5983c;
+                  }
+                  &.bisnes{
+                    background: #1a4d8b;
+                  }
+                  &.representative{
+                    background: #c62b30;
+                  }
+                }
 
                 &:hover{
                   box-shadow: 0 0 30px 0 #fff;
@@ -876,7 +898,7 @@ html, body {
                     list-style: none;
                   }
                   .red{
-                    color: red;
+                    color: #ca272f;
                     font-size: 1.2em;
                     font-weight: bold;
                   }
@@ -929,7 +951,8 @@ html, body {
   height: 100%;
   width: 100%;
   #form-left-bg {
-    background: url("../img/bid.png") no-repeat center center;
+    background: url("../img/bid.png") no-repeat;
+    background-position: center 380px;
     position: absolute;
     top: 0;
     left: -500px;
@@ -938,11 +961,11 @@ html, body {
     z-index: 1;
   }
   #form-right-bg {
-    background: url("../img/bid-right.png") no-repeat center center;
+    background: url("../img/bid-right.png") no-repeat;
+    background-position: 1200px 450px;
     position: absolute;
     top: 0;
     right: 0;
-    background-position: 1200px;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -962,6 +985,8 @@ html, body {
       color: #3f3f3f;
       text-align: center;
       font-family: $blogger;
+      float: right;
+      width: 340px;
     }
     form {
       display: inline-block;
@@ -1008,7 +1033,7 @@ html, body {
         color: #fff;
         margin: 24px auto;
         position: relative;
-        left: 50%;
+        left: 49%;
         float: none;
         padding: 1px 0;
         font-size: 1em;
@@ -1020,13 +1045,15 @@ html, body {
         }
       }
       .red {
-        color: red;
+        color: #ca272f;
       }
     }
     p {
       font-family: $blogger;
       text-align: center;
       font-weight: bold;
+      float: right;
+      width: 340px;
     }
   }
   .clearfix {
@@ -1055,34 +1082,48 @@ html, body {
         color: #fff;
         text-align: center;
         margin: 0;
-        font-family: $blogger;
-        font-size: 1.6em;
+        margin-bottom: 10px;
+        font-family: $blogger-medium;
+        font-size: 1.8em;
+        font-weight: 100;
       }
       .line-info {
-        border-bottom: 2px solid #4e4e4e;
-        height: 25px;
-        font-size: 1em;
+        border-bottom: 1px solid #4e4e4e;
+        padding: 8px 0;
+        color: #fff;
+        font-size: 1.1em;
+        text-align: left;
         &.none-line {
           border-bottom: none;
-        }
-        p {
-          clear: both;
-          height: 25px;
+          padding-top: 8px;
+          .left{
+            padding-top: 8px;
+          }
         }
         .left {
           float: left;
+          font-size: 1em;
+          font-family: $blogger;
         }
         .right {
+          font-size: 0.9em;
+          font-family: $blogger;
           float: right;
+          width: 250px;
           a {
             color: #2e79cc;
-            text-decoration: none;
           }
         }
       }
     }
     #description-contact-2 {
       padding: 0 10%;
+      padding-top: 15px;
+      .line-info{
+        .right{
+          width: 150px;
+        }
+      }
     }
     .clearfix {
       clear: both;

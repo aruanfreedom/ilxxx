@@ -1,5 +1,5 @@
 
-    var pages = function() {
+var pages = function() {
 
     //gallery
     var animText = function(){
@@ -83,9 +83,13 @@
 
     function animLoad(){
         animateText("dynamic-text", "АРЕНДА АВТО ", 0);
-        setTimeout(hideAnim, 8000);
+        setTimeout(hideAnim, 4500);
         function hideAnim(){
-            $("#home").hide("slow");
+            $("#home").animate({
+                "height": "0"
+            }, 1000, function(){
+                $("#home").hide();
+            });
             pages();
         }
     }

@@ -74,12 +74,14 @@
     .alert-message .message-box form p {
       text-align: center; }
     .alert-message .message-box form .red {
-      color: red; }
+      color: #ca272f; }
 
 #home {
   background: url("../img/bg.jpg") no-repeat center center;
   background-size: cover;
-  height: 100%; }
+  position: relative;
+  height: 100%;
+  z-index: 105; }
   #home table .center-td {
     vertical-align: middle;
     position: absolute;
@@ -120,7 +122,7 @@
       content: "";
       background: url("../img/shine.png") no-repeat center center;
       background-size: 100%;
-      animation: shine 1s linear 11s 1;
+      animation: shine 1s linear 7s 1;
       height: 100%;
       position: absolute;
       top: 0;
@@ -171,7 +173,7 @@
 
 #group {
   fill: #2b414d;
-  stroke: red;
+  stroke: #ca272f;
   stroke-width: 5px;
   width: 100%; }
 
@@ -292,15 +294,15 @@ html, body {
       margin-bottom: 0; }
       #section0 section p.yellow-text {
         position: relative;
-        padding-top: 45%;
+        padding-top: 50%;
         bottom: 0; }
     #section0 section #bisnesman-1 {
       background: url("../img/bisnesman-1.png") no-repeat center center;
       position: absolute;
       left: 50px;
-      bottom: 0px;
+      bottom: 0;
       text-align: center;
-      height: 520px;
+      height: 530px;
       width: 343px; }
       #section0 section #bisnesman-1 .punkt-1, #section0 section #bisnesman-1 .punkt-2, #section0 section #bisnesman-1 .punkt-3 {
         animation: punkt 3s ease-in-out;
@@ -343,15 +345,15 @@ html, body {
     #section0 section #bisnesman-2 {
       background: url("../img/bisnesman-2.png") no-repeat center center;
       position: absolute;
-      right: 150px;
+      right: 50px;
       bottom: 10px;
-      height: 498px;
-      width: 144px; }
+      height: 518px;
+      width: 257px; }
       #section0 section #bisnesman-2 .punkt-1, #section0 section #bisnesman-2 .punkt-2 {
         animation: punkt 3s ease-in-out;
         background: url("../img/puncts/punkt-4.png") no-repeat left;
         position: absolute;
-        left: 150px;
+        left: 200px;
         top: 70px;
         overflow: hidden;
         height: 115px;
@@ -510,7 +512,7 @@ html, body {
       padding-left: 160px; }
       #section1 section .tab2 .description h4 {
         color: #e6b41d; }
-    #section1 section .tab2 .description h4 {
+    #section1 section .tab3 .description h4 {
       color: #8dad40; }
     #section1 section .clearfix {
       clear: both; }
@@ -564,14 +566,14 @@ html, body {
               font-size: 1.6em;
               margin: 0; }
             #section2 section #wrapper2 .tab1 #gallery_avto .panel .status-description p {
-              font-family: "FiraSans-Eight", sans-serif;
+              font-family: "FiraSans-Thin", sans-serif;
               color: #fff;
               margin: 0;
               line-height: 180%; }
           #section2 section #wrapper2 .tab1 #gallery_avto .panel .big_transport {
             float: left;
             width: 40%;
-            padding: 80px 40px; }
+            padding: 65px 40px; }
           #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport {
             float: left;
             width: 25%; }
@@ -601,14 +603,14 @@ html, body {
                 font-size: 0.9em;
                 font-family: "BloggerSans-Medium", sans-serif; }
               #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .red {
-                color: red;
+                color: #ca272f;
                 padding-top: 0px;
                 font-size: 2em;
                 font-family: "BloggerSans-Medium", sans-serif;
                 font-weight: bold; }
               #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .right {
                 font-size: 0.9em;
-                font-family: "FiraSans-Eight", sans-serif;
+                font-family: "FiraSans-Thin", sans-serif;
                 float: right;
                 width: 250px; }
                 #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .right a {
@@ -619,16 +621,29 @@ html, body {
             bottom: 0;
             width: 100%; }
             #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport {
-              border-radius: 5px;
+              border-radius: 8px;
               background: #fff;
               background: -webkit-linear-gradient(top, #ffffff 14%, #868ea1 100%);
               box-shadow: 0 0 0 0 #fff;
-              padding: 10px 20px;
               font-family: "BloggerSans-Medium", sans-serif;
               float: left;
-              margin: 0 18px;
+              margin: 0 10px;
               transition: background 0.8s, box-shadow 0.8s;
-              width: 15%; }
+              width: 18%; }
+              #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .des-small {
+                padding: 10px 15px; }
+              #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .status_transport {
+                color: #fff;
+                font-weight: 100;
+                padding: 10px 10px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px; }
+                #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .status_transport.econom {
+                  background: #e5983c; }
+                #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .status_transport.bisnes {
+                  background: #1a4d8b; }
+                #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .status_transport.representative {
+                  background: #c62b30; }
               #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport:hover {
                 box-shadow: 0 0 30px 0 #fff;
                 background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
@@ -654,7 +669,7 @@ html, body {
                 #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport ul li {
                   list-style: none; }
                 #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport ul .red {
-                  color: red;
+                  color: #ca272f;
                   font-size: 1.2em;
                   font-weight: bold; }
       #section2 section #wrapper2 .clearfix {
@@ -687,7 +702,8 @@ html, body {
   height: 100%;
   width: 100%; }
   #section3 #form-left-bg {
-    background: url("../img/bid.png") no-repeat center center;
+    background: url("../img/bid.png") no-repeat;
+    background-position: center 380px;
     position: absolute;
     top: 0;
     left: -500px;
@@ -695,11 +711,11 @@ html, body {
     width: 100%;
     z-index: 1; }
   #section3 #form-right-bg {
-    background: url("../img/bid-right.png") no-repeat center center;
+    background: url("../img/bid-right.png") no-repeat;
+    background-position: 1200px 450px;
     position: absolute;
     top: 0;
     right: 0;
-    background-position: 1200px;
     height: 100%;
     width: 100%;
     z-index: 1; }
@@ -717,7 +733,9 @@ html, body {
     #section3 #form h2 {
       color: #3f3f3f;
       text-align: center;
-      font-family: "BloggerSans", sans-serif; }
+      font-family: "BloggerSans", sans-serif;
+      float: right;
+      width: 340px; }
     #section3 #form form {
       display: inline-block; }
       #section3 #form form label {
@@ -758,7 +776,7 @@ html, body {
         color: #fff;
         margin: 24px auto;
         position: relative;
-        left: 50%;
+        left: 49%;
         float: none;
         padding: 1px 0;
         font-size: 1em;
@@ -768,11 +786,13 @@ html, body {
         #section3 #form form .btn.true {
           background: #e6b41d; }
       #section3 #form form .red {
-        color: red; }
+        color: #ca272f; }
     #section3 #form p {
       font-family: "BloggerSans", sans-serif;
       text-align: center;
-      font-weight: bold; }
+      font-weight: bold;
+      float: right;
+      width: 340px; }
   #section3 .clearfix {
     clear: both; }
 
@@ -795,26 +815,37 @@ html, body {
         color: #fff;
         text-align: center;
         margin: 0;
-        font-family: "BloggerSans", sans-serif;
-        font-size: 1.6em; }
+        margin-bottom: 10px;
+        font-family: "BloggerSans-Medium", sans-serif;
+        font-size: 1.8em;
+        font-weight: 100; }
       #section4 #car #description-contact .line-info, #section4 #car #description-contact-2 .line-info {
-        border-bottom: 2px solid #4e4e4e;
-        height: 25px;
-        font-size: 1em; }
+        border-bottom: 1px solid #4e4e4e;
+        padding: 8px 0;
+        color: #fff;
+        font-size: 1.1em;
+        text-align: left; }
         #section4 #car #description-contact .line-info.none-line, #section4 #car #description-contact-2 .line-info.none-line {
-          border-bottom: none; }
-        #section4 #car #description-contact .line-info p, #section4 #car #description-contact-2 .line-info p {
-          clear: both;
-          height: 25px; }
+          border-bottom: none;
+          padding-top: 8px; }
+          #section4 #car #description-contact .line-info.none-line .left, #section4 #car #description-contact-2 .line-info.none-line .left {
+            padding-top: 8px; }
         #section4 #car #description-contact .line-info .left, #section4 #car #description-contact-2 .line-info .left {
-          float: left; }
+          float: left;
+          font-size: 1em;
+          font-family: "BloggerSans", sans-serif; }
         #section4 #car #description-contact .line-info .right, #section4 #car #description-contact-2 .line-info .right {
-          float: right; }
+          font-size: 0.9em;
+          font-family: "BloggerSans", sans-serif;
+          float: right;
+          width: 250px; }
           #section4 #car #description-contact .line-info .right a, #section4 #car #description-contact-2 .line-info .right a {
-            color: #2e79cc;
-            text-decoration: none; }
+            color: #2e79cc; }
     #section4 #car #description-contact-2 {
-      padding: 0 10%; }
+      padding: 0 10%;
+      padding-top: 15px; }
+      #section4 #car #description-contact-2 .line-info .right {
+        width: 150px; }
     #section4 #car .clearfix {
       clear: both; }
 
