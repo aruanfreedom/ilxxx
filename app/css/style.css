@@ -266,16 +266,16 @@ html, body {
       left: 38%; }
 
 #section0 {
-  background: url("../img/bg-2.jpg") no-repeat center top #111519;
+  background: url("../img/bg-2.jpg") no-repeat center center #111519;
   background-size: cover;
   position: relative;
-  top: 73px;
+  top: 140px;
   height: 92.4%;
   width: 100%;
   z-index: 1; }
   #section0 section {
-    padding-top: 60px;
     position: relative;
+    top: 65px;
     text-align: center;
     color: #fff;
     margin: 0 auto;
@@ -294,7 +294,7 @@ html, body {
       margin-bottom: 0; }
       #section0 section p.yellow-text {
         position: relative;
-        padding-top: 50%;
+        padding-top: 45%;
         bottom: 0; }
     #section0 section #bisnesman-1 {
       background: url("../img/bisnesman-1.png") no-repeat center center;
@@ -862,3 +862,18 @@ html, body {
   z-index: 3; }
   #tel-icon:hover {
     cursor: pointer; }
+
+@media only screen and (max-width: 1366px) {
+  #menu nav .center {
+    left: 33%; }
+  #section0 {
+    top: 207px; }
+    #section0 section {
+      top: 25px;
+      width: 65%; }
+      #section0 section h2 {
+        font-size: 30px; }
+      #section0 section p {
+        font-size: 15px; }
+      #section0 section #bisnesman-1 {
+        background-size: 100%; } }

@@ -3,7 +3,29 @@
             }
             
             @media only screen and (max-width: 1366px) {
-
+              #menu {
+                nav{
+                  .center{
+                    left: 33%;
+                  }
+                }
+              }
+              #section0{
+                top: 207px;
+                section{
+                  top: 25px;
+                  width: 65%;
+                  h2{
+                    font-size: 30px;
+                  }
+                  p{
+                    font-size: 15px;
+                  }
+                  #bisnesman-1 {
+                    background-size: 100%;
+                  }
+                }
+              }
             }
             
             @media only screen and (max-width: 980px) {
