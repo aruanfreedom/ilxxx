@@ -1010,6 +1010,7 @@ html, body {
     #section2 section #wrapper2 .tab1 #gallery_avto .panel .status-description p {
       line-height: 140%; }
     #section2 section #wrapper2 .tab1 #gallery_avto .panel .big_transport {
+      padding: 53px 40px;
       width: 40%; }
       #section2 section #wrapper2 .tab1 #gallery_avto .panel .big_transport img {
         width: 100%; }
@@ -1018,6 +1019,35 @@ html, body {
       #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .right {
         font-size: 0.7em;
         width: 160px; }
+    #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport img {
+      width: 100px; }
+  #section3 #form-left-bg {
+    background: url("../img/bid.png") no-repeat;
+    background-position: center 200px;
+    background-size: 43%;
+    left: -400px; }
+  #section3 #form-right-bg {
+    background: url("../img/bid-right.png") no-repeat;
+    background-position: 850px 250px;
+    background-size: 33%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
+  #section3 #form {
+    padding: 0 5%;
+    width: 35%; }
+    #section3 #form h2 {
+      margin: 0;
+      padding: 10px 0; }
+    #section3 #form form textarea {
+      height: 100px; }
+    #section3 #form form .btn {
+      margin: 15px auto; }
+    #section3 #form p {
+      margin-top: 0; }
   #tel-icon {
     bottom: 15px;
     right: 100px; } }

@@ -214,8 +214,9 @@
                             }
                           }
                           .big_transport {
+                            padding: 53px 40px;
                             width: 40%;
-                            img {
+                            img{
                               width: 100%;
                             }
                           }
@@ -228,9 +229,54 @@
                               }
                             }
                           }
+                          .bottom_panel{
+                            .box_transport{
+                              img{
+                                width: 100px;
+                              }
+                            }
+                          }
                         }
                       }
                     }
+                  }
+                }
+              }
+              #section3{
+                #form-left-bg {
+                  background: url("../img/bid.png") no-repeat;
+                  background-position: center 200px;
+                  background-size:43%;
+                  left: -400px;
+                }
+                #form-right-bg {
+                  background: url("../img/bid-right.png") no-repeat;
+                  background-position: 850px 250px;
+                  background-size: 33%;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  height: 100%;
+                  width: 100%;
+                  z-index: 1;
+                }
+                #form{
+                  padding: 0 5%;
+                  width: 35%;
+                  h2 {
+                    margin: 0;
+                    padding: 10px 0;
+                  }
+                  form {
+                    textarea {
+                      height: 100px;
+                    }
+                    .btn {
+                      margin: 15px auto;
+                    }
+                  }
+                  p{
+                    margin-top: 0;
                   }
                 }
               }
