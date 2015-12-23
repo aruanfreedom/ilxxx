@@ -199,7 +199,7 @@
                   width: 90%;
                   #wrapper2 {
                     h3{
-                      font-size: 1.3em;
+                      font-size: 0.9em;
                     }
                     .tabs-line{
                       margin-bottom: 20px;
@@ -211,10 +211,16 @@
                           .status-description {
                             p{
                               line-height: 140%;
+                              font-size: 0.9em;
+                            }
+                            h2{
+                              font-size: 1.1em;
+                              font-weight: 100;
                             }
                           }
                           .big_transport {
                             padding: 53px 40px;
+                            padding-bottom: 0;
                             width: 40%;
                             img{
                               width: 100%;
@@ -222,7 +228,11 @@
                           }
                           .description_transport {
                             width: 25%;
+                            h2{
+                              font-size: 1em;
+                            }
                             .line-info {
+                              padding-top: 0;
                               .right {
                                 font-size: 0.7em;
                                 width: 160px;
@@ -231,8 +241,17 @@
                           }
                           .bottom_panel{
                             .box_transport{
+                              h2{
+                                font-size: 1em;
+                              }
+                              ul{
+                                margin: 0;
+                                li{
+                                  font-size: 0.75em;
+                                }
+                              }
                               img{
-                                width: 100px;
+                                height: 50px;
                               }
                             }
                           }
@@ -285,6 +304,7 @@
                   #description-contact{
                     padding-top: 19%;
                     h2 {
+                      padding-top: 5px;
                       font-size: 1em;
                     }
                     .line-info {

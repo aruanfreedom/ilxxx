@@ -1004,24 +1004,39 @@ html, body {
   #section2 section {
     width: 90%; }
     #section2 section #wrapper2 h3 {
-      font-size: 1.3em; }
+      font-size: 0.9em; }
     #section2 section #wrapper2 .tabs-line {
       margin-bottom: 20px;
       margin-top: 90px; }
     #section2 section #wrapper2 .tab1 #gallery_avto .panel .status-description p {
-      line-height: 140%; }
+      line-height: 140%;
+      font-size: 0.9em; }
+    #section2 section #wrapper2 .tab1 #gallery_avto .panel .status-description h2 {
+      font-size: 1.1em;
+      font-weight: 100; }
     #section2 section #wrapper2 .tab1 #gallery_avto .panel .big_transport {
       padding: 53px 40px;
+      padding-bottom: 0;
       width: 40%; }
       #section2 section #wrapper2 .tab1 #gallery_avto .panel .big_transport img {
         width: 100%; }
     #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport {
       width: 25%; }
-      #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .right {
-        font-size: 0.7em;
-        width: 160px; }
+      #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport h2 {
+        font-size: 1em; }
+      #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info {
+        padding-top: 0; }
+        #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .right {
+          font-size: 0.7em;
+          width: 160px; }
+    #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport h2 {
+      font-size: 1em; }
+    #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport ul {
+      margin: 0; }
+      #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport ul li {
+        font-size: 0.75em; }
     #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport img {
-      width: 100px; }
+      height: 50px; }
   #section3 #form-left-bg {
     background: url("../img/bid.png") no-repeat;
     background-position: center 200px;
@@ -1052,6 +1067,7 @@ html, body {
   #section4 #car #description-contact {
     padding-top: 19%; }
     #section4 #car #description-contact h2 {
+      padding-top: 5px;
       font-size: 1em; }
     #section4 #car #description-contact .line-info {
       border-bottom: 1px solid #4e4e4e;
