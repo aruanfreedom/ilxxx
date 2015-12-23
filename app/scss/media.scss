@@ -194,6 +194,46 @@
                   }
                 }
               }
+              #section2{
+                section{
+                  width: 90%;
+                  #wrapper2 {
+                    h3{
+                      font-size: 1.3em;
+                    }
+                    .tabs-line{
+                      margin-bottom: 20px;
+                      margin-top: 90px;
+                    }
+                    .tab1 {
+                      #gallery_avto {
+                        .panel {
+                          .status-description {
+                            p{
+                              line-height: 140%;
+                            }
+                          }
+                          .big_transport {
+                            width: 40%;
+                            img {
+                              width: 100%;
+                            }
+                          }
+                          .description_transport {
+                            width: 25%;
+                            .line-info {
+                              .right {
+                                font-size: 0.7em;
+                                width: 160px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
               #tel-icon{
                 bottom: 15px;
                 right: 100px;

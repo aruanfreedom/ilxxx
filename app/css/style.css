@@ -1000,6 +1000,24 @@ html, body {
           margin-bottom: 14px; }
         #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
           font-size: 10px; }
+  #section2 section {
+    width: 90%; }
+    #section2 section #wrapper2 h3 {
+      font-size: 1.3em; }
+    #section2 section #wrapper2 .tabs-line {
+      margin-bottom: 20px;
+      margin-top: 90px; }
+    #section2 section #wrapper2 .tab1 #gallery_avto .panel .status-description p {
+      line-height: 140%; }
+    #section2 section #wrapper2 .tab1 #gallery_avto .panel .big_transport {
+      width: 40%; }
+      #section2 section #wrapper2 .tab1 #gallery_avto .panel .big_transport img {
+        width: 100%; }
+    #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport {
+      width: 25%; }
+      #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .right {
+        font-size: 0.7em;
+        width: 160px; }
   #tel-icon {
     bottom: 15px;
     right: 100px; } }
