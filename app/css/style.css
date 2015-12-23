@@ -803,6 +803,7 @@ html, body {
   width: 100%; }
   #section4 #car {
     background: url("../img/car.png") no-repeat center bottom;
+    background-size: 100%;
     margin: 0 auto;
     height: 100%;
     width: 50%; }
@@ -1048,6 +1049,37 @@ html, body {
       margin: 15px auto; }
     #section3 #form p {
       margin-top: 0; }
+  #section4 #car #description-contact {
+    padding-top: 19%; }
+    #section4 #car #description-contact h2 {
+      font-size: 1em; }
+    #section4 #car #description-contact .line-info {
+      border-bottom: 1px solid #4e4e4e;
+      padding: 5px 0;
+      color: #fff;
+      font-size: 1.1em;
+      text-align: left; }
+      #section4 #car #description-contact .line-info.none-line {
+        border-bottom: none;
+        padding-top: 8px; }
+        #section4 #car #description-contact .line-info.none-line .left {
+          padding-top: 8px; }
+      #section4 #car #description-contact .line-info .left {
+        float: left;
+        font-size: 0.75em;
+        font-family: "BloggerSans", sans-serif; }
+      #section4 #car #description-contact .line-info .right {
+        font-size: 0.75em;
+        font-family: "BloggerSans", sans-serif;
+        float: right;
+        width: 220px; }
+        #section4 #car #description-contact .line-info .right a {
+          color: #2e79cc; }
+  #section4 #car #description-contact-2 {
+    padding: 0 10%;
+    padding-top: 15px; }
+    #section4 #car #description-contact-2 .line-info .right {
+      width: 120px; }
   #tel-icon {
     bottom: 15px;
     right: 100px; } }

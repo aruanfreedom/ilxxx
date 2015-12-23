@@ -280,6 +280,53 @@
                   }
                 }
               }
+              #section4{
+                #car {
+                  #description-contact{
+                    padding-top: 19%;
+                    h2 {
+                      font-size: 1em;
+                    }
+                    .line-info {
+                      border-bottom: 1px solid #4e4e4e;
+                      padding: 5px 0;
+                      color: #fff;
+                      font-size: 1.1em;
+                      text-align: left;
+                      &.none-line {
+                        border-bottom: none;
+                        padding-top: 8px;
+                        .left{
+                          padding-top: 8px;
+                        }
+                      }
+                      .left {
+                        float: left;
+                        font-size: 0.75em;
+                        font-family: $blogger;
+                      }
+                      .right {
+                        font-size: 0.75em;
+                        font-family: $blogger;
+                        float: right;
+                        width: 220px;
+                        a {
+                          color: #2e79cc;
+                        }
+                      }
+                    }
+                  }
+                  #description-contact-2 {
+                    padding: 0 10%;
+                    padding-top: 15px;
+                    .line-info{
+                      .right{
+                        width: 120px;
+                      }
+                    }
+                  }
+                }
+              }
               #tel-icon{
                 bottom: 15px;
                 right: 100px;
