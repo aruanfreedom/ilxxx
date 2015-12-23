@@ -140,6 +140,59 @@
                   }
                 }
               }
+              #section1{
+                section{
+                  #wrapper.tab1 div.tab1 {
+                    background: url("../img/bisness.png") no-repeat left top;
+                    background-size: 53%;
+                    background-position: 80px;
+                    display: block;
+                    width: 100%;
+                  }
+                  #wrapper.tab2 div.tab2 {
+                    background: url("../img/family.png") no-repeat right top;
+                    background-size: 45%;
+                    background-position: 490px;
+                    display: block;
+                    width: 100%;
+                  }
+                  #wrapper.tab3 div.tab3 {
+                    background: url("../img/turism.png") no-repeat left top;
+                    background-size: 45%;
+                    background-position: 220px;
+                    display: block;
+                    width: 100%;
+                  }
+                  padding-top: 85px;
+                  width: 100%;
+                  h2{
+                    margin-bottom: 5px;
+                  }
+                  #wrapper {
+                    h3{
+                      font-size: 22px;
+                    }
+                    .tabs-line {
+                      display: inline-block;
+                      margin-bottom: 0;
+                    }
+                  }
+                  .tab1, .tab2, .tab3 {
+                    .description {
+                      padding: 10px 125px;
+                      .description-item {
+                        padding-bottom: 9px;
+                        img{
+                          width: 8%;
+                        }
+                        small{
+                          font-size: 10px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
               #tel-icon{
                 bottom: 15px;
                 right: 100px;

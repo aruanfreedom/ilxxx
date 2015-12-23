@@ -963,6 +963,42 @@ html, body {
           #section0 section #bisnesman-2 .punkt-2 h3 {
             margin: 5px 5px;
             margin-top: 33px; }
+  #section1 section {
+    padding-top: 85px;
+    width: 100%; }
+    #section1 section #wrapper.tab1 div.tab1 {
+      background: url("../img/bisness.png") no-repeat left top;
+      background-size: 53%;
+      background-position: 80px;
+      display: block;
+      width: 100%; }
+    #section1 section #wrapper.tab2 div.tab2 {
+      background: url("../img/family.png") no-repeat right top;
+      background-size: 45%;
+      background-position: 490px;
+      display: block;
+      width: 100%; }
+    #section1 section #wrapper.tab3 div.tab3 {
+      background: url("../img/turism.png") no-repeat left top;
+      background-size: 45%;
+      background-position: 220px;
+      display: block;
+      width: 100%; }
+    #section1 section h2 {
+      margin-bottom: 5px; }
+    #section1 section #wrapper h3 {
+      font-size: 22px; }
+    #section1 section #wrapper .tabs-line {
+      display: inline-block;
+      margin-bottom: 0; }
+    #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
+      padding: 10px 125px; }
+      #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
+        padding-bottom: 9px; }
+        #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
+          width: 8%; }
+        #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
+          font-size: 10px; }
   #tel-icon {
     bottom: 15px;
     right: 100px; } }
