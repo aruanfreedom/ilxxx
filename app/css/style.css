@@ -874,9 +874,9 @@ html, body {
     100% {
       width: 300px; } }
   #home table {
-    height: 100%; }
+    height: 40em; }
     #home table .center-td {
-      padding-top: 5%; }
+      padding-top: 4%; }
   #menu nav .center {
     left: 33%; }
   #section0 {
@@ -887,9 +887,10 @@ html, body {
       #section0 section h2 {
         font-size: 30px; }
       #section0 section p {
-        font-size: 15px; }
+        font-size: 14px;
+        margin: 0; }
         #section0 section p.yellow-text {
-          padding-top: 260px; }
+          padding-top: 290px; }
       #section0 section #bisnesman-1 {
         background-size: 100%;
         height: 370px;

@@ -18,9 +18,9 @@
               }
               #home{
                 table {
-                  height: 100%;
+                  height: 40em;
                   .center-td {
-                    padding-top: 5%;
+                    padding-top: 4%;
                   }
                 }
               }
@@ -40,9 +40,10 @@
                     font-size: 30px;
                   }
                   p{
-                    font-size: 15px;
+                    font-size: 14px;
+                    margin: 0;
                     &.yellow-text {
-                      padding-top: 260px;
+                      padding-top: 290px;
                     }
                   }
                   #bisnesman-1 {
