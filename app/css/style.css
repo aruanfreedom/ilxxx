@@ -864,6 +864,10 @@ html, body {
     cursor: pointer; }
 
 @media only screen and (max-width: 1366px) {
+  .alert-message .message-box {
+    top: 10%;
+    margin-left: -200px;
+    width: 28%; }
   @keyframes punkt {
     0% {
       opacity: 0;
@@ -905,7 +909,7 @@ html, body {
           #section0 section #bisnesman-1 .punkt-1 h3, #section0 section #bisnesman-1 .punkt-2 h3, #section0 section #bisnesman-1 .punkt-3 h3 {
             font-size: 18px;
             margin: 0;
-            margin-top: 27px; }
+            margin-top: 30px; }
           #section0 section #bisnesman-1 .punkt-1 span, #section0 section #bisnesman-1 .punkt-2 span, #section0 section #bisnesman-1 .punkt-3 span {
             font-size: 12px; }
         #section0 section #bisnesman-1 .punkt-2 {
@@ -915,7 +919,7 @@ html, body {
           right: 165px; }
           #section0 section #bisnesman-1 .punkt-2 h3 {
             margin: 5px 0;
-            margin-top: 30px; }
+            margin-top: 33px; }
         #section0 section #bisnesman-1 .punkt-3 {
           background: url("../img/puncts/punkt-3.png") no-repeat right;
           background-size: 100%;
@@ -923,7 +927,7 @@ html, body {
           right: 180px; }
           #section0 section #bisnesman-1 .punkt-3 h3 {
             margin: 5px 0;
-            margin-top: 50px;
+            margin-top: 53px;
             margin-left: -50px; }
           #section0 section #bisnesman-1 .punkt-3 span {
             margin-left: -50px; }
@@ -944,7 +948,7 @@ html, body {
           #section0 section #bisnesman-2 .punkt-1 h3, #section0 section #bisnesman-2 .punkt-2 h3 {
             font-size: 18px;
             margin: 0 5px;
-            margin-top: 27px; }
+            margin-top: 30px; }
           #section0 section #bisnesman-2 .punkt-1 span, #section0 section #bisnesman-2 .punkt-2 span {
             font-size: 12px;
             opacity: 0;
@@ -958,7 +962,7 @@ html, body {
           left: 115px; }
           #section0 section #bisnesman-2 .punkt-2 h3 {
             margin: 5px 5px;
-            margin-top: 30px; }
+            margin-top: 33px; }
   #tel-icon {
     bottom: 15px;
     right: 100px; } }
