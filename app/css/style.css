@@ -996,7 +996,8 @@ html, body {
       #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
         padding-bottom: 9px; }
         #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
-          width: 8%; }
+          width: 8%;
+          margin-bottom: 14px; }
         #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
           font-size: 10px; }
   #tel-icon {
