@@ -8,6 +8,7 @@ $fira-book: 'FiraSans-Book', sans-serif;
 $fira-eight: 'FiraSans-Eight', sans-serif;
 $blogger: 'BloggerSans', sans-serif;
 $blogger-medium: 'BloggerSans-Medium', sans-serif;
+$size: 1366px;
 
 .section{
   display: none;
@@ -108,6 +109,7 @@ $blogger-medium: 'BloggerSans-Medium', sans-serif;
   position: relative;
   height: 100%;
   z-index: 105;
+  min-width: $size;
 
   table .center-td {
     vertical-align: middle;
@@ -243,7 +245,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  min-width: $size;
+  min-width: $size;
 }
 
 #menu {
@@ -253,6 +256,7 @@ html, body {
   height: 73px;
   width: 100%;
   z-index: 99;
+  min-width: $size;
 
   nav {
     margin: 0 auto;
@@ -313,9 +317,9 @@ html, body {
           background: #d0a114;
           border-radius: 3px;
           padding: 3% 0;
-          margin-left: 30px;
+          margin-left: 10px;
           text-align: center;
-          width: 150px;
+          width: 200px;
           &:hover {
             cursor: pointer;
             background: url("../img/light-lang.png") no-repeat center center #d0a114;
@@ -374,6 +378,7 @@ html, body {
   height: 92.4%;
   width: 100%;
   z-index: 1;
+  min-width: $size;
 
   section {
     position: relative;
@@ -561,6 +566,7 @@ html, body {
   position: relative;
   width: 100%;
   top: 73px;
+  min-width: $size;
 
   section {
     padding-top: 60px;
@@ -721,6 +727,7 @@ html, body {
   top: 73px;
   height: 100%;
   width: 100%;
+  min-width: $size;
   section {
     margin: 0 auto;
     height: 100%;
@@ -950,6 +957,7 @@ html, body {
   position: relative;
   height: 100%;
   width: 100%;
+  min-width: $size;
   #form-left-bg {
     background: url("../img/bid.png") no-repeat;
     background-position: center 380px;
@@ -1066,6 +1074,7 @@ html, body {
   background-size: cover;
   height: 100%;
   width: 100%;
+  min-width: $size;
 
   #car {
     background: url("../img/car.png") no-repeat center bottom;

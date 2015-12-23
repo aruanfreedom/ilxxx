@@ -81,7 +81,8 @@
   background-size: cover;
   position: relative;
   height: 100%;
-  z-index: 105; }
+  z-index: 105;
+  min-width: 1366px; }
   #home table .center-td {
     vertical-align: middle;
     position: absolute;
@@ -186,7 +187,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%; }
+  min-width: 1366px;
+  min-width: 1366px; }
 
 #menu {
   position: fixed;
@@ -194,7 +196,8 @@ html, body {
   background-size: cover;
   height: 73px;
   width: 100%;
-  z-index: 99; }
+  z-index: 99;
+  min-width: 1366px; }
   #menu nav {
     margin: 0 auto;
     width: 80%; }
@@ -229,9 +232,9 @@ html, body {
         background: #d0a114;
         border-radius: 3px;
         padding: 3% 0;
-        margin-left: 30px;
+        margin-left: 10px;
         text-align: center;
-        width: 150px; }
+        width: 200px; }
         #menu nav ul.right li.btn-yellow:hover {
           cursor: pointer;
           background: url("../img/light-lang.png") no-repeat center center #d0a114;
@@ -272,7 +275,8 @@ html, body {
   top: 140px;
   height: 92.4%;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  min-width: 1366px; }
   #section0 section {
     position: relative;
     top: 65px;
@@ -416,7 +420,8 @@ html, body {
   background: #fbfbfb;
   position: relative;
   width: 100%;
-  top: 73px; }
+  top: 73px;
+  min-width: 1366px; }
   #section1 section {
     padding-top: 60px;
     position: relative;
@@ -523,7 +528,8 @@ html, body {
   position: relative;
   top: 73px;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  min-width: 1366px; }
   #section2 section {
     margin: 0 auto;
     height: 100%;
@@ -700,7 +706,8 @@ html, body {
 #section3 {
   position: relative;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  min-width: 1366px; }
   #section3 #form-left-bg {
     background: url("../img/bid.png") no-repeat;
     background-position: center 380px;
@@ -800,7 +807,8 @@ html, body {
   background: url("../img/contact.png") no-repeat center center;
   background-size: cover;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  min-width: 1366px; }
   #section4 #car {
     background: url("../img/car.png") no-repeat center bottom;
     background-size: 100%;
@@ -992,7 +1000,7 @@ html, body {
       font-size: 22px; }
     #section1 section #wrapper .tabs-line {
       display: inline-block;
-      margin-bottom: 11px; }
+      margin-bottom: 5px; }
     #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
       padding: 10px 125px; }
       #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
