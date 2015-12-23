@@ -142,6 +142,7 @@
               }
               #section1{
                 section{
+                  padding-top: 40px;
                   #wrapper.tab1 div.tab1 {
                     background: url("../img/bisness.png") no-repeat left top;
                     background-size: 53%;
@@ -174,7 +175,7 @@
                     }
                     .tabs-line {
                       display: inline-block;
-                      margin-bottom: 0;
+                      margin-bottom: 11px;
                     }
                   }
                   .tab1, .tab2, .tab3 {

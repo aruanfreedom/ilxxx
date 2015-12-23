@@ -965,6 +965,7 @@ html, body {
             margin: 5px 5px;
             margin-top: 33px; }
   #section1 section {
+    padding-top: 40px;
     padding-top: 85px;
     width: 100%; }
     #section1 section #wrapper.tab1 div.tab1 {
@@ -991,7 +992,7 @@ html, body {
       font-size: 22px; }
     #section1 section #wrapper .tabs-line {
       display: inline-block;
-      margin-bottom: 0; }
+      margin-bottom: 11px; }
     #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
       padding: 10px 125px; }
       #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
