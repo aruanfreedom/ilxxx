@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('BloggerSans.eot?#iefix') format('embedded-opentype'),  url('BloggerSans.otf')  format('opentype'),
+	     url('BloggerSans.woff') format('woff'), url('BloggerSans.ttf')  format('truetype'), url('BloggerSans.svg#BloggerSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
