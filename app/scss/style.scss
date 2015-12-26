@@ -775,7 +775,7 @@ html, body {
                 margin: 0;
               }
               p{
-                font-family: $fira-thin;
+                font-family: $fira-eight;
                 color: #fff;
                 margin: 0;
                 line-height: 180%;
@@ -792,7 +792,7 @@ html, body {
               h2{
                 text-align: left;
                 color: #fff;
-                font-family: $blogger-medium;
+                font-family: $fira-semi-bold;
                 font-size: 1.6em;
                 font-weight: 100;
                 margin: 0;
@@ -828,7 +828,7 @@ html, body {
                   }
                 .right {
                   font-size: 0.9em;
-                  font-family: $fira-thin;
+                  font-family: $fira-eight;
                   float: right;
                   width: 250px;
                   a {
@@ -843,8 +843,6 @@ html, body {
               position: relative;
               bottom: 0;
               width: 100%;
-             
-              
 
               .box_transport{
                 border-radius: 8px;
@@ -853,9 +851,8 @@ html, body {
                 box-shadow: 0 0 0 0 #fff;
                 font-family: $blogger-medium;
                 float: left;
-                margin: 0 10px;
                 transition: background 0.8s, box-shadow 0.8s;
-                width: 18%;
+                width: 100%;
 
                 .des-small{
                   padding: 5px 15px;
@@ -868,13 +865,13 @@ html, body {
                   border-top-left-radius: 8px;
                   border-top-right-radius: 8px;
                   &.econom{
-                    background: #e5983c;
+                    background: #e6b41d;
                   }
                   &.bisnes{
-                    background: #1a4d8b;
+                    background: #3a67ba;
                   }
                   &.representative{
-                    background: #c62b30;
+                    background: #171c23;
                   }
                 }
 
@@ -883,11 +880,11 @@ html, body {
                   background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
                   cursor: pointer;
                 }
-                &.active{
-                   box-shadow: 0 0 30px 0 #fff;
-                  background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
-                  cursor: pointer;
-                }
+                //&.active{
+                //   box-shadow: 0 0 30px 0 #fff;
+                //  background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
+                //  cursor: pointer;
+                //}
                 h4{
                   text-align: left;
                   margin: 0;
@@ -898,6 +895,7 @@ html, body {
                 h2{
                   text-align: left;
                   margin: 0;
+                  font-size: 1.2em;
                   font-weight: 100;
                   border-bottom: 2px solid #9da1aa;
                   padding-bottom: 5px;
@@ -1151,8 +1149,8 @@ html, body {
   display: none;
   border-radius: 50%;
   position: fixed;
-  bottom: 50px;
-  right: 150px;
+  bottom: 15px;
+  right: 100px;
   height: 75px;
   width: 75px;
   z-index: 3;
