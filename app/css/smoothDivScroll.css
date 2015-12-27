@@ -9,11 +9,18 @@ z-index:200;
 left:0;}
 
 div.scrollingHotSpotLeftVisible{
+<<<<<<< HEAD
 background:#fff url(../img/arrow_left.gif) center center no-repeat;				
 opacity:.35;
 -moz-opacity:.35;
 filter:alpha(opacity = 35);
 zoom:0;}
+=======
+background: url(../img/icons/leftArr.png) center center no-repeat;
+left: -60px;
+zoom:0;
+cursor: pointer}
+>>>>>>> 75d9115364ece4159871b74d601419266248400e
 
 div.scrollingHotSpotRight{
 width:50px;
@@ -23,6 +30,7 @@ background-repeat:repeat;
 background-position:center center;
 position:absolute;
 z-index:200;
+<<<<<<< HEAD
 right:0;}
 
 div.scrollingHotSpotRightVisible{
@@ -31,6 +39,14 @@ opacity:.35;
 filter:alpha(opacity = 35);
 -moz-opacity:.35;
 zoom:1;}
+=======
+right:-60px;}
+
+div.scrollingHotSpotRightVisible{
+background: url(../img/icons/rightArr.png) center center no-repeat;
+zoom:1;
+cursor: pointer}
+>>>>>>> 75d9115364ece4159871b74d601419266248400e
 div.scrollWrapper{
 position:relative;
 overflow: hidden;
@@ -45,4 +61,25 @@ height:100%;
 -khtml-user-select: none;
 -moz-user-select: none;
 -o-user-select: none;
+<<<<<<< HEAD
 user-select: none;}
+=======
+user-select: none;}
+
+a{outline:none;}
+img{border:none;}
+
+#makeMeScrollable{
+    width:100%;
+    margin:0 auto;
+    display:block;
+    position:relative;
+    height:310px;}
+
+.part{
+    display:inline-block;
+    margin: 0 14px;
+    padding: 22px 0;
+    width:276px;
+    height:100%;}
+>>>>>>> 75d9115364ece4159871b74d601419266248400e

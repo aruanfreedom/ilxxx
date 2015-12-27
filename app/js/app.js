@@ -97,4 +97,41 @@ var pages = function() {
     setTimeout(animLoad, 4000);
 
 
+//Start machine Selection
+    var machineSelection = function(){
+      $(".part").click(function(){
+          var img = $(this).find("img"),
+          imgAttr = img.attr("src"),
+          bigImg = $(".big_transport").find("img"),
+          bigImgAttr = bigImg.attr("src", imgAttr),
+          atrr = bigImgAttr.attr("src"),
+          result = atrr.replace(".png", "_big.png"),// replace img_big for click
+
+          status_des = $(".status-description h2"),
+          status_des_p = $(".status-description p"),
+          status_des_small = $(this).find(".status_transport");
+          status_des_small_html = status_des_small.html();
+
+          bigImg.attr("src", result);
+
+          if(status_des_small_html === "Эконом класс") {
+              status_des.html("Эконом класс");
+              status_des_p.html("Это отличный выбор цены и качества. Вы получаете не только высокий уровень сервиса, но и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных вопросов и ряд других мероприятий. Отчет времени идет после непосредственной подачи авто в указанное место.");
+          } else if  (status_des_small_html === "Бизнес класс") {
+              status_des.html("Бизнес класс");
+              status_des_p.html("Это отличный выбор оптимального комфорта при выгодной стоимости услуг. <p> Вы получаете высокий уровень сервиса и арендуете надежный автомобиль, который по стоимости и комфорту является лучшей альтернативой представительскому и эконом классам.</p><p>Мы берем на себя полную координацию и предоставим подробный отчет по оказанной услуге.</p> ");
+          } else if (status_des_small_html === "S класс") {
+              status_des.html("S класс ");
+              status_des_p.html("Это отличный выбор, чтобы подчеркнуть свой статус. <p>Вы получаете высокий уровень сервиса и арендуете надежный автомобиль, пригодный для решения повседневных деловых задач, встреч высокопоставленных гостей, проведения значимых мероприятий и не только.</p><p>Мы оказываем лучший сервис и оправдаем все Ваши ожидания!</p>");
+          }
+
+
+
+          console.log(result);
+      });
+    };
+machineSelection();
+//End machine Selection
+
+
 

@@ -572,7 +572,7 @@ html, body {
               font-size: 1.6em;
               margin: 0; }
             #section2 section #wrapper2 .tab1 #gallery_avto .panel .status-description p {
-              font-family: "FiraSans-Thin", sans-serif;
+              font-family: "FiraSans-Eight", sans-serif;
               color: #fff;
               margin: 0;
               line-height: 180%; }
@@ -586,7 +586,7 @@ html, body {
             #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport h2 {
               text-align: left;
               color: #fff;
-              font-family: "BloggerSans-Medium", sans-serif;
+              font-family: "FiraSans-SemiBold", sans-serif;
               font-size: 1.6em;
               font-weight: 100;
               margin: 0; }
@@ -616,7 +616,7 @@ html, body {
                 font-weight: bold; }
               #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .right {
                 font-size: 0.9em;
-                font-family: "FiraSans-Thin", sans-serif;
+                font-family: "FiraSans-Eight", sans-serif;
                 float: right;
                 width: 250px; }
                 #section2 section #wrapper2 .tab1 #gallery_avto .panel .description_transport .line-info .right a {
@@ -633,9 +633,8 @@ html, body {
               box-shadow: 0 0 0 0 #fff;
               font-family: "BloggerSans-Medium", sans-serif;
               float: left;
-              margin: 0 10px;
               transition: background 0.8s, box-shadow 0.8s;
-              width: 18%; }
+              width: 100%; }
               #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .des-small {
                 padding: 5px 15px; }
               #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .status_transport {
@@ -645,16 +644,12 @@ html, body {
                 border-top-left-radius: 8px;
                 border-top-right-radius: 8px; }
                 #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .status_transport.econom {
-                  background: #e5983c; }
+                  background: #e6b41d; }
                 #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .status_transport.bisnes {
-                  background: #1a4d8b; }
+                  background: #3a67ba; }
                 #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport .status_transport.representative {
-                  background: #c62b30; }
+                  background: #171c23; }
               #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport:hover {
-                box-shadow: 0 0 30px 0 #fff;
-                background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
-                cursor: pointer; }
-              #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport.active {
                 box-shadow: 0 0 30px 0 #fff;
                 background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
                 cursor: pointer; }
@@ -666,6 +661,7 @@ html, body {
               #section2 section #wrapper2 .tab1 #gallery_avto .panel .bottom_panel .box_transport h2 {
                 text-align: left;
                 margin: 0;
+                font-size: 1.2em;
                 font-weight: 100;
                 border-bottom: 2px solid #9da1aa;
                 padding-bottom: 5px; }
@@ -864,8 +860,8 @@ html, body {
   display: none;
   border-radius: 50%;
   position: fixed;
-  bottom: 50px;
-  right: 150px;
+  bottom: 15px;
+  right: 100px;
   height: 75px;
   width: 75px;
   z-index: 3; }
