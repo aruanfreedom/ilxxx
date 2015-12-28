@@ -373,29 +373,29 @@
         <section>
             <div id="wrapper2" class="tab1">
                 <div class="tabs-line">
-                    <div class="tab1 tabs">
+                    <div class="tab1 tabs" id="tab1">
                         <div id="cars" class="cars">
                             <h3>Легковые</h3></div>
                     </div>
                 </div>
                 <div class="tabs-line">
-                    <div class="tab2 tabs">
+                    <div class="tab2 tabs" id="tab2">
                         <div id="microbus" class="microbus">
                             <h3>Микроавтобусы</h3></div>
                     </div>
                 </div>
                 <div class="tabs-line">
-                    <div class="tab3 tabs">
+                    <div class="tab3 tabs" id="tab3">
                         <div id="bus" class="bus">
                             <h3>Автобусы</h3></div>
                     </div>
                 </div>
-                <!--<div class="tabs-line">
-                    <div class="tab4 tabs">
+                <div class="tabs-line">
+                    <div class="tab4 tabs" id="tab4">
                         <div id="freight" class="freight">
                             <h3>Грузовые</h3></div>
                     </div>
-                </div>-->
+                </div>
                 <div class="tab1 none">
                     <div id="gallery_avto">
                         <div class="panel">
@@ -664,14 +664,337 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="tab2 none">
-                    tab2
+                    <div id="gallery_avto">
+                        <div class="panel">
+                            <div class="status-description">
+                                <h2>Эконом класс</h2>
+
+                                <p>Это отличный выбор цены и качества. Вы получаете не только высокий уровень сервиса,
+                                    но и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных
+                                    вопросов и ряд других мероприятий. Отчет времени идет после непосредственной подачи
+                                    авто в указанное место.</p>
+                            </div>
+                            <div class="big_transport">
+                                <img src="img/cars/car_14_big.png" alt="Skoda Octavia">
+                            </div>
+                            <div class="description_transport">
+                                <h2>Skoda Octavia</h2>
+
+                                <div class="line-info">
+                                    <div class="left">Год выпуска:</div>
+                                    <div class="right">от 2010</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Кузов:</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Количество мест:</div>
+                                    <div class="right">11</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Салон:</div>
+                                    <div class="right">Велюр</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Комплектация:</div>
+                                    <div class="right">Мультимедия (DVD,CD,MP3 TV/Video)</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="right">панорамные окна, регулируемые сидения, сиденья с ремнями,
+                                        микрофон, индивидуальное освещение, индивидуальный обдув
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info none-line">
+                                    <div class="left">Цена:</div>
+                                    <div class="right"><span class="red">30 000</span> тг/час</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="bottom_panel" id="makeMeScrollable">
+
+                                <div class="part">
+                                    <div class="box_transport photo">
+                                        <h4 class="status_transport econom">Эконом класс</h4>
+
+                                        <div class="des-small">
+                                            <img src="img/cars/car_14.png" alt="Toyota Corolla">
+
+                                            <h2 class="name_transport">Toyota Hiace</h2>
+                                            <ul>
+                                                <li>Кузов: туристический</li>
+                                                <li>Количество мест: 11</li>
+                                                <li>Количество багажных мест: 4 - 5</li>
+                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="part">
+                                    <div class="box_transport photo">
+                                        <h4 class="status_transport econom">Эконом класс</h4>
+
+                                        <div class="des-small">
+                                            <img src="img/cars/car_15.png" alt="Toyota Corolla">
+
+                                            <h2 class="name_transport">Mercedes Sprinter</h2>
+                                            <ul>
+                                                <li>Кузов: туристический</li>
+                                                <li>Количество мест: 17</li>
+                                                <li>Количество багажных мест: 6 - 7</li>
+                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="part">
+                                    <div class="box_transport photo">
+                                        <h4 class="status_transport econom">Эконом класс</h4>
+
+                                        <div class="des-small">
+                                            <img src="img/cars/car_16.png" alt="Toyota Corolla">
+
+                                            <h2 class="name_transport">Mercedes Sprinter Skatel </h2>
+                                            <ul>
+                                                <li>Кузов: туристический</li>
+                                                <li>Количество мест: 20</li>
+                                                <li>Количество багажных мест: 15 - 17</li>
+                                                <li>Цена: <span class="red">3 500</span> тг/час</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="part">
+                                    <div class="box_transport photo">
+                                        <h4 class="status_transport econom">Эконом класс</h4>
+
+                                        <div class="des-small">
+                                            <img src="img/cars/car_17.png" alt="Toyota Corolla">
+
+                                            <h2 class="name_transport">Toyota Coaster</h2>
+                                            <ul>
+                                                <li>Кузов: туристический</li>
+                                                <li>Количество мест: 25</li>
+                                                <li>Количество багажных мест: 4 - 5</li>
+                                                <li>Цена: <span class="red">3 500</span> тг/час</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab3 none"> tab3
+                <div class="tab3 none"> 
+                    <div id="gallery_avto">
+                        <div class="panel">
+                            <div class="status-description">
+                                <h2>Эконом класс</h2>
+
+                                <p>Это отличный выбор цены и качества. Вы получаете не только высокий уровень сервиса,
+                                    но и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных
+                                    вопросов и ряд других мероприятий. Отчет времени идет после непосредственной подачи
+                                    авто в указанное место.</p>
+                            </div>
+                            <div class="big_transport">
+                                <img src="img/cars/car_18_big.png" alt="Skoda Octavia">
+                            </div>
+                            <div class="description_transport">
+                                <h2>Skoda Octavia</h2>
+
+                                <div class="line-info">
+                                    <div class="left">Год выпуска:</div>
+                                    <div class="right">от 2010</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Кузов:</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Количество мест:</div>
+                                    <div class="right">11</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Салон:</div>
+                                    <div class="right">Велюр</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Комплектация:</div>
+                                    <div class="right">Мультимедия (DVD,CD,MP3 TV/Video)</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="right">панорамные окна, регулируемые сидения, сиденья с ремнями,
+                                        микрофон, индивидуальное освещение, индивидуальный обдув
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info none-line">
+                                    <div class="left">Цена:</div>
+                                    <div class="right"><span class="red">30 000</span> тг/час</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="bottom_panel" id="makeMeScrollable">
+
+                                <div class="part">
+                                    <div class="box_transport photo">
+                                        <h4 class="status_transport econom">Эконом класс</h4>
+
+                                        <div class="des-small">
+                                            <img src="img/cars/car_18.png" alt="Toyota Corolla">
+
+                                            <h2 class="name_transport">Volvo</h2>
+                                            <ul>
+                                                <li>Кузов: туристический</li>
+                                                <li>Количество мест: 45 - 50</li>
+                                                <li>Количество багажных мест: 30 - 50</li>
+                                                <li>Цена: <span class="red">5 000</span> тг/час</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="part">
+                                    <div class="box_transport photo">
+                                        <h4 class="status_transport econom">Эконом класс</h4>
+
+                                        <div class="des-small">
+                                            <img src="img/cars/car_19.png" alt="Toyota Corolla">
+
+                                            <h2 class="name_transport">Vanhool</h2>
+                                            <ul>
+                                                <li>Кузов: туристический</li>
+                                                <li>Количество мест: 45 - 50</li>
+                                                <li>Количество багажных мест: 30 - 50</li>
+                                                <li>Цена: <span class="red">8 000</span> тг/час</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        </div>
                     <div class="clearfix"></div>
                 </div>
+                
                 <div class="tab4 none">
-                    tab4
+                    <div id="gallery_avto">
+                        <div class="panel">
+                            <div class="status-description">
+                                <h2>Эконом класс</h2>
+
+                                <p>Это отличный выбор цены и качества. Вы получаете не только высокий уровень сервиса,
+                                    но и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных
+                                    вопросов и ряд других мероприятий. Отчет времени идет после непосредственной подачи
+                                    авто в указанное место.</p>
+                            </div>
+                            <div class="big_transport">
+                                <img src="img/cars/car_20_big.png" alt="Skoda Octavia">
+                            </div>
+                            <div class="description_transport">
+                                <h2>Skoda Octavia</h2>
+
+                                <div class="line-info">
+                                    <div class="left">Год выпуска:</div>
+                                    <div class="right">от 2010</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Кузов:</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Количество мест:</div>
+                                    <div class="right">11</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Салон:</div>
+                                    <div class="right">Велюр</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="left">Комплектация:</div>
+                                    <div class="right">Мультимедия (DVD,CD,MP3 TV/Video)</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info">
+                                    <div class="right">панорамные окна, регулируемые сидения, сиденья с ремнями,
+                                        микрофон, индивидуальное освещение, индивидуальный обдув
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="line-info none-line">
+                                    <div class="left">Цена:</div>
+                                    <div class="right"><span class="red">30 000</span> тг/час</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="bottom_panel" id="makeMeScrollable">
+
+                                <div class="part">
+                                    <div class="box_transport photo">
+                                        <h4 class="status_transport econom">Эконом класс</h4>
+
+                                        <div class="des-small">
+                                            <img src="img/cars/car_20.png" alt="Toyota Corolla">
+
+                                            <h2 class="name_transport">Газель</h2>
+                                            <ul>
+                                                <li>Кузов: тентованный/термобудка</li>
+                                                <li>Грузоподъемность: 1,5 тонн</li>
+                                                <li>Вместимость: 8 м.куб</li>
+                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="part">
+                                    <div class="box_transport photo">
+                                        <h4 class="status_transport econom">Эконом класс</h4>
+
+                                        <div class="des-small">
+                                            <img src="img/cars/car_21.png" alt="Toyota Corolla">
+
+                                            <h2 class="name_transport">Мercedes</h2>
+                                            <ul>
+                                                <li>Кузов: тентованный/термобудка</li>
+                                                <li>грузоподьемность: 3-5 тонн</li>
+                                                <li>вместимость: 36 м.куб</li>
+                                                <li>Цена: <span class="red">5 000</span> тг/час</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
+
+                        </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
