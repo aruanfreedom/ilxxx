@@ -178,16 +178,21 @@
                                 margin-bottom: 5px;
                             }
                         }
-                        .tab1,
-                        .tab2,
-                        .tab3 {
+                        .tab1, .tab2, .tab3 {
                             .description {
                                 padding: 10px 125px;
+                                h4{
+                                    font-size: 1em;
+                                }
+
                                 .description-item {
                                     padding-bottom: 9px;
+                                    P{
+                                        font-size: 0.9em;
+                                    }
                                     img {
-                                        width: 8%;
-                                        margin-bottom: 14px;
+                                        width: 35px;
+                                        margin-bottom: 12px;
                                     }
                                     small {
                                         font-size: 10px;
@@ -309,7 +314,7 @@
                 #section4 {
                     #car {
                         #description-contact {
-                            padding-top: 19%;
+                            padding-top: 20%;
                             h2 {
                                 padding-top: 5px;
                                 font-size: 1em;

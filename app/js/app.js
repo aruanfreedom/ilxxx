@@ -115,7 +115,7 @@ var machineSelection = function() {
             status_des_small = $(this).find(".status_transport");
         status_des_small_html = status_des_small.html();
 
-        console.log(nameTransport);
+
 
         bigImg.attr("src", result);
 
@@ -213,17 +213,6 @@ var machineSelection = function() {
         $('.description_transport .equipment2').html(" предоставим грузчиков.");
         $('.description_transport .price').html("3 000");//Characteristic tab4
     });
-
-
-        $(this).find(".name_transport").click(function(){
-            $.getJSON('data/description-transport.json', {}, function(json){
-
-                $('.description_transport h2').html('');
-
-                $('.description_transport h2').append( json.note.to );
-            });
-            console.log("ok");
-        });
 
 };
 machineSelection();
