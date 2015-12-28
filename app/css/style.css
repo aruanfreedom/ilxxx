@@ -988,19 +988,19 @@ html, body {
     width: 100%; }
     #section1 section #wrapper.tab1 div.tab1 {
       background: url("../img/bisness.png") no-repeat left top;
-      background-size: 53%;
+      background-size: 43%;
       background-position: 80px;
       display: block;
       width: 100%; }
     #section1 section #wrapper.tab2 div.tab2 {
       background: url("../img/family.png") no-repeat right top;
-      background-size: 45%;
+      background-size: 39%;
       background-position: 490px;
       display: block;
       width: 100%; }
     #section1 section #wrapper.tab3 div.tab3 {
       background: url("../img/turism.png") no-repeat left top;
-      background-size: 45%;
+      background-size: 43%;
       background-position: 220px;
       display: block;
       width: 100%; }
@@ -1020,7 +1020,7 @@ html, body {
         #section1 section .tab1 .description .description-item P, #section1 section .tab2 .description .description-item P, #section1 section .tab3 .description .description-item P {
           font-size: 0.9em; }
         #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
-          width: 35px;
+          width: 31px;
           margin-bottom: 12px; }
         #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
           font-size: 10px; }
