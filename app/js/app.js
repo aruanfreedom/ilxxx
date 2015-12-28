@@ -95,12 +95,16 @@ function animLoad() {
 
 setTimeout(animLoad, 4000);
 
+$("#logoAnim").click(function(){
+    window.location.reload();
+});
 
 //Start machine Selection
 var machineSelection = function() {
 
     $(".part").on("click", function() {
         var img = $(this).find("img"),
+            nameTransport = $(this).find(".name_transport").html(),
             imgAttr = img.attr("src"),
             bigImg = $(".big_transport img").attr("src", imgAttr),
             atrr = bigImg.attr("src"),
@@ -110,6 +114,8 @@ var machineSelection = function() {
             status_des_p = $(".status-description p"),
             status_des_small = $(this).find(".status_transport");
         status_des_small_html = status_des_small.html();
+
+        console.log(nameTransport);
 
         bigImg.attr("src", result);
 
@@ -127,57 +133,96 @@ var machineSelection = function() {
             status_des_p.html("Это отличный выбор, чтобы подчеркнуть свой статус. <p>Вы получаете высокий уровень сервиса и арендуете надежный автомобиль, пригодный для решения повседневных деловых задач, встреч высокопоставленных гостей, проведения значимых мероприятий и не только.</p><p>Мы оказываем лучший сервис и оправдаем все Ваши ожидания!</p>");
         }
 
-         $.getJSON('data/description-transport.json', {}, function(data){  // загрузку JSON данных из файла example.json   
+         $.getJSON('data/description-transport.json', {}, function(data){
                 
                 var items = [];
-                $('.description_transport h2').html('');
+                $('.description_transport h2, .year, .body, .place, .salon, .equipment, .equipment2, .price, .price2').html('');
  
             $.each(data, function(key, val){
-              items.push('<li id="' + key + '">' + val + '</li>');
-              if( val === $('.name_transport').html() ){
-                  var select = val;
-              console.log(select); 
+
+              if( key === nameTransport ){
+                  $('.description_transport h2').html(val.name);
+                  $('.description_transport .year').html(val.year);
+                  $('.description_transport .body').html(val.body);
+                  $('.description_transport .place').html(val.place);
+                  $('.description_transport .salon').html(val.salon);
+                  $('.description_transport .equipment').html(val.equipment);
+                  $('.description_transport .equipment2').html(val.equipment2);
+                  $('.description_transport .price').html(val.price);
+                  $('.description_transport .price2').html(val.price2); //Characteristic transport
               }
-              console.log($(".part").find('.name_transport').html)
             });
-
-            
            
-            $('<ul/>', {
-              html: items.join('')
-            }).appendTo('.description_transport h2');
+            //$('<ul/>', {
+            //  html: items.join('')
+            //}).appendTo('.description_transport h2');
 
-            // console.log("ok");     
             });      
 
 
     });
 
     $("#tab1").on("click", function() {
-        $(".big_transport img").attr("src", "img/cars/car_1_big.png")
+        $(".big_transport img").attr("src", "img/cars/car_1_big.png");
+
+        $('.description_transport h2').html("Toyota Corolla");
+        $('.description_transport .year').html("от 2011");
+        $('.description_transport .body').html("Седан");
+        $('.description_transport .place').html("3 - 4");
+        $('.description_transport .salon').html("Велюр");
+        $('.description_transport .equipment').html("Климат контроль, подогрев передних");
+        $('.description_transport .equipment2').html("сидений, USB, CD, DVD");
+        $('.description_transport .price').html("3 000");
+        $('.description_transport .price2').html("При заказе более 9 часов, цена от 2500тг."); //Characteristic tab1
     });
 
     $("#tab2").on("click", function() {
-        $(".big_transport img").attr("src", "img/cars/car_14_big.png")
+        $(".big_transport img").attr("src", "img/cars/car_14_big.png");
+
+        $('.description_transport h2').html("Toyota Hiace");
+        $('.description_transport .year').html("от 2010");
+        $('.description_transport .body').html("Туристический");
+        $('.description_transport .place').html("11");
+        $('.description_transport .salon').html("Велюр");
+        $('.description_transport .equipment').html("Климат контроль, регулируемые");
+        $('.description_transport .equipment2').html(" сиденья с ремнями безопасности, общее освещение, индивидуальный обдув");
+        $('.description_transport .price').html("3 000");//Characteristic tab2
     });
 
     $("#tab3").on("click", function() {
-        $(".big_transport img").attr("src", "img/cars/car_18_big.png")
+        $(".big_transport img").attr("src", "img/cars/car_18_big.png");
+
+        $('.description_transport h2').html("Volvo");
+        $('.description_transport .year').html("от 1999");
+        $('.description_transport .body').html("Туристический");
+        $('.description_transport .place').html("45 - 50");
+        $('.description_transport .salon').html("Велюр");
+        $('.description_transport .equipment').html("DVD, TV/Video, место гида,");
+        $('.description_transport .equipment2').html(" панорамные окна, регулируемые сидения с ремнями, холодильник, микрофон, мониторов - 2, индивидуальное освещение, индивидуальный обдув, салон трансформер (сидячих - 50 мест, лежачих 40 мест)");
+        $('.description_transport .price').html("5 000");//Characteristic tab3
     });
 
     $("#tab4").on("click", function() {
-        $(".big_transport img").attr("src", "img/cars/car_20_big.png")
+        $(".big_transport img").attr("src", "img/cars/car_20_big.png");
+
+        $('.description_transport h2').html("Газель");
+        $('.description_transport .year').html("1,5 тонн");
+        $('.description_transport .body').html("Тентованный/термобудка");
+        $('.description_transport .place').html("8 м.куб (можно м3 с малой троечкой");
+        $('.description_transport .equipment').html("При дополнительной оплате");
+        $('.description_transport .equipment2').html(" предоставим грузчиков.");
+        $('.description_transport .price').html("3 000");//Characteristic tab4
     });
 
 
-        $(this).find(".name_transport").click(function(){                    // вешаем на клик по элементу с id = example-4
-            $.getJSON('data/description-transport.json', {}, function(json){  // загрузку JSON данных из файла example.json   
-                
+        $(this).find(".name_transport").click(function(){
+            $.getJSON('data/description-transport.json', {}, function(json){
+
                 $('.description_transport h2').html('');
-                                                             // заполняем DOM элемент данными из JSON объекта
+
                 $('.description_transport h2').append( json.note.to );
-            });      
-            console.log("ok");          
+            });
+            console.log("ok");
         });
 
 };

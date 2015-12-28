@@ -25,7 +25,7 @@ $size: 1366px;
   }
   .message-box{
     background: #fff;
-    box-shadow: 0 0 30px 0 #fff;
+    box-shadow: 0 0 13px 0 #fff;
     padding: 40px;
     position: fixed;
     font-family: $fira-medium;
@@ -80,6 +80,7 @@ $size: 1366px;
       .btn {
         background: #a9a9a9;
         border-radius: 5px;
+        border: none;
         color: #fff;
         margin: 24px auto;
         position: relative;
@@ -316,10 +317,10 @@ html, body {
         li.btn-yellow {
           background: #d0a114;
           border-radius: 3px;
-          padding: 3% 0;
+          padding: 6% 0;
           margin-left: 10px;
           text-align: center;
-          width: 200px;
+          width: 140px;
           &:hover {
             cursor: pointer;
             background: url("../img/light-lang.png") no-repeat center center #d0a114;
@@ -673,7 +674,7 @@ html, body {
         width: 28%;
         h4 {
           color: #65b5de;
-          font-size: 24px;
+          font-size: 2em;
           font-weight: 100;
           font-family: $fira-medium;
           margin: 0;
@@ -685,15 +686,17 @@ html, body {
           img {
             float: left;
             margin-right: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 27px;
+            width: 42px;
           }
           p {
             font-family: $fira-medium;
+            font-size: 1.1em;
             margin: 0;
           }
           small {
             font-family: $fira-book;
-            font-size: 12px;
+            font-size: 0.6em;
           }
         }
       }
@@ -757,7 +760,7 @@ html, body {
         }
       }
       .tab1, .tab2, .tab3, .tab4 {
-        #gallery_avto{
+        .gallery_avto{
           height: 100%;
           width:100%;
           .panel{
@@ -816,21 +819,24 @@ html, body {
                 }
                 .left {
                   float: left;
-                  font-size: 0.9em;
-                  font-family: $blogger-medium;
+                  font-size: 1em;
+                  font-family: $fira-book;
+                  font-weight: bold;
                 }
                 .red{
-                    color: #ca272f;
+                    color: #fff;
                     padding-top: 0px;
-                    font-size: 2em;
-                    font-family: $blogger-medium;
-                    font-weight: bold;
+                    font-size: 1em;
+                    font-family: $fira-eight;
                   }
                 .right {
-                  font-size: 0.9em;
+                  font-size: 1em;
                   font-family: $fira-eight;
                   float: right;
-                  width: 250px;
+                  width: 230px;
+                  &.last{
+                    padding-top: 10px;
+                  }
                   a {
                     color: #2e79cc;
                     text-decoration: none;
@@ -983,7 +989,7 @@ html, body {
   #form {
     background: #ffffff;
     border-radius: 5px;
-    box-shadow: 0px 0px 33px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.51);
     position: relative;
     margin: 0 auto;
     font-family: $blogger;
@@ -1040,6 +1046,7 @@ html, body {
       .btn {
         background: #a9a9a9;
         border-radius: 5px;
+        border: none;
         color: #fff;
         margin: 24px auto;
         position: relative;
