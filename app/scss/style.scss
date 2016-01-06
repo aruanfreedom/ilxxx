@@ -110,7 +110,6 @@ $size: 1366px;
   position: relative;
   height: 100%;
   z-index: 105;
-  min-width: $size;
 
   table .center-td {
     vertical-align: middle;
@@ -246,8 +245,6 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  min-width: $size;
-  min-width: $size;
 }
 
 #menu {
@@ -257,7 +254,6 @@ html, body {
   height: 73px;
   width: 100%;
   z-index: 99;
-  min-width: $size;
 
   nav {
     margin: 0 auto;
@@ -336,10 +332,13 @@ html, body {
       li {
         color: #fff;
         float: left;
-        font-family: $fira-regular;
-        font-size: 16px;
+        font-family: $blogger;
+        font-size: 14px;
         list-style: none;
         margin-left: 15px;
+        &.number-v{
+          padding-top: 5px;
+        }
         &.center-v {
           padding-top: 5px;
         }
@@ -379,7 +378,7 @@ html, body {
   height: 92.4%;
   width: 100%;
   z-index: 1;
-  min-width: $size;
+  
 
   section {
     position: relative;
@@ -567,7 +566,7 @@ html, body {
   position: relative;
   width: 100%;
   top: 73px;
-  min-width: $size;
+  
 
   section {
     padding-top: 60px;
@@ -696,7 +695,7 @@ html, body {
           }
           small {
             font-family: $fira-book;
-            font-size: 0.6em;
+            font-size: 0.85em;
           }
         }
       }
@@ -730,7 +729,7 @@ html, body {
   top: 73px;
   height: 100%;
   width: 100%;
-  min-width: $size;
+  
   section {
     margin: 0 auto;
     height: 100%;
@@ -778,7 +777,7 @@ html, body {
                 margin: 0;
               }
               p{
-                font-family: $fira-eight;
+                font-family: $fira-thin;
                 color: #fff;
                 margin: 0;
                 line-height: 180%;
@@ -788,6 +787,9 @@ html, body {
               float: left;
               width: 40%;
               padding: 65px 40px;
+              img{
+                height: 272px;
+              }
             }
             .description_transport{
               float: left;
@@ -826,12 +828,12 @@ html, body {
                 .red{
                     color: #fff;
                     padding-top: 0px;
-                    font-size: 1em;
-                    font-family: $fira-eight;
+                    font-size: 1.3em;
+                    font-family: $fira-book;
                   }
                 .right {
                   font-size: 1em;
-                  font-family: $fira-eight;
+                  font-family: $fira-thin;
                   float: right;
                   width: 230px;
                   &.last{
@@ -965,7 +967,6 @@ html, body {
   position: relative;
   height: 100%;
   width: 100%;
-  min-width: $size;
   #form-left-bg {
     background: url("../img/bid.png") no-repeat;
     background-position: center 380px;
@@ -1083,7 +1084,6 @@ html, body {
   background-size: cover;
   height: 100%;
   width: 100%;
-  min-width: $size;
 
   #car {
     background: url("../img/car.png") no-repeat center bottom;

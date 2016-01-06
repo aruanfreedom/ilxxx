@@ -95,6 +95,8 @@ function animLoad() {
 
 setTimeout(animLoad, 4000);
 
+
+//reload page
 $("#logoAnim").click(function(){
     window.location.reload();
 });
