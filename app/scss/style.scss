@@ -332,10 +332,13 @@ html, body {
       li {
         color: #fff;
         float: left;
-        font-family: $fira-regular;
-        font-size: 16px;
+        font-family: $blogger;
+        font-size: 14px;
         list-style: none;
         margin-left: 15px;
+        &.number-v{
+          padding-top: 5px;
+        }
         &.center-v {
           padding-top: 5px;
         }
@@ -692,7 +695,7 @@ html, body {
           }
           small {
             font-family: $fira-book;
-            font-size: 0.6em;
+            font-size: 0.85em;
           }
         }
       }
@@ -774,7 +777,7 @@ html, body {
                 margin: 0;
               }
               p{
-                font-family: $fira-eight;
+                font-family: $fira-thin;
                 color: #fff;
                 margin: 0;
                 line-height: 180%;
@@ -784,6 +787,9 @@ html, body {
               float: left;
               width: 40%;
               padding: 65px 40px;
+              img{
+                height: 272px;
+              }
             }
             .description_transport{
               float: left;
@@ -822,12 +828,12 @@ html, body {
                 .red{
                     color: #fff;
                     padding-top: 0px;
-                    font-size: 1em;
-                    font-family: $fira-eight;
+                    font-size: 1.3em;
+                    font-family: $fira-book;
                   }
                 .right {
                   font-size: 1em;
-                  font-family: $fira-eight;
+                  font-family: $fira-thin;
                   float: right;
                   width: 230px;
                   &.last{

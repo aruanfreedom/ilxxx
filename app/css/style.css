@@ -241,10 +241,12 @@ html, body {
       #menu nav ul li {
         color: #fff;
         float: left;
-        font-family: "FiraSans-Regular", sans-serif;
-        font-size: 16px;
+        font-family: "BloggerSans", sans-serif;
+        font-size: 14px;
         list-style: none;
         margin-left: 15px; }
+        #menu nav ul li.number-v {
+          padding-top: 5px; }
         #menu nav ul li.center-v {
           padding-top: 5px; }
         #menu nav ul li.logo-min {
@@ -508,7 +510,7 @@ html, body {
           margin: 0; }
         #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
           font-family: "FiraSans-Book", sans-serif;
-          font-size: 0.6em; }
+          font-size: 0.85em; }
     #section1 section .tab2 .description {
       float: left;
       padding-left: 160px; }
@@ -568,7 +570,7 @@ html, body {
               font-size: 1.6em;
               margin: 0; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
-              font-family: "FiraSans-Eight", sans-serif;
+              font-family: "FiraSans-Thin", sans-serif;
               color: #fff;
               margin: 0;
               line-height: 180%; }
@@ -576,6 +578,8 @@ html, body {
             float: left;
             width: 40%;
             padding: 65px 40px; }
+            #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
+              height: 272px; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
             float: left;
             width: 25%; }
@@ -608,11 +612,11 @@ html, body {
               #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .red, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .red, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .red, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .red {
                 color: #fff;
                 padding-top: 0px;
-                font-size: 1em;
-                font-family: "FiraSans-Eight", sans-serif; }
+                font-size: 1.3em;
+                font-family: "FiraSans-Book", sans-serif; }
               #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
                 font-size: 1em;
-                font-family: "FiraSans-Eight", sans-serif;
+                font-family: "FiraSans-Thin", sans-serif;
                 float: right;
                 width: 230px; }
                 #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right.last {
