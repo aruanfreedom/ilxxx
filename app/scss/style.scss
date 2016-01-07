@@ -337,10 +337,10 @@ html, body {
         list-style: none;
         margin-left: 15px;
         &.number-v{
-          padding-top: 5px;
+          padding-top: 1px;
         }
         &.center-v {
-          padding-top: 5px;
+          padding-top: 2px;
         }
         &.logo-min {
           margin-top: -8px;
@@ -736,6 +736,7 @@ html, body {
     width: 80%;
     #wrapper2 {
       text-align: center;
+      height: 100%;
       .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
@@ -787,9 +788,9 @@ html, body {
               float: left;
               width: 40%;
               padding: 65px 40px;
-              img{
-                height: 272px;
-              }
+              //img{
+              //  height: 272px;
+              //}
             }
             .description_transport{
               float: left;
@@ -848,8 +849,8 @@ html, body {
             }
              
             .bottom_panel{
-              position: relative;
-              bottom: 0;
+              position: absolute;
+              top: 415px;
               width: 100%;
 
               .box_transport{

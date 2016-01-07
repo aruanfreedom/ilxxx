@@ -246,9 +246,9 @@ html, body {
         list-style: none;
         margin-left: 15px; }
         #menu nav ul li.number-v {
-          padding-top: 5px; }
+          padding-top: 1px; }
         #menu nav ul li.center-v {
-          padding-top: 5px; }
+          padding-top: 2px; }
         #menu nav ul li.logo-min {
           margin-top: -8px; }
         #menu nav ul li a {
@@ -533,7 +533,8 @@ html, body {
     height: 100%;
     width: 80%; }
     #section2 section #wrapper2 {
-      text-align: center; }
+      text-align: center;
+      height: 100%; }
       #section2 section #wrapper2 .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
@@ -578,8 +579,6 @@ html, body {
             float: left;
             width: 40%;
             padding: 65px 40px; }
-            #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
-              height: 272px; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
             float: left;
             width: 25%; }
@@ -625,8 +624,8 @@ html, body {
                   color: #2e79cc;
                   text-decoration: none; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
-            position: relative;
-            bottom: 0;
+            position: absolute;
+            top: 415px;
             width: 100%; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport {
               border-radius: 8px;
