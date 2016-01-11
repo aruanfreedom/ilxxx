@@ -752,7 +752,7 @@ html, body {
           cursor: pointer; }
       #section3 #form form input {
         border-radius: 3px;
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
         color: #b1b1b1;
         height: 35px;
         float: right;
@@ -767,12 +767,12 @@ html, body {
         width: 60.4%; }
       #section3 #form form textarea {
         border-radius: 3px;
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
         padding-left: 10px;
         color: #b1b1b1;
         float: right;
         height: 150px;
-        width: 67.4%; }
+        width: 67.7%; }
       #section3 #form form .btn {
         background: #a9a9a9;
         border-radius: 5px;
