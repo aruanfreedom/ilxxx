@@ -42,15 +42,22 @@
 
         <form action="#" method="post">
             <label for="name2">Имя</label>
-            <input type="text" name="name" id="name2"/>
+            <input type="text" name="name2" id="name2"/>
+            <div class="clearfix"></div>
             <label for="email2">Email</label>
-            <input type="email" name="email" id="email2"/>
-            <label for="phone2">Номер
-                <br/> телефона <span class="red">*</span></label>
-            <input type="text" name="phone" maxlength="11" class="phone" id="phone2"/>
+            <input type="email" name="email2" id="email2"/>
+            <div class="clearfix"></div>
+            <label for="phone2" class="number-l">Номер
+                <br/> телефона<span class="red">*</span></label>
+            <input type="text" name="phone2" class="phone" maxlength="11" id="phone2"/>
+            <div class="clearfix"></div>
+            <label for="message2" class="additionally-l">Дополнительно</label>
+                <textarea placeholder="Например: тип авто, время, пункт назначения" name="message"
+                          id="message2"></textarea>
+            <div class="clearfix"></div>
             <input type="submit" name="button" class="btn" value="Отправить" disabled>
 
-            <p>Мы ответим на все Ваши вопросы
+            <p id="text">Мы ответим на все Ваши вопросы
                 <br/> в удобное для Вас время!</p>
 
             <div class="clearfix"></div>
@@ -221,7 +228,7 @@
                     <!-- -->
                     <!--</div>-->
                     <div class="description">
-                        <h4>срочно</h4>
+                        <div class="h4">срочно</div>
 
                         <div class="description-item">
                             <img src="img/icons/bisness/people.png" alt="ilx people">
@@ -241,7 +248,7 @@
                             <p>Выезд за город</p>
                             <small>Более 25 направлений</small>
                         </div>
-                        <h4>долгосрочно</h4>
+                        <div class="h4">долгосрочно</div>
 
                         <div class="description-item">
                             <img src="img/icons/bisness/person.png" alt="ilx person">
@@ -266,52 +273,52 @@
                 </div>
                 <div class="tab2 none">
                     <div class="description">
-                        <h4>торжества</h4>
+                        <div class="h4">торжества</div>
 
                         <div class="description-item">
                             <img src="img/icons/family/people.png" alt="ilx people">
 
-                            <p>Встречи (аэропорт, ж/д вокзал)</p>
+                            <p>Встречи гостей и родственников</p>
                             <small>Встретим от 1-го до 750 человек за раз</small>
                         </div>
                         <div class="description-item">
                             <img src="img/icons/family/rings.png" alt="ilx rings">
 
-                            <p>Часовая по городу</p>
+                            <p>Прокат автомобилей и кортеж</p>
                             <small>Работаем от 3-х до 24-х часов в сутки</small>
                         </div>
                         <div class="description-item">
                             <img src="img/icons/family/mount.png" alt="ilx mount">
 
-                            <p>Выезд за город</p>
+                            <p>Выезд на природу</p>
                             <small>Более 25 направлений</small>
                         </div>
-                        <h4>забота</h4>
+                        <div class="h4">забота</div>
 
                         <div class="description-item">
                             <img src="img/icons/family/car.png" alt="ilx car">
 
-                            <p>Персональное авто для руководителей и сотрудников</p>
-                            <small>Обслужим от 1-го до 250 человек одновременно</small>
+                            <p>Персональный семейный автомобиль</p>
+                            <small>Прокатим всех родных и близких, пока Вы на работе</small>
                         </div>
                         <div class="description-item">
                             <img src="img/icons/family/person.png" alt="ilx person">
 
-                            <p>Развозка сотрудников</p>
+                            <p>Автоняня, автомама и автопапа</p>
                             <small>Доставим каждого во все точки города</small>
                         </div>
                         <div class="description-item">
                             <img src="img/icons/family/truck.png" alt="ilx truck">
 
-                            <p>Обслуживание делегаций</p>
-                            <small>У нас более 11 лет опыта работ и не менее 37 выгодных предложений</small>
+                            <p>Переезд</p>
+                            <small>Перевезем до 4-х тонн или до 30 кубов по городу и не только</small>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="tab3 none">
                     <div class="description">
-                        <h4>обслуживание</h4>
+                        <div class="h4">обслуживание</div>
 
                         <div class="description-item">
                             <img src="img/icons/turism/bus.png" alt="ilx bus">
@@ -333,7 +340,7 @@
                             <p>Отдых, здоровье, охота, рыбалка</p>
                             <small>Более 25 направлений</small>
                         </div>
-                        <h4>партнерство</h4>
+                        <div class="h4">партнерство</div>
 
                         <div class="description-item">
                             <img src="img/icons/turism/friend.png" alt="ilx friend">
@@ -348,7 +355,7 @@
                             <small>Организуем индивидуальные и групповые перевозки</small>
                         </div>
                         <div class="description-item">
-                            <img src="img/icons/turism/services.png" alt="ilx services">
+                            <img src="img/icons/turism/services.png" id="last-img" alt="ilx services">
 
                             <p>Сопровождение саммитов, выставок, крупных спортивных мероприятий</p>
                             <small>У нас более 11 лет опыта работ и не менее 37 выгодных предложений</small>
@@ -439,8 +446,8 @@
 
                             <div class="bottom_panel" id="makeMeScrollable">
 
-                                <div class="part">
-                                    <div class="box_transport photo">
+                                <div class="part cars-mini">
+                                    <div class="box_transport select-cars active photo">
                                         <h4 class="status_transport econom">Эконом класс</h4>
 
                                         <div class="des-small">
@@ -448,15 +455,15 @@
 
                                             <h2 class="name_transport">Toyota Corolla</h2>
                                             <ul>
-                                                <li>Кузов: седан</li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                                <li>Кузов: <span class="regular">седан</span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест: <span class="regular">1 - 2</span></li>
+                                                <li>Цена: <span class="red">3 000</span> <span class="regular">тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part cars-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport econom">Эконом класс</h4>
 
@@ -465,16 +472,16 @@
 
                                             <h2 class="name_transport">KIA Cerato</h2>
                                             <ul>
-                                                <li>Кузов: седан</li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> седан</span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 1 - 2</span></li>
+                                                <li>Цена: <span class="red">3 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
-                                    <div class="box_transport active photo">
+                                <div class="part cars-mini">
+                                    <div class="box_transport photo">
                                         <h4 class="status_transport econom">Эконом класс</h4>
 
                                         <div class="des-small">
@@ -482,15 +489,15 @@
 
                                             <h2 class="name_transport">Skoda Octavia</h2>
                                             <ul>
-                                                <li>Кузов: седан</li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> седан</span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 1 - 2</span></li>
+                                                <li>Цена: <span class="red">3 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part cars-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport bisnes">Бизнес класс</h4>
 
@@ -499,145 +506,145 @@
 
                                             <h2 class="name_transport">Toyota Camry от 2008</h2>
                                             <ul>
-                                                <li>Кузов: седан</li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">3 200</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> седан</span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 1 - 2</span></li>
+                                                <li>Цена: <span class="red">3 200</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part cars-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport bisnes">Бизнес класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_5.png" alt="Toyota Corolla">
                                             <h2 class="name_transport">Toyota Camry от 2012</h2>
                                             <ul>
-                                                <li>Кузов: седан</li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">3 500</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> седан</span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 1 - 2</span></li>
+                                                <li>Цена: <span class="red">3 500</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part cars-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport bisnes">Бизнес класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_6.png" alt="Toyota Corolla">
                                             <h2 class="name_transport">Toyota Camry от 2015</h2>
                                             <ul>
-                                                <li>Кузов: седан</li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">4 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> седан</span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 1 - 2</span></li>
+                                                <li>Цена: <span class="red">4 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part jeep-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport bisnes">Бизнес класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_7.png" alt="Mercedes w220">
                                             <h2 class="name_transport">Toyota Highlander</h2>
                                             <ul>
-                                                <li>Кузов: внедорожник </li>
-                                                <li>Количество мест: 5</li>
-                                                <li>Количество багажных мест: 3 - 4</li>
-                                                <li>Цена: <span class="red">12 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> внедорожник </span></li>
+                                                <li>Количество мест:<span class="regular"> 5</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Цена: <span class="red">12 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part cars-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport representative">S класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_8.png" alt="Mercedes w220">
                                             <h2 class="name_transport">Mercedes w220</h2>
                                             <ul>
-                                                <li>Кузов: седан-лонг </li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">5 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> седан-лонг </span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 1 - 2</span></li>
+                                                <li>Цена: <span class="red">5 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part cars-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport representative">S класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_9.png" alt="Toyota Corolla">
                                             <h2 class="name_transport">Mercedes w221</h2>
                                             <ul>
-                                                <li>Кузов: седан-лонг</li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">9 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> седан-лонг</span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 1 - 2</span></li>
+                                                <li>Цена: <span class="red">9 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part cars-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport representative">S класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_10.png" alt="Toyota Corolla">
                                             <h2 class="name_transport">Mercedes w222</h2>
                                             <ul>
-                                                <li>Кузов: седан-лонг</li>
-                                                <li>Количество мест: 3 - 4</li>
-                                                <li>Количество багажных мест: 1 - 2</li>
-                                                <li>Цена: <span class="red">25 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> седан-лонг</span></li>
+                                                <li>Количество мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 1 - 2</span></li>
+                                                <li>Цена: <span class="red">25 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part jeep-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport representative">S класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_13.png" alt="Mercedes w220">
                                             <h2 class="name_transport">Mercedes Benz Gelenvagen</h2>
                                             <ul>
-                                                <li>Кузов: внедорожник </li>
-                                                <li>Количество мест: 4</li>
-                                                <li>Количество багажных мест: 3 - 4</li>
-                                                <li>Цена: <span class="red">12 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> внедорожник </span></li>
+                                                <li>Количество мест:<span class="regular"> 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Цена: <span class="red">12 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part jeep-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport representative">S класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_11.png" alt="Toyota Corolla">
                                             <h2 class="name_transport">Toyota Land Cruiser 200</h2>
                                             <ul>
-                                                <li>Кузов: внедорожник</li>
-                                                <li>Количество мест: 4</li>
-                                                <li>Количество багажных мест: 3 - 4</li>
-                                                <li>Цена: <span class="red">10 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> внедорожник</span></li>
+                                                <li>Количество мест:<span class="regular"> 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Цена: <span class="red">10 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="part">
+                                <div class="part jeep-mini">
                                     <div class="box_transport photo">
                                         <h4 class="status_transport representative">S класс</h4>
                                         <div class="des-small">
                                             <img src="img/cars/car_12.png" alt="Toyota Corolla">
                                             <h2 class="name_transport">Lexus LX 570</h2>
                                             <ul>
-                                                <li>Кузов: внедорожник</li>
-                                                <li>Количество мест: 4</li>
-                                                <li>Количество багажных мест: 3 - 4</li>
-                                                <li>Цена: <span class="red">12 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> внедорожник</span></li>
+                                                <li>Количество мест:<span class="regular"> 4</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 3 - 4</span></li>
+                                                <li>Цена: <span class="red">12 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -660,7 +667,7 @@
                                     <p>Осуществляем внутригородские, междугородние и международные пассажирские перевозки</p>
                                 </div>
                             </div>
-                            <div class="big_transport">
+                            <div class="big_transport photo">
                                 <img src="img/cars/car_14_big.png" alt="Skoda Octavia">
                             </div>
                             <div class="description_transport">
@@ -699,20 +706,20 @@
                             </div>
                             <div class="clearfix"></div>
 
-                            <div class="bottom_panel" id="makeMeScrollable">
+                            <div class="bottom_panel gruz" id="makeMeScrollable2">
 
                                 <div class="part">
-                                    <div class="box_transport photo">
+                                    <div class="box_transport select-micro  active photo">
 
                                         <div class="des-small">
                                             <img src="img/cars/car_14.png" alt="Toyota Corolla">
 
                                             <h2 class="name_transport">Toyota Hiace</h2>
                                             <ul>
-                                                <li>Кузов: туристический</li>
-                                                <li>Количество мест: 11</li>
-                                                <li>Количество багажных мест: 4 - 5</li>
-                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> туристический</span></li>
+                                                <li>Количество мест:<span class="regular"> 11</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 4 - 5</span></li>
+                                                <li>Цена: <span class="red">3 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -726,10 +733,10 @@
 
                                             <h2 class="name_transport">Mercedes Sprinter</h2>
                                             <ul>
-                                                <li>Кузов: туристический</li>
-                                                <li>Количество мест: 17</li>
-                                                <li>Количество багажных мест: 6 - 7</li>
-                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> туристический</span></li>
+                                                <li>Количество мест:<span class="regular"> 17</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 6 - 7</span></li>
+                                                <li>Цена: <span class="red">3 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -743,10 +750,10 @@
 
                                             <h2 class="name_transport">Mercedes Sprinter Skatel</h2>
                                             <ul>
-                                                <li>Кузов: туристический</li>
-                                                <li>Количество мест: 20</li>
-                                                <li>Количество багажных мест: 15 - 17</li>
-                                                <li>Цена: <span class="red">3 500</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> туристический</span></li>
+                                                <li>Количество мест:<span class="regular"> 20</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 15 - 17</span></li>
+                                                <li>Цена: <span class="red">3 500</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -760,10 +767,10 @@
 
                                             <h2 class="name_transport">Toyota Coaster</h2>
                                             <ul>
-                                                <li>Кузов: туристический</li>
-                                                <li>Количество мест: 25</li>
-                                                <li>Количество багажных мест: 4 - 5</li>
-                                                <li>Цена: <span class="red">3 500</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> туристический</span></li>
+                                                <li>Количество мест:<span class="regular"> 25</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 4 - 5</span></li>
+                                                <li>Цена: <span class="red">3 500</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -786,10 +793,10 @@
                                     </div>
                             </div>
                             <div class="big_transport">
-                                <img src="img/cars/car_18_big.png" alt="Skoda Octavia">
+                                <img src="img/cars/car_19_big.png" alt="Skoda Octavia">
                             </div>
                             <div class="description_transport">
-                                <h2>Volvo</h2>
+                                <h2>Setra</h2>
 
                                 <div class="line-info">
                                     <div class="left">Год выпуска:</div>
@@ -798,7 +805,7 @@
                                 </div>
                                 <div class="line-info">
                                     <div class="left">Кузов:</div>
-                                    <div class="right body">Туристический</div>
+                                    <div class="right body">Туристический - международный</div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="line-info">
@@ -824,21 +831,21 @@
                             </div>
                             <div class="clearfix"></div>
 
-                            <div class="bottom_panel" id="makeMeScrollable">
+                            <div class="bottom_panel gruz" id="makeMeScrollable3">
 
                                 <div class="part">
-                                    <div class="box_transport photo">
+                                    <div class="box_transport select-autobus active photo">
 
 
                                         <div class="des-small">
-                                            <img src="img/cars/car_18.png" alt="Toyota Corolla">
+                                            <img src="img/cars/car_19.png" alt="Toyota Corolla">
 
-                                            <h2 class="name_transport">Volvo</h2>
+                                            <h2 class="name_transport">Setra</h2>
                                             <ul>
-                                                <li>Кузов: туристический</li>
-                                                <li>Количество мест: 45 - 50</li>
-                                                <li>Количество багажных мест: 30 - 50</li>
-                                                <li>Цена: <span class="red">5 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> туристический</span></li>
+                                                <li>Количество мест:<span class="regular"> 45 - 50</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 30 - 50</span></li>
+                                                <li>Цена: <span class="red">5 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -849,14 +856,14 @@
 
 
                                         <div class="des-small">
-                                            <img src="img/cars/car_19.png" alt="Toyota Corolla">
+                                            <img src="img/cars/car_18.png" alt="Toyota Corolla">
 
-                                            <h2 class="name_transport">Vanhool</h2>
+                                            <h2 class="name_transport">Neoplan</h2>
                                             <ul>
-                                                <li>Кузов: туристический</li>
-                                                <li>Количество мест: 45 - 50</li>
-                                                <li>Количество багажных мест: 30 - 50</li>
-                                                <li>Цена: <span class="red">8 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> туристический</span></li>
+                                                <li>Количество мест:<span class="regular"> 45 - 50</span></li>
+                                                <li>Количество багажных мест:<span class="regular"> 30 - 50</span></li>
+                                                <li>Цена: <span class="red">8 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -928,10 +935,10 @@
                             </div>
                             <div class="clearfix"></div>
 
-                            <div class="bottom_panel" id="makeMeScrollable">
+                            <div class="bottom_panel gruz" id="makeMeScrollable4">
 
                                 <div class="part">
-                                    <div class="box_transport photo">
+                                    <div class="box_transport active select-g photo">
 
 
                                         <div class="des-small">
@@ -939,10 +946,10 @@
 
                                             <h2 class="name_transport">Газель</h2>
                                             <ul>
-                                                <li>Кузов: тентованный/термобудка</li>
-                                                <li>Грузоподъемность: 1,5 тонн</li>
-                                                <li>Вместимость: 8 м<sup>3</sup></li>
-                                                <li>Цена: <span class="red">3 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> тентованный/термобудка</span></li>
+                                                <li>Грузоподъемность:<span class="regular"> 1,5 тонн</span></li>
+                                                <li>Вместимость:<span class="regular"> 8 м<sup>3</sup></span></li>
+                                                <li>Цена: <span class="red">3 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -957,10 +964,10 @@
 
                                             <h2 class="name_transport">Мercedes</h2>
                                             <ul>
-                                                <li>Кузов: тентованный/термобудка</li>
-                                                <li>грузоподьемность: 3-5 тонн</li>
-                                                <li>вместимость: 36 м.куб</li>
-                                                <li>Цена: <span class="red">5 000</span> тг/час</li>
+                                                <li>Кузов:<span class="regular"> тентованный/термобудка</span></li>
+                                                <li>Грузоподьемность:<span class="regular"> 3-5 тонн</span></li>
+                                                <li>Вместимость:<span class="regular"> 36 м.куб</span></li>
+                                                <li>Цена: <span class="red">5 000</span><span class="regular"> тг/час</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -984,17 +991,21 @@
             <form action="#" method="post">
                 <label for="name">Имя</label>
                 <input type="text" name="name2" id="name"/>
+                <div class="clearfix"></div>
                 <label for="email">Email</label>
                 <input type="email" name="email2" id="email"/>
-                <label for="phone">Номер
+                <div class="clearfix"></div>
+                <label for="phone" class="number-l">Номер
                     <br/> телефона<span class="red">*</span></label>
                 <input type="text" name="phone2" class="phone" maxlength="11" id="phone"/>
-                <label for="message">Дополнительно</label>
+                <div class="clearfix"></div>
+                <label for="message" class="additionally-l">Дополнительно</label>
                 <textarea placeholder="Например: тип авто, время, пункт назначения" name="message"
                           id="message"></textarea>
+                <div class="clearfix"></div>
                 <input type="submit" name="button" class="btn" value="Отправить" disabled>
 
-                <p>Мы ответим на все Ваши вопросы
+                <p id="text-p">Мы ответим на все Ваши вопросы
                     <br/> в удобное для Вас время!</p>
 
                 <div class="clearfix"></div>
@@ -1017,7 +1028,7 @@
                 </div>
                 <div class="line-info">
                     <div class="left">Телефон/факс:</div>
-                    <div class="right">+7 (7172) 28 72 05</div>
+                    <div class="right">+7 7172 28 72 05</div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="line-info">
@@ -1027,7 +1038,10 @@
                 </div>
                 <div class="line-info">
                     <div class="left">Email:</div>
-                    <div class="right"><a href="mailto:7521990@bk.ru">info@ilx.kz</a> <a href="mailto:7521990@bk.ru">7521990@bk.ru</a></div>
+                    <div class="right">
+                        <a href="mailto:7521990@bk.ru">7521990@bk.ru</a>
+                        <a href="mailto:7521990@bk.ru">info@ilx.kz</a>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
 
@@ -1046,6 +1060,12 @@
                     </div>
                     <div class="line-info">
                         <div class="left">Павлодар, Семей, Усть-Каменогорск:</div>
+                        <div class="right">+7 778 830 66 73</div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="line-info">
+                        <div class="left">Костанай, Караганда:</div>
                         <div class="right">+7 778 830 66 73</div>
 
                         <div class="clearfix"></div>
@@ -1079,32 +1099,39 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $("div#makeMeScrollable").smoothDivScroll({
-            //прокрутка с помощью колеса мыши
-            //по всем направлениям (не все мыши имеют такую возможность)
-            mousewheelScrolling: "",
+
+            mousewheelScrolling: "allDirections",
             manualContinuousScrolling: false, //Бесконечный цикл
             touchScrolling: true,
-            /*
-             "" - пустая строка сделает стрелки для прокрутки невидимыми всегда.
-             hover - сделает стрелки для прокрутки видимым, только при наведении мыши на скроллер.
-             onStart - делает стрелки для прокрутки видимыми n секунд
-             always - стрелки для прокрутки видны все время.
-             */
-            visibleHotSpotBackgrounds: "always",
-            hotSpotScrollingInterval: 1,
-            hotSpotScrollingStep: 1,
-            mousewheelScrollingStep: 95,
-            hotSpotMouseDownSpeedBooster: 1,
-            /*
-             если предыдущее значение onStart
-             через столько миллисекунд стрелки исчезнут
-             */
-            hotSpotsVisibleTime: 500
-            // автозапуск при загрузке страницы
-            // уберите эту строку, если Вам это не нужно
-        });
 
-        $("div#makeMeScrollable").colorbox({ speed: "1" });
+            visibleHotSpotBackgrounds: "always",
+            hotSpotMouseDownSpeedBooster: 50,
+            hotSpotScrollingStep: 50
+
+        });
+//        $("div#makeMeScrollable").smoothDivScroll("move", 500);
+
+//        $("div#makeMeScrollable2").smoothDivScroll({
+//            mousewheelScrolling: "",
+//            manualContinuousScrolling: false,
+//            touchScrolling: true,
+//
+//            visibleHotSpotBackgrounds: ""
+//        });
+//        $("div#makeMeScrollable3").smoothDivScroll({
+//            mousewheelScrolling: "",
+//            manualContinuousScrolling: false,
+//            touchScrolling: true,
+//
+//            visibleHotSpotBackgrounds: ""
+//        });
+//        $("div#makeMeScrollable3").smoothDivScroll({
+//            mousewheelScrolling: "",
+//            manualContinuousScrolling: false,
+//            touchScrolling: true,
+//
+//            visibleHotSpotBackgrounds: ""
+//        });
     });
 </script>
 

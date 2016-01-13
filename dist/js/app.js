@@ -102,6 +102,25 @@ $("#logoAnim").click(function(){
 //Start machine Selection
 var machineSelection = function() {
 
+    var delay = 1200;
+
+    $(".jeep-mini").on("click", function() {
+        $(".big_transport").addClass("jeep-big");
+        $(".big_transport").removeClass("cars-big");
+    });
+
+    $(".cars-mini").on("click", function() {
+        $(".big_transport").addClass("cars-big");
+        $(".big_transport").removeClass("jeep-big");
+    });
+
+
+    $(".box_transport").on("click", function(){
+        $(".box_transport").removeClass("active");
+        $(this).addClass("active");
+
+    });
+
     $(".part").on("click", function() {
         var img = $(this).find("img"),
             nameTransport = $(this).find(".name_transport").html(),
@@ -114,7 +133,6 @@ var machineSelection = function() {
             status_des_p = $(".status-description .description-p"),
             status_des_small = $(this).find(".status_transport");
         status_des_small_html = status_des_small.html();
-
 
 
         bigImg.attr("src", result);
@@ -166,6 +184,32 @@ var machineSelection = function() {
     $("#tab1").on("click", function() {
         $(".big_transport img").attr("src", "img/cars/car_1_big.png");
 
+        $(".select-cars").addClass("active");
+
+        function camera(){
+            $("#section2").animate({ //camera mikroautobus
+                "backgroundSize": "150%"
+            }, delay);
+
+            $(".tab2 .big_transport img").animate({
+                "width": "100%"
+            }, delay);
+
+            $(".tab3 .big_transport img").animate({
+                "width": "100%"
+            }, delay);
+
+            $(".tab4 .big_transport img").animate({
+                "width": "100%"
+            }, delay);
+
+            $(".tab1 .big_transport img").animate({
+                "width": "100%"
+            }, delay);
+        }
+
+        camera();
+
         var status_des = $(".status-description h2"),
             status_des_p = $(".status-description .description-p");
 
@@ -185,8 +229,32 @@ var machineSelection = function() {
         $('.description_transport .price2').html("При заказе более 9 часов, цена от 2500тг."); //Characteristic tab1
     });
 
+
+
+
     $("#tab2").on("click", function() {
         $(".big_transport img").attr("src", "img/cars/car_14_big.png");
+
+        $(".select-micro").addClass("active");
+
+            function camera(){
+                $("#section2").animate({ //camera mikroautobus
+                    "backgroundSize": "120%"
+                }, delay);
+
+
+                $(".tab2 .big_transport img").animate({
+                    "width": "95%"
+                }, delay);
+
+                $(".tab1 .big_transport img").animate({
+                    "width": "95%"
+                }, delay);
+            }
+
+            camera();
+
+        //animate(camera, 5000);
 
         var status_des = $(".status-description h2"),
             status_des_p = $(".status-description .description-p");
@@ -209,6 +277,25 @@ var machineSelection = function() {
     $("#tab3").on("click", function() {
         $(".big_transport img").attr("src", "img/cars/car_18_big.png");
 
+        $(".select-autobus").addClass("active");
+
+        function camera(){
+            $("#section2").animate({ //camera mikroautobus
+                "backgroundSize": "120%"
+            }, delay);
+
+
+            $(".tab3 .big_transport img").animate({
+                "width": "95%"
+            }, delay);
+
+            $(".tab1 .big_transport img").animate({
+                "width": "95%"
+            }, delay);
+        }
+
+        camera();
+
         var status_des = $(".status-description h2"),
             status_des_p = $(".status-description .description-p");
 
@@ -220,7 +307,7 @@ var machineSelection = function() {
 
         $('.description_transport h2').html("Volvo");
         $('.description_transport .year').html("от 1999");
-        $('.description_transport .body').html("Туристический");
+        $('.description_transport .body').html("Туристический - международный");
         $('.description_transport .place').html("45 - 50");
         $('.description_transport .salon').html("Велюр");
         $('.description_transport .equipment').html("DVD, TV/Video, место гида, панорамные окна, регулируемые сидения с ремнями, холодильник, микрофон, мониторов - 2, индивидуальное освещение, индивидуальный обдув, салон трансформер (сидячих - 50 мест, лежачих 40 мест)");
@@ -229,6 +316,25 @@ var machineSelection = function() {
 
     $("#tab4").on("click", function() {
         $(".big_transport img").attr("src", "img/cars/car_20_big.png");
+
+        $(".select-g").addClass("active");
+
+        function camera(){
+            $("#section2").animate({ //camera mikroautobus
+                "backgroundSize": "120%"
+            }, delay);
+
+
+            $(".tab4 .big_transport img").animate({
+                "width": "95%"
+            }, delay);
+
+            $(".tab1 .big_transport img").animate({
+                "width": "95%"
+            }, delay);
+        }
+
+        camera();
 
         var status_des = $(".status-description h2"),
             status_des_p = $(".status-description .description-p");

@@ -551,7 +551,7 @@ html, body {
       clear: both; }
 
 #section2 {
-  background: url("../img/car_park.jpg") no-repeat center;
+  background: url("../img/car_park.jpg") no-repeat center #020204;
   background-size: 150%;
   position: relative;
   top: 73px;
@@ -1025,8 +1025,7 @@ html, body {
           #section0 section #bisnesman-2 .punkt-1 span,
           #section0 section #bisnesman-2 .punkt-2 span {
             font-size: 12px;
-            opacity: 0;
-            font-family: "FiraSans-Book", sans-serif; }
+            opacity: 0; }
         #section0 section #bisnesman-2 .punkt-1 {
           left: 140px; }
         #section0 section #bisnesman-2 .punkt-2 {
@@ -1038,7 +1037,7 @@ html, body {
             margin: 5px 5px;
             margin-top: 33px; }
   #section1 section {
-    padding-top: 40px;
+    padding-top: 80px;
     width: 100%; }
     #section1 section #wrapper.tab1 div.tab1 {
       background: url("../img/bisness.png") no-repeat left top;
@@ -1049,7 +1048,7 @@ html, body {
     #section1 section #wrapper.tab2 div.tab2 {
       background: url("../img/family.png") no-repeat right top;
       background-size: 39%;
-      background-position: 490px;
+      background-position: 540px;
       display: block;
       width: 100%; }
     #section1 section #wrapper.tab3 div.tab3 {
@@ -1066,7 +1065,7 @@ html, body {
       display: inline-block;
       margin-bottom: 30px; }
     #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
-      padding: 10px 125px; }
+      padding: 10px 200px; }
       #section1 section .tab1 .description h4, #section1 section .tab2 .description h4, #section1 section .tab3 .description h4 {
         font-size: 1em; }
       #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
@@ -1108,7 +1107,7 @@ html, body {
           font-size: 0.7em;
           width: 160px; }
     #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
-      bottom: 50px; }
+      top: 370px; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
         font-size: 1em; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
@@ -1124,7 +1123,7 @@ html, body {
     left: -400px; }
   #section3 #form-right-bg {
     background: url("../img/bid-right.png") no-repeat;
-    background-position: 850px 250px;
+    background-position: 890px 250px;
     background-size: 33%;
     position: absolute;
     top: 0;
@@ -1145,7 +1144,7 @@ html, body {
     #section3 #form p {
       margin-top: 0; }
   #section4 #car #description-contact {
-    padding-top: 22%; }
+    padding-top: 36%; }
     #section4 #car #description-contact h2 {
       padding-top: 5px;
       font-size: 1em; }
@@ -1162,11 +1161,9 @@ html, body {
           padding-top: 8px; }
       #section4 #car #description-contact .line-info .left {
         float: left;
-        font-size: 0.75em;
-        font-family: "BloggerSans", sans-serif; }
+        font-size: 0.75em; }
       #section4 #car #description-contact .line-info .right {
         font-size: 0.75em;
-        font-family: "BloggerSans", sans-serif;
         float: right;
         width: 220px; }
         #section4 #car #description-contact .line-info .right a {
@@ -1242,14 +1239,12 @@ html, body {
       width: 90%; }
       #section0 section h2 {
         margin: 0;
-        font-family: "FiraSans-SemiBold", sans-serif;
         font-weight: 100;
         font-size: 1.2em;
         text-transform: uppercase; }
       #section0 section .yellow-text {
         color: #e6b41d; }
       #section0 section p {
-        font-family: "FiraSans-UltraLight", sans-serif;
         font-size: 0.75em;
         margin-bottom: 0; }
         #section0 section p.yellow-text {
@@ -1275,7 +1270,6 @@ html, body {
           width: 320px; }
           #section0 section #bisnesman-1 .punkt-1 h3, #section0 section #bisnesman-1 .punkt-2 h3, #section0 section #bisnesman-1 .punkt-3 h3 {
             animation: punkt-text-false 0s ease-in-out 0s;
-            font-family: "FiraSans-Medium", sans-serif;
             font-weight: 100;
             opacity: 1;
             text-transform: uppercase;
@@ -1284,8 +1278,7 @@ html, body {
           #section0 section #bisnesman-1 .punkt-1 span, #section0 section #bisnesman-1 .punkt-2 span, #section0 section #bisnesman-1 .punkt-3 span {
             animation: punkt-text-false 3s ease-in-out 3s;
             font-size: 0.6em;
-            opacity: 1;
-            font-family: "FiraSans-Book", sans-serif; }
+            opacity: 1; }
         #section0 section #bisnesman-1 .punkt-2 {
           background: none;
           top: 0;
@@ -1320,7 +1313,6 @@ html, body {
           width: 100%; }
           #section0 section #bisnesman-2 .punkt-1 h3, #section0 section #bisnesman-2 .punkt-2 h3 {
             animation: punkt-text-false 3s ease-in-out 3s;
-            font-family: "FiraSans-Medium", sans-serif;
             font-weight: 100;
             opacity: 1;
             text-transform: uppercase;
@@ -1329,8 +1321,7 @@ html, body {
           #section0 section #bisnesman-2 .punkt-1 span, #section0 section #bisnesman-2 .punkt-2 span {
             animation: punkt-text-false 3s ease-in-out 3s;
             font-size: 0.6em;
-            opacity: 1;
-            font-family: "FiraSans-Book", sans-serif; }
+            opacity: 1; }
         #section0 section #bisnesman-2 .punkt-2 {
           background: none;
           top: 0;
@@ -1351,7 +1342,6 @@ html, body {
       #section1 section h2 {
         text-align: center;
         color: #2e2e2f;
-        font-family: "FiraSans-SemiBold", sans-serif;
         text-transform: uppercase;
         font-weight: 100;
         font-size: 1.3em;
@@ -1367,7 +1357,6 @@ html, body {
         margin: 0 10px;
         text-align: center;
         color: #fff;
-        font-family: "FiraSans-Medium", sans-serif;
         text-transform: uppercase;
         font-weight: 100;
         font-size: 1.2em;
@@ -1415,7 +1404,6 @@ html, body {
           color: #65b5de;
           font-size: 0.9em;
           font-weight: 100;
-          font-family: "FiraSans-Medium", sans-serif;
           margin: 0;
           text-transform: uppercase; }
         #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
@@ -1427,11 +1415,9 @@ html, body {
             margin-bottom: 17px;
             width: 30px; }
           #section1 section .tab1 .description .description-item p, #section1 section .tab2 .description .description-item p, #section1 section .tab3 .description .description-item p {
-            font-family: "FiraSans-Medium", sans-serif;
             font-size: 0.8em;
             margin: 0; }
           #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
-            font-family: "FiraSans-Book", sans-serif;
             font-size: 0.6em; }
       #section1 section .tab2 .description {
         float: right;
@@ -1545,7 +1531,6 @@ html, body {
           text-align: center;
           margin: 0;
           margin-bottom: 10px;
-          font-family: "BloggerSans-Medium", sans-serif;
           font-size: 1.2em;
           font-weight: 100; }
         #section4 #car #description-contact .line-info, #section4 #car #description-contact-2 .line-info {
@@ -1561,11 +1546,9 @@ html, body {
               padding-top: 8px; }
           #section4 #car #description-contact .line-info .left, #section4 #car #description-contact-2 .line-info .left {
             float: left;
-            font-size: 1em;
-            font-family: "BloggerSans", sans-serif; }
+            font-size: 1em; }
           #section4 #car #description-contact .line-info .right, #section4 #car #description-contact-2 .line-info .right {
             font-size: 0.9em;
-            font-family: "BloggerSans", sans-serif;
             float: right;
             width: 170px; }
             #section4 #car #description-contact .line-info .right a, #section4 #car #description-contact-2 .line-info .right a {
