@@ -71,26 +71,47 @@ $size: 1366px;
         font-size: 1em;
         width: 62%;
       }
+      textarea {
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        color: #b1b1b1;
+        float: right;
+        height: 150px;
+        width: 61%;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .number-l{
+        padding: 2px 0;
+      }
+      .additionally-l{
+        padding: 0px 0;
+      }
       .phone {
         background: url("../img/icons/number.png") no-repeat;
         background-position: 10px;
         padding-left: 45px;
+        margin-bottom: 12px;
         width: 52.5%;
       }
       .btn {
         background: #a9a9a9;
         border-radius: 5px;
         border: none;
+        cursor: pointer;
         color: #fff;
         margin: 24px auto;
+        margin-bottom: 0;
         position: relative;
-        left: 9%;
+        left: 49%;
         float: none;
         padding: 1px 0;
         font-size: 1em;
         text-transform: uppercase;
         height: 57px;
-        width: 40%;
+        width: 32%;
           &.true{
             background: #e6b41d;
         }
@@ -311,17 +332,36 @@ html, body {
           }
         }
         li.btn-yellow {
-          background: #d0a114;
+          background: #e6b41d;
           border-radius: 3px;
           padding: 6% 0;
           margin-left: 10px;
+          position: relative;
           text-align: center;
           width: 140px;
-          &:hover {
-            cursor: pointer;
-            background: url("../img/light-lang.png") no-repeat center center #d0a114;
-            background-size: cover;
+          &.active {
+            background: url("../img/light-lang.png") no-repeat center center #e6b41d;
+            background-size: 150%;
           }
+          &:focus {
+            background: #d0a114;
+          }
+          &:hover {
+            background: url("../img/light-lang.png") no-repeat center center #e6b41d;
+            background-size: 150%;
+            //&:after{
+            //  content: "";
+            //  cursor: pointer;
+            //  background: url("../img/light-lang.png") no-repeat center center ;
+            //  background-size: 100% 100%;
+            //  position: absolute;
+            //  top: -25px;
+            //  left: -10px;
+            //  height: 90px;
+            //  width: 160px;
+            //}
+          }
+
           a {
             &:hover {
               background: none;
@@ -566,8 +606,11 @@ html, body {
   position: relative;
   width: 100%;
   top: 73px;
-  
 
+  .fp-tableCell {
+    display: table-cell;
+   vertical-align: text-top;
+  }
   section {
     padding-top: 60px;
     position: relative;
@@ -579,10 +622,9 @@ html, body {
       color: #2e2e2f;
       font-family: $fira-semi-bold;
       text-transform: uppercase;
+      margin: 33px 0;
       font-weight: 100;
       font-size: 36px;
-      margin: 0;
-      margin-bottom: 35px;
     }
     #wrapper {
       .tabs-line {
@@ -668,14 +710,18 @@ html, body {
     .tab1, .tab2, .tab3 {
       .description {
         float: right;
-        padding: 30px 0;
-        padding-right: 90px;
-        width: 28%;
-        h4 {
+        padding: 0;
+        padding-right: 55px;
+        width: 30%;
+        .block{
+          position: relative;
+          top: -80px;
+        }
+        .h4 {
           color: #65b5de;
           font-size: 2em;
           font-weight: 100;
-          font-family: $fira-medium;
+          font-family: $fira-medium,sans-serif;
           margin: 0;
           text-transform: uppercase;
         }
@@ -686,7 +732,7 @@ html, body {
             float: left;
             margin-right: 15px;
             margin-bottom: 27px;
-            width: 42px;
+            width: 41px;
           }
           p {
             font-family: $fira-medium;
@@ -695,7 +741,10 @@ html, body {
           }
           small {
             font-family: $fira-book;
-            font-size: 0.85em;
+            font-size: 16px;
+          }
+          #last-img{
+            margin-bottom: 32px;
           }
         }
       }
@@ -704,14 +753,14 @@ html, body {
       .description {
         float: left;
         padding-left: 160px;
-        h4 {
+        .h4 {
           color: #e6b41d;
         }
       }
     }
     .tab3 {
       .description {
-        h4 {
+        .h4 {
           color: #8dad40;
         }
       }
@@ -724,7 +773,7 @@ html, body {
 
 #section2 {
   background: url("../img/car_park.jpg") no-repeat center;
-  background-size: cover;
+  background-size: 150%;
   position: relative;
   top: 73px;
   height: 100%;
@@ -787,10 +836,16 @@ html, body {
             .big_transport{
               float: left;
               width: 40%;
-              padding: 65px 40px;
-              //img{
-              //  height: 272px;
-              //}
+              padding: 125px 40px;
+              img{
+                width: 100%;
+              }
+              &.jeep-big{
+                padding: 75px 40px;
+              }
+              &.cars-big{
+                padding: 125px 40px;
+              }
             }
             .description_transport{
               float: left;
@@ -804,7 +859,7 @@ html, body {
                 margin: 0;
               }
               .line-info {
-                border-bottom: 2px solid #666d7b;
+                border-bottom: 1px solid #666d7b;
                 padding-top: 8px;
                 color: #fff;
                 font-size: 1em;
@@ -852,7 +907,9 @@ html, body {
               position: absolute;
               top: 415px;
               width: 100%;
-
+              &.gruz{
+                padding-top: 40px;
+              }
               .box_transport{
                 border-radius: 8px;
                 background: #fff;
@@ -863,10 +920,19 @@ html, body {
                 transition: background 0.8s, box-shadow 0.8s;
                 width: 100%;
 
+                  &.active{
+                      box-shadow: 0 0 30px 0 #fff;
+                      background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
+                      cursor: pointer;
+                    }
+
                 .des-small{
                   padding: 5px 15px;
+                  .regular{
+                    font-family: $fira-regular;
+                    font-weight: 100;
+                  }
                 }
-
                 .status_transport{
                   color: #fff;
                   font-weight: 100;
@@ -889,11 +955,7 @@ html, body {
                   background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
                   cursor: pointer;
                 }
-                //&.active{
-                //   box-shadow: 0 0 30px 0 #fff;
-                //  background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
-                //  cursor: pointer;
-                //}
+
                 h4{
                   text-align: left;
                   margin: 0;
@@ -914,6 +976,7 @@ html, body {
                   padding: 0;
                   li{
                     list-style: none;
+                    font-weight: 100;
                   }
                   .red{
                     color: #ca272f;
@@ -948,6 +1011,10 @@ html, body {
     #wrapper2.tab4 div.tab4 {
       display: block;
       width: 100%;
+    }
+    #wrapper2 h3{
+      box-shadow: 1px 3px 15px -2px rgba(0,0,0,0.75);
+      text-shadow: 0px 2px 0px rgba(150, 150, 150, 1);
     }
     #wrapper2.tab1 .tab1 h3 {
       background: #c62b30;
@@ -1004,7 +1071,7 @@ html, body {
       text-align: center;
       font-family: $blogger;
       float: right;
-      width: 340px;
+      width: 397px;
     }
     form {
       display: inline-block;
@@ -1030,11 +1097,23 @@ html, body {
         font-size: 1em;
         width: 68%;
       }
+      .number-l{
+        padding: 2px 0;
+      }
+      .additionally-l{
+        padding: 0px 0;
+      }
       .phone {
         background: url("../img/icons/number.png") no-repeat;
         background-position: 10px;
         padding-left: 45px;
-        width: 60.4%;
+        margin-bottom: 12px;
+        width: 60.3%;
+      }
+
+      #text-p{
+        position: relative;
+        right: -21px;
       }
       textarea {
         border-radius: 3px;
@@ -1049,8 +1128,10 @@ html, body {
         background: #a9a9a9;
         border-radius: 5px;
         border: none;
+        cursor: pointer;
         color: #fff;
         margin: 24px auto;
+        margin-bottom: 0;
         position: relative;
         left: 49%;
         float: none;
@@ -1095,7 +1176,7 @@ html, body {
 
     #description-contact, #description-contact-2 {
       padding: 17%;
-      padding-top: 25%;
+      padding-top: 26%;
       font-family: $blogger;
       color: #fff;
       h2 {
@@ -1132,6 +1213,9 @@ html, body {
           width: 250px;
           a {
             color: #2e79cc;
+            &:last-child{
+              margin-left: 15px;
+            }
           }
         }
       }
@@ -1159,8 +1243,8 @@ html, body {
   position: fixed;
   bottom: 15px;
   right: 100px;
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
   z-index: 3;
   &:hover {
     cursor: pointer;
