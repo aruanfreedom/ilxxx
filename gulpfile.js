@@ -10,8 +10,18 @@ var gulp = require("gulp"),
     uncss = require('gulp-uncss'),
     connect = require('gulp-connect'),
     livereload = require('gulp-livereload'),
-    autoprefixer = require('autoprefixer'),
+    autoprefixer = require('gulp-autoprefixer'),
     clean = require('gulp-clean');
+
+//autoprefixer
+gulp.task('autoprefixer', function () {
+    return gulp.src('app/scss/style.scss')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist-css'));
+});
 
 //server connect
 gulp.task('connect', function() {
