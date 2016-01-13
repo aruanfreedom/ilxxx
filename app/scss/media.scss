@@ -121,7 +121,6 @@
                                 span {
                                     font-size: 12px;
                                     opacity: 0;
-                                    font-family: $fira-book;
                                 }
                             }
                             .punkt-1 {
@@ -142,7 +141,7 @@
                 }
                 #section1 {
                     section {
-                        padding-top: 40px;
+                        padding-top: 80px;
                         width: 100%;
                         #wrapper.tab1 div.tab1 {
                             background: url("../img/bisness.png") no-repeat left top;
@@ -154,7 +153,7 @@
                         #wrapper.tab2 div.tab2 {
                             background: url("../img/family.png") no-repeat right top;
                             background-size: 39%;
-                            background-position: 490px;
+                            background-position: 540px;
                             display: block;
                             width: 100%;
                         }
@@ -180,7 +179,7 @@
                         }
                         .tab1, .tab2, .tab3 {
                             .description {
-                                padding: 10px 125px;
+                                padding: 10px 200px;
                                 h4{
                                     font-size: 1em;
                                 }
@@ -249,7 +248,7 @@
                                             }
                                         }
                                         .bottom_panel {
-                                          bottom: 50px;
+                                          top: 370px;
                                             .part {
                                                 .box_transport {
                                                     h2 {
@@ -282,7 +281,7 @@
                     }
                     #form-right-bg {
                         background: url("../img/bid-right.png") no-repeat;
-                        background-position: 850px 250px;
+                        background-position: 890px 250px;
                         background-size: 33%;
                         position: absolute;
                         top: 0;
@@ -314,7 +313,7 @@
                 #section4 {
                     #car {
                         #description-contact {
-                            padding-top: 22%;
+                            padding-top: 36%;
                             h2 {
                                 padding-top: 5px;
                                 font-size: 1em;
@@ -335,11 +334,9 @@
                                 .left {
                                     float: left;
                                     font-size: 0.75em;
-                                    font-family: $blogger;
                                 }
                                 .right {
                                     font-size: 0.75em;
-                                    font-family: $blogger;
                                     float: right;
                                     width: 220px;
                                     a {
@@ -464,7 +461,6 @@
 
                         h2 {
                             margin: 0;
-                            font-family: $fira-semi-bold;
                             font-weight: 100;
                             font-size: 1.2em;
                             text-transform: uppercase;
@@ -475,7 +471,6 @@
                         }
 
                         p {
-                            font-family: $fira-ultra-light;
                             font-size: 0.75em;
                             margin-bottom: 0;
                             &.yellow-text {
@@ -503,7 +498,6 @@
                                 width: 320px;
                                 h3 {
                                     animation: punkt-text-false 0s ease-in-out 0s;
-                                    font-family: $fira-medium;
                                     font-weight: 100;
                                     opacity: 1;
                                     text-transform: uppercase;
@@ -514,7 +508,6 @@
                                     animation: punkt-text-false 3s ease-in-out 3s;
                                     font-size: 0.6em;
                                     opacity: 1;
-                                    font-family: $fira-book;
                                 }
                             }
                             .punkt-2 {
@@ -558,7 +551,6 @@
                                 width: 100%;
                                 h3 {
                                     animation: punkt-text-false 3s ease-in-out 3s;
-                                    font-family: $fira-medium;
                                     font-weight: 100;
                                     opacity: 1;
                                     text-transform: uppercase;
@@ -569,7 +561,6 @@
                                     animation: punkt-text-false 3s ease-in-out 3s;
                                     font-size: 0.6em;
                                     opacity: 1;
-                                    font-family: $fira-book;
                                 }
                             }
                             .punkt-2 {
@@ -598,7 +589,6 @@
                         h2 {
                             text-align: center;
                             color: #2e2e2f;
-                            font-family: $fira-semi-bold;
                             text-transform: uppercase;
                             font-weight: 100;
                             font-size: 1.3em;
@@ -617,7 +607,6 @@
                                 margin: 0 10px;
                                 text-align: center;
                                 color: #fff;
-                                font-family: $fira-medium;
                                 text-transform: uppercase;
                                 font-weight: 100;
                                 font-size: 1.2em;
@@ -695,7 +684,6 @@
                                     color: #65b5de;
                                     font-size: 0.9em;
                                     font-weight: 100;
-                                    font-family: $fira-medium;
                                     margin: 0;
                                     text-transform: uppercase;
                                 }
@@ -709,12 +697,10 @@
                                         width: 30px;
                                     }
                                     p {
-                                        font-family: $fira-medium;
                                         font-size: 0.8em;
                                         margin: 0;
                                     }
                                     small {
-                                        font-family: $fira-book;
                                         font-size: 0.6em;
                                     }
                                 }
@@ -895,7 +881,6 @@
                                 text-align: center;
                                 margin: 0;
                                 margin-bottom: 10px;
-                                font-family: $blogger-medium;
                                 font-size: 1.2em;
                                 font-weight: 100;
                             }
@@ -915,11 +900,9 @@
                                 .left {
                                     float: left;
                                     font-size: 1em;
-                                    font-family: $blogger;
                                 }
                                 .right {
                                     font-size: 0.9em;
-                                    font-family: $blogger;
                                     float: right;
                                     width: 170px;
                                     a {

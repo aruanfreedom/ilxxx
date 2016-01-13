@@ -39,7 +39,7 @@ gulp.task('autoprefixer', function () {
 });
 
 gulp.task('sass', function() {
-    gulp.src('app/scss/style.scss')
+    gulp.src('app/scss/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('app/css/'))
         .pipe(connect.reload());
@@ -96,7 +96,7 @@ gulp.task('watch', function() {
     gulp.watch('bower.json', ['bower']);
     gulp.watch('app/*.html', ['hml']);
     gulp.watch('app/js/*.js', ['js']);
-    gulp.watch('app/scss/style.scss', ['sass']);
+    gulp.watch('app/scss/*.scss', ['sass']);
     gulp.watch('app/scss/media.scss', ['sass']);
 })
 
