@@ -1759,7 +1759,7 @@ html, body {
     display: none; }
     .alert-message .message-box {
       padding: 10px;
-      top: 10%;
+      top: 3%;
       left: 3%;
       margin-left: 0;
       width: 88%; }
