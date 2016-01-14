@@ -3,7 +3,7 @@
             @media only screen and (max-width: 1366px) {
                 .alert-message {
                     .message-box {
-                        top: 10%;
+                        top: 2%;
                         margin-left: -200px;
                         width: 28%;
                     }
@@ -361,7 +361,392 @@
                     right: 50px;
                 }
             }
-            
+            @media only screen and (max-width: 1280px) {
+                .alert-message {
+                    .message-box {
+                        top: 2%;
+                        margin-left: -200px;
+                        width: 28%;
+                    }
+                }
+                @keyframes punkt {
+                    0% {
+                        opacity: 0;
+                        width: 8px;
+                    }
+                    50% {
+                        opacity: 1;
+                        width: 8px;
+                    }
+                    100% {
+                        width: 300px;
+                    }
+                }
+                #home {
+                    table {
+                        height: 40em;
+                        .center-td {
+                            padding-top: 4%;
+                        }
+                    }
+                }
+                #menu {
+                    nav {
+                        .center {
+                            left: 33%;
+                        }
+                    }
+                }
+                #section0 {
+                    top: 0px;
+                    section {
+                        top: 53px;
+                        width: 65%;
+                        h2 {
+                            font-size: 30px;
+                        }
+                        p {
+                            font-size: 14px;
+                            margin: 0;
+                            &.yellow-text {
+                                padding-top: 255px;
+                            }
+                        }
+                        #bisnesman-1 {
+                            background-size: 100%;
+                            height: 370px;
+                            width: 230px;
+                            .punkt-1,
+                            .punkt-2,
+                            .punkt-3 {
+                                background: url("../img/puncts/punkt-1.png") no-repeat right;
+                                background-size: 100%;
+                                right: 150px;
+                                top: -20px;
+                                height: 115px;
+                                width: 300px;
+                                h3 {
+                                    font-size: 18px;
+                                    margin: 0;
+                                    margin-top: 30px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                }
+                            }
+                            .punkt-2 {
+                                background: url("../img/puncts/punkt-2.png") no-repeat right;
+                                background-size: 100%;
+                                top: 150px;
+                                right: 165px;
+                                h3 {
+                                    margin: 5px 0;
+                                    margin-top: 33px;
+                                }
+                            }
+                            .punkt-3 {
+                                background: url("../img/puncts/punkt-3.png") no-repeat right;
+                                background-size: 100%;
+                                top: 250px;
+                                right: 180px;
+                                h3 {
+                                    margin: 5px 0;
+                                    margin-top: 53px;
+                                    margin-left: -50px;
+                                }
+                                span {
+                                    margin-left: -50px;
+                                }
+                            }
+                        }
+                        #bisnesman-2 {
+                            background-size: 100%;
+                            right: 92px;
+                            height: 370px;
+                            width: 178px;
+                            .punkt-1,
+                            .punkt-2 {
+                                animation: punkt 3s ease-in-out;
+                                background: url("../img/puncts/punkt-4.png") no-repeat left;
+                                background-size: 100%;
+                                position: absolute;
+                                top: 30px;
+                                overflow: hidden;
+                                height: 115px;
+                                width: 300px;
+                                h3 {
+                                    font-size: 18px;
+                                    margin: 0 5px;
+                                    margin-top: 30px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    opacity: 0;
+                                }
+                            }
+                            .punkt-1 {
+                                left: 140px;
+                            }
+                            .punkt-2 {
+                                background: url("../img/puncts/punkt-5.png") no-repeat left;
+                                background-size: 100%;
+                                top: 190px;
+                                left: 115px;
+                                h3 {
+                                    margin: 5px 5px;
+                                    margin-top: 33px;
+                                }
+                            }
+                        }
+                    }
+                }
+                #section1 {
+                    section {
+                        padding-top: 43px;
+                        width: 100%;
+                        #wrapper.tab1 div.tab1 {
+                            background: url("../img/bisness.png") no-repeat left top;
+                            background-size: 43%;
+                            background-position: 80px;
+                            display: block;
+                            width: 100%;
+                        }
+                        #wrapper.tab2 div.tab2 {
+                            background: url("../img/family.png") no-repeat right top;
+                            background-size: 39%;
+                            background-position: 540px;
+                            display: block;
+                            width: 100%;
+                        }
+                        #wrapper.tab3 div.tab3 {
+                            background: url("../img/turism.png") no-repeat left top;
+                            background-size: 43%;
+                            background-position: 220px;
+                            display: block;
+                            width: 100%;
+                        }
+
+                        h2 {
+                            margin-bottom: 5px;
+                        }
+                        #wrapper {
+                            h3 {
+                                font-size: 22px;
+                            }
+                            .tabs-line {
+                                display: inline-block;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .tab1, .tab2, .tab3 {
+                            .description {
+                                padding: 10px 200px;
+                                .h4{
+                                    font-size: 1.2em;
+                                }
+
+                                .description-item {
+                                    padding-bottom: 9px;
+                                    P{
+                                        font-size: 0.9em;
+                                    }
+                                    img {
+                                        width: 31px;
+                                        margin-bottom: 12px;
+                                    }
+                                    small {
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #section2 {
+                    section {
+                        width: 90%;
+                        #wrapper2 {
+                            h3 {
+                                font-size: 0.8em;
+                            }
+                            .tabs-line {
+                                margin-bottom: 20px;
+                                margin-top: 90px;
+                            }
+                            .tab1, .tab2, .tab3, .tab4 {
+                                .gallery_avto {
+                                    .panel {
+                                        .status-description {
+                                            p {
+                                                line-height: 140%;
+                                                font-size: 0.9em;
+                                            }
+                                            h2 {
+                                                font-size: 1.1em;
+                                                font-weight: 100;
+                                            }
+                                        }
+                                        .big_transport {
+                                            padding: 37px 40px;
+                                            padding-bottom: 0;
+                                            width: 40%;
+                                            img {
+                                                width: 100%;
+                                                height: 272px;
+                                            }
+                                            &.jeep-big{
+                                                padding: 0 40px;
+                                            }
+                                            &.cars-big{
+                                                padding: 50px 40px;
+                                            }
+                                        }
+                                        .description_transport {
+                                            width: 25%;
+                                            h2 {
+                                                font-size: 1em;
+                                            }
+                                            .line-info {
+                                                padding-top: 0;
+                                                .right {
+                                                    font-size: 0.7em;
+                                                    width: 160px;
+                                                }
+                                                .left{
+                                                    font-size: 0.8em;
+                                                }
+                                            }
+                                        }
+                                        .bottom_panel {
+                                          top: 233px;
+                                            &.gruz{
+                                                padding-top: 25px;
+                                            }
+                                            .part {
+                                                .box_transport {
+                                                    h2 {
+                                                        font-size: 1em;
+                                                    }
+                                                    ul {
+                                                        margin: 0;
+                                                        li {
+                                                            font-size: 0.75em;
+                                                        }
+                                                    }
+                                                    img {
+                                                        height: 40px;
+                                                    }
+                                                    .status_transport{
+                                                        padding: 2px 10px;
+                                                    }
+                                                }
+                                            }
+                                            div.scrollingHotSpotLeft{
+                                                height: 75%;
+                                            }
+                                            div.scrollingHotSpotRight{
+                                                height: 75%;
+                                            }
+                                            .part{
+                                                width: 215px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #section3 {
+                    #form-left-bg {
+                        background: url("../img/bid.png") no-repeat;
+                        background-position: center 200px;
+                        background-size: 43%;
+                        left: -400px;
+                    }
+                    #form-right-bg {
+                        background: url("../img/bid-right.png") no-repeat;
+                        background-position: 890px 250px;
+                        background-size: 33%;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                    #form {
+                        padding: 0 5%;
+                        width: 35%;
+                        h2 {
+                            margin: 0;
+                            padding: 10px 0;
+                        }
+                        form {
+                            textarea {
+                                height: 100px;
+                            }
+                            .btn {
+                                margin: 15px auto;
+                            }
+                        }
+                        p {
+                            margin-top: 0;
+                        }
+                    }
+                }
+                #section4 {
+                    #car {
+                        #description-contact {
+                            padding-top: 18%;
+                            h2 {
+                                padding-top: 5px;
+                                font-size: 1em;
+                            }
+                            .line-info {
+                                border-bottom: 1px solid #4e4e4e;
+                                padding: 3px 0;
+                                color: #fff;
+                                font-size: 1.1em;
+                                text-align: left;
+                                &.none-line {
+                                    border-bottom: none;
+                                    padding-top: 8px;
+                                    .left {
+                                        padding-top: 8px;
+                                    }
+                                }
+                                .left {
+                                    float: left;
+                                    font-size: 0.75em;
+                                }
+                                .right {
+                                    font-size: 0.75em;
+                                    float: right;
+                                    width: 220px;
+                                    a {
+                                        color: #2e79cc;
+                                    }
+                                }
+                            }
+                        }
+                        #description-contact-2 {
+                            padding: 0 10%;
+                            padding-top: 15px;
+                            .line-info {
+                                .right {
+                                    width: 120px;
+                                }
+                            }
+                        }
+                    }
+                }
+                #tel-icon {
+                    bottom: 15px;
+                    right: 50px;
+                }
+            }
+
             @media only screen and (max-width: 980px) {}
             
             @media only screen and (max-width: 800px) {}
@@ -577,11 +962,13 @@
                 #section1 {
                     background: #fbfbfb;
                     position: relative;
+                    padding-bottom: 90px;
                     width: 100%;
-                    top: 100px;
+                    top: 145px;
 
                     section {
-                        padding-top: 60px;
+                        padding-top: 90px;
+                        padding-bottom: 120px;
                         position: relative;
                         text-align: center;
                         margin: 0 auto;
@@ -593,7 +980,7 @@
                             font-weight: 100;
                             font-size: 1.3em;
                             margin: 0;
-                            margin-bottom: 35px;
+                            margin-bottom: 10px;
                         }
                         #wrapper {
                             .tabs-line {
@@ -729,6 +1116,7 @@
                     }
                 }
                 #section2 {
+                    top: 100px;
                     section {
                         position: relative;
                         top: 120px;
@@ -780,7 +1168,7 @@
                                             }
                                         }
                                         .bottom_panel {
-                                            bottom: 0;
+                                            top: 50px;
                                             .part {
                                                 .box_transport {
                                                     h2 {
@@ -796,6 +1184,12 @@
                                                         height: 50px;
                                                     }
                                                 }
+                                            }
+                                            div.scrollingHotSpotLeft{
+                                                height: 75%;
+                                            }
+                                            div.scrollingHotSpotRight{
+                                                height: 75%;
                                             }
                                         }
                                     }

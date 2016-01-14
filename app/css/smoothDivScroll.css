@@ -47,7 +47,7 @@ user-select: none;}
 a{outline:none;}
 img{border:none;}
 
-#makeMeScrollable{
+#makeMeScrollable, #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4{
     width:100%;
     margin:0 auto;
     display:block;
