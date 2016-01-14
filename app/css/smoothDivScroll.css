@@ -47,12 +47,12 @@ user-select: none;}
 a{outline:none;}
 img{border:none;}
 
-#makeMeScrollable, #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4{
+#makeMeScrollable{
     width:100%;
     margin:0 auto;
     display:block;
     position:relative;
-    height:310px;}
+    height:350px;}
 
 .part{
     display:inline-block;

@@ -1,4 +1,18 @@
+@media only screen and (min-width: 1920px) {
+  #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
+    top: 400px; } }
+
 @media only screen and (max-width: 1366px) {
+  #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4 {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    height: 310px; }
+  .part {
+    width: 220px; }
+  div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
+    height: 70%; }
   .alert-message .message-box {
     top: 2%;
     margin-left: -200px;
@@ -18,6 +32,8 @@
       padding-top: 4%; }
   #menu nav .center {
     left: 33%; }
+  #menu nav ul li {
+    font-size: 13px; }
   #section0 {
     top: 0px; }
     #section0 section {
@@ -133,63 +149,78 @@
       font-size: 22px; }
     #section1 section #wrapper .tabs-line {
       display: inline-block;
-      margin-bottom: 30px; }
+      margin-bottom: 15px; }
     #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
-      padding: 10px 200px; }
-      #section1 section .tab1 .description h4, #section1 section .tab2 .description h4, #section1 section .tab3 .description h4 {
-        font-size: 1em; }
+      padding: 0px 200px; }
+      #section1 section .tab1 .description .h4, #section1 section .tab2 .description .h4, #section1 section .tab3 .description .h4 {
+        font-size: 1.6em; }
       #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
         padding-bottom: 9px; }
         #section1 section .tab1 .description .description-item P, #section1 section .tab2 .description .description-item P, #section1 section .tab3 .description .description-item P {
           font-size: 0.9em; }
         #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
-          width: 31px;
+          width: 35px;
           margin-bottom: 12px; }
         #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
-          font-size: 10px; }
-  #section2 section {
-    width: 90%; }
-    #section2 section #wrapper2 h3 {
-      font-size: 0.9em; }
-    #section2 section #wrapper2 .tabs-line {
-      margin-bottom: 20px;
-      margin-top: 90px; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
-      line-height: 140%;
-      font-size: 0.9em; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description h2 {
-      font-size: 1.1em;
-      font-weight: 100; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
-      padding: 53px 40px;
-      padding-bottom: 0;
-      width: 40%; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
-        width: 100%;
-        height: 272px; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
-      width: 25%; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport h2 {
-        font-size: 1em; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info {
-        padding-top: 0; }
-        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
-          font-size: 0.7em;
-          width: 160px; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
-      top: 272px; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
-        font-size: 1em; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
-        margin: 0; }
-        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul li {
-          font-size: 0.75em; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport img {
-        height: 50px; }
+          font-size: 13px; }
+  #section2 {
+    background: url("../img/car_park.jpg") no-repeat center #020204;
+    background-size: 125%; }
+    #section2 section {
+      width: 90%; }
+      #section2 section #wrapper2 h3 {
+        font-size: 0.9em; }
+      #section2 section #wrapper2 .tabs-line {
+        margin-bottom: 20px;
+        margin-top: 90px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
+        line-height: 140%;
+        font-size: 0.9em; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description h2 {
+        font-size: 1.1em;
+        font-weight: 100; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
+        padding: 75px 40px;
+        padding-bottom: 0;
+        width: 40%; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
+          width: 85%;
+          height: auto; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.jeep-big {
+          padding: 65px 40px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.cars-big {
+          padding: 75px 40px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
+        width: 26%; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport h2 {
+          font-size: 1.2em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info {
+          padding-top: 0; }
+          #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
+            font-size: 0.8em;
+            width: 160px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
+        top: 288px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
+          top: 270px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
+          font-size: 1em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport {
+          padding: 3px 10px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
+          margin: 0; }
+          #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul li {
+            font-size: 0.75em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport img {
+          height: 50px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport.active, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport.active, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport.active, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport.active {
+          box-shadow: 0 0 20px 0 #fff; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport:hover, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport:hover, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport:hover, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport:hover {
+          box-shadow: 0 0 20px 0 #fff; }
   #section3 #form-left-bg {
     background: url("../img/bid.png") no-repeat;
-    background-position: center 200px;
-    background-size: 43%;
+    background-position: center 237px;
+    background-size: 38%;
     left: -400px; }
   #section3 #form-right-bg {
     background: url("../img/bid-right.png") no-repeat;
@@ -745,7 +776,7 @@
           text-transform: uppercase; }
         #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
           text-align: left;
-          padding-bottom: 10px; }
+          padding-bottom: 15px; }
           #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
             float: left;
             margin-right: 15px;

@@ -82,14 +82,14 @@
 		_create: function () {
 			var self = this, o = this.options, el = this.element;
 
-			// Create variables for any existing or not existing 
+			// Create variables for any existing or not existing
 			// scroller elements on the page.
 			el.data("scrollWrapper", el.find("." + o.scrollWrapperClass));
 			el.data("scrollingHotSpotRight", el.find("." + o.scrollingHotSpotRightClass));
 			el.data("scrollingHotSpotLeft", el.find("." + o.scrollingHotSpotLeftClass));
 			el.data("scrollableArea", el.find("." + o.scrollableAreaClass));
 
-			// Check which elements are already present on the page. 
+			// Check which elements are already present on the page.
 			// Create any elements needed by the plugin if
 			// the user hasn't already created them.
 
@@ -190,7 +190,7 @@
 			/*****************************************
 			SET UP EVENTS FOR SCROLLING RIGHT
 			*****************************************/
-			// Check the mouse X position and calculate 
+			// Check the mouse X position and calculate
 			// the relative X position inside the right hotspot
 			el.data("scrollingHotSpotRight").bind("mousemove", function (e) {
 				if (o.hotSpotScrolling) {
@@ -326,7 +326,7 @@
 					var pixels;
 
 					// Can be either positive or negative
-					// Is multiplied/inverted by minus one since you want it to scroll 
+					// Is multiplied/inverted by minus one since you want it to scroll
 					// left when moving the wheel down/right and right when moving the wheel up/left
 					if (o.mousewheelScrolling === "vertical" && deltaY !== 0) {
 						// Stop any ongoing auto scrolling if it's running
@@ -371,7 +371,7 @@
 			/*****************************************
 			FETCHING CONTENT ON INITIALIZATION
 			*****************************************/
-			// If getContentOnLoad is present in the options, 
+			// If getContentOnLoad is present in the options,
 			// sort out the method and parameters and get the content
 
 			if (!(jQuery.isEmptyObject(o.getContentOnLoad))) {
@@ -388,8 +388,8 @@
 			*****************************************/
 			// The $(window).load event handler is used because the width of the elements are not calculated
 			// properly until then, at least not in Google Chrome. The start of the auto scrolling and the
-			// setting of the hotspot backgrounds is started here as well for the same reason. 
-			// If the auto scrolling is not started in $(window).load, it won't start because it 
+			// setting of the hotspot backgrounds is started here as well for the same reason.
+			// If the auto scrolling is not started in $(window).load, it won't start because it
 			// will interpret the scrollable areas as too short.
 			$(window).load(function () {
 
@@ -403,7 +403,7 @@
 					self.startAutoScrolling();
 				}
 
-				// If the user wants to have visible hotspot backgrounds, 
+				// If the user wants to have visible hotspot backgrounds,
 				// here is where it's taken care of
 				if (o.autoScrollingMode !== "always") {
 
@@ -607,7 +607,7 @@
 					el.data("scrollXPos", 0);
 					return true;
 				case "start":
-					// Check to see if there is a specified start element in the options 
+					// Check to see if there is a specified start element in the options
 					// and that the element exists in the DOM
 					if (o.startAtElementId !== "") {
 						if (el.data("scrollableArea").has("#" + o.startAtElementId)) {
@@ -986,7 +986,7 @@
 
 			// Recalculate the total width of the elements inside the scrollable area
 			self.recalculateScrollableArea();
-	
+
 			// Determine which hotspots to show
 			self._showHideHotSpots();
 
@@ -1168,7 +1168,7 @@
 			if (el.data("getNextElementWidth")) {
 
 				if ((o.startAtElementId.length > 0) && (el.data("startAtElementHasNotPassed"))) {
-					// If the user has set a certain element to start at, set swapAt 
+					// If the user has set a certain element to start at, set swapAt
 					// to that element width. This happens once.
 					el.data("swapAt", $("#" + o.startAtElementId).outerWidth(true));
 					el.data("startAtElementHasNotPassed", false);

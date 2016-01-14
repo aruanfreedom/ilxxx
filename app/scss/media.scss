@@ -1,6 +1,35 @@
-            @media only screen and (min-width: 1920px) {}
+            @media only screen and (min-width: 1920px) {
+                #section2 {
+                    section {
+                        #wrapper2 {
+                            .tab1, .tab2, .tab3, .tab4 {
+                                .gallery_avto {
+                                    .panel {
+                                        .bottom_panel {
+                                            top: 400px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             
             @media only screen and (max-width: 1366px) {
+                #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4{
+                    width:100%;
+                    margin:0 auto;
+                    display:block;
+                    position:relative;
+                    height:310px;
+                }
+                .part{
+                    width: 220px;
+                }
+                div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
+                    height: 70%;
+                }
                 .alert-message {
                     .message-box {
                         top: 2%;
@@ -33,6 +62,11 @@
                     nav {
                         .center {
                             left: 33%;
+                        }
+                        ul{
+                            li{
+                                font-size: 13px;
+                            }
                         }
                     }
                 }
@@ -174,14 +208,14 @@
                             }
                             .tabs-line {
                                 display: inline-block;
-                                margin-bottom: 30px;
+                                margin-bottom: 15px;
                             }
                         }
                         .tab1, .tab2, .tab3 {
                             .description {
-                                padding: 10px 200px;
-                                h4{
-                                    font-size: 1em;
+                                padding: 0px 200px;
+                                .h4{
+                                    font-size: 1.6em;
                                 }
 
                                 .description-item {
@@ -190,11 +224,11 @@
                                         font-size: 0.9em;
                                     }
                                     img {
-                                        width: 31px;
+                                        width: 35px;
                                         margin-bottom: 12px;
                                     }
                                     small {
-                                        font-size: 10px;
+                                        font-size: 13px;
                                     }
                                 }
                             }
@@ -202,6 +236,8 @@
                     }
                 }
                 #section2 {
+                    background: url("../img/car_park.jpg") no-repeat center #020204;
+                    background-size: 125%;
                     section {
                         width: 90%;
                         #wrapper2 {
@@ -226,33 +262,45 @@
                                             }
                                         }
                                         .big_transport {
-                                            padding: 53px 40px;
+                                            padding: 75px 40px;
                                             padding-bottom: 0;
                                             width: 40%;
                                             img {
-                                                width: 100%;
-                                                height: 272px;
+                                                width: 85%;
+                                                height: auto;
+                                            }
+                                            &.jeep-big{
+                                                padding: 65px 40px;
+                                            }
+                                            &.cars-big{
+                                                padding: 75px 40px;
                                             }
                                         }
                                         .description_transport {
-                                            width: 25%;
+                                            width: 26%;
                                             h2 {
-                                                font-size: 1em;
+                                                font-size: 1.2em;
                                             }
                                             .line-info {
                                                 padding-top: 0;
                                                 .right {
-                                                    font-size: 0.7em;
+                                                    font-size: 0.8em;
                                                     width: 160px;
                                                 }
                                             }
                                         }
                                         .bottom_panel {
-                                          top: 272px;
+                                          top: 288px;
+                                            &.gruz{
+                                                top: 270px;
+                                            }
                                             .part {
                                                 .box_transport {
                                                     h2 {
                                                         font-size: 1em;
+                                                    }
+                                                    .status_transport{
+                                                        padding: 3px 10px;
                                                     }
                                                     ul {
                                                         margin: 0;
@@ -262,6 +310,12 @@
                                                     }
                                                     img {
                                                         height: 50px;
+                                                    }
+                                                    &.active{
+                                                        box-shadow: 0 0 20px 0 #fff;
+                                                    }
+                                                    &:hover{
+                                                        box-shadow: 0 0 20px 0 #fff;
                                                     }
                                                 }
                                             }
@@ -275,8 +329,8 @@
                 #section3 {
                     #form-left-bg {
                         background: url("../img/bid.png") no-repeat;
-                        background-position: center 200px;
-                        background-size: 43%;
+                        background-position: center 237px;
+                        background-size: 38%;
                         left: -400px;
                     }
                     #form-right-bg {
@@ -1076,7 +1130,7 @@
                                 }
                                 .description-item {
                                     text-align: left;
-                                    padding-bottom: 10px;
+                                    padding-bottom: 15px;
                                     img {
                                         float: left;
                                         margin-right: 15px;
