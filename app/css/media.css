@@ -107,7 +107,7 @@
             margin: 5px 5px;
             margin-top: 33px; }
   #section1 section {
-    padding-top: 80px;
+    padding-top: 43px;
     width: 100%; }
     #section1 section #wrapper.tab1 div.tab1 {
       background: url("../img/bisness.png") no-repeat left top;
@@ -177,7 +177,7 @@
           font-size: 0.7em;
           width: 160px; }
     #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
-      top: 370px; }
+      top: 272px; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
         font-size: 1em; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
@@ -214,7 +214,7 @@
     #section3 #form p {
       margin-top: 0; }
   #section4 #car #description-contact {
-    padding-top: 36%; }
+    padding-top: 21%; }
     #section4 #car #description-contact h2 {
       padding-top: 5px;
       font-size: 1em; }
