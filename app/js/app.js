@@ -9,14 +9,14 @@ var pages = function() {
     };
 
     var animMenuLogo = function() {
-        $(".logo-min").animate({
+        $(".logo-min").css({
             "opacity": 1
-        }, 1000);
+        });
         animMenu();
     };
 
 
-    setTimeout(animMenuLogo, 900);
+    setTimeout(animMenuLogo, 1500);
 
     //End Animate menu-header
 
@@ -99,11 +99,30 @@ function animLoad() {
     animateText("dynamic-text", "АРЕНДА АВТО ", 0);
     setTimeout(hideAnim, 4500);
 
+    var menuHide = function(){
+        $("#menu").animate({
+            "display": "block",
+            "opacity": 1
+        }, 1500, function() {
+            if( parseInt( $(window).width() ) <= 1920){
+                $("#logo").add(".width1920");
+            } else if( parseInt( $(window).width() ) <= 1366 ){
+                $("#logo").add(".width1366");
+            } else{
+                return false;
+            }
+
+        });
+
+        $("#dynamic-text").hide();
+    };
+    setTimeout(menuHide, 4500);
+
     function hideAnim() {
         $("#home").animate({
             "height": "0"
-        }, 600, function() {
-            $("#home").hide();
+        }, 1900, function() {
+            $("#bg2").css({"display": "none"});
         });
         pages();
     }

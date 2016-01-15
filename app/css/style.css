@@ -106,7 +106,7 @@
     vertical-align: middle;
     position: absolute;
     padding-top: 15%;
-    left: 50%;
+    left: 47.3%;
     right: 50%;
     margin-left: -150px;
     width: 400px; }
@@ -129,15 +129,17 @@
   #home #bg2 {
     background: url("../img/bg2.png") no-repeat center center;
     background-size: cover;
+    position: relative;
     animation: bg 4s ease-in 1; }
   #home #logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
-    animation: logo 5s ease-in 4s 1;
+    animation: logo 5s ease-in 5s 1;
     margin: 0 auto;
     height: 421px;
-    width: 400px; }
+    width: 400px;
+    z-index: 200; }
     #home #logo:before {
       content: "";
       background: url("../img/shine.png") no-repeat center center;
@@ -149,23 +151,25 @@
       left: 0;
       transform: translate(60px, 110px);
       opacity: 0;
-      width: 0%; }
+      width: 0; }
+
+.width1920 {
+  transform: translate(0px, -465px) scale(0.1); }
+
+.width1366 {
+  transform: translate(0px, -235px) scale(0.1); }
 
 @keyframes logo {
   0% {
     opacity: 1; }
   20% {
     opacity: 1; }
-  90% {
+  70% {
     transform: translate(0, 0px); }
-  95% {
-    opacity: 1;
-    position: relative; }
+  90% { }
+  95% { }
   100% {
-    opacity: 0;
-    position: fixed;
-    transform: translate(-50px, -480px) scale(0.1);
-    z-index: 200; } }
+    transform: translate(0px, -460px) scale(0.1); } }
 
 @keyframes bg {
   0% {
@@ -233,7 +237,10 @@ html, body {
   background-size: cover;
   height: 73px;
   width: 100%;
+  opacity: 0;
   z-index: 99; }
+  #menu #logoAnim {
+    width: 40px; }
   #menu nav {
     margin: 0 auto;
     width: 80%; }
@@ -299,8 +306,9 @@ html, body {
           opacity: 0;
           padding-top: 2px; }
         #menu nav ul li.logo-min {
-          margin-top: -8px;
-          opacity: 0; }
+          margin-top: 0;
+          opacity: 0;
+          margin-left: 20px; }
         #menu nav ul li a {
           color: #fff;
           font-size: 13px;
@@ -969,6 +977,17 @@ html, body {
     top: 400px; } }
 
 @media only screen and (max-width: 1366px) {
+  @keyframes logo {
+    0% {
+      opacity: 1; }
+    20% {
+      opacity: 1; }
+    70% {
+      transform: translate(0, 0px); }
+    90% { }
+    95% { }
+    100% {
+      transform: translate(0px, -235px) scale(0.1); } }
   #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4 {
     width: 100%;
     margin: 0 auto;
@@ -997,7 +1016,7 @@ html, body {
     #home table .center-td {
       padding-top: 4%; }
   #menu nav .center {
-    left: 33%; }
+    left: 34.3%; }
   #menu nav ul li {
     font-size: 13px; }
   #section0 {
@@ -1531,7 +1550,7 @@ html, body {
       background: url("../img/logo.png") no-repeat center center;
       background-size: 100%;
       position: relative;
-      animation: logo 4s ease-in 1;
+      animation: logoFalse 4s ease-in 1;
       margin: 0 auto;
       height: 421px;
       width: 100%; }

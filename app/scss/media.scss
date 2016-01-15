@@ -17,6 +17,26 @@
             }
             
             @media only screen and (max-width: 1366px) {
+                @keyframes logo {
+                    0% {
+                        opacity: 1;
+                    }
+                    20%{
+                        opacity: 1;
+                    }
+                    70%{
+                        transform: translate(0, 0px);
+                    }
+                    90%{
+
+                    }
+                    95%{
+
+                    }
+                    100% {
+                        transform: translate(0px, -235px) scale(0.1);
+                    }
+                }
                 #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4{
                     width:100%;
                     margin:0 auto;
@@ -61,7 +81,7 @@
                 #menu {
                     nav {
                         .center {
-                            left: 33%;
+                            left: 34.3%;
                         }
                         ul{
                             li{
@@ -835,7 +855,7 @@
                         background: url("../img/logo.png") no-repeat center center;
                         background-size: 100%;
                         position: relative;
-                        animation: logo 4s ease-in 1;
+                        animation: logoFalse 4s ease-in 1;
                         margin: 0 auto;
                         height: 421px;
                         width: 100%;
