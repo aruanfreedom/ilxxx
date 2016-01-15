@@ -103,11 +103,11 @@ function animLoad() {
         $("#menu").animate({
             "display": "block",
             "opacity": 1
-        }, 1500, function() {
+        }, 1000, function() {
             if( parseInt( $(window).width() ) <= 1920){
-                $("#logo").add(".width1920");
-            } else if( parseInt( $(window).width() ) <= 1366 ){
-                $("#logo").add(".width1366");
+                $("#logo").addClass("width1920");
+            } else if( parseInt( $(window).width() ) >= 1366 ){
+                $("#logo").addClass("width1366");
             } else{
                 return false;
             }
@@ -120,7 +120,7 @@ function animLoad() {
 
     function hideAnim() {
         $("#home").animate({
-            "height": "0"
+            "height": "73px"
         }, 1900, function() {
             $("#bg2").css({"display": "none"});
         });

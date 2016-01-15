@@ -458,9 +458,10 @@ html, body {
 #section0 {
   background: url("../img/bg-2.jpg") no-repeat center center #111519;
   background-size: cover;
+  background-position: -186px -59px;
   //display: none;
   position: relative;
-  top: 140px;
+  top: 0;
   height: 92.4%;
   width: 100%;
   z-index: 1;
@@ -468,7 +469,7 @@ html, body {
 
   section {
     position: relative;
-    top: 65px;
+    top: 0;
     text-align: center;
     color: #fff;
     margin: 0 auto;

@@ -334,14 +334,15 @@ html, body {
 #section0 {
   background: url("../img/bg-2.jpg") no-repeat center center #111519;
   background-size: cover;
+  background-position: -186px -59px;
   position: relative;
-  top: 140px;
+  top: 0;
   height: 92.4%;
   width: 100%;
   z-index: 1; }
   #section0 section {
     position: relative;
-    top: 65px;
+    top: 0;
     text-align: center;
     color: #fff;
     margin: 0 auto;
@@ -1015,14 +1016,17 @@ html, body {
     height: 40em; }
     #home table .center-td {
       padding-top: 4%; }
+  #home #logo {
+    animation: logo 6s ease-in 4s 1; }
   #menu nav .center {
     left: 34.3%; }
   #menu nav ul li {
     font-size: 13px; }
   #section0 {
-    top: 0px; }
+    background-position: -95px -59px;
+    top: 0; }
     #section0 section {
-      top: 53px;
+      top: 0;
       width: 65%; }
       #section0 section h2 {
         font-size: 30px; }

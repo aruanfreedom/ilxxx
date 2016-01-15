@@ -77,6 +77,9 @@
                             padding-top: 4%;
                         }
                     }
+                    #logo{
+                        animation: logo 6s ease-in 4s 1;
+                    }
                 }
                 #menu {
                     nav {
@@ -91,9 +94,10 @@
                     }
                 }
                 #section0 {
-                    top: 0px;
+                    background-position: -95px -59px;
+                    top: 0;
                     section {
-                        top: 53px;
+                        top: 0;
                         width: 65%;
                         h2 {
                             font-size: 30px;
