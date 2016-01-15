@@ -25,9 +25,94 @@
   div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
     height: 70%; }
   .alert-message .message-box {
-    top: 2%;
-    margin-left: -200px;
-    width: 28%; }
+    background: #fff;
+    box-shadow: 0 0 13px 0 #fff;
+    padding: 5px;
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    margin-left: -290px;
+    width: 43%;
+    z-index: 101; }
+    .alert-message .message-box .close {
+      background: url("../img/icons/close.png") no-repeat center center;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      height: 32px;
+      width: 32px; }
+      .alert-message .message-box .close:hover {
+        cursor: pointer; }
+    .alert-message .message-box h2 {
+      color: #3f3f3f;
+      font-weight: 100;
+      text-align: center;
+      float: right;
+      width: 89%; }
+    .alert-message .message-box form label {
+      color: #3c3c3c;
+      float: left;
+      text-align: right;
+      padding: 11px 14px 11px 0px;
+      font-size: 1.1em;
+      width: 130px; }
+      .alert-message .message-box form label:hover {
+        cursor: pointer; }
+    .alert-message .message-box form input {
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      color: #b1b1b1;
+      height: 35px;
+      float: left;
+      padding-left: 10px;
+      margin: 6px 0;
+      font-size: 1em;
+      width: 60%; }
+    .alert-message .message-box form textarea {
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+      color: #b1b1b1;
+      float: left;
+      height: 150px;
+      width: 60%; }
+    .alert-message .message-box form .clearfix {
+      clear: both; }
+    .alert-message .message-box form .number-l {
+      padding: 2px 15px 2px 0; }
+    .alert-message .message-box form .additionally-l {
+      padding: 0px 0;
+      margin-right: 15px; }
+    .alert-message .message-box form .phone {
+      background: url("../img/icons/number.png") no-repeat;
+      background-position: 10px;
+      padding-left: 45px;
+      margin-bottom: 12px;
+      width: 54%; }
+    .alert-message .message-box form .btn {
+      background: #a9a9a9;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      margin: 24px auto;
+      margin-bottom: 0;
+      position: relative;
+      left: 42%;
+      float: none;
+      padding: 1px 0;
+      font-size: 1em;
+      text-transform: uppercase;
+      height: 57px;
+      width: 32%; }
+      .alert-message .message-box form .btn.true {
+        background: #e6b41d; }
+    .alert-message .message-box form p {
+      text-align: center;
+      float: right;
+      width: 84%; }
+    .alert-message .message-box form .red {
+      color: #ca272f; }
   @keyframes punkt {
     0% {
       opacity: 0;
@@ -78,11 +163,13 @@
           #section0 section #bisnesman-1 .punkt-3 h3 {
             font-size: 18px;
             margin: 0;
-            margin-top: 30px; }
+            margin-top: 30px;
+            margin-left: -10px; }
           #section0 section #bisnesman-1 .punkt-1 span,
           #section0 section #bisnesman-1 .punkt-2 span,
           #section0 section #bisnesman-1 .punkt-3 span {
-            font-size: 12px; }
+            font-size: 12px;
+            margin-left: -10px; }
         #section0 section #bisnesman-1 .punkt-2 {
           background: url("../img/puncts/punkt-2.png") no-repeat right;
           background-size: 100%;
@@ -91,6 +178,8 @@
           #section0 section #bisnesman-1 .punkt-2 h3 {
             margin: 5px 0;
             margin-top: 33px; }
+          #section0 section #bisnesman-1 .punkt-2 span {
+            margin-left: -2px; }
         #section0 section #bisnesman-1 .punkt-3 {
           background: url("../img/puncts/punkt-3.png") no-repeat right;
           background-size: 100%;
@@ -99,9 +188,9 @@
           #section0 section #bisnesman-1 .punkt-3 h3 {
             margin: 5px 0;
             margin-top: 53px;
-            margin-left: -50px; }
+            margin-left: -55px; }
           #section0 section #bisnesman-1 .punkt-3 span {
-            margin-left: -50px; }
+            margin-left: -60px; }
       #section0 section #bisnesman-2 {
         background-size: 100%;
         right: 92px;
@@ -121,10 +210,12 @@
           #section0 section #bisnesman-2 .punkt-2 h3 {
             font-size: 18px;
             margin: 0 5px;
-            margin-top: 30px; }
+            margin-top: 30px;
+            margin-left: 30px; }
           #section0 section #bisnesman-2 .punkt-1 span,
           #section0 section #bisnesman-2 .punkt-2 span {
             font-size: 12px;
+            margin-left: 30px;
             opacity: 0; }
         #section0 section #bisnesman-2 .punkt-1 {
           left: 140px; }
@@ -136,6 +227,9 @@
           #section0 section #bisnesman-2 .punkt-2 h3 {
             margin: 5px 5px;
             margin-top: 33px; }
+          #section0 section #bisnesman-2 .punkt-2 span {
+            font-size: 12px;
+            margin-left: 20px; }
   #section1 section {
     padding-top: 0;
     width: 100%; }
@@ -153,12 +247,12 @@
       width: 100%; }
     #section1 section #wrapper.tab3 div.tab3 {
       background: url("../img/turism.png") no-repeat left top;
-      background-size: 43%;
+      background-size: 37%;
       background-position: 220px;
       display: block;
       width: 100%; }
     #section1 section h2 {
-      margin-bottom: 20px; }
+      margin: 11px 0; }
     #section1 section #wrapper h3 {
       font-size: 22px; }
     #section1 section #wrapper .tabs-line {
@@ -179,7 +273,8 @@
           font-size: 13px; }
   #section2 {
     background: url("../img/car_park.jpg") no-repeat center #020204;
-    background-size: 125%; }
+    background-size: 110%;
+    background-position: 50% -130px; }
     #section2 section {
       width: 90%; }
       #section2 section #wrapper2 h3 {

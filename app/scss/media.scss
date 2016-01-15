@@ -51,10 +51,112 @@
                     height: 70%;
                 }
                 .alert-message {
-                    .message-box {
-                        top: 2%;
-                        margin-left: -200px;
-                        width: 28%;
+                    .message-box{
+                        background: #fff;
+                        box-shadow: 0 0 13px 0 #fff;
+                        padding: 5px;
+                        position: fixed;
+                        top: 13%;
+                        left: 50%;
+                        margin-left: -290px;
+                        width: 43%;
+                        z-index: 101;
+                        .close{
+                            background: url("../img/icons/close.png") no-repeat center center;
+                            position: absolute;
+                            right: 5px;
+                            top: 5px;
+                            height: 32px;
+                            width: 32px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        h2{
+                            color: #3f3f3f;
+                            font-weight: 100;
+                            text-align: center;
+                            float: right;
+                            width: 89%;
+                        }
+                        form {
+                            label {
+                                color: #3c3c3c;
+                                float: left;
+                                text-align: right;
+                                padding: 11px 14px 11px 0px;
+                                font-size: 1.1em;
+                                width: 130px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                            input {
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                                color: #b1b1b1;
+                                height: 35px;
+                                float: left;
+                                padding-left: 10px;
+                                margin: 6px 0;
+                                font-size: 1em;
+                                width: 60%;
+                            }
+                            textarea {
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                                padding-left: 10px;
+                                color: #b1b1b1;
+                                float: left;
+                                height: 150px;
+                                width: 60%;
+                            }
+                            .clearfix {
+                                clear: both;
+                            }
+                            .number-l{
+                                padding: 2px 15px 2px 0;
+                            }
+                            .additionally-l{
+                                padding: 0px 0;
+                                margin-right: 15px;
+                            }
+                            .phone {
+                                background: url("../img/icons/number.png") no-repeat;
+                                background-position: 10px;
+                                padding-left: 45px;
+                                margin-bottom: 12px;
+                                width: 54%;
+                            }
+                            .btn {
+                                background: #a9a9a9;
+                                border-radius: 5px;
+                                border: none;
+                                cursor: pointer;
+                                color: #fff;
+                                margin: 24px auto;
+                                margin-bottom: 0;
+                                position: relative;
+                                left: 42%;
+                                float: none;
+                                padding: 1px 0;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                                height: 57px;
+                                width: 32%;
+                                &.true{
+                                    background: #e6b41d;
+                                }
+                            }
+                            p{
+                                text-align: center;
+                                float: right;
+                                width: 84%;
+                            }
+                            .red {
+                                color: #ca272f;
+                            }
+                        }
                     }
                 }
                 @keyframes punkt {
@@ -126,9 +228,11 @@
                                     font-size: 18px;
                                     margin: 0;
                                     margin-top: 30px;
+                                    margin-left: -10px;
                                 }
                                 span {
                                     font-size: 12px;
+                                    margin-left: -10px;
                                 }
                             }
                             .punkt-2 {
@@ -140,6 +244,9 @@
                                     margin: 5px 0;
                                     margin-top: 33px;
                                 }
+                                span {
+                                    margin-left: -2px;
+                                }
                             }
                             .punkt-3 {
                                 background: url("../img/puncts/punkt-3.png") no-repeat right;
@@ -149,10 +256,10 @@
                                 h3 {
                                     margin: 5px 0;
                                     margin-top: 53px;
-                                    margin-left: -50px;
+                                    margin-left: -55px;
                                 }
                                 span {
-                                    margin-left: -50px;
+                                    margin-left: -60px;
                                 }
                             }
                         }
@@ -175,9 +282,11 @@
                                     font-size: 18px;
                                     margin: 0 5px;
                                     margin-top: 30px;
+                                    margin-left: 30px;
                                 }
                                 span {
                                     font-size: 12px;
+                                    margin-left: 30px;
                                     opacity: 0;
                                 }
                             }
@@ -192,6 +301,10 @@
                                 h3 {
                                     margin: 5px 5px;
                                     margin-top: 33px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    margin-left: 20px;
                                 }
                             }
                         }
@@ -217,14 +330,14 @@
                         }
                         #wrapper.tab3 div.tab3 {
                             background: url("../img/turism.png") no-repeat left top;
-                            background-size: 43%;
+                            background-size: 37%;
                             background-position: 220px;
                             display: block;
                             width: 100%;
                         }
 
                         h2 {
-                            margin-bottom: 20px;
+                            margin: 11px 0;
                         }
                         #wrapper {
                             h3 {
@@ -261,7 +374,8 @@
                 }
                 #section2 {
                     background: url("../img/car_park.jpg") no-repeat center #020204;
-                    background-size: 125%;
+                    background-size: 110%;
+                    background-position: 50% -130px;
                     section {
                         width: 90%;
                         #wrapper2 {

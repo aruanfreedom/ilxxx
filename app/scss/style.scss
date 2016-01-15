@@ -173,7 +173,11 @@ $size: 1366px;
     background-size: cover;
     position: relative;
     animation: bg 4s ease-in 1;
+    &.bg2-speed{
+      animation: bg 1s ease-in 1;
+    }
   }
+
   #logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
@@ -196,6 +200,13 @@ $size: 1366px;
       transform: translate(60px, 110px);
       opacity: 0;
       width: 0;
+    }
+    &.logo-speed{
+      animation: logo 1.5s ease-in 5s 1;
+
+      &:before{
+        animation: shine 1s linear 1s 1;
+      }
     }
   }
 }
@@ -321,6 +332,7 @@ html, body {
 
   #logoAnim{
     width: 40px;
+    transition: width 2s;
   }
 
   nav {

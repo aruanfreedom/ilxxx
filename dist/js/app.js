@@ -1,3 +1,37 @@
+var animateTextDelay = 200,
+    hideAnimDelay = 4500,
+    menuHideDelay = 4500,
+    speedmenuHide = 1000,
+    speedHome = 1900,
+    animMenuLogoDelay = 1500,
+    animMenuDelay = 2000,
+    speedTextAnim = 5000,
+    animLoadStopDelay = 4000;
+
+var speedAnim = function(){
+
+    $("#bg2").click(function(){
+        $(this).addClass("bg2-speed");
+        $("#logo").addClass("logo-speed");
+        animateTextDelay = 5;
+        hideAnimDelay = 500;
+        menuHideDelay = 450;
+        speedmenuHide = 1000;
+        speedHome = 500;
+        animMenuLogoDelay = 500;
+        animMenuDelay = 200;
+        speedTextAnim = 10;
+        animLoadStopDelay = 40;
+
+        //animateText("dynamic-text", "АРЕНДА АВТО ", 0);
+
+        //animLoad();
+    });
+
+};
+
+
+
 var pages = function() {
 
     //Animate menu-header
@@ -5,7 +39,10 @@ var pages = function() {
     var animMenu = function() {
         $(".center-v, .left, .right").animate({
             "opacity": 1
-        }, 2000);
+        }, animMenuDelay);
+        $("#logoAnim").css({
+            "width" : "49px"
+        });
     };
 
     var animMenuLogo = function() {
@@ -16,7 +53,7 @@ var pages = function() {
     };
 
 
-    setTimeout(animMenuLogo, 1500);
+    setTimeout(animMenuLogo, animMenuLogoDelay);
 
     //End Animate menu-header
 
@@ -27,7 +64,7 @@ var pages = function() {
         $("#tel-icon").show();
     };
 
-    setTimeout(animText, 5000);
+    setTimeout(animText, speedTextAnim);
 
     //menu
 
@@ -80,6 +117,7 @@ var pages = function() {
 };
 
 function animateText(id, text, i) {
+
     document.getElementById(id).innerHTML = text.substring(0, i);
     i++;
     set();
@@ -91,19 +129,21 @@ function animateText(id, text, i) {
     }
 
     function set() {
-        setTimeout("animateText('" + id + "','" + text + "'," + i + ")", 200);
+        setTimeout("animateText('" + id + "','" + text + "'," + i + ")", animateTextDelay);
     }
 }
 
 function animLoad() {
+
     animateText("dynamic-text", "АРЕНДА АВТО ", 0);
-    setTimeout(hideAnim, 4500);
+    setTimeout(hideAnim, hideAnimDelay);
 
     var menuHide = function(){
+
         $("#menu").animate({
             "display": "block",
             "opacity": 1
-        }, 1000, function() {
+        }, speedmenuHide, function() {
             if( parseInt( $(window).width() ) <= 1920){
                 $("#logo").addClass("width1920");
             } else if( parseInt( $(window).width() ) >= 1366 ){
@@ -116,19 +156,21 @@ function animLoad() {
 
         $("#dynamic-text").hide();
     };
-    setTimeout(menuHide, 4500);
+    setTimeout(menuHide, menuHideDelay);
 
-    function hideAnim() {
-        $("#home").animate({
-            "height": "73px"
-        }, 1900, function() {
-            $("#bg2").css({"display": "none"});
-        });
-        pages();
-    }
 }
 
-setTimeout(animLoad, 4000);
+function hideAnim() {
+
+    $("#home").animate({
+        "height": "73px"
+    }, speedHome, function() {
+        $("#bg2").css({"display": "none"});
+    });
+    pages();
+}
+
+setTimeout(animLoad, animLoadStopDelay);
 
 $("#logoAnim").click(function(){
     window.location.reload();
@@ -225,32 +267,39 @@ var machineSelection = function() {
 
         $(".select-cars").addClass("active");
 
+        $("#section2").css({
+            "backgroundPosition": "50% -130px"
+        });
+
+        $(".big_transport").addClass("cars-big");
+        $(".big_transport").removeClass("jeep-big");
+
         function camera(){
            $(function() {
                 if( parseInt( $(window).width() ) <= 1366) {
                     $("#section2").animate({ //camera mikroautobus
-                        "backgroundSize": "125%"
+                        "backgroundSize": "110%"
                     }, delay);
 
                     $(".tab2 .big_transport img").animate({
-                        "width": "85%"
+                        "width": "88%"
                     }, delay);
 
                     $(".tab3 .big_transport img").animate({
-                        "width": "85%"
+                        "width": "88%"
                     }, delay);
 
                     $(".tab4 .big_transport img").animate({
-                        "width": "85%"
+                        "width": "88%"
                     }, delay);
 
                     $(".tab1 .big_transport img").animate({
-                        "width": "85%"
+                        "width": "88%"
                     }, delay);
                 }
                else{
                     $("#section2").animate({ //camera mikroautobus
-                        "backgroundSize": "150%"
+                        "backgroundSize": "110%"
                     }, delay);
 
                     $(".tab2 .big_transport img").animate({
@@ -303,25 +352,32 @@ var machineSelection = function() {
 
         $(".select-micro").addClass("active");
 
+        $("#section2").css({
+            "backgroundPosition": "50% -50px"
+        });
+
+        $(".big_transport").removeClass("cars-big");
+        $(".big_transport").addClass("jeep-big");
+
             function camera(){
                 $(function() {
                     if( parseInt( $(window).width() ) <= 1366) {
                         $("#section2").animate({ //camera mikroautobus
-                            "backgroundSize": "130%"
+                            "backgroundSize": "100%"
                         }, delay);
 
                         $(".tab2 .big_transport img").animate({
-                            "width": "88%"
+                            "width": "85%"
                         }, delay);
 
 
                         $(".tab1 .big_transport img").animate({
-                            "width": "88%"
+                            "width": "85%"
                         }, delay);
                     }
                     else{
                         $("#section2").animate({ //camera mikroautobus
-                            "backgroundSize": "120%"
+                            "backgroundSize": "100%"
                         }, delay);
 
 
@@ -365,26 +421,33 @@ var machineSelection = function() {
 
         $(".select-autobus").addClass("active");
 
+        $(".big_transport").removeClass("cars-big");
+        $(".big_transport").addClass("jeep-big");
+
+        $("#section2").css({
+            "backgroundPosition": "50% -50px"
+        });
+
         function camera(){
 
             if( parseInt( $(window).width() ) <= 1366) {
                 $("#section2").animate({ //camera mikroautobus
-                    "backgroundSize": "130%"
+                    "backgroundSize": "100%"
                 }, delay);
 
 
                 $(".tab3 .big_transport img").animate({
-                    "width": "88%"
+                    "width": "85%"
                 }, delay);
 
 
                 $(".tab1 .big_transport img").animate({
-                    "width": "88%"
+                    "width": "85%"
                 }, delay);
             }
             else{
                 $("#section2").animate({ //camera mikroautobus
-                    "backgroundSize": "120%"
+                    "backgroundSize": "100%"
                 }, delay);
 
 
@@ -425,24 +488,33 @@ var machineSelection = function() {
 
         $(".select-g").addClass("active");
 
+        $(".big_transport").removeClass("cars-big");
+        $(".big_transport").addClass("jeep-big");
+
+        $("#section2").css({
+            "backgroundPosition": "50% -50px"
+        });
+
+
+
         function camera(){
 
             if( parseInt( $(window).width() ) <= 1366) {
                 $("#section2").animate({ //camera mikroautobus
-                    "backgroundSize": "130%"
+                    "backgroundSize": "100%"
                 }, delay);
 
                 $(".tab4 .big_transport img").animate({
-                    "width": "88%"
+                    "width": "85%"
                 }, delay);
 
                 $(".tab1 .big_transport img").animate({
-                    "width": "88%"
+                    "width": "85%"
                 }, delay);
             }
             else{
                 $("#section2").animate({ //camera mikroautobus
-                    "backgroundSize": "120%"
+                    "backgroundSize": "100%"
                 }, delay);
 
 
@@ -479,3 +551,5 @@ var machineSelection = function() {
 };
 machineSelection();
 //End machine Selection
+
+speedAnim();
