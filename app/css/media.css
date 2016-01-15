@@ -137,7 +137,7 @@
             margin: 5px 5px;
             margin-top: 33px; }
   #section1 section {
-    padding-top: 43px;
+    padding-top: 0;
     width: 100%; }
     #section1 section #wrapper.tab1 div.tab1 {
       background: url("../img/bisness.png") no-repeat left top;
@@ -186,7 +186,7 @@
         font-size: 0.9em; }
       #section2 section #wrapper2 .tabs-line {
         margin-bottom: 20px;
-        margin-top: 90px; }
+        margin-top: 20px; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
         line-height: 140%;
         font-size: 0.9em; }

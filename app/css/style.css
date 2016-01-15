@@ -18,8 +18,8 @@
     font-family: "FiraSans-Medium", sans-serif;
     top: 25%;
     left: 50%;
-    margin-left: -250px;
-    width: 20%;
+    margin-left: -320px;
+    width: 30%;
     z-index: 101; }
     .alert-message .message-box .close {
       background: url("../img/icons/close.png") no-repeat center center;
@@ -33,46 +33,49 @@
     .alert-message .message-box h2 {
       color: #3f3f3f;
       font-weight: 100;
-      text-align: center; }
+      text-align: center;
+      float: right;
+      width: 89%; }
     .alert-message .message-box form label {
       color: #3c3c3c;
       float: left;
       text-align: right;
-      padding: 11px 0;
+      padding: 11px 14px 11px 0px;
       font-size: 1.1em;
-      width: 100px; }
+      width: 130px; }
       .alert-message .message-box form label:hover {
         cursor: pointer; }
     .alert-message .message-box form input {
       border-radius: 3px;
-      border: 2px solid #ccc;
+      border: 1px solid #ccc;
       color: #b1b1b1;
       height: 35px;
-      float: right;
+      float: left;
       padding-left: 10px;
       margin: 6px 0;
       font-size: 1em;
-      width: 62%; }
+      width: 60%; }
     .alert-message .message-box form textarea {
       border-radius: 3px;
       border: 1px solid #ccc;
       padding-left: 10px;
       color: #b1b1b1;
-      float: right;
+      float: left;
       height: 150px;
-      width: 61%; }
+      width: 60%; }
     .alert-message .message-box form .clearfix {
       clear: both; }
     .alert-message .message-box form .number-l {
-      padding: 2px 0; }
+      padding: 2px 15px 2px 0; }
     .alert-message .message-box form .additionally-l {
-      padding: 0px 0; }
+      padding: 0px 0;
+      margin-right: 15px; }
     .alert-message .message-box form .phone {
       background: url("../img/icons/number.png") no-repeat;
       background-position: 10px;
       padding-left: 45px;
       margin-bottom: 12px;
-      width: 52.5%; }
+      width: 54%; }
     .alert-message .message-box form .btn {
       background: #a9a9a9;
       border-radius: 5px;
@@ -82,7 +85,7 @@
       margin: 24px auto;
       margin-bottom: 0;
       position: relative;
-      left: 49%;
+      left: 42%;
       float: none;
       padding: 1px 0;
       font-size: 1em;
@@ -92,7 +95,9 @@
       .alert-message .message-box form .btn.true {
         background: #e6b41d; }
     .alert-message .message-box form p {
-      text-align: center; }
+      text-align: center;
+      float: right;
+      width: 84%; }
     .alert-message .message-box form .red {
       color: #ca272f; }
 
@@ -361,7 +366,7 @@ html, body {
       margin-bottom: 0; }
       #section0 section p.yellow-text {
         position: relative;
-        padding-top: 45%;
+        padding-top: 44%;
         bottom: 0; }
     #section0 section #bisnesman-1 {
       background: url("../img/bisnesman-1.png") no-repeat center center;
@@ -488,7 +493,7 @@ html, body {
     display: table-cell;
     vertical-align: text-top; }
   #section1 section {
-    padding-top: 60px;
+    padding-top: 0;
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -582,7 +587,7 @@ html, body {
           font-family: "FiraSans-Book", sans-serif;
           font-size: 16px; }
         #section1 section .tab1 .description .description-item #last-img, #section1 section .tab2 .description .description-item #last-img, #section1 section .tab3 .description .description-item #last-img {
-          margin-bottom: 32px; }
+          margin-bottom: 38px; }
     #section1 section .tab2 .description {
       float: left;
       padding-left: 160px; }
@@ -595,9 +600,10 @@ html, body {
 
 #section2 {
   background: url("../img/car_park.jpg") no-repeat center #020204;
-  background-size: 150%;
+  background-size: 110%;
+  background-position: 50% -130px;
   position: relative;
-  top: 73px;
+  top: 0;
   height: 100%;
   width: 100%; }
   #section2 section {
@@ -610,7 +616,7 @@ html, body {
       #section2 section #wrapper2 .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
-        margin-top: 120px; }
+        margin-top: 40px; }
       #section2 section #wrapper2 h3 {
         background: #a9a9a9;
         border-radius: 5px;
@@ -650,13 +656,13 @@ html, body {
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
             float: left;
             width: 40%;
-            padding: 125px 40px; }
+            padding: 135px 40px; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
               width: 100%; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.jeep-big {
               padding: 75px 40px; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.cars-big {
-              padding: 125px 40px; }
+              padding: 135px 40px; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
             float: left;
             width: 25%; }
@@ -823,7 +829,7 @@ html, body {
     margin: 0 auto;
     font-family: "BloggerSans", sans-serif;
     padding: 3% 6%;
-    top: 30px;
+    top: 0;
     width: 25%;
     z-index: 2; }
     #section3 #form h2 {
@@ -916,7 +922,7 @@ html, body {
     width: 50%; }
     #section4 #car #description-contact, #section4 #car #description-contact-2 {
       padding: 17%;
-      padding-top: 26%;
+      padding-top: 25%;
       font-family: "BloggerSans", sans-serif;
       color: #fff; }
       #section4 #car #description-contact h2, #section4 #car #description-contact-2 h2 {
@@ -1112,7 +1118,7 @@ html, body {
             margin: 5px 5px;
             margin-top: 33px; }
   #section1 section {
-    padding-top: 43px;
+    padding-top: 0;
     width: 100%; }
     #section1 section #wrapper.tab1 div.tab1 {
       background: url("../img/bisness.png") no-repeat left top;
@@ -1161,7 +1167,7 @@ html, body {
         font-size: 0.9em; }
       #section2 section #wrapper2 .tabs-line {
         margin-bottom: 20px;
-        margin-top: 90px; }
+        margin-top: 20px; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
         line-height: 140%;
         font-size: 0.9em; }

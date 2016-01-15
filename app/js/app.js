@@ -225,6 +225,13 @@ var machineSelection = function() {
 
         $(".select-cars").addClass("active");
 
+        $("#section2").css({
+            "backgroundPosition": "50% -130px"
+        });
+
+        $(".big_transport").addClass("cars-big");
+        $(".big_transport").removeClass("jeep-big");
+
         function camera(){
            $(function() {
                 if( parseInt( $(window).width() ) <= 1366) {
@@ -250,7 +257,7 @@ var machineSelection = function() {
                 }
                else{
                     $("#section2").animate({ //camera mikroautobus
-                        "backgroundSize": "150%"
+                        "backgroundSize": "110%"
                     }, delay);
 
                     $(".tab2 .big_transport img").animate({
@@ -303,11 +310,18 @@ var machineSelection = function() {
 
         $(".select-micro").addClass("active");
 
+        $("#section2").css({
+            "backgroundPosition": "50% -50px"
+        });
+
+        $(".big_transport").removeClass("cars-big");
+        $(".big_transport").addClass("jeep-big");
+
             function camera(){
                 $(function() {
                     if( parseInt( $(window).width() ) <= 1366) {
                         $("#section2").animate({ //camera mikroautobus
-                            "backgroundSize": "130%"
+                            "backgroundSize": "100%"
                         }, delay);
 
                         $(".tab2 .big_transport img").animate({
@@ -321,7 +335,7 @@ var machineSelection = function() {
                     }
                     else{
                         $("#section2").animate({ //camera mikroautobus
-                            "backgroundSize": "120%"
+                            "backgroundSize": "100%"
                         }, delay);
 
 
@@ -365,11 +379,18 @@ var machineSelection = function() {
 
         $(".select-autobus").addClass("active");
 
+        $(".big_transport").removeClass("cars-big");
+        $(".big_transport").addClass("jeep-big");
+
+        $("#section2").css({
+            "backgroundPosition": "50% -50px"
+        });
+
         function camera(){
 
             if( parseInt( $(window).width() ) <= 1366) {
                 $("#section2").animate({ //camera mikroautobus
-                    "backgroundSize": "130%"
+                    "backgroundSize": "100%"
                 }, delay);
 
 
@@ -384,7 +405,7 @@ var machineSelection = function() {
             }
             else{
                 $("#section2").animate({ //camera mikroautobus
-                    "backgroundSize": "120%"
+                    "backgroundSize": "100%"
                 }, delay);
 
 
@@ -425,11 +446,20 @@ var machineSelection = function() {
 
         $(".select-g").addClass("active");
 
+        $(".big_transport").removeClass("cars-big");
+        $(".big_transport").addClass("jeep-big");
+
+        $("#section2").css({
+            "backgroundPosition": "50% -50px"
+        });
+
+
+
         function camera(){
 
             if( parseInt( $(window).width() ) <= 1366) {
                 $("#section2").animate({ //camera mikroautobus
-                    "backgroundSize": "130%"
+                    "backgroundSize": "100%"
                 }, delay);
 
                 $(".tab4 .big_transport img").animate({
@@ -442,7 +472,7 @@ var machineSelection = function() {
             }
             else{
                 $("#section2").animate({ //camera mikroautobus
-                    "backgroundSize": "120%"
+                    "backgroundSize": "100%"
                 }, delay);
 
 

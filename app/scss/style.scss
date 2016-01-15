@@ -31,8 +31,8 @@ $size: 1366px;
     font-family: $fira-medium;
     top: 25%;
     left: 50%;
-    margin-left: -250px;
-    width: 20%;
+    margin-left: -320px;
+    width: 30%;
     z-index: 101;
     .close{
       background: url("../img/icons/close.png") no-repeat center center;
@@ -49,54 +49,57 @@ $size: 1366px;
       color: #3f3f3f;
       font-weight: 100;
       text-align: center;
+      float: right;
+      width: 89%;
     }
     form {
       label {
         color: #3c3c3c;
         float: left;
         text-align: right;
-        padding: 11px 0;
+        padding: 11px 14px 11px 0px;
         font-size: 1.1em;
-        width: 100px;
+        width: 130px;
         &:hover {
           cursor: pointer;
         }
       }
       input {
         border-radius: 3px;
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
         color: #b1b1b1;
         height: 35px;
-        float: right;
+        float: left;
         padding-left: 10px;
         margin: 6px 0;
         font-size: 1em;
-        width: 62%;
+        width: 60%;
       }
       textarea {
         border-radius: 3px;
         border: 1px solid #ccc;
         padding-left: 10px;
         color: #b1b1b1;
-        float: right;
+        float: left;
         height: 150px;
-        width: 61%;
+        width: 60%;
       }
       .clearfix {
         clear: both;
       }
       .number-l{
-        padding: 2px 0;
+        padding: 2px 15px 2px 0;
       }
       .additionally-l{
         padding: 0px 0;
+        margin-right: 15px;
       }
       .phone {
         background: url("../img/icons/number.png") no-repeat;
         background-position: 10px;
         padding-left: 45px;
         margin-bottom: 12px;
-        width: 52.5%;
+        width: 54%;
       }
       .btn {
         background: #a9a9a9;
@@ -107,7 +110,7 @@ $size: 1366px;
         margin: 24px auto;
         margin-bottom: 0;
         position: relative;
-        left: 49%;
+        left: 42%;
         float: none;
         padding: 1px 0;
         font-size: 1em;
@@ -120,6 +123,8 @@ $size: 1366px;
       }
       p{
         text-align: center;
+        float: right;
+        width: 84%;
       }
       .red {
         color: #ca272f;
@@ -493,7 +498,7 @@ html, body {
       margin-bottom: 0;
       &.yellow-text {
         position: relative;
-        padding-top: 45%;
+        padding-top: 44%;
         bottom: 0;
       }
     }
@@ -659,7 +664,7 @@ html, body {
    vertical-align: text-top;
   }
   section {
-    padding-top: 60px;
+    padding-top: 0;
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -791,7 +796,7 @@ html, body {
             font-size: 16px;
           }
           #last-img{
-            margin-bottom: 32px;
+            margin-bottom: 38px;
           }
         }
       }
@@ -820,9 +825,10 @@ html, body {
 
 #section2 {
   background: url("../img/car_park.jpg") no-repeat center #020204;
-  background-size: 150%;
+  background-size: 110%;
+  background-position: 50% -130px;
   position: relative;
-  top: 73px;
+  top: 0;
   height: 100%;
   width: 100%;
   
@@ -836,7 +842,7 @@ html, body {
       .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
-        margin-top: 120px;
+        margin-top: 40px;
       }
       h3 {
         background: #a9a9a9;
@@ -883,7 +889,7 @@ html, body {
             .big_transport{
               float: left;
               width: 40%;
-              padding: 125px 40px;
+              padding: 135px 40px;
               img{
                 width: 100%;
               }
@@ -891,7 +897,7 @@ html, body {
                 padding: 75px 40px;
               }
               &.cars-big{
-                padding: 125px 40px;
+                padding: 135px 40px;
               }
             }
             .description_transport{
@@ -1112,7 +1118,7 @@ html, body {
     margin: 0 auto;
     font-family: $blogger;
     padding: 3% 6%;
-    top: 30px;
+    top: 0;
     width: 25%;
     z-index: 2;
     h2 {
@@ -1225,7 +1231,7 @@ html, body {
 
     #description-contact, #description-contact-2 {
       padding: 17%;
-      padding-top: 26%;
+      padding-top: 25%;
       font-family: $blogger;
       color: #fff;
       h2 {
