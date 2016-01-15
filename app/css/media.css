@@ -810,7 +810,7 @@
     width: 100%;
     top: 0; }
     #section1 section {
-      padding-top: 20px;
+      padding-top: 45px;
       padding-bottom: 120px;
       position: relative;
       text-align: center;
@@ -907,10 +907,11 @@
       #section1 section .clearfix {
         clear: both; }
   #section2 {
-    top: 20px; }
+    top: 60px; }
     #section2 section {
       position: relative;
-      top: 20px;
+      top: 60px;
+      margin-bottom: 50px;
       width: 90%; }
       #section2 section #wrapper2 h3 {
         font-size: 0.9em; }
