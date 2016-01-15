@@ -162,11 +162,21 @@ function animLoad() {
 
 function hideAnim() {
 
-    $("#home").animate({
-        "height": "73px"
-    }, speedHome, function() {
-        $("#bg2").css({"display": "none"});
-    });
+    if( parseInt( $(window).width() ) >= 1366) {
+        $("#home").animate({
+            "height": "73px"
+        }, speedHome, function() {
+            $("#bg2").css({"display": "none"});
+        });
+    }else{
+        $("#home").animate({
+            "height": "45px"
+        }, speedHome, function() {
+            $("#bg2").css({"display": "none"});
+        });
+    }
+
+
     pages();
 }
 
