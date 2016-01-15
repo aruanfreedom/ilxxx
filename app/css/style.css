@@ -129,12 +129,12 @@
   #home #bg2 {
     background: url("../img/bg2.png") no-repeat center center;
     background-size: cover;
-    animation: logo 4s ease-in 1; }
+    animation: bg 4s ease-in 1; }
   #home #logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
-    animation: logo 4s ease-in 1;
+    animation: logo 5s ease-in 4s 1;
     margin: 0 auto;
     height: 421px;
     width: 400px; }
@@ -148,9 +148,26 @@
       top: 0;
       left: 0;
       transform: translate(60px, 110px);
+      opacity: 0;
       width: 0%; }
 
 @keyframes logo {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 1; }
+  90% {
+    transform: translate(0, 0px); }
+  95% {
+    opacity: 1;
+    position: relative; }
+  100% {
+    opacity: 0;
+    position: fixed;
+    transform: translate(-50px, -480px) scale(0.1);
+    z-index: 200; } }
+
+@keyframes bg {
   0% {
     opacity: 0; }
   100% {
@@ -158,6 +175,7 @@
 
 @keyframes shine {
   0% {
+    opacity: 1;
     transform: translate(-10px, -120px);
     width: 40%; }
   10% {
@@ -186,9 +204,11 @@
     width: 70%; }
   90% {
     transform: translate(0px, 130px);
-    width: 40%; }
+    width: 40%;
+    opacity: 1; }
   100% {
     transform: translate(15px, 110px);
+    opacity: 0;
     width: 0%; } }
 
 #group {
@@ -220,8 +240,10 @@ html, body {
     #menu nav ul {
       float: left;
       padding: 0; }
-      #menu nav ul.left li.center-v {
-        margin-left: 5px; }
+      #menu nav ul.left {
+        opacity: 0; }
+        #menu nav ul.left li.center-v {
+          margin-left: 5px; }
       #menu nav ul.center li.center-v {
         padding-top: 10px; }
         #menu nav ul.center li.center-v.active a {
@@ -234,34 +256,36 @@ html, body {
             background-size: 100%; }
       #menu nav ul.center li a {
         font-family: "FiraSans-Thin", sans-serif; }
-      #menu nav ul.right li.center-v {
-        padding-top: 5px; }
-        #menu nav ul.right li.center-v.active a {
-          background: url("../img/light-cursor.png") no-repeat center center;
-          background-size: 100%; }
-        #menu nav ul.right li.center-v a {
-          padding: 0 10px; }
-          #menu nav ul.right li.center-v a:hover {
-            background: url("../img/light-lang.png") no-repeat center center;
-            background-size: cover; }
-      #menu nav ul.right li.btn-yellow {
-        background: #e6b41d;
-        border-radius: 3px;
-        padding: 6% 0;
-        margin-left: 10px;
-        position: relative;
-        text-align: center;
-        width: 140px; }
-        #menu nav ul.right li.btn-yellow.active {
-          background: url("../img/light-lang.png") no-repeat center center #e6b41d;
-          background-size: 150%; }
-        #menu nav ul.right li.btn-yellow:focus {
-          background: #d0a114; }
-        #menu nav ul.right li.btn-yellow:hover {
-          background: url("../img/light-lang.png") no-repeat center center #e6b41d;
-          background-size: 150%; }
-        #menu nav ul.right li.btn-yellow a:hover {
-          background: none; }
+      #menu nav ul.right {
+        opacity: 0; }
+        #menu nav ul.right li.center-v {
+          padding-top: 5px; }
+          #menu nav ul.right li.center-v.active a {
+            background: url("../img/light-cursor.png") no-repeat center center;
+            background-size: 100%; }
+          #menu nav ul.right li.center-v a {
+            padding: 0 10px; }
+            #menu nav ul.right li.center-v a:hover {
+              background: url("../img/light-lang.png") no-repeat center center;
+              background-size: cover; }
+        #menu nav ul.right li.btn-yellow {
+          background: #e6b41d;
+          border-radius: 3px;
+          padding: 6% 0;
+          margin-left: 10px;
+          position: relative;
+          text-align: center;
+          width: 140px; }
+          #menu nav ul.right li.btn-yellow.active {
+            background: url("../img/light-lang.png") no-repeat center center #e6b41d;
+            background-size: 150%; }
+          #menu nav ul.right li.btn-yellow:focus {
+            background: #d0a114; }
+          #menu nav ul.right li.btn-yellow:hover {
+            background: url("../img/light-lang.png") no-repeat center center #e6b41d;
+            background-size: 150%; }
+          #menu nav ul.right li.btn-yellow a:hover {
+            background: none; }
       #menu nav ul li {
         color: #fff;
         float: left;
@@ -272,9 +296,11 @@ html, body {
         #menu nav ul li.number-v {
           padding-top: 1px; }
         #menu nav ul li.center-v {
+          opacity: 0;
           padding-top: 2px; }
         #menu nav ul li.logo-min {
-          margin-top: -8px; }
+          margin-top: -8px;
+          opacity: 0; }
         #menu nav ul li a {
           color: #fff;
           font-size: 13px;
@@ -290,6 +316,12 @@ html, body {
       position: absolute;
       font-size: 13px;
       left: 38%; }
+
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 #section0 {
   background: url("../img/bg-2.jpg") no-repeat center center #111519;

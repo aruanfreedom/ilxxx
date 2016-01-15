@@ -166,13 +166,13 @@ $size: 1366px;
   #bg2 {
     background: url("../img/bg2.png") no-repeat center center;
     background-size: cover;
-    animation: logo 4s ease-in 1;
+    animation: bg 4s ease-in 1;
   }
   #logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
-    animation: logo 4s ease-in 1;
+    animation: logo 5s ease-in 4s 1;
     margin: 0 auto;
     height: 421px;
     width: 400px;
@@ -187,7 +187,8 @@ $size: 1366px;
       top: 0;
       left: 0;
       transform: translate(60px, 110px);
-       width: 0%;
+      opacity: 0;
+      width: 0%;
     }
   }
 }
@@ -195,6 +196,28 @@ $size: 1366px;
 ///*Animation*/
 // 
 @keyframes logo {
+  0% {
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+  }
+  90%{
+    transform: translate(0, 0px);
+  }
+  95%{
+    opacity: 1;
+    position: relative;
+  }
+  100% {
+    opacity: 0;
+    position: fixed;
+    transform: translate(-50px, -480px) scale(0.1);
+    z-index: 200;
+  }
+}
+
+@keyframes bg {
   0% {
     opacity: 0;
   }
@@ -204,7 +227,8 @@ $size: 1366px;
 }
 
 @keyframes shine {
-  0% {    
+  0% {
+    opacity: 1;
     transform: translate(-10px, -120px);
     width: 40%;
   }
@@ -243,9 +267,11 @@ $size: 1366px;
   90% {
     transform: translate(0px, 130px);
     width: 40%;
+    opacity: 1;
   }
   100% {
     transform: translate(15px, 110px);
+    opacity: 0;
     width: 0%;
   }
 }
@@ -285,6 +311,7 @@ html, body {
       float: left;
       padding: 0;
       &.left {
+        opacity: 0;
         li {
           &.center-v {
             margin-left: 5px;
@@ -315,6 +342,7 @@ html, body {
         }
       }
       &.right {
+        opacity: 0;
         li {
           &.center-v {
             padding-top: 5px;
@@ -351,17 +379,6 @@ html, body {
           &:hover {
             background: url("../img/light-lang.png") no-repeat center center #e6b41d;
             background-size: 150%;
-            //&:after{
-            //  content: "";
-            //  cursor: pointer;
-            //  background: url("../img/light-lang.png") no-repeat center center ;
-            //  background-size: 100% 100%;
-            //  position: absolute;
-            //  top: -25px;
-            //  left: -10px;
-            //  height: 90px;
-            //  width: 160px;
-            //}
           }
 
           a {
@@ -382,10 +399,12 @@ html, body {
           padding-top: 1px;
         }
         &.center-v {
+          opacity: 0;
           padding-top: 2px;
         }
         &.logo-min {
           margin-top: -8px;
+          opacity: 0;
         }
         a {
           color: #fff;
@@ -409,6 +428,16 @@ html, body {
       left: 38%;
     }
   }
+
+  @keyframes fadeInMenu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 }
 
 #section0 {

@@ -1,5 +1,25 @@
 var pages = function() {
 
+    //Animate menu-header
+
+    var animMenu = function() {
+        $(".center-v, .left, .right").animate({
+            "opacity": 1
+        }, 2000);
+    };
+
+    var animMenuLogo = function() {
+        $(".logo-min").animate({
+            "opacity": 1
+        }, 1000);
+        animMenu();
+    };
+
+
+    setTimeout(animMenuLogo, 900);
+
+    //End Animate menu-header
+
     //gallery
     var animText = function() {
         $("#bisnesman-1 h3, span").css("opacity", 1);
@@ -24,14 +44,10 @@ var pages = function() {
         var btn = $(".btn");
         // Разрешаем: backspace, delete, tab и escape
         if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
-                // Разрешаем: Ctrl+A
             (event.keyCode == 65 && event.ctrlKey === true) ||
-                // Разрешаем: home, end, влево, вправо
             (event.keyCode >= 35 && event.keyCode <= 39)) {
-            // Ничего не делаем
             return;
         } else {
-            // Обеждаемся, что это цифра, и останавливаем событие keypress
             if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
                 event.preventDefault();
             }
@@ -86,7 +102,7 @@ function animLoad() {
     function hideAnim() {
         $("#home").animate({
             "height": "0"
-        }, 1000, function() {
+        }, 600, function() {
             $("#home").hide();
         });
         pages();
@@ -106,7 +122,6 @@ var machineSelection = function() {
 
     $(".scrollingHotSpotLeft").hover(function(){
         return false;
-        console.log("left");
     });
 
     $(".jeep-mini").on("click", function() {
