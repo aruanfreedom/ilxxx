@@ -701,13 +701,13 @@
     background: url("../img/bg-2-min.jpg") no-repeat center center #111519;
     background-size: cover;
     position: relative;
-    top: 140px;
+    top: 0;
     height: 100%;
     width: 100%;
     z-index: 1; }
     #section0 section {
       position: relative;
-      top: 45px;
+      top: 0;
       text-align: center;
       color: #fff;
       margin: 0 auto;
@@ -808,9 +808,9 @@
     position: relative;
     padding-bottom: 90px;
     width: 100%;
-    top: 145px; }
+    top: 0; }
     #section1 section {
-      padding-top: 90px;
+      padding-top: 20px;
       padding-bottom: 120px;
       position: relative;
       text-align: center;
@@ -907,16 +907,18 @@
       #section1 section .clearfix {
         clear: both; }
   #section2 {
-    top: 100px; }
+    top: 20px; }
     #section2 section {
       position: relative;
-      top: 120px;
+      top: 20px;
       width: 90%; }
       #section2 section #wrapper2 h3 {
         font-size: 0.9em; }
       #section2 section #wrapper2 .tabs-line {
         margin-bottom: 30px;
-        margin-top: 0; }
+        margin-top: 0;
+        font-size: 0.9em;
+        width: 160px; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description {
         display: none; }
         #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
@@ -971,36 +973,38 @@
       left: 3%;
       margin-left: 0;
       width: 88%; }
-  #section3 #form-left-bg {
-    display: none; }
-  #section3 #form-right-bg {
-    display: none; }
-  #section3 #form {
-    top: 20px;
-    width: 90%; }
-    #section3 #form h2 {
-      font-size: 1.2em;
-      float: right;
-      margin: 0 auto;
-      width: 300px; }
-    #section3 #form form {
-      display: inline-block; }
-      #section3 #form form label {
-        font-size: 0.75em;
-        width: 59px; }
-      #section3 #form form input {
+  #section3 {
+    background: #fff; }
+    #section3 #form-left-bg {
+      display: none; }
+    #section3 #form-right-bg {
+      display: none; }
+    #section3 #form {
+      top: 0px;
+      width: 90%; }
+      #section3 #form h2 {
+        font-size: 1.2em;
         float: right;
-        padding-left: 10px;
-        margin: 6px 0;
-        font-size: 0.6em;
-        width: 68%; }
-      #section3 #form form .phone {
-        width: 57%; }
-      #section3 #form form textarea {
-        height: 85px;
-        width: 67.4%; }
-    #section3 #form p {
-      width: 320px; }
+        margin: 0 auto;
+        width: 300px; }
+      #section3 #form form {
+        display: inline-block; }
+        #section3 #form form label {
+          font-size: 0.75em;
+          width: 59px; }
+        #section3 #form form input {
+          float: right;
+          padding-left: 10px;
+          margin: 6px 0;
+          font-size: 0.6em;
+          width: 68%; }
+        #section3 #form form .phone {
+          width: 57%; }
+        #section3 #form form textarea {
+          height: 85px;
+          width: 67.4%; }
+      #section3 #form p {
+        width: 320px; }
   #section4 {
     background: #1E1E1E; }
     #section4 #car {
@@ -1008,7 +1012,7 @@
       width: 100%; }
       #section4 #car #description-contact, #section4 #car #description-contact-2 {
         padding: 5%;
-        padding-top: 30%; }
+        padding-top: 15%; }
         #section4 #car #description-contact h2, #section4 #car #description-contact-2 h2 {
           color: #fff;
           text-align: center;

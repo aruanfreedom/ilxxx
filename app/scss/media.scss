@@ -1023,14 +1023,14 @@
                     background-size: cover;
                     //display: none;
                     position: relative;
-                    top: 140px;
+                    top: 0;
                     height: 100%;
                     width: 100%;
                     z-index: 1;
 
                     section {
                         position: relative;
-                        top: 45px;
+                        top: 0;
                         text-align: center;
                         color: #fff;
                         margin: 0 auto;
@@ -1156,10 +1156,10 @@
                     position: relative;
                     padding-bottom: 90px;
                     width: 100%;
-                    top: 145px;
+                    top: 0;
 
                     section {
-                        padding-top: 90px;
+                        padding-top: 20px;
                         padding-bottom: 120px;
                         position: relative;
                         text-align: center;
@@ -1308,10 +1308,10 @@
                     }
                 }
                 #section2 {
-                    top: 100px;
+                    top: 20px;
                     section {
                         position: relative;
-                        top: 120px;
+                        top: 20px;
                         width: 90%;
                         #wrapper2 {
                             h3 {
@@ -1320,6 +1320,8 @@
                             .tabs-line {
                                 margin-bottom: 30px;
                                 margin-top: 0;
+                                font-size:0.9em;
+                                width: 160px;
                             }
                             .tab1, .tab2, .tab3, .tab4 {
                                 .gallery_avto {
@@ -1409,6 +1411,7 @@
                     }
                 }
                 #section3 {
+                    background: #fff;
 
                     #form-left-bg {
                         display: none;
@@ -1417,7 +1420,7 @@
                         display: none;
                     }
                     #form {
-                        top: 20px;
+                        top: 0px;
                         width: 90%;
                         h2 {
                             font-size: 1.2em;
@@ -1461,7 +1464,7 @@
 
                         #description-contact, #description-contact-2 {
                             padding: 5%;
-                            padding-top: 30%;
+                            padding-top: 15%;
                             h2 {
                                 color: #fff;
                                 text-align: center;
