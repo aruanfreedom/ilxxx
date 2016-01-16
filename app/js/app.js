@@ -41,7 +41,8 @@ var pages = function() {
             "opacity": 1
         }, animMenuDelay);
         $("#logoAnim").css({
-            "width" : "49px"
+            "width" : "49px",
+            "marginTop" : "-6px"
         });
     };
 
@@ -427,7 +428,7 @@ var machineSelection = function() {
     });
 
     $("#tab3").on("click", function() {
-        $(".big_transport img").attr("src", "img/cars/car_18_big.png");
+        $(".big_transport img").attr("src", "img/cars/car_19_big.png");
 
         $(".select-autobus").addClass("active");
 
@@ -484,7 +485,7 @@ var machineSelection = function() {
         status_des.html("Автобус");
         status_des_p.html("<p>Это отличный выбор для корпоративных, туристических (экскурсионных) поездок.</p><p>Вы получаете высокий уровень сервиса и арендуете комфортабельное  транспортное средство, предназначенное для перевозок пассажиров в средних и больших количествах.</p><p>Предоставляем услуги по развозке персонала и организуем встречи гостей, деятелей культуры и официальных делегаций.</p>");
 
-        $('.description_transport h2').html("Volvo");
+        $('.description_transport h2').html("Setra");
         $('.description_transport .year').html("от 1999");
         $('.description_transport .body').html("Туристический / международный");
         $('.description_transport .place').html("45 - 50");

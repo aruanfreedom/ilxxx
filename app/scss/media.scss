@@ -238,6 +238,7 @@
                             .punkt-2 {
                                 background: url("../img/puncts/punkt-2.png") no-repeat right;
                                 background-size: 100%;
+                                padding-right: 20px;  
                                 top: 150px;
                                 right: 165px;
                                 h3 {
@@ -292,19 +293,28 @@
                             }
                             .punkt-1 {
                                 left: 140px;
+                                padding-left: 20px;
+                                h3 { 
+                                    margin-left: 0;
+                                }
+                                span {
+                                    margin-left: 0;
+                                }
                             }
                             .punkt-2 {
                                 background: url("../img/puncts/punkt-5.png") no-repeat left;
                                 background-size: 100%;
                                 top: 190px;
                                 left: 115px;
+                                padding-left: 30px;
                                 h3 {
                                     margin: 5px 5px;
-                                    margin-top: 33px;
+                                    margin-top: 39px;
+                                    margin-bottom: 0px;
                                 }
                                 span {
                                     font-size: 12px;
-                                    margin-left: 20px;
+                                    margin-left: 0;
                                 }
                             }
                         }
@@ -356,7 +366,7 @@
                                 }
 
                                 .description-item {
-                                    padding-bottom: 9px;
+                                    padding-bottom: 13px;
                                     P{
                                         font-size: 0.9em;
                                     }
