@@ -1,9 +1,562 @@
-            @media only screen and (min-width: 1920px) {}
+            @media only screen and (min-width: 1920px) {
+                #section2 {
+                    section {
+                        #wrapper2 {
+                            .tab1, .tab2, .tab3, .tab4 {
+                                .gallery_avto {
+                                    .panel {
+                                        .bottom_panel {
+                                            top: 400px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             
             @media only screen and (max-width: 1366px) {
+                @keyframes logo {
+                    0% {
+                        opacity: 1;
+                    }
+                    20%{
+                        opacity: 1;
+                    }
+                    70%{
+                        transform: translate(0, 0px);
+                    }
+                    90%{
+
+                    }
+                    95%{
+
+                    }
+                    100% {
+                        transform: translate(0px, -235px) scale(0.1);
+                    }
+                }
+                #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4{
+                    width:100%;
+                    margin:0 auto;
+                    display:block;
+                    position:relative;
+                    height:310px;
+                }
+                .part{
+                    width: 220px;
+                }
+                div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
+                    height: 70%;
+                }
+                .alert-message {
+                    .message-box{
+                        background: #fff;
+                        box-shadow: 0 0 13px 0 #fff;
+                        padding: 5px;
+                        position: fixed;
+                        top: 13%;
+                        left: 50%;
+                        margin-left: -290px;
+                        width: 43%;
+                        z-index: 101;
+                        .close{
+                            background: url("../img/icons/close.png") no-repeat center center;
+                            position: absolute;
+                            right: 5px;
+                            top: 5px;
+                            height: 32px;
+                            width: 32px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        h2{
+                            color: #3f3f3f;
+                            font-weight: 100;
+                            text-align: center;
+                            float: right;
+                            width: 89%;
+                        }
+                        form {
+                            label {
+                                color: #3c3c3c;
+                                float: left;
+                                text-align: right;
+                                padding: 11px 14px 11px 0px;
+                                font-size: 1.1em;
+                                width: 130px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                            input {
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                                color: #b1b1b1;
+                                height: 35px;
+                                float: left;
+                                padding-left: 10px;
+                                margin: 6px 0;
+                                font-size: 1em;
+                                width: 60%;
+                            }
+                            textarea {
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                                padding-left: 10px;
+                                color: #b1b1b1;
+                                float: left;
+                                height: 150px;
+                                width: 60%;
+                            }
+                            .clearfix {
+                                clear: both;
+                            }
+                            .number-l{
+                                padding: 2px 15px 2px 0;
+                            }
+                            .additionally-l{
+                                padding: 0px 0;
+                                margin-right: 15px;
+                            }
+                            .phone {
+                                background: url("../img/icons/number.png") no-repeat;
+                                background-position: 10px;
+                                padding-left: 45px;
+                                margin-bottom: 12px;
+                                width: 54%;
+                            }
+                            .btn {
+                                background: #a9a9a9;
+                                border-radius: 5px;
+                                border: none;
+                                cursor: pointer;
+                                color: #fff;
+                                margin: 24px auto;
+                                margin-bottom: 0;
+                                position: relative;
+                                left: 42%;
+                                float: none;
+                                padding: 1px 0;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                                height: 57px;
+                                width: 32%;
+                                &.true{
+                                    background: #e6b41d;
+                                }
+                            }
+                            p{
+                                text-align: center;
+                                float: right;
+                                width: 84%;
+                            }
+                            .red {
+                                color: #ca272f;
+                            }
+                        }
+                    }
+                }
+                @keyframes punkt {
+                    0% {
+                        opacity: 0;
+                        width: 8px;
+                    }
+                    50% {
+                        opacity: 1;
+                        width: 8px;
+                    }
+                    100% {
+                        width: 300px;
+                    }
+                }
+                #home {
+                    table {
+                        height: 40em;
+                        .center-td {
+                            padding-top: 4%;
+                        }
+                    }
+                    #logo{
+                        animation: logo 6s ease-in 4s 1;
+                    }
+                }
+                #menu {
+                    nav {
+                        .center {
+                            left: 34.3%;
+                        }
+                        ul{
+                            li{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+                #section0 {
+                    background-position: -95px -59px;
+                    top: 0;
+                    section {
+                        top: 0;
+                        width: 65%;
+                        h2 {
+                            font-size: 30px;
+                        }
+                        p {
+                            font-size: 14px;
+                            margin: 0;
+                            &.yellow-text {
+                                padding-top: 290px;
+                            }
+                        }
+                        #bisnesman-1 {
+                            background-size: 100%;
+                            height: 370px;
+                            width: 230px;
+                            .punkt-1,
+                            .punkt-2,
+                            .punkt-3 {
+                                background: url("../img/puncts/punkt-1.png") no-repeat right;
+                                background-size: 100%;
+                                right: 150px;
+                                top: -20px;
+                                height: 115px;
+                                width: 300px;
+                                h3 {
+                                    font-size: 18px;
+                                    margin: 0;
+                                    margin-top: 30px;
+                                    margin-left: -10px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    margin-left: -10px;
+                                }
+                            }
+                            .punkt-2 {
+                                background: url("../img/puncts/punkt-2.png") no-repeat right;
+                                background-size: 100%;
+                                top: 150px;
+                                right: 165px;
+                                h3 {
+                                    margin: 5px 0;
+                                    margin-top: 33px;
+                                }
+                                span {
+                                    margin-left: -2px;
+                                }
+                            }
+                            .punkt-3 {
+                                background: url("../img/puncts/punkt-3.png") no-repeat right;
+                                background-size: 100%;
+                                top: 250px;
+                                right: 180px;
+                                h3 {
+                                    margin: 5px 0;
+                                    margin-top: 53px;
+                                    margin-left: -55px;
+                                }
+                                span {
+                                    margin-left: -60px;
+                                }
+                            }
+                        }
+                        #bisnesman-2 {
+                            background-size: 100%;
+                            right: 92px;
+                            height: 370px;
+                            width: 178px;
+                            .punkt-1,
+                            .punkt-2 {
+                                animation: punkt 3s ease-in-out;
+                                background: url("../img/puncts/punkt-4.png") no-repeat left;
+                                background-size: 100%;
+                                position: absolute;
+                                top: 30px;
+                                overflow: hidden;
+                                height: 115px;
+                                width: 300px;
+                                h3 {
+                                    font-size: 18px;
+                                    margin: 0 5px;
+                                    margin-top: 30px;
+                                    margin-left: 30px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    margin-left: 30px;
+                                    opacity: 0;
+                                }
+                            }
+                            .punkt-1 {
+                                left: 140px;
+                            }
+                            .punkt-2 {
+                                background: url("../img/puncts/punkt-5.png") no-repeat left;
+                                background-size: 100%;
+                                top: 190px;
+                                left: 115px;
+                                h3 {
+                                    margin: 5px 5px;
+                                    margin-top: 33px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    margin-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                #section1 {
+                    section {
+                        padding-top: 0;
+                        width: 100%;
+                        #wrapper.tab1 div.tab1 {
+                            background: url("../img/bisness.png") no-repeat left top;
+                            background-size: 43%;
+                            background-position: 80px;
+                            display: block;
+                            width: 100%;
+                        }
+                        #wrapper.tab2 div.tab2 {
+                            background: url("../img/family.png") no-repeat right top;
+                            background-size: 39%;
+                            background-position: 540px;
+                            display: block;
+                            width: 100%;
+                        }
+                        #wrapper.tab3 div.tab3 {
+                            background: url("../img/turism.png") no-repeat left top;
+                            background-size: 37%;
+                            background-position: 220px;
+                            display: block;
+                            width: 100%;
+                        }
+
+                        h2 {
+                            margin: 11px 0;
+                        }
+                        #wrapper {
+                            h3 {
+                                font-size: 22px;
+                            }
+                            .tabs-line {
+                                display: inline-block;
+                                margin-bottom: 15px;
+                            }
+                        }
+                        .tab1, .tab2, .tab3 {
+                            .description {
+                                padding: 0px 200px;
+                                .h4{
+                                    font-size: 1.6em;
+                                }
+
+                                .description-item {
+                                    padding-bottom: 9px;
+                                    P{
+                                        font-size: 0.9em;
+                                    }
+                                    img {
+                                        width: 35px;
+                                        margin-bottom: 12px;
+                                    }
+                                    small {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #section2 {
+                    background: url("../img/car_park.jpg") no-repeat center #020204;
+                    background-size: 110%;
+                    background-position: 50% -130px;
+                    section {
+                        width: 90%;
+                        #wrapper2 {
+                            h3 {
+                                font-size: 0.9em;
+                            }
+                            .tabs-line {
+                                margin-bottom: 20px;
+                                margin-top: 20px;
+                            }
+                            .tab1, .tab2, .tab3, .tab4 {
+                                .gallery_avto {
+                                    .panel {
+                                        .status-description {
+                                            p {
+                                                line-height: 140%;
+                                                font-size: 0.9em;
+                                            }
+                                            h2 {
+                                                font-size: 1.1em;
+                                                font-weight: 100;
+                                            }
+                                        }
+                                        .big_transport {
+                                            padding: 75px 40px;
+                                            padding-bottom: 0;
+                                            width: 40%;
+                                            img {
+                                                width: 85%;
+                                                height: auto;
+                                            }
+                                            &.jeep-big{
+                                                padding: 65px 40px;
+                                            }
+                                            &.cars-big{
+                                                padding: 75px 40px;
+                                            }
+                                        }
+                                        .description_transport {
+                                            width: 26%;
+                                            h2 {
+                                                font-size: 1.2em;
+                                            }
+                                            .line-info {
+                                                padding-top: 0;
+                                                .right {
+                                                    font-size: 0.8em;
+                                                    width: 160px;
+                                                }
+                                            }
+                                        }
+                                        .bottom_panel {
+                                          top: 288px;
+                                            &.gruz{
+                                                top: 270px;
+                                            }
+                                            .part {
+                                                .box_transport {
+                                                    h2 {
+                                                        font-size: 1em;
+                                                    }
+                                                    .status_transport{
+                                                        padding: 3px 10px;
+                                                    }
+                                                    ul {
+                                                        margin: 0;
+                                                        li {
+                                                            font-size: 0.75em;
+                                                        }
+                                                    }
+                                                    img {
+                                                        height: 50px;
+                                                    }
+                                                    &.active{
+                                                        box-shadow: 0 0 20px 0 #fff;
+                                                    }
+                                                    &:hover{
+                                                        box-shadow: 0 0 20px 0 #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #section3 {
+                    #form-left-bg {
+                        background: url("../img/bid.png") no-repeat;
+                        background-position: center 237px;
+                        background-size: 38%;
+                        left: -400px;
+                    }
+                    #form-right-bg {
+                        background: url("../img/bid-right.png") no-repeat;
+                        background-position: 890px 250px;
+                        background-size: 33%;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                    #form {
+                        padding: 0 5%;
+                        width: 35%;
+                        h2 {
+                            margin: 0;
+                            padding: 10px 0;
+                        }
+                        form {
+                            textarea {
+                                height: 100px;
+                            }
+                            .btn {
+                                margin: 15px auto;
+                            }
+                        }
+                        p {
+                            margin-top: 0;
+                        }
+                    }
+                }
+                #section4 {
+                    #car {
+                        #description-contact {
+                            padding-top: 21%;
+                            h2 {
+                                padding-top: 5px;
+                                font-size: 1em;
+                            }
+                            .line-info {
+                                border-bottom: 1px solid #4e4e4e;
+                                padding: 5px 0;
+                                color: #fff;
+                                font-size: 1.1em;
+                                text-align: left;
+                                &.none-line {
+                                    border-bottom: none;
+                                    padding-top: 8px;
+                                    .left {
+                                        padding-top: 8px;
+                                    }
+                                }
+                                .left {
+                                    float: left;
+                                    font-size: 0.75em;
+                                }
+                                .right {
+                                    font-size: 0.75em;
+                                    float: right;
+                                    width: 220px;
+                                    a {
+                                        color: #2e79cc;
+                                    }
+                                }
+                            }
+                        }
+                        #description-contact-2 {
+                            padding: 0 10%;
+                            padding-top: 15px;
+                            .line-info {
+                                .right {
+                                    width: 120px;
+                                }
+                            }
+                        }
+                    }
+                }
+                #tel-icon {
+                    bottom: 15px;
+                    right: 50px;
+                }
+            }
+            @media only screen and (max-width: 1280px) {
                 .alert-message {
                     .message-box {
-                        top: 10%;
+                        top: 2%;
                         margin-left: -200px;
                         width: 28%;
                     }
@@ -48,7 +601,7 @@
                             font-size: 14px;
                             margin: 0;
                             &.yellow-text {
-                                padding-top: 290px;
+                                padding-top: 255px;
                             }
                         }
                         #bisnesman-1 {
@@ -166,7 +719,7 @@
                         }
 
                         h2 {
-                            margin-bottom: 20px;
+                            margin-bottom: 5px;
                         }
                         #wrapper {
                             h3 {
@@ -174,14 +727,14 @@
                             }
                             .tabs-line {
                                 display: inline-block;
-                                margin-bottom: 30px;
+                                margin-bottom: 10px;
                             }
                         }
                         .tab1, .tab2, .tab3 {
                             .description {
                                 padding: 10px 200px;
-                                h4{
-                                    font-size: 1em;
+                                .h4{
+                                    font-size: 1.2em;
                                 }
 
                                 .description-item {
@@ -206,7 +759,7 @@
                         width: 90%;
                         #wrapper2 {
                             h3 {
-                                font-size: 0.9em;
+                                font-size: 0.8em;
                             }
                             .tabs-line {
                                 margin-bottom: 20px;
@@ -226,12 +779,18 @@
                                             }
                                         }
                                         .big_transport {
-                                            padding: 53px 40px;
+                                            padding: 37px 40px;
                                             padding-bottom: 0;
                                             width: 40%;
                                             img {
                                                 width: 100%;
                                                 height: 272px;
+                                            }
+                                            &.jeep-big{
+                                                padding: 0 40px;
+                                            }
+                                            &.cars-big{
+                                                padding: 50px 40px;
                                             }
                                         }
                                         .description_transport {
@@ -245,10 +804,16 @@
                                                     font-size: 0.7em;
                                                     width: 160px;
                                                 }
+                                                .left{
+                                                    font-size: 0.8em;
+                                                }
                                             }
                                         }
                                         .bottom_panel {
-                                          top: 272px;
+                                          top: 233px;
+                                            &.gruz{
+                                                padding-top: 25px;
+                                            }
                                             .part {
                                                 .box_transport {
                                                     h2 {
@@ -261,9 +826,21 @@
                                                         }
                                                     }
                                                     img {
-                                                        height: 50px;
+                                                        height: 40px;
+                                                    }
+                                                    .status_transport{
+                                                        padding: 2px 10px;
                                                     }
                                                 }
+                                            }
+                                            div.scrollingHotSpotLeft{
+                                                height: 75%;
+                                            }
+                                            div.scrollingHotSpotRight{
+                                                height: 75%;
+                                            }
+                                            .part{
+                                                width: 215px;
                                             }
                                         }
                                     }
@@ -313,14 +890,14 @@
                 #section4 {
                     #car {
                         #description-contact {
-                            padding-top: 21%;
+                            padding-top: 18%;
                             h2 {
                                 padding-top: 5px;
                                 font-size: 1em;
                             }
                             .line-info {
                                 border-bottom: 1px solid #4e4e4e;
-                                padding: 5px 0;
+                                padding: 3px 0;
                                 color: #fff;
                                 font-size: 1.1em;
                                 text-align: left;
@@ -361,7 +938,7 @@
                     right: 50px;
                 }
             }
-            
+
             @media only screen and (max-width: 980px) {}
             
             @media only screen and (max-width: 800px) {}
@@ -396,7 +973,7 @@
                         background: url("../img/logo.png") no-repeat center center;
                         background-size: 100%;
                         position: relative;
-                        animation: logo 4s ease-in 1;
+                        animation: logoFalse 4s ease-in 1;
                         margin: 0 auto;
                         height: 421px;
                         width: 100%;
@@ -446,14 +1023,14 @@
                     background-size: cover;
                     //display: none;
                     position: relative;
-                    top: 140px;
+                    top: 0;
                     height: 100%;
                     width: 100%;
                     z-index: 1;
 
                     section {
                         position: relative;
-                        top: 45px;
+                        top: 0;
                         text-align: center;
                         color: #fff;
                         margin: 0 auto;
@@ -577,11 +1154,13 @@
                 #section1 {
                     background: #fbfbfb;
                     position: relative;
+                    padding-bottom: 90px;
                     width: 100%;
-                    top: 100px;
+                    top: 0;
 
                     section {
-                        padding-top: 60px;
+                        padding-top: 45px;
+                        padding-bottom: 120px;
                         position: relative;
                         text-align: center;
                         margin: 0 auto;
@@ -593,7 +1172,7 @@
                             font-weight: 100;
                             font-size: 1.3em;
                             margin: 0;
-                            margin-bottom: 35px;
+                            margin-bottom: 10px;
                         }
                         #wrapper {
                             .tabs-line {
@@ -689,7 +1268,7 @@
                                 }
                                 .description-item {
                                     text-align: left;
-                                    padding-bottom: 10px;
+                                    padding-bottom: 15px;
                                     img {
                                         float: left;
                                         margin-right: 15px;
@@ -729,9 +1308,11 @@
                     }
                 }
                 #section2 {
+                    top: 60px;
                     section {
                         position: relative;
-                        top: 120px;
+                        top: 60px;
+                        margin-bottom: 50px;
                         width: 90%;
                         #wrapper2 {
                             h3 {
@@ -740,6 +1321,8 @@
                             .tabs-line {
                                 margin-bottom: 30px;
                                 margin-top: 0;
+                                font-size:0.9em;
+                                width: 160px;
                             }
                             .tab1, .tab2, .tab3, .tab4 {
                                 .gallery_avto {
@@ -780,7 +1363,7 @@
                                             }
                                         }
                                         .bottom_panel {
-                                            bottom: 0;
+                                            top: 50px;
                                             .part {
                                                 .box_transport {
                                                     h2 {
@@ -796,6 +1379,12 @@
                                                         height: 50px;
                                                     }
                                                 }
+                                            }
+                                            div.scrollingHotSpotLeft{
+                                                height: 75%;
+                                            }
+                                            div.scrollingHotSpotRight{
+                                                height: 75%;
                                             }
                                         }
                                     }
@@ -816,13 +1405,14 @@
                     display: none;
                     .message-box{
                         padding: 10px;
-                        top: 10%;
+                        top: 3%;
                         left: 3%;
                         margin-left: 0;
                         width: 88%;
                     }
                 }
                 #section3 {
+                    background: #fff;
 
                     #form-left-bg {
                         display: none;
@@ -831,7 +1421,7 @@
                         display: none;
                     }
                     #form {
-                        top: 20px;
+                        top: 0px;
                         width: 90%;
                         h2 {
                             font-size: 1.2em;
@@ -875,7 +1465,7 @@
 
                         #description-contact, #description-contact-2 {
                             padding: 5%;
-                            padding-top: 30%;
+                            padding-top: 15%;
                             h2 {
                                 color: #fff;
                                 text-align: center;

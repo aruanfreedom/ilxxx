@@ -18,8 +18,8 @@
     font-family: "FiraSans-Medium", sans-serif;
     top: 25%;
     left: 50%;
-    margin-left: -250px;
-    width: 20%;
+    margin-left: -320px;
+    width: 30%;
     z-index: 101; }
     .alert-message .message-box .close {
       background: url("../img/icons/close.png") no-repeat center center;
@@ -31,46 +31,51 @@
       .alert-message .message-box .close:hover {
         cursor: pointer; }
     .alert-message .message-box h2 {
-      text-align: center; }
+      color: #3f3f3f;
+      font-weight: 100;
+      text-align: center;
+      float: right;
+      width: 89%; }
     .alert-message .message-box form label {
       color: #3c3c3c;
       float: left;
       text-align: right;
-      padding: 11px 0;
+      padding: 11px 14px 11px 0px;
       font-size: 1.1em;
-      width: 100px; }
+      width: 130px; }
       .alert-message .message-box form label:hover {
         cursor: pointer; }
     .alert-message .message-box form input {
       border-radius: 3px;
-      border: 2px solid #ccc;
+      border: 1px solid #ccc;
       color: #b1b1b1;
       height: 35px;
-      float: right;
+      float: left;
       padding-left: 10px;
       margin: 6px 0;
       font-size: 1em;
-      width: 62%; }
+      width: 60%; }
     .alert-message .message-box form textarea {
       border-radius: 3px;
       border: 1px solid #ccc;
       padding-left: 10px;
       color: #b1b1b1;
-      float: right;
+      float: left;
       height: 150px;
-      width: 61%; }
+      width: 60%; }
     .alert-message .message-box form .clearfix {
       clear: both; }
     .alert-message .message-box form .number-l {
-      padding: 2px 0; }
+      padding: 2px 15px 2px 0; }
     .alert-message .message-box form .additionally-l {
-      padding: 0px 0; }
+      padding: 0px 0;
+      margin-right: 15px; }
     .alert-message .message-box form .phone {
       background: url("../img/icons/number.png") no-repeat;
       background-position: 10px;
       padding-left: 45px;
       margin-bottom: 12px;
-      width: 52.5%; }
+      width: 54%; }
     .alert-message .message-box form .btn {
       background: #a9a9a9;
       border-radius: 5px;
@@ -80,7 +85,7 @@
       margin: 24px auto;
       margin-bottom: 0;
       position: relative;
-      left: 49%;
+      left: 42%;
       float: none;
       padding: 1px 0;
       font-size: 1em;
@@ -90,7 +95,9 @@
       .alert-message .message-box form .btn.true {
         background: #e6b41d; }
     .alert-message .message-box form p {
-      text-align: center; }
+      text-align: center;
+      float: right;
+      width: 84%; }
     .alert-message .message-box form .red {
       color: #ca272f; }
 
@@ -104,7 +111,7 @@
     vertical-align: middle;
     position: absolute;
     padding-top: 15%;
-    left: 50%;
+    left: 47.3%;
     right: 50%;
     margin-left: -150px;
     width: 400px; }
@@ -127,15 +134,19 @@
   #home #bg2 {
     background: url("../img/bg2.png") no-repeat center center;
     background-size: cover;
-    animation: logo 4s ease-in 1; }
+    position: relative;
+    animation: bg 4s ease-in 1; }
+    #home #bg2.bg2-speed {
+      animation: bg 1s ease-in 1; }
   #home #logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
-    animation: logo 4s ease-in 1;
+    animation: logo 5s ease-in 5s 1;
     margin: 0 auto;
     height: 421px;
-    width: 400px; }
+    width: 400px;
+    z-index: 200; }
     #home #logo:before {
       content: "";
       background: url("../img/shine.png") no-repeat center center;
@@ -146,9 +157,32 @@
       top: 0;
       left: 0;
       transform: translate(60px, 110px);
-      width: 0%; }
+      opacity: 0;
+      width: 0; }
+    #home #logo.logo-speed {
+      animation: logo 1.5s ease-in 5s 1; }
+      #home #logo.logo-speed:before {
+        animation: shine 1s linear 1s 1; }
+
+.width1920 {
+  transform: translate(0px, -465px) scale(0.1); }
+
+.width1366 {
+  transform: translate(0px, -235px) scale(0.1); }
 
 @keyframes logo {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 1; }
+  70% {
+    transform: translate(0, 0px); }
+  90% { }
+  95% { }
+  100% {
+    transform: translate(0px, -460px) scale(0.1); } }
+
+@keyframes bg {
   0% {
     opacity: 0; }
   100% {
@@ -156,6 +190,7 @@
 
 @keyframes shine {
   0% {
+    opacity: 1;
     transform: translate(-10px, -120px);
     width: 40%; }
   10% {
@@ -184,9 +219,11 @@
     width: 70%; }
   90% {
     transform: translate(0px, 130px);
-    width: 40%; }
+    width: 40%;
+    opacity: 1; }
   100% {
     transform: translate(15px, 110px);
+    opacity: 0;
     width: 0%; } }
 
 #group {
@@ -211,15 +248,21 @@ html, body {
   background-size: cover;
   height: 73px;
   width: 100%;
+  opacity: 0;
   z-index: 99; }
+  #menu #logoAnim {
+    width: 40px;
+    transition: width 2s; }
   #menu nav {
     margin: 0 auto;
     width: 80%; }
     #menu nav ul {
       float: left;
       padding: 0; }
-      #menu nav ul.left li.center-v {
-        margin-left: 5px; }
+      #menu nav ul.left {
+        opacity: 0; }
+        #menu nav ul.left li.center-v {
+          margin-left: 5px; }
       #menu nav ul.center li.center-v {
         padding-top: 10px; }
         #menu nav ul.center li.center-v.active a {
@@ -232,34 +275,36 @@ html, body {
             background-size: 100%; }
       #menu nav ul.center li a {
         font-family: "FiraSans-Thin", sans-serif; }
-      #menu nav ul.right li.center-v {
-        padding-top: 5px; }
-        #menu nav ul.right li.center-v.active a {
-          background: url("../img/light-cursor.png") no-repeat center center;
-          background-size: 100%; }
-        #menu nav ul.right li.center-v a {
-          padding: 0 10px; }
-          #menu nav ul.right li.center-v a:hover {
-            background: url("../img/light-lang.png") no-repeat center center;
-            background-size: cover; }
-      #menu nav ul.right li.btn-yellow {
-        background: #e6b41d;
-        border-radius: 3px;
-        padding: 6% 0;
-        margin-left: 10px;
-        position: relative;
-        text-align: center;
-        width: 140px; }
-        #menu nav ul.right li.btn-yellow.active {
-          background: url("../img/light-lang.png") no-repeat center center #e6b41d;
-          background-size: 150%; }
-        #menu nav ul.right li.btn-yellow:focus {
-          background: #d0a114; }
-        #menu nav ul.right li.btn-yellow:hover {
-          background: url("../img/light-lang.png") no-repeat center center #e6b41d;
-          background-size: 150%; }
-        #menu nav ul.right li.btn-yellow a:hover {
-          background: none; }
+      #menu nav ul.right {
+        opacity: 0; }
+        #menu nav ul.right li.center-v {
+          padding-top: 5px; }
+          #menu nav ul.right li.center-v.active a {
+            background: url("../img/light-cursor.png") no-repeat center center;
+            background-size: 100%; }
+          #menu nav ul.right li.center-v a {
+            padding: 0 10px; }
+            #menu nav ul.right li.center-v a:hover {
+              background: url("../img/light-lang.png") no-repeat center center;
+              background-size: cover; }
+        #menu nav ul.right li.btn-yellow {
+          background: #e6b41d;
+          border-radius: 3px;
+          padding: 6% 0;
+          margin-left: 10px;
+          position: relative;
+          text-align: center;
+          width: 140px; }
+          #menu nav ul.right li.btn-yellow.active {
+            background: url("../img/light-lang.png") no-repeat center center #e6b41d;
+            background-size: 150%; }
+          #menu nav ul.right li.btn-yellow:focus {
+            background: #d0a114; }
+          #menu nav ul.right li.btn-yellow:hover {
+            background: url("../img/light-lang.png") no-repeat center center #e6b41d;
+            background-size: 150%; }
+          #menu nav ul.right li.btn-yellow a:hover {
+            background: none; }
       #menu nav ul li {
         color: #fff;
         float: left;
@@ -270,9 +315,12 @@ html, body {
         #menu nav ul li.number-v {
           padding-top: 1px; }
         #menu nav ul li.center-v {
+          opacity: 0;
           padding-top: 2px; }
         #menu nav ul li.logo-min {
-          margin-top: -8px; }
+          margin-top: 0;
+          opacity: 0;
+          margin-left: 20px; }
         #menu nav ul li a {
           color: #fff;
           font-size: 13px;
@@ -289,17 +337,24 @@ html, body {
       font-size: 13px;
       left: 38%; }
 
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 #section0 {
   background: url("../img/bg-2.jpg") no-repeat center center #111519;
   background-size: cover;
+  background-position: -186px -59px;
   position: relative;
-  top: 140px;
+  top: 0;
   height: 92.4%;
   width: 100%;
   z-index: 1; }
   #section0 section {
     position: relative;
-    top: 65px;
+    top: 0;
     text-align: center;
     color: #fff;
     margin: 0 auto;
@@ -318,7 +373,7 @@ html, body {
       margin-bottom: 0; }
       #section0 section p.yellow-text {
         position: relative;
-        padding-top: 45%;
+        padding-top: 44%;
         bottom: 0; }
     #section0 section #bisnesman-1 {
       background: url("../img/bisnesman-1.png") no-repeat center center;
@@ -445,7 +500,7 @@ html, body {
     display: table-cell;
     vertical-align: text-top; }
   #section1 section {
-    padding-top: 60px;
+    padding-top: 0;
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -539,7 +594,7 @@ html, body {
           font-family: "FiraSans-Book", sans-serif;
           font-size: 16px; }
         #section1 section .tab1 .description .description-item #last-img, #section1 section .tab2 .description .description-item #last-img, #section1 section .tab3 .description .description-item #last-img {
-          margin-bottom: 32px; }
+          margin-bottom: 38px; }
     #section1 section .tab2 .description {
       float: left;
       padding-left: 160px; }
@@ -552,9 +607,10 @@ html, body {
 
 #section2 {
   background: url("../img/car_park.jpg") no-repeat center #020204;
-  background-size: 150%;
+  background-size: 110%;
+  background-position: 50% -130px;
   position: relative;
-  top: 73px;
+  top: 0;
   height: 100%;
   width: 100%; }
   #section2 section {
@@ -567,7 +623,7 @@ html, body {
       #section2 section #wrapper2 .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
-        margin-top: 120px; }
+        margin-top: 40px; }
       #section2 section #wrapper2 h3 {
         background: #a9a9a9;
         border-radius: 5px;
@@ -607,13 +663,13 @@ html, body {
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
             float: left;
             width: 40%;
-            padding: 125px 40px; }
+            padding: 135px 40px; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
               width: 100%; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.jeep-big {
               padding: 75px 40px; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.cars-big {
-              padding: 125px 40px; }
+              padding: 135px 40px; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
             float: left;
             width: 25%; }
@@ -623,7 +679,9 @@ html, body {
               font-family: "FiraSans-SemiBold", sans-serif;
               font-size: 1.6em;
               font-weight: 100;
-              margin: 0; }
+              text-shadow: 1px -1px 14px #fff;
+              margin: 0;
+              margin-bottom: 5px; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info {
               border-bottom: 1px solid #666d7b;
               padding-top: 8px;
@@ -674,7 +732,7 @@ html, body {
               transition: background 0.8s, box-shadow 0.8s;
               width: 100%; }
               #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport.active, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport.active, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport.active, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport.active {
-                box-shadow: 0 0 30px 0 #fff;
+                box-shadow: 0 0 20px 0 #fff;
                 background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
                 cursor: pointer; }
               #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .des-small {
@@ -695,7 +753,7 @@ html, body {
                 #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .status_transport.representative, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .status_transport.representative, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .status_transport.representative, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .status_transport.representative {
                   background: #171c23; }
               #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport:hover, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport:hover, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport:hover, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport:hover {
-                box-shadow: 0 0 30px 0 #fff;
+                box-shadow: 0 0 20px 0 #fff;
                 background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
                 cursor: pointer; }
               #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport h4, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport h4, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport h4, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport h4 {
@@ -754,7 +812,7 @@ html, body {
   width: 100%; }
   #section3 #form-left-bg {
     background: url("../img/bid.png") no-repeat;
-    background-position: center 380px;
+    background-position: center 450px;
     position: absolute;
     top: 0;
     left: -500px;
@@ -778,7 +836,7 @@ html, body {
     margin: 0 auto;
     font-family: "BloggerSans", sans-serif;
     padding: 3% 6%;
-    top: 30px;
+    top: 0;
     width: 25%;
     z-index: 2; }
     #section3 #form h2 {
@@ -871,7 +929,7 @@ html, body {
     width: 50%; }
     #section4 #car #description-contact, #section4 #car #description-contact-2 {
       padding: 17%;
-      padding-top: 26%;
+      padding-top: 25%;
       font-family: "BloggerSans", sans-serif;
       color: #fff; }
       #section4 #car #description-contact h2, #section4 #car #description-contact-2 h2 {
@@ -928,9 +986,398 @@ html, body {
   #tel-icon:hover {
     cursor: pointer; }
 
+@media only screen and (min-width: 1920px) {
+  #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
+    top: 400px; } }
+
 @media only screen and (max-width: 1366px) {
+  @keyframes logo {
+    0% {
+      opacity: 1; }
+    20% {
+      opacity: 1; }
+    70% {
+      transform: translate(0, 0px); }
+    90% { }
+    95% { }
+    100% {
+      transform: translate(0px, -235px) scale(0.1); } }
+  #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4 {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    height: 310px; }
+  .part {
+    width: 220px; }
+  div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
+    height: 70%; }
   .alert-message .message-box {
-    top: 10%;
+    background: #fff;
+    box-shadow: 0 0 13px 0 #fff;
+    padding: 5px;
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    margin-left: -290px;
+    width: 43%;
+    z-index: 101; }
+    .alert-message .message-box .close {
+      background: url("../img/icons/close.png") no-repeat center center;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      height: 32px;
+      width: 32px; }
+      .alert-message .message-box .close:hover {
+        cursor: pointer; }
+    .alert-message .message-box h2 {
+      color: #3f3f3f;
+      font-weight: 100;
+      text-align: center;
+      float: right;
+      width: 89%; }
+    .alert-message .message-box form label {
+      color: #3c3c3c;
+      float: left;
+      text-align: right;
+      padding: 11px 14px 11px 0px;
+      font-size: 1.1em;
+      width: 130px; }
+      .alert-message .message-box form label:hover {
+        cursor: pointer; }
+    .alert-message .message-box form input {
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      color: #b1b1b1;
+      height: 35px;
+      float: left;
+      padding-left: 10px;
+      margin: 6px 0;
+      font-size: 1em;
+      width: 60%; }
+    .alert-message .message-box form textarea {
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+      color: #b1b1b1;
+      float: left;
+      height: 150px;
+      width: 60%; }
+    .alert-message .message-box form .clearfix {
+      clear: both; }
+    .alert-message .message-box form .number-l {
+      padding: 2px 15px 2px 0; }
+    .alert-message .message-box form .additionally-l {
+      padding: 0px 0;
+      margin-right: 15px; }
+    .alert-message .message-box form .phone {
+      background: url("../img/icons/number.png") no-repeat;
+      background-position: 10px;
+      padding-left: 45px;
+      margin-bottom: 12px;
+      width: 54%; }
+    .alert-message .message-box form .btn {
+      background: #a9a9a9;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      margin: 24px auto;
+      margin-bottom: 0;
+      position: relative;
+      left: 42%;
+      float: none;
+      padding: 1px 0;
+      font-size: 1em;
+      text-transform: uppercase;
+      height: 57px;
+      width: 32%; }
+      .alert-message .message-box form .btn.true {
+        background: #e6b41d; }
+    .alert-message .message-box form p {
+      text-align: center;
+      float: right;
+      width: 84%; }
+    .alert-message .message-box form .red {
+      color: #ca272f; }
+  @keyframes punkt {
+    0% {
+      opacity: 0;
+      width: 8px; }
+    50% {
+      opacity: 1;
+      width: 8px; }
+    100% {
+      width: 300px; } }
+  #home table {
+    height: 40em; }
+    #home table .center-td {
+      padding-top: 4%; }
+  #home #logo {
+    animation: logo 6s ease-in 4s 1; }
+  #menu nav .center {
+    left: 34.3%; }
+  #menu nav ul li {
+    font-size: 13px; }
+  #section0 {
+    background-position: -95px -59px;
+    top: 0; }
+    #section0 section {
+      top: 0;
+      width: 65%; }
+      #section0 section h2 {
+        font-size: 30px; }
+      #section0 section p {
+        font-size: 14px;
+        margin: 0; }
+        #section0 section p.yellow-text {
+          padding-top: 290px; }
+      #section0 section #bisnesman-1 {
+        background-size: 100%;
+        height: 370px;
+        width: 230px; }
+        #section0 section #bisnesman-1 .punkt-1,
+        #section0 section #bisnesman-1 .punkt-2,
+        #section0 section #bisnesman-1 .punkt-3 {
+          background: url("../img/puncts/punkt-1.png") no-repeat right;
+          background-size: 100%;
+          right: 150px;
+          top: -20px;
+          height: 115px;
+          width: 300px; }
+          #section0 section #bisnesman-1 .punkt-1 h3,
+          #section0 section #bisnesman-1 .punkt-2 h3,
+          #section0 section #bisnesman-1 .punkt-3 h3 {
+            font-size: 18px;
+            margin: 0;
+            margin-top: 30px;
+            margin-left: -10px; }
+          #section0 section #bisnesman-1 .punkt-1 span,
+          #section0 section #bisnesman-1 .punkt-2 span,
+          #section0 section #bisnesman-1 .punkt-3 span {
+            font-size: 12px;
+            margin-left: -10px; }
+        #section0 section #bisnesman-1 .punkt-2 {
+          background: url("../img/puncts/punkt-2.png") no-repeat right;
+          background-size: 100%;
+          top: 150px;
+          right: 165px; }
+          #section0 section #bisnesman-1 .punkt-2 h3 {
+            margin: 5px 0;
+            margin-top: 33px; }
+          #section0 section #bisnesman-1 .punkt-2 span {
+            margin-left: -2px; }
+        #section0 section #bisnesman-1 .punkt-3 {
+          background: url("../img/puncts/punkt-3.png") no-repeat right;
+          background-size: 100%;
+          top: 250px;
+          right: 180px; }
+          #section0 section #bisnesman-1 .punkt-3 h3 {
+            margin: 5px 0;
+            margin-top: 53px;
+            margin-left: -55px; }
+          #section0 section #bisnesman-1 .punkt-3 span {
+            margin-left: -60px; }
+      #section0 section #bisnesman-2 {
+        background-size: 100%;
+        right: 92px;
+        height: 370px;
+        width: 178px; }
+        #section0 section #bisnesman-2 .punkt-1,
+        #section0 section #bisnesman-2 .punkt-2 {
+          animation: punkt 3s ease-in-out;
+          background: url("../img/puncts/punkt-4.png") no-repeat left;
+          background-size: 100%;
+          position: absolute;
+          top: 30px;
+          overflow: hidden;
+          height: 115px;
+          width: 300px; }
+          #section0 section #bisnesman-2 .punkt-1 h3,
+          #section0 section #bisnesman-2 .punkt-2 h3 {
+            font-size: 18px;
+            margin: 0 5px;
+            margin-top: 30px;
+            margin-left: 30px; }
+          #section0 section #bisnesman-2 .punkt-1 span,
+          #section0 section #bisnesman-2 .punkt-2 span {
+            font-size: 12px;
+            margin-left: 30px;
+            opacity: 0; }
+        #section0 section #bisnesman-2 .punkt-1 {
+          left: 140px; }
+        #section0 section #bisnesman-2 .punkt-2 {
+          background: url("../img/puncts/punkt-5.png") no-repeat left;
+          background-size: 100%;
+          top: 190px;
+          left: 115px; }
+          #section0 section #bisnesman-2 .punkt-2 h3 {
+            margin: 5px 5px;
+            margin-top: 33px; }
+          #section0 section #bisnesman-2 .punkt-2 span {
+            font-size: 12px;
+            margin-left: 20px; }
+  #section1 section {
+    padding-top: 0;
+    width: 100%; }
+    #section1 section #wrapper.tab1 div.tab1 {
+      background: url("../img/bisness.png") no-repeat left top;
+      background-size: 43%;
+      background-position: 80px;
+      display: block;
+      width: 100%; }
+    #section1 section #wrapper.tab2 div.tab2 {
+      background: url("../img/family.png") no-repeat right top;
+      background-size: 39%;
+      background-position: 540px;
+      display: block;
+      width: 100%; }
+    #section1 section #wrapper.tab3 div.tab3 {
+      background: url("../img/turism.png") no-repeat left top;
+      background-size: 37%;
+      background-position: 220px;
+      display: block;
+      width: 100%; }
+    #section1 section h2 {
+      margin: 11px 0; }
+    #section1 section #wrapper h3 {
+      font-size: 22px; }
+    #section1 section #wrapper .tabs-line {
+      display: inline-block;
+      margin-bottom: 15px; }
+    #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
+      padding: 0px 200px; }
+      #section1 section .tab1 .description .h4, #section1 section .tab2 .description .h4, #section1 section .tab3 .description .h4 {
+        font-size: 1.6em; }
+      #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
+        padding-bottom: 9px; }
+        #section1 section .tab1 .description .description-item P, #section1 section .tab2 .description .description-item P, #section1 section .tab3 .description .description-item P {
+          font-size: 0.9em; }
+        #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
+          width: 35px;
+          margin-bottom: 12px; }
+        #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
+          font-size: 13px; }
+  #section2 {
+    background: url("../img/car_park.jpg") no-repeat center #020204;
+    background-size: 110%;
+    background-position: 50% -130px; }
+    #section2 section {
+      width: 90%; }
+      #section2 section #wrapper2 h3 {
+        font-size: 0.9em; }
+      #section2 section #wrapper2 .tabs-line {
+        margin-bottom: 20px;
+        margin-top: 20px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
+        line-height: 140%;
+        font-size: 0.9em; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description h2 {
+        font-size: 1.1em;
+        font-weight: 100; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
+        padding: 75px 40px;
+        padding-bottom: 0;
+        width: 40%; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
+          width: 85%;
+          height: auto; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.jeep-big {
+          padding: 65px 40px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.cars-big {
+          padding: 75px 40px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
+        width: 26%; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport h2 {
+          font-size: 1.2em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info {
+          padding-top: 0; }
+          #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
+            font-size: 0.8em;
+            width: 160px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
+        top: 288px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
+          top: 270px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
+          font-size: 1em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport {
+          padding: 3px 10px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
+          margin: 0; }
+          #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul li {
+            font-size: 0.75em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport img {
+          height: 50px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport.active, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport.active, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport.active, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport.active {
+          box-shadow: 0 0 20px 0 #fff; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport:hover, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport:hover, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport:hover, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport:hover {
+          box-shadow: 0 0 20px 0 #fff; }
+  #section3 #form-left-bg {
+    background: url("../img/bid.png") no-repeat;
+    background-position: center 237px;
+    background-size: 38%;
+    left: -400px; }
+  #section3 #form-right-bg {
+    background: url("../img/bid-right.png") no-repeat;
+    background-position: 890px 250px;
+    background-size: 33%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
+  #section3 #form {
+    padding: 0 5%;
+    width: 35%; }
+    #section3 #form h2 {
+      margin: 0;
+      padding: 10px 0; }
+    #section3 #form form textarea {
+      height: 100px; }
+    #section3 #form form .btn {
+      margin: 15px auto; }
+    #section3 #form p {
+      margin-top: 0; }
+  #section4 #car #description-contact {
+    padding-top: 21%; }
+    #section4 #car #description-contact h2 {
+      padding-top: 5px;
+      font-size: 1em; }
+    #section4 #car #description-contact .line-info {
+      border-bottom: 1px solid #4e4e4e;
+      padding: 5px 0;
+      color: #fff;
+      font-size: 1.1em;
+      text-align: left; }
+      #section4 #car #description-contact .line-info.none-line {
+        border-bottom: none;
+        padding-top: 8px; }
+        #section4 #car #description-contact .line-info.none-line .left {
+          padding-top: 8px; }
+      #section4 #car #description-contact .line-info .left {
+        float: left;
+        font-size: 0.75em; }
+      #section4 #car #description-contact .line-info .right {
+        font-size: 0.75em;
+        float: right;
+        width: 220px; }
+        #section4 #car #description-contact .line-info .right a {
+          color: #2e79cc; }
+  #section4 #car #description-contact-2 {
+    padding: 0 10%;
+    padding-top: 15px; }
+    #section4 #car #description-contact-2 .line-info .right {
+      width: 120px; }
+  #tel-icon {
+    bottom: 15px;
+    right: 50px; } }
+
+@media only screen and (max-width: 1280px) {
+  .alert-message .message-box {
+    top: 2%;
     margin-left: -200px;
     width: 28%; }
   @keyframes punkt {
@@ -959,7 +1406,7 @@ html, body {
         font-size: 14px;
         margin: 0; }
         #section0 section p.yellow-text {
-          padding-top: 290px; }
+          padding-top: 255px; }
       #section0 section #bisnesman-1 {
         background-size: 100%;
         height: 370px;
@@ -1058,16 +1505,16 @@ html, body {
       display: block;
       width: 100%; }
     #section1 section h2 {
-      margin-bottom: 20px; }
+      margin-bottom: 5px; }
     #section1 section #wrapper h3 {
       font-size: 22px; }
     #section1 section #wrapper .tabs-line {
       display: inline-block;
-      margin-bottom: 30px; }
+      margin-bottom: 10px; }
     #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
       padding: 10px 200px; }
-      #section1 section .tab1 .description h4, #section1 section .tab2 .description h4, #section1 section .tab3 .description h4 {
-        font-size: 1em; }
+      #section1 section .tab1 .description .h4, #section1 section .tab2 .description .h4, #section1 section .tab3 .description .h4 {
+        font-size: 1.2em; }
       #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
         padding-bottom: 9px; }
         #section1 section .tab1 .description .description-item P, #section1 section .tab2 .description .description-item P, #section1 section .tab3 .description .description-item P {
@@ -1080,7 +1527,7 @@ html, body {
   #section2 section {
     width: 90%; }
     #section2 section #wrapper2 h3 {
-      font-size: 0.9em; }
+      font-size: 0.8em; }
     #section2 section #wrapper2 .tabs-line {
       margin-bottom: 20px;
       margin-top: 90px; }
@@ -1091,12 +1538,16 @@ html, body {
       font-size: 1.1em;
       font-weight: 100; }
     #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
-      padding: 53px 40px;
+      padding: 37px 40px;
       padding-bottom: 0;
       width: 40%; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
         width: 100%;
         height: 272px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.jeep-big {
+        padding: 0 40px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.cars-big {
+        padding: 50px 40px; }
     #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
       width: 25%; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport h2 {
@@ -1106,8 +1557,12 @@ html, body {
         #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
           font-size: 0.7em;
           width: 160px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .left, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .left, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .left, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .left {
+          font-size: 0.8em; }
     #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
-      top: 272px; }
+      top: 233px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
+        padding-top: 25px; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
         font-size: 1em; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
@@ -1115,7 +1570,15 @@ html, body {
         #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul li {
           font-size: 0.75em; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport img {
-        height: 50px; }
+        height: 40px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport .status_transport {
+        padding: 2px 10px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel div.scrollingHotSpotLeft, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel div.scrollingHotSpotLeft, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel div.scrollingHotSpotLeft, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel div.scrollingHotSpotLeft {
+        height: 75%; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel div.scrollingHotSpotRight, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel div.scrollingHotSpotRight, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel div.scrollingHotSpotRight, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel div.scrollingHotSpotRight {
+        height: 75%; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part {
+        width: 215px; }
   #section3 #form-left-bg {
     background: url("../img/bid.png") no-repeat;
     background-position: center 200px;
@@ -1144,13 +1607,13 @@ html, body {
     #section3 #form p {
       margin-top: 0; }
   #section4 #car #description-contact {
-    padding-top: 21%; }
+    padding-top: 18%; }
     #section4 #car #description-contact h2 {
       padding-top: 5px;
       font-size: 1em; }
     #section4 #car #description-contact .line-info {
       border-bottom: 1px solid #4e4e4e;
-      padding: 5px 0;
+      padding: 3px 0;
       color: #fff;
       font-size: 1.1em;
       text-align: left; }
@@ -1199,7 +1662,7 @@ html, body {
       background: url("../img/logo.png") no-repeat center center;
       background-size: 100%;
       position: relative;
-      animation: logo 4s ease-in 1;
+      animation: logoFalse 4s ease-in 1;
       margin: 0 auto;
       height: 421px;
       width: 100%; }
@@ -1226,13 +1689,13 @@ html, body {
     background: url("../img/bg-2-min.jpg") no-repeat center center #111519;
     background-size: cover;
     position: relative;
-    top: 140px;
+    top: 0;
     height: 100%;
     width: 100%;
     z-index: 1; }
     #section0 section {
       position: relative;
-      top: 45px;
+      top: 0;
       text-align: center;
       color: #fff;
       margin: 0 auto;
@@ -1331,10 +1794,12 @@ html, body {
   #section1 {
     background: #fbfbfb;
     position: relative;
+    padding-bottom: 90px;
     width: 100%;
-    top: 100px; }
+    top: 0; }
     #section1 section {
-      padding-top: 60px;
+      padding-top: 45px;
+      padding-bottom: 120px;
       position: relative;
       text-align: center;
       margin: 0 auto;
@@ -1346,7 +1811,7 @@ html, body {
         font-weight: 100;
         font-size: 1.3em;
         margin: 0;
-        margin-bottom: 35px; }
+        margin-bottom: 10px; }
       #section1 section #wrapper .tabs-line {
         display: inline-block;
         margin-bottom: 10px; }
@@ -1408,7 +1873,7 @@ html, body {
           text-transform: uppercase; }
         #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
           text-align: left;
-          padding-bottom: 10px; }
+          padding-bottom: 15px; }
           #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
             float: left;
             margin-right: 15px;
@@ -1429,95 +1894,106 @@ html, body {
         color: #8dad40; }
       #section1 section .clearfix {
         clear: both; }
-  #section2 section {
-    position: relative;
-    top: 120px;
-    width: 90%; }
-    #section2 section #wrapper2 h3 {
-      font-size: 0.9em; }
-    #section2 section #wrapper2 .tabs-line {
-      margin-bottom: 30px;
-      margin-top: 0; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description {
-      display: none; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
-        line-height: 140%;
+  #section2 {
+    top: 60px; }
+    #section2 section {
+      position: relative;
+      top: 60px;
+      margin-bottom: 50px;
+      width: 90%; }
+      #section2 section #wrapper2 h3 {
         font-size: 0.9em; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description h2 {
-        font-size: 1.1em;
-        font-weight: 100; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
-      display: none;
-      padding: 53px 40px;
-      padding-bottom: 0;
-      width: 40%; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
-        width: 100%;
-        height: 272px; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
-      display: none;
-      width: 25%; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport h2 {
-        font-size: 1em; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info {
-        padding-top: 0; }
-        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
-          font-size: 0.7em;
-          width: 160px; }
-    #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
-      bottom: 0; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
-        font-size: 1em; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
-        margin: 0; }
-        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul li {
-          font-size: 0.75em; }
-      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport img {
-        height: 50px; }
-  #section2 .scrollingHotSpotLeft {
-    background: url(../img/icons/leftArr.png) center center no-repeat rgba(0, 0, 0, 0.4);
-    left: 0; }
-  #section2 .scrollingHotSpotRight {
-    background: url(../img/icons/rightArr.png) center center no-repeat rgba(0, 0, 0, 0.4);
-    right: 0; }
+      #section2 section #wrapper2 .tabs-line {
+        margin-bottom: 30px;
+        margin-top: 0;
+        font-size: 0.9em;
+        width: 160px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description {
+        display: none; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
+          line-height: 140%;
+          font-size: 0.9em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description h2 {
+          font-size: 1.1em;
+          font-weight: 100; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
+        display: none;
+        padding: 53px 40px;
+        padding-bottom: 0;
+        width: 40%; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
+          width: 100%;
+          height: 272px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
+        display: none;
+        width: 25%; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport h2 {
+          font-size: 1em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info {
+          padding-top: 0; }
+          #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
+            font-size: 0.7em;
+            width: 160px; }
+      #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
+        top: 50px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
+          font-size: 1em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
+          margin: 0; }
+          #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul li, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul li {
+            font-size: 0.75em; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport img {
+          height: 50px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel div.scrollingHotSpotLeft, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel div.scrollingHotSpotLeft, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel div.scrollingHotSpotLeft, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel div.scrollingHotSpotLeft {
+          height: 75%; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel div.scrollingHotSpotRight, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel div.scrollingHotSpotRight, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel div.scrollingHotSpotRight, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel div.scrollingHotSpotRight {
+          height: 75%; }
+    #section2 .scrollingHotSpotLeft {
+      background: url(../img/icons/leftArr.png) center center no-repeat rgba(0, 0, 0, 0.4);
+      left: 0; }
+    #section2 .scrollingHotSpotRight {
+      background: url(../img/icons/rightArr.png) center center no-repeat rgba(0, 0, 0, 0.4);
+      right: 0; }
   .alert-message {
     display: none; }
     .alert-message .message-box {
       padding: 10px;
-      top: 10%;
+      top: 3%;
       left: 3%;
       margin-left: 0;
       width: 88%; }
-  #section3 #form-left-bg {
-    display: none; }
-  #section3 #form-right-bg {
-    display: none; }
-  #section3 #form {
-    top: 20px;
-    width: 90%; }
-    #section3 #form h2 {
-      font-size: 1.2em;
-      float: right;
-      margin: 0 auto;
-      width: 300px; }
-    #section3 #form form {
-      display: inline-block; }
-      #section3 #form form label {
-        font-size: 0.75em;
-        width: 59px; }
-      #section3 #form form input {
+  #section3 {
+    background: #fff; }
+    #section3 #form-left-bg {
+      display: none; }
+    #section3 #form-right-bg {
+      display: none; }
+    #section3 #form {
+      top: 0px;
+      width: 90%; }
+      #section3 #form h2 {
+        font-size: 1.2em;
         float: right;
-        padding-left: 10px;
-        margin: 6px 0;
-        font-size: 0.6em;
-        width: 68%; }
-      #section3 #form form .phone {
-        width: 57%; }
-      #section3 #form form textarea {
-        height: 85px;
-        width: 67.4%; }
-    #section3 #form p {
-      width: 320px; }
+        margin: 0 auto;
+        width: 300px; }
+      #section3 #form form {
+        display: inline-block; }
+        #section3 #form form label {
+          font-size: 0.75em;
+          width: 59px; }
+        #section3 #form form input {
+          float: right;
+          padding-left: 10px;
+          margin: 6px 0;
+          font-size: 0.6em;
+          width: 68%; }
+        #section3 #form form .phone {
+          width: 57%; }
+        #section3 #form form textarea {
+          height: 85px;
+          width: 67.4%; }
+      #section3 #form p {
+        width: 320px; }
   #section4 {
     background: #1E1E1E; }
     #section4 #car {
@@ -1525,7 +2001,7 @@ html, body {
       width: 100%; }
       #section4 #car #description-contact, #section4 #car #description-contact-2 {
         padding: 5%;
-        padding-top: 30%; }
+        padding-top: 15%; }
         #section4 #car #description-contact h2, #section4 #car #description-contact-2 h2 {
           color: #fff;
           text-align: center;
