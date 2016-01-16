@@ -1663,7 +1663,8 @@ html, body {
       right: 50%;
       width: 90%; }
     #home #dynamic-text {
-      margin: 0px auto; }
+      margin: 0px auto;
+      height: 0; }
     #home table {
       height: 40em; }
     #home #logo {
@@ -1944,6 +1945,8 @@ html, body {
             width: 160px; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
         top: 50px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
+          top: 0; }
         #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
           font-size: 1em; }
         #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
@@ -2074,7 +2077,8 @@ html, body {
       right: 50%;
       width: 90%; }
     #home #dynamic-text {
-      margin: 0px auto; }
+      margin: 0px auto;
+      height: 0; }
     #home table {
       height: 30em; }
     #home #logo {
@@ -2237,7 +2241,7 @@ html, body {
         margin-bottom: 10px; }
       #section1 section #wrapper .tabs-line {
         display: inline-block;
-        margin-bottom: 10px; }
+        margin-bottom: 0; }
       #section1 section #wrapper h3 {
         padding: 3px 12px;
         font-size: 0.9em; }
@@ -2288,7 +2292,7 @@ html, body {
           text-transform: uppercase; }
         #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
           text-align: left;
-          padding-bottom: 14px; }
+          padding-bottom: 10px; }
           #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
             float: left;
             margin-right: 15px;
@@ -2353,6 +2357,8 @@ html, body {
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
         top: 11px;
         left: 18px; }
+        #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
+          top: 0; }
         #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport h2 {
           font-size: 1em; }
         #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .part .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .part .box_transport ul {
@@ -2389,14 +2395,16 @@ html, body {
       top: 0px;
       width: 90%; }
       #section3 #form h2 {
-        font-size: 1.2em;
+        font-size: 1em;
         float: right;
         margin: 0 auto;
-        width: 300px; }
+        width: 223px; }
       #section3 #form form {
         display: inline-block; }
         #section3 #form form .btn {
-          margin: 4px auto; }
+          margin: 4px auto;
+          font-size: 0.8em;
+          height: 40px; }
         #section3 #form form label {
           font-size: 0.75em;
           width: 59px; }
@@ -2412,6 +2420,7 @@ html, body {
           height: 85px;
           width: 67.4%; }
       #section3 #form p {
+        font-size: 0.8em;
         width: 320px; }
   #section4 {
     background: #1E1E1E; }

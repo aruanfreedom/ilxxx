@@ -975,6 +975,7 @@
 
                     #dynamic-text {
                         margin: 0px auto;
+                        height: 0;
                     }
                     table {
                         height: 40em;
@@ -1374,6 +1375,9 @@
                                         }
                                         .bottom_panel {
                                             top: 50px;
+                                            &.gruz{
+                                                top: 0;
+                                            }
                                             .part {
                                                 .box_transport {
                                                     h2 {
@@ -1564,6 +1568,7 @@
 
                     #dynamic-text {
                         margin: 0px auto;
+                        height: 0;
                     }
                     table {
                         height: 30em;
@@ -1780,7 +1785,7 @@
                         #wrapper {
                             .tabs-line {
                                 display: inline-block;
-                                margin-bottom: 10px;
+                                margin-bottom: 0;
                             }
                             h3 {
                                 padding: 3px 12px;
@@ -1863,7 +1868,7 @@
                                 }
                                 .description-item {
                                     text-align: left;
-                                    padding-bottom: 14px;
+                                    padding-bottom: 10px;
                                     img {
                                         float: left;
                                         margin-right: 15px;
@@ -1961,6 +1966,9 @@
                                         .bottom_panel {
                                                 top: 11px;
                                                 left: 18px;
+                                            &.gruz{
+                                                top: 0;
+                                            }
                                             .part {
                                                 .box_transport {
                                                     h2 {
@@ -2022,15 +2030,17 @@
                         width: 90%;
 
                         h2 {
-                            font-size: 1.2em;
+                            font-size: 1em;
                             float: right;
                             margin: 0 auto;
-                            width: 300px;
+                            width: 223px;
                         }
                         form {
                             display: inline-block;
                             .btn{
                                 margin: 4px auto;
+                                font-size: 0.8em;
+                                height: 40px;
                             }
                             label {
                                 font-size: 0.75em;
@@ -2052,6 +2062,7 @@
                             }
                         }
                         p {
+                            font-size: 0.8em;
                             width: 320px;
                         }
                     }
