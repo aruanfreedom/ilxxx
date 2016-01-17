@@ -1272,6 +1272,7 @@
       position: relative;
       top: 0;
       text-align: center;
+      padding-top: 40px;
       color: #fff;
       margin: 0 auto;
       width: 90%; }
@@ -1858,7 +1859,7 @@
           text-transform: uppercase; }
         #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
           text-align: left;
-          padding-bottom: 10px; }
+          padding-bottom: 15px; }
           #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
             float: left;
             margin-right: 15px;
