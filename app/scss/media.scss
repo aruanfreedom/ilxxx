@@ -564,11 +564,146 @@
                 }
             }
             @media only screen and (max-width: 1280px) {
+                @keyframes logo {
+                    0% {
+                        opacity: 1;
+                    }
+                    20%{
+                        opacity: 1;
+                    }
+                    70%{
+                        transform: translate(0, 0px);
+                    }
+                    90%{
+
+                    }
+                    95%{
+
+                    }
+                    100% {
+                        transform: translate(0px, -235px) scale(0.1);
+                    }
+                }
+                #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4{
+                    width:100%;
+                    margin:0 auto;
+                    display:block;
+                    position:relative;
+                    height:310px;
+                }
+                .part{
+                    width: 220px;
+                }
+                div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
+                    height: 70%;
+                }
                 .alert-message {
-                    .message-box {
-                        top: 2%;
-                        margin-left: -200px;
-                        width: 28%;
+                    .message-box{
+                        background: #fff;
+                        box-shadow: 0 0 13px 0 #fff;
+                        padding: 5px;
+                        position: fixed;
+                        top: 13%;
+                        left: 50%;
+                        margin-left: -290px;
+                        width: 43%;
+                        z-index: 101;
+                        .close{
+                            background: url("../img/icons/close.png") no-repeat center center;
+                            position: absolute;
+                            right: 5px;
+                            top: 5px;
+                            height: 32px;
+                            width: 32px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        h2{
+                            color: #3f3f3f;
+                            font-weight: 100;
+                            text-align: center;
+                            float: right;
+                            width: 89%;
+                        }
+                        form {
+                            label {
+                                color: #3c3c3c;
+                                float: left;
+                                text-align: right;
+                                padding: 11px 14px 11px 0px;
+                                font-size: 1.1em;
+                                width: 130px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                            input {
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                                color: #b1b1b1;
+                                height: 35px;
+                                float: left;
+                                padding-left: 10px;
+                                margin: 6px 0;
+                                font-size: 1em;
+                                width: 60%;
+                            }
+                            textarea {
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                                padding-left: 10px;
+                                color: #b1b1b1;
+                                float: left;
+                                height: 150px;
+                                width: 60%;
+                            }
+                            .clearfix {
+                                clear: both;
+                            }
+                            .number-l{
+                                padding: 2px 15px 2px 0;
+                            }
+                            .additionally-l{
+                                padding: 0px 0;
+                                margin-right: 15px;
+                            }
+                            .phone {
+                                background: url("../img/icons/number.png") no-repeat;
+                                background-position: 10px;
+                                padding-left: 45px;
+                                margin-bottom: 12px;
+                                width: 54%;
+                            }
+                            .btn {
+                                background: #a9a9a9;
+                                border-radius: 5px;
+                                border: none;
+                                cursor: pointer;
+                                color: #fff;
+                                margin: 24px auto;
+                                margin-bottom: 0;
+                                position: relative;
+                                left: 42%;
+                                float: none;
+                                padding: 1px 0;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                                height: 57px;
+                                width: 32%;
+                                &.true{
+                                    background: #e6b41d;
+                                }
+                            }
+                            p{
+                                text-align: center;
+                                float: right;
+                                width: 84%;
+                            }
+                            .red {
+                                color: #ca272f;
+                            }
+                        }
                     }
                 }
                 @keyframes punkt {
@@ -591,18 +726,27 @@
                             padding-top: 4%;
                         }
                     }
+                    #logo{
+                        animation: logo 6s ease-in 4s 1;
+                    }
                 }
                 #menu {
                     nav {
                         .center {
-                            left: 33%;
+                            left: 34.3%;
+                        }
+                        ul{
+                            li{
+                                font-size: 13px;
+                            }
                         }
                     }
                 }
                 #section0 {
-                    top: 0px;
+                    background-position: -95px -59px;
+                    top: 0;
                     section {
-                        top: 53px;
+                        top: 0;
                         width: 65%;
                         h2 {
                             font-size: 30px;
@@ -611,7 +755,7 @@
                             font-size: 14px;
                             margin: 0;
                             &.yellow-text {
-                                padding-top: 255px;
+                                padding-top: 290px;
                             }
                         }
                         #bisnesman-1 {
@@ -631,19 +775,25 @@
                                     font-size: 18px;
                                     margin: 0;
                                     margin-top: 30px;
+                                    margin-left: -10px;
                                 }
                                 span {
                                     font-size: 12px;
+                                    margin-left: -10px;
                                 }
                             }
                             .punkt-2 {
                                 background: url("../img/puncts/punkt-2.png") no-repeat right;
                                 background-size: 100%;
+                                padding-right: 20px;  
                                 top: 150px;
                                 right: 165px;
                                 h3 {
                                     margin: 5px 0;
                                     margin-top: 33px;
+                                }
+                                span {
+                                    margin-left: -2px;
                                 }
                             }
                             .punkt-3 {
@@ -654,10 +804,10 @@
                                 h3 {
                                     margin: 5px 0;
                                     margin-top: 53px;
-                                    margin-left: -50px;
+                                    margin-left: -55px;
                                 }
                                 span {
-                                    margin-left: -50px;
+                                    margin-left: -60px;
                                 }
                             }
                         }
@@ -680,23 +830,38 @@
                                     font-size: 18px;
                                     margin: 0 5px;
                                     margin-top: 30px;
+                                    margin-left: 30px;
                                 }
                                 span {
                                     font-size: 12px;
+                                    margin-left: 30px;
                                     opacity: 0;
                                 }
                             }
                             .punkt-1 {
                                 left: 140px;
+                                padding-left: 20px;
+                                h3 { 
+                                    margin-left: 0;
+                                }
+                                span {
+                                    margin-left: 0;
+                                }
                             }
                             .punkt-2 {
                                 background: url("../img/puncts/punkt-5.png") no-repeat left;
                                 background-size: 100%;
                                 top: 190px;
                                 left: 115px;
+                                padding-left: 30px;
                                 h3 {
                                     margin: 5px 5px;
-                                    margin-top: 33px;
+                                    margin-top: 39px;
+                                    margin-bottom: 0px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    margin-left: 0;
                                 }
                             }
                         }
@@ -704,7 +869,7 @@
                 }
                 #section1 {
                     section {
-                        padding-top: 43px;
+                        padding-top: 0;
                         width: 100%;
                         #wrapper.tab1 div.tab1 {
                             background: url("../img/bisness.png") no-repeat left top;
@@ -722,14 +887,14 @@
                         }
                         #wrapper.tab3 div.tab3 {
                             background: url("../img/turism.png") no-repeat left top;
-                            background-size: 43%;
+                            background-size: 37%;
                             background-position: 220px;
                             display: block;
                             width: 100%;
                         }
 
                         h2 {
-                            margin-bottom: 5px;
+                            margin: 11px 0;
                         }
                         #wrapper {
                             h3 {
@@ -737,27 +902,27 @@
                             }
                             .tabs-line {
                                 display: inline-block;
-                                margin-bottom: 10px;
+                                margin-bottom: 15px;
                             }
                         }
                         .tab1, .tab2, .tab3 {
                             .description {
-                                padding: 10px 200px;
+                                padding: 0px 200px;
                                 .h4{
-                                    font-size: 1.2em;
+                                    font-size: 1.6em;
                                 }
 
                                 .description-item {
-                                    padding-bottom: 12px;
+                                    padding-bottom: 13px;
                                     P{
                                         font-size: 0.9em;
                                     }
                                     img {
-                                        width: 31px;
+                                        width: 35px;
                                         margin-bottom: 12px;
                                     }
                                     small {
-                                        font-size: 10px;
+                                        font-size: 13px;
                                     }
                                 }
                             }
@@ -765,15 +930,18 @@
                     }
                 }
                 #section2 {
+                    background: url("../img/car_park.jpg") no-repeat center #020204;
+                    background-size: 110%;
+                    background-position: 50% -130px;
                     section {
                         width: 90%;
                         #wrapper2 {
                             h3 {
-                                font-size: 0.8em;
+                                font-size: 0.9em;
                             }
                             .tabs-line {
                                 margin-bottom: 20px;
-                                margin-top: 90px;
+                                margin-top: 20px;
                             }
                             .tab1, .tab2, .tab3, .tab4 {
                                 .gallery_avto {
@@ -789,45 +957,45 @@
                                             }
                                         }
                                         .big_transport {
-                                            padding: 37px 40px;
+                                            padding: 75px 40px;
                                             padding-bottom: 0;
                                             width: 40%;
                                             img {
-                                                width: 100%;
-                                                height: 272px;
+                                                width: 85%;
+                                                height: auto;
                                             }
                                             &.jeep-big{
-                                                padding: 0 40px;
+                                                padding: 65px 40px;
                                             }
                                             &.cars-big{
-                                                padding: 50px 40px;
+                                                padding: 75px 40px;
                                             }
                                         }
                                         .description_transport {
-                                            width: 25%;
+                                            width: 26%;
                                             h2 {
-                                                font-size: 1em;
+                                                font-size: 1.2em;
                                             }
                                             .line-info {
                                                 padding-top: 0;
                                                 .right {
-                                                    font-size: 0.7em;
-                                                    width: 160px;
-                                                }
-                                                .left{
                                                     font-size: 0.8em;
+                                                    width: 160px;
                                                 }
                                             }
                                         }
                                         .bottom_panel {
-                                          top: 233px;
+                                          top: 288px;
                                             &.gruz{
-                                                padding-top: 25px;
+                                                top: 270px;
                                             }
                                             .part {
                                                 .box_transport {
                                                     h2 {
                                                         font-size: 1em;
+                                                    }
+                                                    .status_transport{
+                                                        padding: 3px 10px;
                                                     }
                                                     ul {
                                                         margin: 0;
@@ -836,21 +1004,15 @@
                                                         }
                                                     }
                                                     img {
-                                                        height: 40px;
+                                                        height: 50px;
                                                     }
-                                                    .status_transport{
-                                                        padding: 2px 10px;
+                                                    &.active{
+                                                        box-shadow: 0 0 20px 0 #fff;
+                                                    }
+                                                    &:hover{
+                                                        box-shadow: 0 0 20px 0 #fff;
                                                     }
                                                 }
-                                            }
-                                            div.scrollingHotSpotLeft{
-                                                height: 75%;
-                                            }
-                                            div.scrollingHotSpotRight{
-                                                height: 75%;
-                                            }
-                                            .part{
-                                                width: 215px;
                                             }
                                         }
                                     }
@@ -862,8 +1024,8 @@
                 #section3 {
                     #form-left-bg {
                         background: url("../img/bid.png") no-repeat;
-                        background-position: center 200px;
-                        background-size: 43%;
+                        background-position: center 237px;
+                        background-size: 38%;
                         left: -400px;
                     }
                     #form-right-bg {
@@ -900,14 +1062,14 @@
                 #section4 {
                     #car {
                         #description-contact {
-                            padding-top: 18%;
+                            padding-top: 21%;
                             h2 {
                                 padding-top: 5px;
                                 font-size: 1em;
                             }
                             .line-info {
                                 border-bottom: 1px solid #4e4e4e;
-                                padding: 3px 0;
+                                padding: 5px 0;
                                 color: #fff;
                                 font-size: 1.1em;
                                 text-align: left;
@@ -953,7 +1115,597 @@
             
             @media only screen and (max-width: 800px) {}
             
-            @media only screen and (max-width: 768px) {}
+            @media only screen and (max-width: 768px) {
+                .fp-tableCell{
+                    vertical-align: top;
+                }
+                 @keyframes logo { 
+                    0% {
+                        opacity: 1;
+                    }
+                    20%{
+                        opacity: 1;
+                    }
+                    70%{
+                        transform: translate(0, 0px);
+                    }
+                    90%{
+
+                    }
+                    95%{
+
+                    }
+                    100% {
+                        transform: translate(0px, -235px) scale(0.1);
+                    }
+                }
+                #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4{
+                    width:100%;
+                    margin:0 auto;
+                    display:block;
+                    position:relative;
+                    height:310px;
+                }
+                .part{
+                    width: 220px;
+                }
+                div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
+                    height: 70%;
+                }
+                .alert-message {
+                    .message-box{
+                        background: #fff;
+                        box-shadow: 0 0 13px 0 #fff;
+                        padding: 5px;
+                        position: fixed;
+                        top: 13%;
+                        left: 50%;
+                        margin-left: -290px;
+                        width: 43%;
+                        z-index: 101;
+                        .close{
+                            background: url("../img/icons/close.png") no-repeat center center;
+                            position: absolute;
+                            right: 5px;
+                            top: 5px;
+                            height: 32px;
+                            width: 32px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        h2{
+                            color: #3f3f3f;
+                            font-weight: 100;
+                            text-align: center;
+                            float: right;
+                            width: 89%;
+                        }
+                        form {
+                            label {
+                                color: #3c3c3c;
+                                float: left;
+                                text-align: right;
+                                padding: 11px 14px 11px 0px;
+                                font-size: 1.1em;
+                                width: 130px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                            input {
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                                color: #b1b1b1;
+                                height: 35px;
+                                float: left;
+                                padding-left: 10px;
+                                margin: 6px 0;
+                                font-size: 1em;
+                                width: 60%;
+                            }
+                            textarea {
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                                padding-left: 10px;
+                                color: #b1b1b1;
+                                float: left;
+                                height: 150px;
+                                width: 60%;
+                            }
+                            .clearfix {
+                                clear: both;
+                            }
+                            .number-l{
+                                padding: 2px 15px 2px 0;
+                            }
+                            .additionally-l{
+                                padding: 0px 0;
+                                margin-right: 15px;
+                            }
+                            .phone {
+                                background: url("../img/icons/number.png") no-repeat;
+                                background-position: 10px;
+                                padding-left: 45px;
+                                margin-bottom: 12px;
+                                width: 54%;
+                            }
+                            .btn {
+                                background: #a9a9a9;
+                                border-radius: 5px;
+                                border: none;
+                                cursor: pointer;
+                                color: #fff;
+                                margin: 24px auto;
+                                margin-bottom: 0;
+                                position: relative;
+                                left: 42%;
+                                float: none;
+                                padding: 1px 0;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                                height: 57px;
+                                width: 32%;
+                                &.true{
+                                    background: #e6b41d;
+                                }
+                            }
+                            p{
+                                text-align: center;
+                                float: right;
+                                width: 84%;
+                            }
+                            .red {
+                                color: #ca272f;
+                            }
+                        }
+                    }
+                }
+                @keyframes punkt {
+                    0% {
+                        opacity: 0;
+                        width: 8px;
+                    }
+                    50% {
+                        opacity: 1;
+                        width: 8px;
+                    }
+                    100% {
+                        width: 300px;
+                    }
+                }
+                #home {
+                    table {
+                        height: 40em;
+                        .center-td {
+                            padding-top: 4%;
+                        }
+                    }
+                    #logo{
+                        animation: logo 6s ease-in 4s 1;
+                    }
+                }
+                #menu {
+                    nav {
+                        width: 100%;
+                        .center {
+                            left: 34.3%;
+                        }
+                        ul{
+                            li{
+                                font-size: 13px;
+                                margin-left: 16px;
+                            }
+                            &.center{
+                                li{
+                                    &.center-v{
+                                        a{
+                                            padding: 20px 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #section0 {
+                    @keyframes punkt {
+                      0% {
+                        opacity: 0;
+                        width: 8px;
+                      }
+                      50% {
+                        opacity: 1;
+                        width: 8px;
+                      }
+                      100% {
+                        width: 200px;
+                      }
+                    }
+                    background-position: -69px 28px;
+                    background-size: 121% 44%;
+                    top: 0;
+                    section {
+                        top: 45px;
+                        width: 65%;
+                        h2 {
+                            font-size: 16px;
+                        }
+                        p {
+                            font-size: 10px;
+                            margin: 0;
+                            &.yellow-text {
+                                padding-top: 290px;
+                            }
+                        }
+                        #bisnesman-1 {
+                                background-size: 67%;
+                                top: 124px;
+                            height: 370px;
+                            width: 230px;
+                            .punkt-1,
+                            .punkt-2,
+                            .punkt-3 {
+                                background: url("../img/puncts/punkt-1.png") no-repeat right;
+                                background-size: 100%;
+                                right: 150px;
+                                top: 20px;
+                                height: 115px;
+                                width: 200px;
+                                h3 {
+                                    font-size: 10px;
+                                    margin: 0;
+                                    margin-top: 40px;
+                                    margin-left: -10px;
+                                }
+                                span {
+                                    font-size: 8px;
+                                    margin-left: -10px;
+                                }
+                            }
+                            .punkt-2 {
+                                background: url("../img/puncts/punkt-2.png") no-repeat right;
+                                background-size: 100%;
+                                padding-right: 20px;  
+                                top: 130px;
+                                right: 145px;
+                                h3 {
+                                    margin: 0px 0;
+                                    margin-top: 45px;
+                                }
+                                span {
+                                    margin-left: -2px;
+                                }
+                            }
+                            .punkt-3 {
+                                background: url("../img/puncts/punkt-3.png") no-repeat right;
+                                background-size: 100%;
+                                top: 190px;
+                                right: 150px;
+                                h3 {
+                                    margin: 0;
+                                    margin-top: 56px;
+                                    margin-left: -35px;
+                                }
+                                span {
+                                    margin-left: -40px;
+                                }
+                            }
+                        }
+                        #bisnesman-2 {
+                            background-size: 67%;
+                            top: 121px;
+                            right: 46px;
+                            height: 370px;
+                            width: 178px;
+                            .punkt-1,
+                            .punkt-2 {
+                                animation: punkt 3s ease-in-out;
+                                background: url("../img/puncts/punkt-4.png") no-repeat left;
+                                background-size: 100%;
+                                position: absolute;
+                                top: 30px;
+                                left:0;
+                                overflow: hidden;
+                                height: 115px;
+                                width: 200px;
+                                h3 {
+                                    font-size: 10px;
+                                    margin: 0 5px;
+                                    margin-top: 40px;
+                                    margin-left: 30px;
+                                }
+                                span {
+                                    font-size: 8px;
+                                    margin-left: 30px;
+                                    opacity: 0;
+                                }
+                            }
+                            .punkt-1 {
+                                left: 120px;
+                                padding-left: 20px;
+                                h3 { 
+                                    margin-left: 0;
+                                }
+                                span {
+                                    margin-left: 0;
+                                }
+                            }
+                            .punkt-2 {
+                                background: url("../img/puncts/punkt-5.png") no-repeat left;
+                                background-size: 100%;
+                                top: 180px;
+                                left: 115px;
+                                padding-left: 30px;
+                                h3 {
+                                    margin: 5px 5px;
+                                    margin-top: 45px;
+                                    font-size: 10px;
+                                    margin-bottom: 0px;
+                                }
+                                span {
+                                    font-size: 8px;
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                #section1 {
+                    section {
+                        padding-top: 25px;
+                        width: 100%;
+                        #wrapper.tab1 div.tab1 {
+                            background: url("../img/bisness.png") no-repeat left top;
+                            background-size: 46%;
+                            background-position: 60px; 
+                            display: block;
+                            width: 100%;
+                        }
+                        #wrapper.tab2 div.tab2 {
+                            background: url("../img/family.png") no-repeat right top;
+                            background-size: 53%;
+                            background-position: 301px;
+                            display: block;
+                            width: 100%;
+                        }
+                        #wrapper.tab3 div.tab3 {
+                            background: url("../img/turism.png") no-repeat left top;
+                                background-size: 50%;
+                            background-position: 34px;
+                            display: block;
+                            width: 100%;
+                        }
+
+                        h2 {
+                            margin: 11px 0;
+                            font-size: 16px;
+                        }
+                        #wrapper {
+                            h3 {
+                                font-size: 14px;
+                            }
+                            .tabs-line {
+                                display: inline-block;
+                                margin-bottom: 5px;
+                            }
+                        }
+                        .tab1, .tab2, .tab3 {
+                            .description {
+                                padding: 0px 90px;
+                                .h4{
+                                    font-size: 0.8em;
+                                }
+
+                                .description-item {
+                                    padding-bottom: 14px;
+                                    p{
+                                        font-size: 0.7em;
+                                    }
+                                    img {
+                                        width: 15px;
+                                        margin-bottom: 20px;
+                                    }
+                                    small {
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #section2 {
+                    background: url("../img/car_park.jpg") no-repeat center #020204;
+                    background-size: 110%;
+                    background-position: 50% -130px;
+                    section {
+                        width: 90%;
+                        #wrapper2 {
+                            h3 {
+                                font-size: 0.9em;
+                            }
+                            .tabs-line {
+                                margin-bottom: 10px;
+                                margin-top: 30px;
+                            }
+                            .tab1, .tab2, .tab3, .tab4 {
+                                .gallery_avto {
+                                    .panel {
+                                        .status-description {
+                                            p {
+                                                line-height: 140%;
+                                                font-size: 0.6em;
+                                            }
+                                            h2 {
+                                                font-size: 0.8em;
+                                                font-weight: 100;
+                                            }
+                                        }
+                                        .big_transport {
+                                            padding: 75px 30px;
+                                            padding-bottom: 0;
+                                            width: 40%;
+                                            img {
+                                                width: 85%;
+                                                height: auto;
+                                            }
+                                            &.jeep-big{
+                                                padding: 65px 30px;
+                                            }
+                                            &.cars-big{
+                                                padding: 75px 30px;
+                                            }
+                                        }
+                                        .description_transport {
+                                            width: 26%;
+                                            h2 {
+                                                font-size: 0.8em;
+                                            }
+                                            .line-info {
+                                                padding-top: 0;
+                                                .left{
+                                                    font-size:0.7em;
+                                                }
+                                                .right {
+                                                    font-size: 0.6em;
+                                                    width: 108px;
+                                                }
+                                            }
+                                        }
+                                        .bottom_panel {
+                                          top: 220px;
+                                            &.gruz{
+                                                top: 200px;
+                                            }
+                                            .part {
+                                                width:190px;
+                                                .box_transport {
+                                                    h2 {
+                                                        font-size: 1em;
+                                                    }
+                                                    .status_transport{
+                                                        padding: 3px 10px;
+                                                    }
+                                                    ul {
+                                                        margin: 0;
+                                                        li {
+                                                            font-size: 0.75em;
+                                                        }
+                                                    }
+                                                    img {
+                                                        height: 30px;
+                                                    }
+                                                    &.active{
+                                                        box-shadow: 0 0 20px 0 #fff;
+                                                    }
+                                                    &:hover{
+                                                        box-shadow: 0 0 20px 0 #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #section3 {
+                    #form-left-bg {
+                        background: url("../img/bid.png") no-repeat;
+                        display:none;
+                        background-position: center 237px;
+                        background-size: 38%;
+                        left: -400px;
+                    }
+                    #form-right-bg {
+                        background: url("../img/bid-right.png") no-repeat;
+                        display: none;
+                        background-position: 890px 250px;
+                        background-size: 33%;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                    #form {
+                        padding: 0 5%;
+                        margin-top: 40px;
+                        width: 66%;
+                        h2 {
+                            margin: 0;
+                            padding: 10px 0;
+                        }
+                        form {
+                            textarea {
+                                height: 100px;
+                            }
+                            .btn {
+                                margin: 15px auto;
+                            }
+                        }
+                        p {
+                            margin-top: 0;
+                        }
+                    }
+                }
+                #section4 {
+                    #car {
+                        background: url("../img/car.png") no-repeat center 8%;
+                        background-size: 100%;
+                        width: 76%;
+                        #description-contact {
+                            padding-top: 12%;
+                            h2 {
+                                padding-top: 5px;
+                                font-size: 1em;
+                            }
+                            .line-info {
+                                border-bottom: 1px solid #4e4e4e;
+                                padding: 3px 0;
+                                color: #fff;
+                                font-size: 1.1em;
+                                text-align: left;
+                                &.none-line {
+                                    border-bottom: none;
+                                    padding-top: 8px;
+                                    .left {
+                                        padding-top: 8px;
+                                    }
+                                }
+                                .left {
+                                    float: left;
+                                    font-size: 0.65em;
+                                }
+                                .right {
+                                    font-size: 0.65em;
+                                    float: right;
+                                    width: 220px;
+                                    a {
+                                        color: #2e79cc;
+                                    }
+                                }
+                            }
+                        }
+                        #description-contact-2 {
+                            padding: 0 10%;
+                            padding-top: 15px;
+                            .line-info {
+                                .right {
+                                    width: 120px;
+                                }
+                            }
+                        }
+                    }
+                }
+                #tel-icon {
+                    bottom: 15px;
+                    right: 50px;
+                }
+            
+            }
             
             @media only screen and (max-width: 360px) {
                 #home {
