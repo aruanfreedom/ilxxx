@@ -9,7 +9,12 @@ $fira-eight: 'FiraSans-Eight', sans-serif;
 $blogger: 'BloggerSans', sans-serif;
 $blogger-medium: 'BloggerSans-Medium', sans-serif;
 $size: 1366px;
-  
+
+.fp-tableCell {
+  display: block;
+  vertical-align: top;
+}
+
 .section{
   display: none;
 }
@@ -139,6 +144,12 @@ $size: 1366px;
   height: 100%;
   z-index: 105;
 
+  #next{
+    position: absolute;
+    left:49%;
+    bottom: 0;
+  }
+
   table .center-td {
     vertical-align: middle;
     position: absolute;
@@ -160,7 +171,7 @@ $size: 1366px;
   }
   table {
     border-collapse: collapse;
-    height: 59.7em;
+    height: 100%;
   }
   h1 {
     margin: 0;
@@ -171,6 +182,7 @@ $size: 1366px;
   #bg2 {
     background: url("../img/bg2.png") no-repeat center center;
     background-size: cover;
+    height: 100%;
     position: relative;
     animation: bg 4s ease-in 1;
     &.bg2-speed{
@@ -477,7 +489,7 @@ html, body {
   background-size: cover;
   background-position: -186px -59px;
   //display: none;
-  position: relative;
+  //position: relative;
   top: 0;
   height: 92.4%;
   width: 100%;
@@ -488,6 +500,8 @@ html, body {
     position: relative;
     top: 0;
     text-align: center;
+    height: 100%;
+    padding-top: 40px;
     color: #fff;
     margin: 0 auto;
     width: 50%;
@@ -510,7 +524,7 @@ html, body {
       margin-bottom: 0;
       &.yellow-text {
         position: relative;
-        padding-top: 44%;
+        padding-top: 49%;
         bottom: 0;
       }
     }
@@ -518,7 +532,7 @@ html, body {
       background: url("../img/bisnesman-1.png") no-repeat center center;
       position: absolute;
       left: 50px;
-      bottom: 0;
+      bottom: 70px;
       text-align: center;
       height: 530px;
       width: 343px;
@@ -572,8 +586,8 @@ html, body {
     #bisnesman-2 {
       background: url("../img/bisnesman-2.png") no-repeat center center;
       position: absolute;
-      right: 50px;
-      bottom: 10px;
+      right: 80px;
+      bottom: 75px;
       height: 518px;
       width: 257px;
 
@@ -671,10 +685,7 @@ html, body {
   width: 100%;
   top: 73px;
 
-  .fp-tableCell {
-    display: table-cell;
-   vertical-align: text-top;
-  }
+
   section {
     padding-top: 0;
     position: relative;
@@ -972,7 +983,7 @@ html, body {
              
             .bottom_panel{
               position: absolute;
-              top: 415px;
+              bottom: -170px;
               width: 100%;
               &.gruz{
                 padding-top: 40px;
@@ -1130,7 +1141,7 @@ html, body {
     margin: 0 auto;
     font-family: $blogger;
     padding: 3% 6%;
-    top: 0;
+    top: 160px;
     width: 25%;
     z-index: 2;
     h2 {
@@ -1237,13 +1248,20 @@ html, body {
   #car {
     background: url("../img/car.png") no-repeat center bottom;
     background-size: 100%;
+    position: relative;
     margin: 0 auto;
     height: 100%;
     width: 50%;
 
+    #block-adress{
+      position: absolute;
+      left: 50%;
+      margin-left: -270px;
+      bottom: 200px;
+    }
+
     #description-contact, #description-contact-2 {
-      padding: 17%;
-      padding-top: 25%;
+      padding: 0;
       font-family: $blogger;
       color: #fff;
       h2 {
@@ -1252,7 +1270,7 @@ html, body {
         margin: 0;
         margin-bottom: 10px;
         font-family: $blogger-medium;
-        font-size: 1.8em;
+        font-size: 1.6em;
         font-weight: 100;
       }
       .line-info {
@@ -1276,6 +1294,7 @@ html, body {
         .right {
           font-size: 0.9em;
           font-family: $blogger;
+          text-align: right;
           float: right;
           width: 250px;
           a {

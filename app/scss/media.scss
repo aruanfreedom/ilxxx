@@ -56,7 +56,7 @@
                         box-shadow: 0 0 13px 0 #fff;
                         padding: 5px;
                         position: fixed;
-                        top: 13%;
+                        top: 14%;
                         left: 50%;
                         margin-left: -290px;
                         width: 43%;
@@ -108,7 +108,7 @@
                                 padding-left: 10px;
                                 color: #b1b1b1;
                                 float: left;
-                                height: 150px;
+                                height: 85px;
                                 width: 60%;
                             }
                             .clearfix {
@@ -174,7 +174,7 @@
                 }
                 #home {
                     table {
-                        height: 40em;
+                        height: 35em;
                         .center-td {
                             padding-top: 4%;
                         }
@@ -191,15 +191,18 @@
                         ul{
                             li{
                                 font-size: 13px;
+                                margin-left: 6px;
                             }
                         }
                     }
                 }
                 #section0 {
-                    background-position: -95px -59px;
+                    background-position: 50% -60px;
                     top: 0;
                     section {
                         top: 0;
+                        padding-top: 10px;
+                        height: 100%;
                         width: 65%;
                         h2 {
                             font-size: 30px;
@@ -208,12 +211,23 @@
                             font-size: 14px;
                             margin: 0;
                             &.yellow-text {
-                                padding-top: 290px;
+                                padding-top: 0px;
+                                position: absolute;
+                                bottom: 120px;
+                                left: 50%;
+                                margin-left: -330px;
+                            }
+                            &#img-bottom{
+                                position: absolute;
+                                left: 50%;
+                                margin-left: 0px;
+                                bottom: 80px;
                             }
                         }
                         #bisnesman-1 {
                             background-size: 100%;
                             height: 370px;
+                            left: 77px;
                             width: 230px;
                             .punkt-1,
                             .punkt-2,
@@ -252,7 +266,7 @@
                             .punkt-3 {
                                 background: url("../img/puncts/punkt-3.png") no-repeat right;
                                 background-size: 100%;
-                                top: 250px;
+                                top: 230px;
                                 right: 180px;
                                 h3 {
                                     margin: 5px 0;
@@ -266,7 +280,7 @@
                         }
                         #bisnesman-2 {
                             background-size: 100%;
-                            right: 92px;
+                            right: 120px;
                             height: 370px;
                             width: 178px;
                             .punkt-1,
@@ -321,9 +335,13 @@
                     }
                 }
                 #section1 {
+                    padding-bottom: 30px;
                     section {
-                        padding-top: 0;
+                        padding-top: 25px;
                         width: 100%;
+                        #wrapper{
+                            height: 100%;
+                        }
                         #wrapper.tab1 div.tab1 {
                             background: url("../img/bisness.png") no-repeat left top;
                             background-size: 43%;
@@ -340,7 +358,7 @@
                         }
                         #wrapper.tab3 div.tab3 {
                             background: url("../img/turism.png") no-repeat left top;
-                            background-size: 37%;
+                            background-size: 36%;
                             background-position: 220px;
                             display: block;
                             width: 100%;
@@ -348,6 +366,7 @@
 
                         h2 {
                             margin: 11px 0;
+                            font-size: 30px;
                         }
                         #wrapper {
                             h3 {
@@ -380,6 +399,13 @@
                                 }
                             }
                         }
+                        .tab3{
+                            .description {
+                                .description-item {
+                                    padding-bottom: 10px;
+                                }
+                            }
+                        }
                     }
                 }
                 #section2 {
@@ -387,6 +413,7 @@
                     background-size: 110%;
                     background-position: 50% -130px;
                     section {
+                        padding-top: 20px;
                         width: 90%;
                         #wrapper2 {
                             h3 {
@@ -438,7 +465,7 @@
                                             }
                                         }
                                         .bottom_panel {
-                                          top: 288px;
+                                            bottom: -230px;
                                             &.gruz{
                                                 top: 270px;
                                             }
@@ -494,10 +521,12 @@
                     }
                     #form {
                         padding: 0 5%;
-                        width: 35%;
+                        top: 60px;
+                        width: 37%;
                         h2 {
                             margin: 0;
                             padding: 10px 0;
+                            width: 450px;
                         }
                         form {
                             textarea {
@@ -514,557 +543,16 @@
                 }
                 #section4 {
                     #car {
-                        #description-contact {
-                            padding-top: 21%;
-                            h2 {
-                                padding-top: 5px;
-                                font-size: 1em;
-                            }
-                            .line-info {
-                                border-bottom: 1px solid #4e4e4e;
-                                padding: 5px 0;
-                                color: #fff;
-                                font-size: 1.1em;
-                                text-align: left;
-                                &.none-line {
-                                    border-bottom: none;
-                                    padding-top: 8px;
-                                    .left {
-                                        padding-top: 8px;
-                                    }
-                                }
-                                .left {
-                                    float: left;
-                                    font-size: 0.75em;
-                                }
-                                .right {
-                                    font-size: 0.75em;
-                                    float: right;
-                                    width: 220px;
-                                    a {
-                                        color: #2e79cc;
-                                    }
-                                }
-                            }
-                        }
-                        #description-contact-2 {
-                            padding: 0 10%;
-                            padding-top: 15px;
-                            .line-info {
-                                .right {
-                                    width: 120px;
-                                }
-                            }
-                        }
-                    }
-                }
-                #tel-icon {
-                    bottom: 15px;
-                    right: 50px;
-                }
-            }
-            @media only screen and (max-width: 1280px) {
-                @keyframes logo {
-                    0% {
-                        opacity: 1;
-                    }
-                    20%{
-                        opacity: 1;
-                    }
-                    70%{
-                        transform: translate(0, 0px);
-                    }
-                    90%{
-
-                    }
-                    95%{
-
-                    }
-                    100% {
-                        transform: translate(0px, -235px) scale(0.1);
-                    }
-                }
-                #makeMeScrollable2, #makeMeScrollable3, #makeMeScrollable4{
-                    width:100%;
-                    margin:0 auto;
-                    display:block;
-                    position:relative;
-                    height:310px;
-                }
-                .part{
-                    width: 220px;
-                }
-                div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
-                    height: 70%;
-                }
-                .alert-message {
-                    .message-box{
-                        background: #fff;
-                        box-shadow: 0 0 13px 0 #fff;
-                        padding: 5px;
-                        position: fixed;
-                        top: 13%;
-                        left: 50%;
-                        margin-left: -290px;
-                        width: 43%;
-                        z-index: 101;
-                        .close{
-                            background: url("../img/icons/close.png") no-repeat center center;
-                            position: absolute;
-                            right: 5px;
-                            top: 5px;
-                            height: 32px;
-                            width: 32px;
-                            &:hover{
-                                cursor: pointer;
-                            }
-                        }
-                        h2{
-                            color: #3f3f3f;
-                            font-weight: 100;
-                            text-align: center;
-                            float: right;
-                            width: 89%;
-                        }
-                        form {
-                            label {
-                                color: #3c3c3c;
-                                float: left;
-                                text-align: right;
-                                padding: 11px 14px 11px 0px;
-                                font-size: 1.1em;
-                                width: 130px;
-                                &:hover {
-                                    cursor: pointer;
-                                }
-                            }
-                            input {
-                                border-radius: 3px;
-                                border: 1px solid #ccc;
-                                color: #b1b1b1;
-                                height: 35px;
-                                float: left;
-                                padding-left: 10px;
-                                margin: 6px 0;
-                                font-size: 1em;
-                                width: 60%;
-                            }
-                            textarea {
-                                border-radius: 3px;
-                                border: 1px solid #ccc;
-                                padding-left: 10px;
-                                color: #b1b1b1;
-                                float: left;
-                                height: 150px;
-                                width: 60%;
-                            }
-                            .clearfix {
-                                clear: both;
-                            }
-                            .number-l{
-                                padding: 2px 15px 2px 0;
-                            }
-                            .additionally-l{
-                                padding: 0px 0;
-                                margin-right: 15px;
-                            }
-                            .phone {
-                                background: url("../img/icons/number.png") no-repeat;
-                                background-position: 10px;
-                                padding-left: 45px;
-                                margin-bottom: 12px;
-                                width: 54%;
-                            }
-                            .btn {
-                                background: #a9a9a9;
-                                border-radius: 5px;
-                                border: none;
-                                cursor: pointer;
-                                color: #fff;
-                                margin: 24px auto;
-                                margin-bottom: 0;
-                                position: relative;
-                                left: 42%;
-                                float: none;
-                                padding: 1px 0;
-                                font-size: 1em;
-                                text-transform: uppercase;
-                                height: 57px;
-                                width: 32%;
-                                &.true{
-                                    background: #e6b41d;
-                                }
-                            }
-                            p{
-                                text-align: center;
-                                float: right;
-                                width: 84%;
-                            }
-                            .red {
-                                color: #ca272f;
-                            }
-                        }
-                    }
-                }
-                @keyframes punkt {
-                    0% {
-                        opacity: 0;
-                        width: 8px;
-                    }
-                    50% {
-                        opacity: 1;
-                        width: 8px;
-                    }
-                    100% {
-                        width: 300px;
-                    }
-                }
-                #home {
-                    table {
-                        height: 40em;
-                        .center-td {
-                            padding-top: 4%;
-                        }
-                    }
-                    #logo{
-                        animation: logo 6s ease-in 4s 1;
-                    }
-                }
-                #menu {
-                    nav {
-                        .center {
-                            left: 34.3%;
-                        }
-                        ul{
-                            li{
-                                font-size: 13px;
-                            }
-                        }
-                    }
-                }
-                #section0 {
-                    background-position: -95px -59px;
-                    top: 0;
-                    section {
-                        top: 0;
-                        width: 65%;
-                        h2 {
-                            font-size: 30px;
-                        }
-                        p {
-                            font-size: 14px;
-                            margin: 0;
-                            &.yellow-text {
-                                padding-top: 290px;
-                            }
-                        }
-                        #bisnesman-1 {
-                            background-size: 100%;
-                            height: 370px;
-                            width: 230px;
-                            .punkt-1,
-                            .punkt-2,
-                            .punkt-3 {
-                                background: url("../img/puncts/punkt-1.png") no-repeat right;
-                                background-size: 100%;
-                                right: 150px;
-                                top: -20px;
-                                height: 115px;
-                                width: 300px;
-                                h3 {
-                                    font-size: 18px;
-                                    margin: 0;
-                                    margin-top: 30px;
-                                    margin-left: -10px;
-                                }
-                                span {
-                                    font-size: 12px;
-                                    margin-left: -10px;
-                                }
-                            }
-                            .punkt-2 {
-                                background: url("../img/puncts/punkt-2.png") no-repeat right;
-                                background-size: 100%;
-                                padding-right: 20px;  
-                                top: 150px;
-                                right: 165px;
-                                h3 {
-                                    margin: 5px 0;
-                                    margin-top: 33px;
-                                }
-                                span {
-                                    margin-left: -2px;
-                                }
-                            }
-                            .punkt-3 {
-                                background: url("../img/puncts/punkt-3.png") no-repeat right;
-                                background-size: 100%;
-                                top: 250px;
-                                right: 180px;
-                                h3 {
-                                    margin: 5px 0;
-                                    margin-top: 53px;
-                                    margin-left: -55px;
-                                }
-                                span {
-                                    margin-left: -60px;
-                                }
-                            }
-                        }
-                        #bisnesman-2 {
-                            background-size: 100%;
-                            right: 92px;
-                            height: 370px;
-                            width: 178px;
-                            .punkt-1,
-                            .punkt-2 {
-                                animation: punkt 3s ease-in-out;
-                                background: url("../img/puncts/punkt-4.png") no-repeat left;
-                                background-size: 100%;
-                                position: absolute;
-                                top: 30px;
-                                overflow: hidden;
-                                height: 115px;
-                                width: 300px;
-                                h3 {
-                                    font-size: 18px;
-                                    margin: 0 5px;
-                                    margin-top: 30px;
-                                    margin-left: 30px;
-                                }
-                                span {
-                                    font-size: 12px;
-                                    margin-left: 30px;
-                                    opacity: 0;
-                                }
-                            }
-                            .punkt-1 {
-                                left: 140px;
-                                padding-left: 20px;
-                                h3 { 
-                                    margin-left: 0;
-                                }
-                                span {
-                                    margin-left: 0;
-                                }
-                            }
-                            .punkt-2 {
-                                background: url("../img/puncts/punkt-5.png") no-repeat left;
-                                background-size: 100%;
-                                top: 190px;
-                                left: 115px;
-                                padding-left: 30px;
-                                h3 {
-                                    margin: 5px 5px;
-                                    margin-top: 39px;
-                                    margin-bottom: 0px;
-                                }
-                                span {
-                                    font-size: 12px;
-                                    margin-left: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-                #section1 {
-                    section {
                         padding-top: 0;
-                        width: 100%;
-                        #wrapper.tab1 div.tab1 {
-                            background: url("../img/bisness.png") no-repeat left top;
-                            background-size: 43%;
-                            background-position: 80px;
-                            display: block;
-                            width: 100%;
+                        #block-adress{
+                            left: 50%;
+                            margin-left: -170px;
+                            bottom: 155px;
                         }
-                        #wrapper.tab2 div.tab2 {
-                            background: url("../img/family.png") no-repeat right top;
-                            background-size: 39%;
-                            background-position: 540px;
-                            display: block;
-                            width: 100%;
-                        }
-                        #wrapper.tab3 div.tab3 {
-                            background: url("../img/turism.png") no-repeat left top;
-                            background-size: 37%;
-                            background-position: 220px;
-                            display: block;
-                            width: 100%;
-                        }
-
-                        h2 {
-                            margin: 11px 0;
-                        }
-                        #wrapper {
-                            h3 {
-                                font-size: 22px;
-                            }
-                            .tabs-line {
-                                display: inline-block;
-                                margin-bottom: 15px;
-                            }
-                        }
-                        .tab1, .tab2, .tab3 {
-                            .description {
-                                padding: 0px 200px;
-                                .h4{
-                                    font-size: 1.6em;
-                                }
-
-                                .description-item {
-                                    padding-bottom: 13px;
-                                    P{
-                                        font-size: 0.9em;
-                                    }
-                                    img {
-                                        width: 35px;
-                                        margin-bottom: 12px;
-                                    }
-                                    small {
-                                        font-size: 13px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                #section2 {
-                    background: url("../img/car_park.jpg") no-repeat center #020204;
-                    background-size: 110%;
-                    background-position: 50% -130px;
-                    section {
-                        width: 90%;
-                        #wrapper2 {
-                            h3 {
-                                font-size: 0.9em;
-                            }
-                            .tabs-line {
-                                margin-bottom: 20px;
-                                margin-top: 20px;
-                            }
-                            .tab1, .tab2, .tab3, .tab4 {
-                                .gallery_avto {
-                                    .panel {
-                                        .status-description {
-                                            p {
-                                                line-height: 140%;
-                                                font-size: 0.9em;
-                                            }
-                                            h2 {
-                                                font-size: 1.1em;
-                                                font-weight: 100;
-                                            }
-                                        }
-                                        .big_transport {
-                                            padding: 75px 40px;
-                                            padding-bottom: 0;
-                                            width: 40%;
-                                            img {
-                                                width: 85%;
-                                                height: auto;
-                                            }
-                                            &.jeep-big{
-                                                padding: 65px 40px;
-                                            }
-                                            &.cars-big{
-                                                padding: 75px 40px;
-                                            }
-                                        }
-                                        .description_transport {
-                                            width: 26%;
-                                            h2 {
-                                                font-size: 1.2em;
-                                            }
-                                            .line-info {
-                                                padding-top: 0;
-                                                .right {
-                                                    font-size: 0.8em;
-                                                    width: 160px;
-                                                }
-                                            }
-                                        }
-                                        .bottom_panel {
-                                          top: 288px;
-                                            &.gruz{
-                                                top: 270px;
-                                            }
-                                            .part {
-                                                .box_transport {
-                                                    h2 {
-                                                        font-size: 1em;
-                                                    }
-                                                    .status_transport{
-                                                        padding: 3px 10px;
-                                                    }
-                                                    ul {
-                                                        margin: 0;
-                                                        li {
-                                                            font-size: 0.75em;
-                                                        }
-                                                    }
-                                                    img {
-                                                        height: 50px;
-                                                    }
-                                                    &.active{
-                                                        box-shadow: 0 0 20px 0 #fff;
-                                                    }
-                                                    &:hover{
-                                                        box-shadow: 0 0 20px 0 #fff;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                #section3 {
-                    #form-left-bg {
-                        background: url("../img/bid.png") no-repeat;
-                        background-position: center 237px;
-                        background-size: 38%;
-                        left: -400px;
-                    }
-                    #form-right-bg {
-                        background: url("../img/bid-right.png") no-repeat;
-                        background-position: 890px 250px;
-                        background-size: 33%;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        height: 100%;
-                        width: 100%;
-                        z-index: 1;
-                    }
-                    #form {
-                        padding: 0 5%;
-                        width: 35%;
-                        h2 {
-                            margin: 0;
-                            padding: 10px 0;
-                        }
-                        form {
-                            textarea {
-                                height: 100px;
-                            }
-                            .btn {
-                                margin: 15px auto;
-                            }
-                        }
-                        p {
-                            margin-top: 0;
-                        }
-                    }
-                }
-                #section4 {
-                    #car {
                         #description-contact {
-                            padding-top: 21%;
+                            padding: 0;
                             h2 {
-                                padding-top: 5px;
+                                padding: 5px;
                                 font-size: 1em;
                             }
                             .line-info {
@@ -1095,11 +583,11 @@
                             }
                         }
                         #description-contact-2 {
-                            padding: 0 10%;
+                            padding: 0 2%;
                             padding-top: 15px;
                             .line-info {
                                 .right {
-                                    width: 120px;
+                                    width: 100px;
                                 }
                             }
                         }
@@ -1110,6 +598,11 @@
                     right: 50px;
                 }
             }
+
+            @media only screen and (max-width: 1280px){
+
+            }
+
 
             @media only screen and (max-width: 980px) {}
             
@@ -2397,7 +1890,7 @@
                             margin: 0;
                             font-weight: 100;
                             font-size: 1.2em;
-                            padding-top: 33px;                            
+                            padding-top: 0;
                             text-transform: uppercase;
                         }
 
@@ -2412,7 +1905,7 @@
                             &.yellow-text {
                                 position: relative;
                                 padding-top: 0%;
-                                bottom: 50px;
+                                bottom: 0;
                             }
                         }
                         #bisnesman-1 {
@@ -2473,8 +1966,8 @@
                             text-align: right;
                             right: 0;
                             top: 15px;
-                            margin-bottom: 45px;
-                            height: 100%;
+                            margin-bottom: 0;
+                            height: 34%;
                             width: 93%;
 
                             .punkt-1, .punkt-2 {
@@ -2826,6 +2319,7 @@
 
                     #car {
                         background: #1E1E1E;
+                        padding-top: 0;
                         width: 100%;
 
                         #description-contact, #description-contact-2 {
