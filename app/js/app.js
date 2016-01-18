@@ -210,7 +210,6 @@ var machineSelection = function() {
     $(".box_transport").on("click", function(){
         $(".box_transport").removeClass("active");
         $(this).addClass("active");
-
     });
 
     $(".part").on("click", function() {
@@ -234,7 +233,7 @@ var machineSelection = function() {
 
         if (status_des_small_html === "Эконом класс") {
             status_des.html("Эконом класс");
-            status_des_p.html("<p>Это отличный выбор цены и качества.</p><p> Вы получаете высокий уровень сервиса,но и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных вопросов и ряд других мероприятий.</p><p>Отчет времени идет после непосредственной подачи   авто в указанное место.</p>");
+            status_des_p.html("<p>Это отличный выбор цены и качества.</p><p>  Вы получаете высокий уровень сервиса и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных вопросов и ряд других мероприятий.</p><p>Отчет времени идет после непосредственной подачи   авто в указанное место.</p>");
         } else if (status_des_small_html === "Бизнес класс") {
             status_des.html("Бизнес класс");
             status_des_p.html("<p>Это отличный выбор оптимального комфорта при выгодной стоимости услуг.</p> <p> Вы получаете высокий уровень сервиса и арендуете надежный автомобиль, который по стоимости и комфорту является лучшей альтернативой представительскому и эконом классам.</p><p>Мы берем на себя полную координацию и предоставим подробный отчет по оказанной услуге.</p> ");
@@ -276,6 +275,7 @@ var machineSelection = function() {
     $("#tab1").on("click", function() {
         $(".big_transport img").attr("src", "img/cars/car_1_big.png");
 
+        $(".box_transport").removeClass("active");
         $(".select-cars").addClass("active");
 
         $("#section2").css({
@@ -343,7 +343,7 @@ var machineSelection = function() {
         status_des_p.html("");
 
         status_des.html("Эконом класс");
-        status_des_p.html("<p>Это отличный выбор цены и качества.</p><p> Вы получаете высокий уровень сервиса, но и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных вопросов и ряд других мероприятий.</p><p>Отчет времени идет после непосредственной подачи   авто в указанное место.</p>");
+        status_des_p.html("<p>Это отличный выбор цены и качества.</p><p>  Вы получаете высокий уровень сервиса и арендуете надежный автомобиль, пригодный для решения деловых задач, семейных вопросов и ряд других мероприятий.</p><p>Отчет времени идет после непосредственной подачи   авто в указанное место.</p>");
 
         $('.description_transport h2').html("Toyota Corolla");
         $('.description_transport .year').html("от 2011");
@@ -361,6 +361,7 @@ var machineSelection = function() {
     $("#tab2").on("click", function() {
         $(".big_transport img").attr("src", "img/cars/car_14_big.png");
 
+        $(".box_transport").removeClass("active");
         $(".select-micro").addClass("active");
 
         $("#section2").css({
@@ -416,7 +417,7 @@ var machineSelection = function() {
         status_des_p.html("");
 
         status_des.html("Микроавтобус");
-        status_des_p.html("<p>Это отличный выбор для поездки небольшой группы.</p> <p> Вы получаете не только высокий уровень сервиса, но и арендуете комфортабельное транспортное средство, обеспечивающее мобильность и вместительность равную четырем и более легковым авто.</p><p>Осуществляем внутригородские, междугородние и международные пассажирские перевозки.</p>");
+        status_des_p.html("<p>Это отличный выбор для поездки небольшой группы.</p> <p> Вы получаете  высокий уровень сервиса и арендуете комфортабельное транспортное средство, обеспечивающее мобильность и вместительность равную четырем и более легковым авто.</p><p>Осуществляем внутригородские, междугородние и международные пассажирские перевозки.</p>");
 
         $('.description_transport h2').html("Toyota Hiace");
         $('.description_transport .year').html("от 2010");
@@ -430,6 +431,7 @@ var machineSelection = function() {
     $("#tab3").on("click", function() {
         $(".big_transport img").attr("src", "img/cars/car_19_big.png");
 
+        $(".box_transport").removeClass("active");
         $(".select-autobus").addClass("active");
 
         $(".big_transport").removeClass("cars-big");
@@ -497,6 +499,7 @@ var machineSelection = function() {
     $("#tab4").on("click", function() {
         $(".big_transport img").attr("src", "img/cars/car_20_big.png");
 
+        $(".box_transport").removeClass("active");
         $(".select-g").addClass("active");
 
         $(".big_transport").removeClass("cars-big");

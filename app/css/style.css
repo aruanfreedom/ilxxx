@@ -626,6 +626,7 @@ html, body {
     width: 80%; }
     #section2 section #wrapper2 {
       text-align: center;
+      position: relative;
       height: 100%; }
       #section2 section #wrapper2 .tabs-line {
         display: inline-block;
@@ -650,7 +651,6 @@ html, body {
         height: 100%;
         width: 100%; }
         #section2 section #wrapper2 .tab1 .gallery_avto .panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel {
-          position: relative;
           height: 100%;
           width: 100%; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description {
