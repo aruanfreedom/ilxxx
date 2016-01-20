@@ -12,7 +12,7 @@ var speedAnim = function(){
 
     $("#bg2").click(function(){
         $(this).addClass("bg2-speed");
-        $("#logo").addClass("logo-speed");
+        $(".logo").addClass("logo-speed");
         animateTextDelay = 5;
         hideAnimDelay = 500;
         menuHideDelay = 450;
@@ -23,9 +23,9 @@ var speedAnim = function(){
         speedTextAnim = 10;
         animLoadStopDelay = 40;
 
-        //animateText("dynamic-text", "АРЕНДА АВТО ", 0);
 
-        //animLoad();
+
+        delete animLoad();
     });
 
 };
@@ -146,9 +146,9 @@ function animLoad() {
             "opacity": 1
         }, speedmenuHide, function() {
             if( parseInt( $(window).width() ) <= 1920){
-                $("#logo").addClass("width1920");
+                $(".logo").addClass("width1920");
             } else if( parseInt( $(window).width() ) >= 1366 ){
-                $("#logo").addClass("width1366");
+                $(".logo").addClass("width1366");
             } else{
                 return false;
             }

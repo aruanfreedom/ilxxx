@@ -147,7 +147,7 @@
     animation: bg 4s ease-in 1; }
     #home #bg2.bg2-speed {
       animation: bg 1s ease-in 1; }
-  #home #logo {
+  #home .logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
@@ -156,7 +156,11 @@
     height: 421px;
     width: 400px;
     z-index: 200; }
-    #home #logo:before {
+    #home .logo.logo-speed {
+      animation: logo-speed 1s ease-in 1; }
+      #home .logo.logo-speed:before {
+        animation: shine 1s linear 1; }
+    #home .logo:before {
       content: "";
       background: url("../img/shine.png") no-repeat center center;
       background-size: 100%;
@@ -168,10 +172,6 @@
       transform: translate(60px, 110px);
       opacity: 0;
       width: 0; }
-    #home #logo.logo-speed {
-      animation: logo 1.5s ease-in 5s 1; }
-      #home #logo.logo-speed:before {
-        animation: shine 1s linear 1s 1; }
 
 .width1920 {
   transform: translate(0px, -465px) scale(0.1); }
@@ -188,6 +188,14 @@
     transform: translate(0, 0px); }
   90% { }
   95% { }
+  100% {
+    transform: translate(0px, -460px) scale(0.1); } }
+
+@keyframes logo-speed {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 1; }
   100% {
     transform: translate(0px, -460px) scale(0.1); } }
 
@@ -383,13 +391,15 @@ html, body {
       margin-bottom: 0; }
       #section0 section p.yellow-text {
         position: relative;
-        padding-top: 49%;
+        padding-top: 460px;
         bottom: 0; }
+      #section0 section p#img-bottom {
+        margin: 0; }
     #section0 section #bisnesman-1 {
       background: url("../img/bisnesman-1.png") no-repeat center center;
       position: absolute;
       left: 50px;
-      bottom: 70px;
+      bottom: 110px;
       text-align: center;
       height: 530px;
       width: 343px; }
@@ -435,7 +445,7 @@ html, body {
       background: url("../img/bisnesman-2.png") no-repeat center center;
       position: absolute;
       right: 80px;
-      bottom: 75px;
+      bottom: 110px;
       height: 518px;
       width: 257px; }
       #section0 section #bisnesman-2 .punkt-1, #section0 section #bisnesman-2 .punkt-2 {
@@ -659,11 +669,11 @@ html, body {
             width: 25%; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description h2 {
               color: #fff;
-              font-family: "FiraSans-SemiBold", sans-serif;
+              font-family: "FiraSans-UltraLight", sans-serif;
               font-size: 1.6em;
               margin: 0; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
-              font-family: "FiraSans-Thin", sans-serif;
+              font-family: "FiraSans-UltraLight", sans-serif;
               color: #fff;
               margin: 0;
               line-height: 180%; }
@@ -715,7 +725,7 @@ html, body {
                 font-family: "FiraSans-Book", sans-serif; }
               #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
                 font-size: 1em;
-                font-family: "FiraSans-Thin", sans-serif;
+                font-family: "FiraSans-UltraLight", sans-serif;
                 float: right;
                 width: 230px; }
                 #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right.last {
@@ -725,7 +735,7 @@ html, body {
                   text-decoration: none; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
             position: absolute;
-            bottom: -170px;
+            bottom: 50px;
             width: 100%; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
               padding-top: 40px; }
@@ -939,7 +949,8 @@ html, body {
       position: absolute;
       left: 50%;
       margin-left: -270px;
-      bottom: 200px; }
+      bottom: 225px;
+      width: 60%; }
     #section4 #car #description-contact, #section4 #car #description-contact-2 {
       padding: 0;
       font-family: "BloggerSans", sans-serif;
@@ -972,7 +983,7 @@ html, body {
           font-family: "BloggerSans", sans-serif;
           text-align: right;
           float: right;
-          width: 250px; }
+          width: 280px; }
           #section4 #car #description-contact .line-info .right a, #section4 #car #description-contact-2 .line-info .right a {
             color: #2e79cc; }
             #section4 #car #description-contact .line-info .right a:last-child, #section4 #car #description-contact-2 .line-info .right a:last-child {

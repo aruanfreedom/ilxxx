@@ -1,19 +1,5 @@
             @media only screen and (min-width: 1920px) {
-                #section2 {
-                    section {
-                        #wrapper2 {
-                            .tab1, .tab2, .tab3, .tab4 {
-                                .gallery_avto {
-                                    .panel {
-                                        .bottom_panel {
-                                            bottom: 50px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+
             }
             
             @media only screen and (max-width: 1366px) {
@@ -32,6 +18,17 @@
                     }
                     95%{
 
+                    }
+                    100% {
+                        transform: translate(0px, -235px) scale(0.1);
+                    }
+                }
+                @keyframes logo-speed {
+                    0% {
+                        opacity: 1;
+                    }
+                    20%{
+                        opacity: 1;
                     }
                     100% {
                         transform: translate(0px, -235px) scale(0.1);
@@ -227,6 +224,7 @@
                         #bisnesman-1 {
                             background-size: 100%;
                             height: 370px;
+                            bottom: 80px;
                             left: 77px;
                             width: 230px;
                             .punkt-1,
@@ -281,6 +279,7 @@
                         #bisnesman-2 {
                             background-size: 100%;
                             right: 120px;
+                            bottom: 75px;
                             height: 370px;
                             width: 178px;
                             .punkt-1,
@@ -553,6 +552,7 @@
                             left: 50%;
                             margin-left: -170px;
                             bottom: 140px;
+                            width: 51%;
                         }
                         #description-contact {
                             padding: 0;

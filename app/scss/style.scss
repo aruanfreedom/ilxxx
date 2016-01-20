@@ -190,7 +190,7 @@ $size: 1366px;
     }
   }
 
-  #logo {
+  .logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
@@ -199,6 +199,14 @@ $size: 1366px;
     height: 421px;
     width: 400px;
     z-index: 200;
+
+    &.logo-speed{
+      animation: logo-speed 1s ease-in 1;
+
+      &:before{
+        animation: shine 1s linear 1;
+      }
+    }
 
     &:before {
       content: "";
@@ -213,14 +221,8 @@ $size: 1366px;
       opacity: 0;
       width: 0;
     }
-    &.logo-speed{
-      animation: logo 1.5s ease-in 5s 1;
-
-      &:before{
-        animation: shine 1s linear 1s 1;
-      }
-    }
   }
+
 }
 
 .width1920{
@@ -248,6 +250,17 @@ $size: 1366px;
   }
   95%{
 
+  }
+  100% {
+    transform: translate(0px, -460px) scale(0.1);
+  }
+}
+@keyframes logo-speed {
+  0% {
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
   }
   100% {
     transform: translate(0px, -460px) scale(0.1);
@@ -524,15 +537,18 @@ html, body {
       margin-bottom: 0;
       &.yellow-text {
         position: relative;
-        padding-top: 49%;
+        padding-top: 460px;
         bottom: 0;
+      }
+      &#img-bottom{
+        margin: 0;
       }
     }
     #bisnesman-1 {
       background: url("../img/bisnesman-1.png") no-repeat center center;
       position: absolute;
       left: 50px;
-      bottom: 70px;
+      bottom: 110px;
       text-align: center;
       height: 530px;
       width: 343px;
@@ -587,7 +603,7 @@ html, body {
       background: url("../img/bisnesman-2.png") no-repeat center center;
       position: absolute;
       right: 80px;
-      bottom: 75px;
+      bottom: 110px;
       height: 518px;
       width: 257px;
 
@@ -898,12 +914,12 @@ html, body {
               width: 25%;
               h2{
                 color: #fff;
-                font-family: $fira-semi-bold;
+                font-family: $fira-ultra-light;
                 font-size: 1.6em;
                 margin: 0;
               }
               p{
-                font-family: $fira-thin;
+                font-family: $fira-ultra-light;
                 color: #fff;
                 margin: 0;
                 line-height: 180%;
@@ -967,7 +983,7 @@ html, body {
                   }
                 .right {
                   font-size: 1em;
-                  font-family: $fira-thin;
+                  font-family: $fira-ultra-light;
                   float: right;
                   width: 230px;
                   &.last{
@@ -983,7 +999,7 @@ html, body {
              
             .bottom_panel{
               position: absolute;
-              bottom: -170px;
+              bottom: 50px;
               width: 100%;
               &.gruz{
                 padding-top: 40px;
@@ -1257,7 +1273,8 @@ html, body {
       position: absolute;
       left: 50%;
       margin-left: -270px;
-      bottom: 200px;
+      bottom: 225px;
+      width: 60%;
     }
 
     #description-contact, #description-contact-2 {
@@ -1296,7 +1313,7 @@ html, body {
           font-family: $blogger;
           text-align: right;
           float: right;
-          width: 250px;
+          width: 280px;
           a {
             color: #2e79cc;
             &:last-child{
