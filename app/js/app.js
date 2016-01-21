@@ -20,7 +20,7 @@ var speedAnim = function(){
         speedHome = 500;
         animMenuLogoDelay = 500;
         animMenuDelay = 200;
-        speedTextAnim = 10;
+        //speedTextAnim = 10;
         animLoadStopDelay = 40;
 
 
@@ -165,13 +165,13 @@ function hideAnim() {
 
     if( parseInt( $(window).width() ) >= 1366) {
         $("#home").animate({
-            "height": "73px"
+            "height": "0px"
         }, speedHome, function() {
             $("#bg2").css({"display": "none"});
         });
     }else{
         $("#home").animate({
-            "height": "45px"
+            "height": "0px"
         }, speedHome, function() {
             $("#bg2").css({"display": "none"});
         });

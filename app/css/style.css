@@ -1,7 +1,3 @@
-.fp-tableCell {
-  display: block;
-  vertical-align: top; }
-
 .section {
   display: none; }
 
@@ -352,7 +348,8 @@ html, body {
       float: none;
       position: absolute;
       font-size: 13px;
-      left: 38%; }
+      left: 50%;
+      margin-left: -228px; }
 
 @keyframes fadeInMenu {
   0% {
@@ -360,10 +357,11 @@ html, body {
   100% {
     opacity: 1; } }
 
+.clearfix {
+  clear: both; }
+
 #section0 {
-  background: url("../img/bg-2.jpg") no-repeat center center #111519;
-  background-size: cover;
-  background-position: -186px -59px;
+  background: url("../img/bg-2.jpg") no-repeat bottom center #000;
   top: 0;
   height: 92.4%;
   width: 100%;
@@ -372,41 +370,54 @@ html, body {
     position: relative;
     top: 0;
     text-align: center;
-    height: 100%;
     padding-top: 40px;
     color: #fff;
     margin: 0 auto;
     width: 50%; }
     #section0 section h2 {
       margin: 0;
+      margin-top: 57px;
       font-family: "FiraSans-SemiBold", sans-serif;
       font-weight: 100;
       font-size: 36px;
       text-transform: uppercase; }
     #section0 section .yellow-text {
-      color: #e6b41d; }
+      margin: 0;
+      color: #e6b41d;
+      margin-bottom: 33px; }
     #section0 section p {
       font-family: "FiraSans-UltraLight", sans-serif;
       font-size: 18px;
       margin-bottom: 0; }
       #section0 section p.yellow-text {
-        position: relative;
-        padding-top: 460px;
-        bottom: 0; }
+        position: absolute;
+        padding-top: 0px;
+        bottom: 43px;
+        margin: 0;
+        width: 100%; }
       #section0 section p#img-bottom {
-        margin: 0; }
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        margin-left: -12px; }
     #section0 section #bisnesman-1 {
-      background: url("../img/bisnesman-1.png") no-repeat center center;
-      position: absolute;
+      position: relative;
+      float: left;
       left: 50px;
-      bottom: 110px;
+      bottom: 0;
       text-align: center;
-      height: 530px;
-      width: 343px; }
+      padding: 0;
+      height: 100%;
+      width: 33%; }
+      #section0 section #bisnesman-1 img {
+        height: 100%; }
       #section0 section #bisnesman-1 .punkt-1, #section0 section #bisnesman-1 .punkt-2, #section0 section #bisnesman-1 .punkt-3 {
         animation: punkt 3s ease-in-out;
         background: url("../img/puncts/punkt-1.png") no-repeat right;
         position: absolute;
+        top: 0;
         right: 254px;
         overflow: hidden;
         height: 115px;
@@ -442,12 +453,14 @@ html, body {
         #section0 section #bisnesman-1 .punkt-3 span {
           margin-left: -100px; }
     #section0 section #bisnesman-2 {
-      background: url("../img/bisnesman-2.png") no-repeat center center;
-      position: absolute;
+      position: relative;
+      float: right;
       right: 80px;
-      bottom: 110px;
-      height: 518px;
-      width: 257px; }
+      bottom: 0;
+      height: 100%;
+      width: 30%; }
+      #section0 section #bisnesman-2 img {
+        height: 82%; }
       #section0 section #bisnesman-2 .punkt-1, #section0 section #bisnesman-2 .punkt-2 {
         animation: punkt 3s ease-in-out;
         background: url("../img/puncts/punkt-4.png") no-repeat left;
@@ -456,7 +469,7 @@ html, body {
         top: 70px;
         overflow: hidden;
         height: 115px;
-        width: 453px; }
+        width: 430px; }
         #section0 section #bisnesman-2 .punkt-1 h3, #section0 section #bisnesman-2 .punkt-2 h3 {
           animation: punkt-text 3s ease-in-out 3s;
           font-family: "FiraSans-Medium", sans-serif;
@@ -477,26 +490,23 @@ html, body {
         #section0 section #bisnesman-2 .punkt-2 h3 {
           margin: 5px 0;
           margin-top: 30px; }
-    #section0 section img {
+    #section0 section #img-bottom img {
       animation: arrow-bottom 1s ease-in-out infinite; }
 
 /* Animation puncts*/
 @keyframes punkt {
   0% {
-    opacity: 0;
-    width: 8px; }
+    width: 8px;
+    opacity: 0; }
   50% {
-    opacity: 1;
-    width: 8px; }
+    opacity: 1; }
   100% {
-    width: 453px; } }
+    width: 430px; } }
 
 @keyframes punkt-text {
   0% {
-    display: none;
     opacity: 0; }
   100% {
-    display: block;
     opacity: 1; } }
 
 /* End Animation puncts */
