@@ -1,3 +1,9 @@
+.fp-tableCell {
+  display: block; }
+
+.clearfix {
+  clear: both; }
+
 .section {
   display: none; }
 
@@ -287,7 +293,7 @@ html, body {
             background: url("../img/light-cursor.png") no-repeat center center;
             background-size: 100%; }
       #menu nav ul.center li a {
-        font-family: "FiraSans-Thin", sans-serif; }
+        font-family: "FiraSans-UltraLight", sans-serif; }
       #menu nav ul.right {
         opacity: 0; }
         #menu nav ul.right li.center-v {
@@ -322,7 +328,7 @@ html, body {
         color: #fff;
         float: left;
         font-family: "BloggerSans", sans-serif;
-        font-size: 14px;
+        font-size: 0.875em;
         list-style: none;
         margin-left: 15px; }
         #menu nav ul li.number-v {
@@ -336,7 +342,7 @@ html, body {
           margin-left: 20px; }
         #menu nav ul li a {
           color: #fff;
-          font-size: 13px;
+          font-size: 1.1125em;
           text-decoration: none;
           text-transform: uppercase;
           font-family: "FiraSans-Regular", sans-serif; }
@@ -347,7 +353,7 @@ html, body {
     #menu nav .center {
       float: none;
       position: absolute;
-      font-size: 13px;
+      font-size: 0.8125em;
       left: 50%;
       margin-left: -228px; }
 
@@ -361,8 +367,9 @@ html, body {
   clear: both; }
 
 #section0 {
-  background: url("../img/bg-2.jpg") no-repeat bottom center #000;
-  top: 0;
+  background: url("../img/bg-2.jpg") no-repeat bottom center #111519;
+  background-size: cover;
+  top: 73px;
   height: 92.4%;
   width: 100%;
   z-index: 1; }
@@ -379,46 +386,61 @@ html, body {
       margin-top: 57px;
       font-family: "FiraSans-SemiBold", sans-serif;
       font-weight: 100;
-      font-size: 36px;
+      font-size: 2.25em;
       text-transform: uppercase; }
     #section0 section .yellow-text {
       margin: 0;
       color: #e6b41d;
-      margin-bottom: 33px; }
+      margin-bottom: 67px; }
     #section0 section p {
       font-family: "FiraSans-UltraLight", sans-serif;
-      font-size: 18px;
+      font-size: 1.125em;
       margin-bottom: 0; }
       #section0 section p.yellow-text {
         position: absolute;
         padding-top: 0px;
         bottom: 43px;
         margin: 0;
-        width: 100%; }
+        width: 100%;
+        z-index: 2; }
       #section0 section p#img-bottom {
         margin: 0;
         position: absolute;
         bottom: 0;
         left: 50%;
         right: 50%;
-        margin-left: -12px; }
+        margin-left: -12px;
+        z-index: 2; }
+    #section0 section #luxe {
+      position: absolute;
+      left: 0;
+      right: 50%;
+      bottom: -4%;
+      text-align: center;
+      z-index: 1;
+      width: 100%; }
+      #section0 section #luxe img {
+        width: 65.833333%; }
     #section0 section #bisnesman-1 {
       position: relative;
       float: left;
-      left: 50px;
+      left: 10%;
       bottom: 0;
       text-align: center;
       padding: 0;
       height: 100%;
-      width: 33%; }
+      margin: 0 auto;
+      width: 33%;
+      z-index: 2; }
       #section0 section #bisnesman-1 img {
-        height: 100%; }
+        height: 100%;
+        width: 100%; }
       #section0 section #bisnesman-1 .punkt-1, #section0 section #bisnesman-1 .punkt-2, #section0 section #bisnesman-1 .punkt-3 {
         animation: punkt 3s ease-in-out;
         background: url("../img/puncts/punkt-1.png") no-repeat right;
         position: absolute;
         top: 0;
-        right: 254px;
+        right: 60%;
         overflow: hidden;
         height: 115px;
         width: 453px; }
@@ -428,24 +450,24 @@ html, body {
           font-weight: 100;
           opacity: 0;
           text-transform: uppercase;
-          font-size: 22px;
+          font-size: 1.375em;
           margin: 15px 0; }
         #section0 section #bisnesman-1 .punkt-1 span, #section0 section #bisnesman-1 .punkt-2 span, #section0 section #bisnesman-1 .punkt-3 span {
           animation: punkt-text 3s ease-in-out 3s;
-          font-size: 16px;
+          font-size: 1em;
           opacity: 0;
           font-family: "FiraSans-Book", sans-serif; }
       #section0 section #bisnesman-1 .punkt-2 {
         background: url("../img/puncts/punkt-2.png") no-repeat right;
-        top: 190px;
-        right: 220px; }
+        top: 40%;
+        right: 62%; }
         #section0 section #bisnesman-1 .punkt-2 h3 {
           margin: 5px 0;
           margin-top: 30px; }
       #section0 section #bisnesman-1 .punkt-3 {
         background: url("../img/puncts/punkt-3.png") no-repeat right;
-        top: 350px;
-        right: 235px; }
+        top: 65%;
+        right: 65%; }
         #section0 section #bisnesman-1 .punkt-3 h3 {
           margin: 5px 0;
           margin-top: 59px;
@@ -455,18 +477,21 @@ html, body {
     #section0 section #bisnesman-2 {
       position: relative;
       float: right;
-      right: 80px;
+      right: 13%;
       bottom: 0;
+      margin: 0 auto;
       height: 100%;
-      width: 30%; }
+      width: 25%;
+      z-index: 2; }
       #section0 section #bisnesman-2 img {
-        height: 82%; }
+        height: 100%;
+        width: 100%; }
       #section0 section #bisnesman-2 .punkt-1, #section0 section #bisnesman-2 .punkt-2 {
         animation: punkt 3s ease-in-out;
         background: url("../img/puncts/punkt-4.png") no-repeat left;
         position: absolute;
-        left: 200px;
-        top: 70px;
+        left: 72%;
+        top: 10%;
         overflow: hidden;
         height: 115px;
         width: 430px; }
@@ -476,17 +501,17 @@ html, body {
           font-weight: 100;
           opacity: 0;
           text-transform: uppercase;
-          font-size: 22px;
+          font-size: 1.375em;
           margin: 15px 0; }
         #section0 section #bisnesman-2 .punkt-1 span, #section0 section #bisnesman-2 .punkt-2 span {
           animation: punkt-text 3s ease-in-out 3s;
-          font-size: 16px;
+          font-size: 1em;
           opacity: 0;
           font-family: "FiraSans-Book", sans-serif; }
       #section0 section #bisnesman-2 .punkt-2 {
         background: url("../img/puncts/punkt-5.png") no-repeat left;
-        top: 220px;
-        right: 230px; }
+        top: 48%;
+        left: 63%; }
         #section0 section #bisnesman-2 .punkt-2 h3 {
           margin: 5px 0;
           margin-top: 30px; }
@@ -538,8 +563,9 @@ html, body {
       font-family: "FiraSans-SemiBold", sans-serif;
       text-transform: uppercase;
       margin: 33px 0;
+      margin-top: 100px;
       font-weight: 100;
-      font-size: 36px; }
+      font-size: 2.25em; }
     #section1 section #wrapper .tabs-line {
       display: inline-block;
       margin-bottom: 50px; }
@@ -553,7 +579,7 @@ html, body {
       font-family: "FiraSans-Medium", sans-serif;
       text-transform: uppercase;
       font-weight: 100;
-      font-size: 36px;
+      font-size: 2.25em;
       transition: background .8s; }
     #section1 section #wrapper #bisness h3:hover {
       cursor: pointer;
@@ -619,7 +645,7 @@ html, body {
           margin: 0; }
         #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
           font-family: "FiraSans-Book", sans-serif;
-          font-size: 16px; }
+          font-size: 1em; }
         #section1 section .tab1 .description .description-item #last-img, #section1 section .tab2 .description .description-item #last-img, #section1 section .tab3 .description .description-item #last-img {
           margin-bottom: 38px; }
     #section1 section .tab2 .description {
@@ -651,7 +677,7 @@ html, body {
       #section2 section #wrapper2 .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
-        margin-top: 40px; }
+        margin-top: 95px; }
       #section2 section #wrapper2 h3 {
         background: #a9a9a9;
         border-radius: 5px;
@@ -714,7 +740,8 @@ html, body {
               padding-top: 8px;
               color: #fff;
               font-size: 1em;
-              text-align: left; }
+              text-align: left;
+              width: 100%; }
               #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info.none-line, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info.none-line, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info.none-line, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info.none-line {
                 border-bottom: none;
                 padding: 0; }
@@ -737,7 +764,7 @@ html, body {
                 font-size: 1em;
                 font-family: "FiraSans-UltraLight", sans-serif;
                 float: right;
-                width: 230px; }
+                width: 50%; }
                 #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right.last {
                   padding-top: 10px; }
                 #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right a, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right a, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right a, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right a {
@@ -745,7 +772,7 @@ html, body {
                   text-decoration: none; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
             position: absolute;
-            bottom: 50px;
+            bottom: 0px;
             width: 100%; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
               padding-top: 40px; }
@@ -978,7 +1005,8 @@ html, body {
         padding: 8px 0;
         color: #fff;
         font-size: 1.1em;
-        text-align: left; }
+        text-align: left;
+        width: 100%; }
         #section4 #car #description-contact .line-info.none-line, #section4 #car #description-contact-2 .line-info.none-line {
           border-bottom: none;
           padding-top: 8px; }
@@ -993,7 +1021,7 @@ html, body {
           font-family: "BloggerSans", sans-serif;
           text-align: right;
           float: right;
-          width: 280px; }
+          width: 70%; }
           #section4 #car #description-contact .line-info .right a, #section4 #car #description-contact-2 .line-info .right a {
             color: #2e79cc; }
             #section4 #car #description-contact .line-info .right a:last-child, #section4 #car #description-contact-2 .line-info .right a:last-child {
@@ -1002,7 +1030,7 @@ html, body {
       padding: 0 10%;
       padding-top: 15px; }
       #section4 #car #description-contact-2 .line-info .right {
-        width: 150px; }
+        width: 40%; }
     #section4 #car .clearfix {
       clear: both; }
 
