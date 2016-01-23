@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'uninstall', 'node-sass' ]
+2 info using npm@1.4.29
+3 info using node@v0.10.41
+4 verbose node symlink /usr/bin/node
+5 warn deprecated This version of npm lacks support for important features,
+6 warn deprecated such as scoped packages, offered by the primary npm
+7 warn deprecated registry. Consider upgrading to at least npm@2, if not the
+8 warn deprecated latest stable version. To upgrade to npm@2, run:
+9 warn deprecated npm -g install npm@latest-2
+10 warn deprecated To upgrade to the latest stable version, run:
+11 warn deprecated npm -g install npm@latest
+12 warn deprecated (Depending on how Node.js was installed on your system, you
+13 warn deprecated may need to prefix the preceding commands with `sudo`, or if
+14 warn deprecated on Windows, run them from an Administrator prompt.)
+15 warn deprecated If you're running the version of npm bundled with
+16 warn deprecated Node.js 0.10 LTS, be aware that the next version of 0.10 LTS
+17 warn deprecated will be bundled with a version of npm@2, which has some small
+18 warn deprecated backwards-incompatible changes made to `npm run-script` and
+19 warn deprecated semver behavior.
+20 verbose node_modules/node-sass unbuild
+21 info preuninstall node-sass@3.4.2
+22 info uninstall node-sass@3.4.2
+23 verbose true,/opt/lampp/htdocs/ilxxx/node_modules,/opt/lampp/htdocs/ilxxx/node_modules unbuild node-sass@3.4.2
+24 verbose /opt/lampp/htdocs/ilxxx/node_modules/.bin,[object Object] binRoot
+25 error Refusing to delete: /opt/lampp/htdocs/ilxxx/node_modules/.bin/node-sass not in /opt/lampp/htdocs/ilxxx/node_modules/node-sass
+File exists: /opt/lampp/htdocs/ilxxx/node_modules/.bin/node-sass
+Move it away, and try again.
+26 error System Linux 3.13.0-76-generic
+27 error command "/usr/bin/node" "/usr/bin/npm" "uninstall" "node-sass"
+28 error cwd /opt/lampp/htdocs/ilxxx
+29 error node -v v0.10.41
+30 error npm -v 1.4.29
+31 error path /opt/lampp/htdocs/ilxxx/node_modules/.bin/node-sass
+32 error code EEXIST
+33 verbose exit [ 1, true ]
