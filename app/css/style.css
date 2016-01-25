@@ -1,6 +1,3 @@
-.fp-tableCell {
-  display: block; }
-
 .clearfix {
   clear: both; }
 
@@ -322,8 +319,10 @@ html, body {
           #menu nav ul.right li.btn-yellow:hover {
             background: url("../img/light-lang.png") no-repeat center center #e6b41d;
             background-size: 150%; }
-          #menu nav ul.right li.btn-yellow a:hover {
-            background: none; }
+          #menu nav ul.right li.btn-yellow a {
+            font-size: 0.9125em; }
+            #menu nav ul.right li.btn-yellow a:hover {
+              background: none; }
       #menu nav ul li {
         color: #fff;
         float: left;
@@ -369,21 +368,19 @@ html, body {
 #section0 {
   background: url("../img/bg-2.jpg") no-repeat bottom center #111519;
   background-size: cover;
-  top: 73px;
-  height: 92.4%;
+  height: 100%;
   width: 100%;
   z-index: 1; }
   #section0 section {
     position: relative;
     top: 0;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 5%;
     color: #fff;
     margin: 0 auto;
     width: 50%; }
     #section0 section h2 {
       margin: 0;
-      margin-top: 57px;
       font-family: "FiraSans-SemiBold", sans-serif;
       font-weight: 100;
       font-size: 2.25em;
@@ -549,14 +546,16 @@ html, body {
 #section1 {
   background: #fbfbfb;
   position: relative;
+  height: 100%;
   width: 100%;
-  top: 73px; }
+  z-index: 1; }
   #section1 section {
-    padding-top: 0;
-    position: relative;
     text-align: center;
+    padding-top: 1%;
     margin: 0 auto;
-    width: 75%; }
+    height: 100%;
+    width: 75%;
+    max-width: 1440px; }
     #section1 section h2 {
       text-align: center;
       color: #2e2e2f;
@@ -669,15 +668,16 @@ html, body {
   #section2 section {
     margin: 0 auto;
     height: 100%;
-    width: 80%; }
+    width: 100%; }
     #section2 section #wrapper2 {
       text-align: center;
-      position: relative;
+      position: absolute;
+      left: 0;
+      top: 10%;
       height: 100%; }
       #section2 section #wrapper2 .tabs-line {
         display: inline-block;
-        margin-bottom: 50px;
-        margin-top: 95px; }
+        margin-bottom: 50px; }
       #section2 section #wrapper2 h3 {
         background: #a9a9a9;
         border-radius: 5px;
@@ -695,7 +695,8 @@ html, body {
           cursor: pointer; }
       #section2 section #wrapper2 .tab1 .gallery_avto, #section2 section #wrapper2 .tab2 .gallery_avto, #section2 section #wrapper2 .tab3 .gallery_avto, #section2 section #wrapper2 .tab4 .gallery_avto {
         height: 100%;
-        width: 100%; }
+        margin: 0 auto;
+        width: 85%; }
         #section2 section #wrapper2 .tab1 .gallery_avto .panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel {
           height: 100%;
           width: 100%; }
@@ -772,10 +773,10 @@ html, body {
                   text-decoration: none; }
           #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
             position: absolute;
-            bottom: 0px;
-            width: 100%; }
+            bottom: 8%;
+            width: 81%; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
-              padding-top: 40px; }
+              padding-top: 15%; }
             #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport {
               border-radius: 8px;
               background: #fff;
@@ -890,7 +891,7 @@ html, body {
     margin: 0 auto;
     font-family: "BloggerSans", sans-serif;
     padding: 3% 6%;
-    top: 160px;
+    top: 0;
     width: 25%;
     z-index: 2; }
     #section3 #form h2 {

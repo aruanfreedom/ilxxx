@@ -10,10 +10,10 @@ $blogger: 'BloggerSans', sans-serif;
 $blogger-medium: 'BloggerSans-Medium', sans-serif;
 $size: 1366px;
 
-.fp-tableCell {
-  display: block;
-  //vertical-align: top;
-}
+//.fp-tableCell {
+//  display: block;
+//  vertical-align: top;
+//}
 
 .clearfix{
   clear: both;
@@ -445,6 +445,7 @@ html, body {
           }
 
           a {
+            font-size: 0.9125em;
             &:hover {
               background: none;
             }
@@ -512,8 +513,7 @@ html, body {
 #section0 {
   background: url("../img/bg-2.jpg") no-repeat bottom center #111519;
   background-size: cover;
-  top: 73px;
-  height: 92.4%;
+  height: 100%;
   width: 100%;
   z-index: 1;
 
@@ -521,15 +521,13 @@ html, body {
     position: relative;
     top: 0;
     text-align: center;
-    //height: 100%;
-    padding-top: 40px;
+    padding-top: 5%;
     color: #fff;
     margin: 0 auto;
     width: 50%;
 
     h2 {
       margin: 0;
-      margin-top: 57px;
       font-family: $fira-semi-bold;
       font-weight: 100;
       font-size: 2.25em;
@@ -742,15 +740,17 @@ html, body {
 #section1 {
   background: #fbfbfb;
   position: relative;
+  height: 100%;
   width: 100%;
-  top: 73px;
+  z-index: 1;
 
   section {
-    padding-top: 0;
-    position: relative;
     text-align: center;
+    padding-top: 1%;
     margin: 0 auto;
+    height: 100%;
     width: 75%;
+    max-width: 1440px;
     h2 {
       text-align: center;
       color: #2e2e2f;
@@ -918,15 +918,16 @@ html, body {
   section {
     margin: 0 auto;
     height: 100%;
-    width: 80%;
+    width: 100%;
     #wrapper2 {
       text-align: center;
-      position: relative;
-      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 10%;
+      height: 100%;;
       .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
-        margin-top: 95px;
       }
       h3 {
         background: #a9a9a9;
@@ -948,7 +949,8 @@ html, body {
       .tab1, .tab2, .tab3, .tab4 {
         .gallery_avto {
           height: 100%;
-          width: 100%;
+          margin: 0 auto;
+          width: 85%;
           .panel {
             height: 100%;
             width: 100%;
@@ -1044,10 +1046,10 @@ html, body {
 
             .bottom_panel {
               position: absolute;
-              bottom: 0px;
-              width: 100%;
+              bottom: 8%;
+              width: 81%;
               &.gruz {
-                padding-top: 40px;
+                padding-top: 15%;
               }
               .box_transport {
                 border-radius: 8px;
@@ -1132,6 +1134,9 @@ html, body {
         clear: both;
       }
     }
+    #wrapper2{
+
+    }
     #wrapper2 .none {
       display: none;
     }
@@ -1202,7 +1207,7 @@ html, body {
     margin: 0 auto;
     font-family: $blogger;
     padding: 3% 6%;
-    top: 160px;
+    top: 0;
     width: 25%;
     z-index: 2;
     h2 {

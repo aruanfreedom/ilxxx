@@ -8,29 +8,6 @@ var animateTextDelay = 200,
     speedTextAnim = 5000,
     animLoadStopDelay = 4000;
 
-var speedAnim = function(){
-
-    $("#bg2").click(function(){
-        $(this).addClass("bg2-speed");
-        $(".logo").addClass("logo-speed");
-        animateTextDelay = 5;
-        hideAnimDelay = 500;
-        menuHideDelay = 450;
-        speedmenuHide = 1000;
-        speedHome = 500;
-        animMenuLogoDelay = 500;
-        animMenuDelay = 200;
-        //speedTextAnim = 10;
-        animLoadStopDelay = 40;
-
-
-
-        delete animLoad();
-    });
-
-};
-
-
 
 var pages = function() {
 
@@ -45,6 +22,8 @@ var pages = function() {
             "marginTop" : "-6px"
         });
     };
+
+    animPages();
 
     var animMenuLogo = function() {
         $(".logo-min").css({
@@ -69,11 +48,7 @@ var pages = function() {
 
     //menu
 
-    $('#fullpage').fullpage({
-        anchors: ['about', 'services', 'car_park', 'bid', 'contact'],
-        menu: '#menu',
-        scrollingSpeed: 500
-    });
+
 
     //end menu
 
@@ -117,7 +92,7 @@ var pages = function() {
     //End alert
 };
 
-function animateText(id, text, i) {
+var animateText = function (id, text, i) {
 
     document.getElementById(id).innerHTML = text.substring(0, i);
     i++;
@@ -134,7 +109,7 @@ function animateText(id, text, i) {
     }
 }
 
-function animLoad() {
+var animLoad = function () {
 
     animateText("dynamic-text", "АРЕНДА АВТО ", 0);
     setTimeout(hideAnim, hideAnimDelay);
@@ -159,9 +134,9 @@ function animLoad() {
     };
     setTimeout(menuHide, menuHideDelay);
 
-}
+};
 
-function hideAnim() {
+var  hideAnim = function () {
 
     if( parseInt( $(window).width() ) >= 1366) {
         $("#home").animate({
@@ -181,7 +156,7 @@ function hideAnim() {
     pages();
 }
 
-setTimeout(animLoad, animLoadStopDelay);
+var timer = setTimeout(animLoad, animLoadStopDelay);
 
 $("#logoAnim").click(function(){
     window.location.reload();
@@ -566,4 +541,37 @@ var machineSelection = function() {
 machineSelection();
 //End machine Selection
 
-speedAnim();
+var animPages = function(){
+    $('#fullpage').fullpage({
+        anchors: ['about', 'services', 'car_park', 'bid', 'contact'],
+        menu: '#menu',
+        scrollingSpeed: 500
+    });
+};
+
+$("#bg2").click(function(){
+    $(this).addClass("bg2-speed");
+    $(".logo").addClass("logo-speed");
+    animateTextDelay = 5;
+    hideAnimDelay = 500;
+    menuHideDelay = 450;
+    speedmenuHide = 1000;
+    speedHome = 500;
+    animMenuLogoDelay = 500;
+    animMenuDelay = 200;
+    //speedTextAnim = 10;
+    animLoadStopDelay = 40;
+
+    //delete animLoad();
+
+
+    delete animLoad();
+    clearTimeout(timer) ;
+    //animPages();
+
+
+});
+
+
+
+
