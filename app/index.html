@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/smoothDivScroll.css">
     <link rel="stylesheet" href="css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <!--<link rel="stylesheet" href="css/media.css">-->
     <!-- endcss -->
     <!-- endbuild -->
@@ -1226,7 +1227,7 @@
     $(document).ready(function () {
         $("div#makeMeScrollable").smoothDivScroll({
 
-            mousewheelScrolling: "allDirections",
+            mousewheelScrolling: "",
             manualContinuousScrolling: true, //Бесконечный цикл
             touchScrolling: true,
 
@@ -1236,10 +1237,33 @@
 
         });
 
-        function animate() {
+        function animate980() {
 
-            $("div#makeMeScrollable2, div#makeMeScrollable3, div#makeMeScrollable4").smoothDivScroll({
-                mousewheelScrolling: "allDirections",
+            $("div#makeMeScrollable2").smoothDivScroll({
+                mousewheelScrolling: "",
+                manualContinuousScrolling: false, //Бесконечный цикл
+                touchScrolling: true,
+
+                visibleHotSpotBackgrounds: "always",
+                hotSpotMouseDownSpeedBooster: 50,
+                hotSpotScrollingStep: 50
+            });
+        }
+
+        function animate360() {
+
+            $("div#makeMeScrollable3").smoothDivScroll({
+                mousewheelScrolling: "",
+                manualContinuousScrolling: false, //Бесконечный цикл
+                touchScrolling: true,
+
+                visibleHotSpotBackgrounds: "always",
+                hotSpotMouseDownSpeedBooster: 50,
+                hotSpotScrollingStep: 50
+            });
+
+            $("div#makeMeScrollable4").smoothDivScroll({
+                mousewheelScrolling: "",
                 manualContinuousScrolling: false, //Бесконечный цикл
                 touchScrolling: true,
 
@@ -1250,9 +1274,12 @@
         }
 
         $(function () {
-            if (parseInt($(window).width()) <= 360) {
-                animate();
-                console.log("ok");
+            if (parseInt($(window).width()) <= 980) {
+                animate980();
+            }
+            if (parseInt($(window).width()) <= 600 || parseInt($(window).height()) <= 600) {
+                animate360();
+                console.log("360");
             }
         });
 
