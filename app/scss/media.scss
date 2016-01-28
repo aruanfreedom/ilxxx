@@ -137,7 +137,7 @@ $size: 1366px;
 
     }
     100% {
-      transform: translate(-10%, -60%) scale(0.1);
+      transform: translate(-20%, -100%) scale(0.1);
     }
   }
 
@@ -149,13 +149,41 @@ $size: 1366px;
       opacity: 1;
     }
     100% {
-      transform: translate(-10%, -60%) scale(0.1);
+      transform: translate(-20%, -100%) scale(0.1);
     }
   }
   #home {
 
     table .center-td {
-      top: 5%;
+      vertical-align: middle;
+      position: absolute;
+      padding-top: 15%;
+      top: 0;
+      height: 20em;
+      left: 50%;
+      right: 50%;
+      margin-left: -150px;
+      transform: translate(0%, -10%) scale(0.8);
+      width: 400px;
+    }
+    #dynamic-text {
+      color: #fff;
+      text-align: left;
+      font-size: 1.8em;
+      height: 80px;
+      margin: 30px auto;
+      position: relative;
+      width: 220px;
+    }
+    .logo {
+      background: url("../img/logo.png") no-repeat center center;
+      background-size: 100%;
+      position: relative;
+      animation: logo 5s ease-in 5s 1;
+      margin: 0 auto;
+      height: 420px;
+      width: 420px;
+      z-index: 200;
     }
   }
 
@@ -189,13 +217,14 @@ $size: 1366px;
         }
       }
       #luxe{
-        bottom: -4%;
+        bottom: 0%;
         img{
           width: 50%;
         }
       }
       #bisnesman-1 {
         left: 15%;
+        bottom: 23px;
         width: 25%;
         .punkt-1, .punkt-2, .punkt-3 {
           background: url("../img/puncts/punkt-1-s.png") no-repeat right;
@@ -207,7 +236,7 @@ $size: 1366px;
             margin-top: 30px;
           }
           span{
-            font-size: 0.7em;
+            font-size: 0.75em;
           }
         }
         .punkt-2 {
@@ -221,7 +250,7 @@ $size: 1366px;
             margin-top: 35px;
           }
           span{
-            font-size: 0.7em;
+            font-size: 0.75em;
             margin-left: 55px;
           }
         }
@@ -236,14 +265,14 @@ $size: 1366px;
             margin-top: 58px;
           }
           span{
-            font-size: 0.7em;
+            font-size: 0.75em;
             margin-left: -50px;
           }
         }
       }
       #bisnesman-2 {
         right: 18%;
-        bottom: 0;
+        bottom: 23px;
         width: 19%;
 
         .punkt-1, .punkt-2 {
@@ -258,7 +287,7 @@ $size: 1366px;
             margin-top: 30px;
           }
           span{
-            font-size: 0.7em;
+            font-size: 0.75em;
             margin-left: 0px;
           }
         }
@@ -273,7 +302,7 @@ $size: 1366px;
             margin-top: 38px;
           }
           span{
-            font-size: 0.7em;
+            font-size: 0.75em;
             margin-left: 10px;
           }
         }
@@ -329,7 +358,8 @@ $size: 1366px;
             font-size: 1.3em
           }
           .description-item {
-            padding-bottom: 1%;
+            padding-bottom: 10px;
+
             P{
               font-size: 0.9em;
             }
@@ -337,7 +367,9 @@ $size: 1366px;
               font-size: 0.8em;
             }
             img{
-              width: 30px;
+              width: 33px;
+              height: 30px;
+              margin-bottom: 12px;
             }
           }
         }
@@ -387,20 +419,20 @@ $size: 1366px;
                   margin: 0;
                 }
                 p {
-                  font-size: 0.7em;
+                  font-size: 0.8em;
                 }
               }
               .big_transport {
                 width: 40%;
-                padding: 6% 40px;
+                padding: 6% 35px;
                 img {
                   width: 100%;
                 }
                 &.jeep-big {
-                  padding: 2% 40px;
+                  padding: 2% 35px;
                 }
                 &.cars-big {
-                  padding: 6% 40px;
+                  padding: 6% 35px;
                 }
               }
               .description_transport {
@@ -412,15 +444,15 @@ $size: 1366px;
                   padding-top: 0;
                   font-size: 1em;
                   .left {
-                    font-size: 0.8em;
+                    font-size: 0.9em;
                   }
                   .red {
                     padding-top: 0px;
                     font-size: 1.3em;
                   }
                   .right {
-                    font-size: 0.7em;
-                    width: 58%;
+                    font-size: 0.8em;
+                    width: 54%;
                   }
                 }
               }
@@ -444,7 +476,6 @@ $size: 1366px;
                   .status_transport {
                     padding: 3px 10px;
                   }
-
 
                   img {
                     height: 40px;
@@ -473,6 +504,7 @@ $size: 1366px;
     background-size: 30%;
     #form{
       padding: 1% 6%;
+      padding-right: 10%;
       top: 6%;
       form{
         textarea{
@@ -515,7 +547,7 @@ $size: 1366px;
         }
       }
       #description-contact-2 {
-        padding: 0 10%;
+        padding: 0 5%;
         padding-top: 15px;
         .line-info {
           .right {
@@ -528,9 +560,22 @@ $size: 1366px;
 }
 
 @media only screen and (max-width: 1024px){
+
   #menu{
     nav{
       width: 99%;
+    }
+  }
+  #section0  {
+    section{
+      p{
+        &#img-bottom{
+          bottom: -6%;
+        }
+        &.yellow-text{
+          bottom: 2%;
+        }
+      }
     }
   }
   #section1  {
@@ -538,6 +583,113 @@ $size: 1366px;
       .tab1, .tab2, .tab3 {
         .description{
           width: 335px;
+          .description-item{
+            img{
+              margin-bottom: 32px;
+            }
+          }
+        }
+        }
+      }
+    }
+  #section2 {
+
+    section {
+      #wrapper2 {
+        top: 3%;
+        .tabs-line {
+          margin-bottom: 1%;
+        }
+        h3 {
+          padding: 10px 20px;
+          font-size: 1.3em;
+        }
+        .tab1, .tab2, .tab3, .tab4 {
+          .gallery_avto {
+            .panel {
+              .status-description {
+                h2 {
+                  font-size: 1.1em;
+                  margin: 0;
+                }
+                p {
+                  font-size: 0.8em;
+                }
+              }
+              .big_transport {
+                width: 40%;
+                padding: 6% 35px;
+                img {
+                  width: 100%;
+                }
+                &.jeep-big {
+                  padding: 2% 0px;
+                }
+                &.cars-big {
+                  padding: 6% 0px;
+                }
+              }
+              .description_transport {
+                width: 34%;
+                h2 {
+                  font-size: 1.1em;
+                  margin-bottom: 5px;
+                }
+                .line-info {
+                  padding-top: 0;
+                  font-size: 1em;
+                  .left {
+                    font-size: 0.9em;
+                  }
+                  .red {
+                    padding-top: 0px;
+                    font-size: 1.3em;
+                  }
+                  .right {
+                    font-size: 0.8em;
+                    width: 54%;
+                  }
+                }
+              }
+
+              .bottom_panel {
+                bottom: 0%;
+                &.gruz {
+                  padding-top: 5%;
+                }
+                .box_transport {
+
+                  .des-small {
+                    padding: 5px 15px;
+                    ul{
+                      margin: 0;
+                      li{
+                        font-size: 0.8em;
+                      }
+                    }
+                  }
+                  .status_transport {
+                    padding: 3px 10px;
+                  }
+
+                  img {
+                    height: 40px;
+                  }
+                  h2 {
+                    margin: 0;
+                    font-size: 0.9em;
+                  }
+                  ul {
+                    text-align: left;
+                    padding: 0;
+                    .red {
+                      font-size: 1.2em;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -1097,7 +1249,7 @@ $size: 1366px;
           float: right;
           position: absolute;
           font-size: 0.8125em;;
-          left: 75%;
+          left: 83%;
           margin-left: 0;
         }
       }
@@ -1548,7 +1700,7 @@ $size: 1366px;
 
       section {
         margin: 0 auto;
-        padding-top: 10%;
+        padding: 10% 0;
         height: 100%;
         width: 100%;
         #wrapper2 {
@@ -1686,7 +1838,7 @@ $size: 1366px;
 
                 .bottom_panel {
                   position: relative;
-                  bottom: 8%;
+                  bottom: -70px;
                   width: 81%;
                   &.gruz {
                     padding-top: 15%;
@@ -1838,6 +1990,7 @@ $size: 1366px;
         padding: 3% 6%;
         top: 0;
         width: 70%;
+        max-width: 320px;
         z-index: 2;
         h2 {
           color: #3f3f3f;
@@ -1939,7 +2092,7 @@ $size: 1366px;
     #section4 {
       background: #1e1e1e;
       background-size: cover;
-      height: 40%;
+      height: auto;
       width: 100%;
       position: absolute;
 
@@ -1948,17 +2101,18 @@ $size: 1366px;
         background-size: 100%;
         position: relative;
         margin: 0 auto;
-        height: 50%;
+        height: 540px;
         width: 100%;
         margin: 0 auto;
         max-width: 1920px;
 
         #block-adress {
           position: absolute;
-          left: 1%;
+          left: 0%;
           margin-left: 0px;
-          bottom: 30%;
-          width: 98%;
+          bottom: 17%;
+          height: auto;
+          width: 100%;
         }
 
         #description-contact, #description-contact-2 {
@@ -2045,7 +2199,7 @@ $size: 1366px;
       margin:0 auto;
       display:block;
       position:relative;
-      height:350px;
+      height:250px;
     }
 
     div.scrollingHotSpotLeft, div.scrollingHotSpotRight{

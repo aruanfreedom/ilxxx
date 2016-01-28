@@ -1,8 +1,8 @@
 var animateTextDelay = 200,
     hideAnimDelay = 4500,
     menuHideDelay = 4500,
-    speedmenuHide = 1000,
-    speedHome = 1900,
+    speedmenuHide = 500,
+    speedHome = 1000,
     animMenuLogoDelay = 1500,
     animMenuDelay = 2000,
     speedTextAnim = 5000,
@@ -151,10 +151,6 @@ var  hideAnim = function () {
             $("#bg2").css({"display": "none"});
         });
     }
-
-
-
-
     pages();
 };
 
@@ -578,7 +574,7 @@ $("#bg2").click(function(){
     animateTextDelay = 5;
     hideAnimDelay = 500;
     menuHideDelay = 450;
-    speedmenuHide = 1000;
+    speedmenuHide = 500;
     speedHome = 500;
     animMenuLogoDelay = 500;
     animMenuDelay = 200;

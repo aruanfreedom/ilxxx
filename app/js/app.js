@@ -8,6 +8,24 @@ var animateTextDelay = 200,
     speedTextAnim = 5000,
     animLoadStopDelay = 4000;
 
+var speedAnim = function(){
+        $("#bg2").click(function(){
+            $(this).addClass("bg2-speed");
+            $(".logo").addClass("logo-speed");
+            animateTextDelay = 5;
+            hideAnimDelay = 500;
+            menuHideDelay = 450;
+            speedmenuHide = 500;
+            speedHome = 500;
+            animMenuLogoDelay = 500;
+            animMenuDelay = 200;
+            //speedTextAnim = 10;
+            animLoadStopDelay = 40;
+
+            delete animLoad();
+            clearTimeout(timer) ;
+    });
+};
 
 var pages = function() {
 
@@ -136,25 +154,21 @@ var animLoad = function () {
 
 };
 
-var  hideAnim = function () {
+function hideAnim() {
 
     if( parseInt( $(window).width() ) >= 1366) {
         $("#home").animate({
-            "height": "0px"
+            "height": "40px"
         }, speedHome, function() {
             $("#bg2").css({"display": "none"});
         });
     }else{
         $("#home").animate({
-            "height": "0px"
+            "height": "40px"
         }, speedHome, function() {
             $("#bg2").css({"display": "none"});
         });
     }
-
-
-
-
     pages();
 };
 
@@ -572,27 +586,7 @@ $(function () {
 
 });
 
-$("#bg2").click(function(){
-    $(this).addClass("bg2-speed");
-    $(".logo").addClass("logo-speed");
-    animateTextDelay = 5;
-    hideAnimDelay = 500;
-    menuHideDelay = 450;
-    speedmenuHide = 1000;
-    speedHome = 500;
-    animMenuLogoDelay = 500;
-    animMenuDelay = 200;
-    //speedTextAnim = 10;
-    animLoadStopDelay = 40;
-
-    //delete animLoad();
-
-
-    delete animLoad();
-    clearTimeout(timer) ;
-
-
-});
+speedAnim();
 
 
 

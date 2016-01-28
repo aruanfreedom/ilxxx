@@ -19,6 +19,10 @@ $size: 1366px;
   clear: both;
 }
 
+#fullpage{
+  z-index: 1;
+}
+
 .section {
   display: none;
 }
@@ -159,8 +163,9 @@ $size: 1366px;
   table .center-td {
     vertical-align: middle;
     position: absolute;
-    padding: 0;
-    top: 30%;
+    padding-top: 15%;
+    height: 20em;
+    top: 0%;
     left: 50%;
     right: 50%;
     margin-left: -150px;
@@ -201,7 +206,7 @@ $size: 1366px;
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
-    animation: logo 5s ease-in 5s 1;
+    animation: logo 5s ease-in 5.1s 1;
     margin: 0 auto;
     height: 421px;
     width: 400px;
@@ -259,7 +264,7 @@ $size: 1366px;
 
   }
   100% {
-    transform: translate(-10%, -90%) scale(0.1);
+    transform: translate(-13%, -117%) scale(0.1);
   }
 }
 
@@ -271,7 +276,7 @@ $size: 1366px;
     opacity: 1;
   }
   100% {
-    transform: translate(-10%, -90%) scale(0.1);
+    transform: translate(-13%, -117%) scale(0.1);
   }
 }
 
@@ -868,7 +873,7 @@ html, body {
             float: left;
             margin-right: 15px;
             margin-bottom: 27px;
-            width: 41px;
+            width: 40px;
           }
           p {
             font-family: $fira-medium;
@@ -977,15 +982,15 @@ html, body {
             .big_transport {
               float: left;
               width: 40%;
-              padding: 135px 40px;
+              padding: 90px 40px;
               img {
                 width: 100%;
               }
               &.jeep-big {
-                padding: 75px 40px;
+                padding: 20px 40px;
               }
               &.cars-big {
-                padding: 135px 40px;
+                padding: 90px 40px;
               }
             }
             .description_transport {
@@ -1029,6 +1034,7 @@ html, body {
                   color: #fff;
                   padding-top: 0px;
                   font-size: 1.3em;
+                  font-weight: bold;
                   font-family: $fira-book;
                 }
                 .right {
@@ -1180,7 +1186,7 @@ html, body {
 
 #section3 {
   background: url("../img/bid.png") 13% center no-repeat,
-  url("../img/bid-right.png") 87% center no-repeat;
+  url("../img/bid-right.png") 90% center no-repeat;
   margin: 0 auto;
   position: relative;
   height: 100%;
@@ -1207,7 +1213,6 @@ html, body {
   //  z-index: 1;
   //}
   #form {
-
     background: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.51);
@@ -1215,8 +1220,9 @@ html, body {
     margin: 0 auto;
     font-family: $blogger;
     padding: 3% 6%;
+    padding-right: 10%;
     top: 0;
-    width: 480px;
+    width: 487px;
     z-index: 2;
     h2 {
       color: #3f3f3f;
@@ -1386,7 +1392,7 @@ html, body {
       }
     }
     #description-contact-2 {
-      padding: 0 10%;
+      padding: 0 5%;
       padding-top: 15px;
       .line-info {
         .right {
@@ -1416,4 +1422,4 @@ html, body {
   }
 }
 
-// @import "media";
+ @import "media";
