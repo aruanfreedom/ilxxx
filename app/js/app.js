@@ -417,6 +417,7 @@ var machineSelection = function() {
         $('.description_transport .salon').html("Велюр");
         $('.description_transport .equipment').html("Климат контроль, регулируемые сиденья с ремнями безопасности, общее освещение, индивидуальный обдув");
         $('.description_transport .price').html("3 000");//Characteristic tab2
+        // $('.description_transport .price2').html("");
     });
 
     $("#tab3").on("click", function() {

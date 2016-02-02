@@ -672,7 +672,7 @@ html, body {
       text-align: center;
       position: relative;
       left: 0;
-      top: 10%;
+      top: 0%;
       height: 100%;
       margin: 0 auto;
       max-width: 1920px; }
@@ -1144,6 +1144,7 @@ html, body {
       margin-bottom: 0px; }
     #section0 section p {
       font-size: 1em;
+      margin-top: 0;
       margin-bottom: 0; }
       #section0 section p.yellow-text {
         padding-top: 0px;
@@ -1282,7 +1283,7 @@ html, body {
     width: 200px;
     height: 100%; }
   #section2 section #wrapper2 {
-    top: 3%; }
+    top: 0%; }
     #section2 section #wrapper2 .tabs-line {
       margin-bottom: 1%; }
     #section2 section #wrapper2 h3 {
@@ -1317,7 +1318,7 @@ html, body {
         font-size: 0.8em;
         width: 54%; }
     #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
-      bottom: 0%; }
+      bottom: 3%; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
         padding-top: 5%; }
       #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .des-small {
@@ -1387,7 +1388,7 @@ html, body {
     #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
       margin-bottom: 32px; }
   #section2 section #wrapper2 {
-    top: 3%; }
+    top: 0; }
     #section2 section #wrapper2 .tabs-line {
       margin-bottom: 1%; }
     #section2 section #wrapper2 h3 {

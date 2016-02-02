@@ -202,6 +202,7 @@ $size: 1366px;
 
       p {
         font-size: 1em;
+        margin-top: 0;
         margin-bottom: 0;
         &.yellow-text {
           padding-top: 0px;
@@ -402,7 +403,7 @@ $size: 1366px;
 
     section {
       #wrapper2 {
-        top: 3%;
+        top: 0%;
         .tabs-line {
           margin-bottom: 1%;
         }
@@ -410,7 +411,7 @@ $size: 1366px;
           padding: 10px 20px;
           font-size: 1.3em;
         }
-        .tab1, .tab2, .tab3, .tab4 {
+        .tab1, .tab2, .tab3, .tab4 { 
           .gallery_avto {
             .panel {
               .status-description {
@@ -458,7 +459,7 @@ $size: 1366px;
               }
 
               .bottom_panel {
-                bottom: 0%;
+                bottom: 3%;
                 &.gruz {
                   padding-top: 5%;
                 }
@@ -596,7 +597,7 @@ $size: 1366px;
 
     section {
       #wrapper2 {
-        top: 3%;
+        top: 0;
         .tabs-line {
           margin-bottom: 1%;
         }
