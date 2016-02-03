@@ -26,7 +26,7 @@ gulp.task('autoprefixer', function () {
 //server connect
 gulp.task('connect', function() {
     connect.server({
-        port: 8888,
+        port: 3030,
         root: 'app/',
         livereload: true
     });
