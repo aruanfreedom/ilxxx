@@ -50,7 +50,11 @@ user-select: none;}
     margin:0 auto;
     display:block;
     position:relative;
+<<<<<<< HEAD
     height:150px;}
+=======
+    height:350px;}
+>>>>>>> 7bc251a48b09825874d7561a3b3f4742beb99be0
 
 .part{
     display:inline-block;

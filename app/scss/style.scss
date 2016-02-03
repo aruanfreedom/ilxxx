@@ -10,6 +10,11 @@ $blogger: 'BloggerSans', sans-serif;
 $blogger-medium: 'BloggerSans-Medium', sans-serif;
 $size: 1366px;
 
+.fp-tableCell {
+  display: block;
+  vertical-align: top;
+}
+
 .section{
   display: none;
 }
@@ -25,14 +30,14 @@ $size: 1366px;
   }
   .message-box{
     background: #fff;
-    box-shadow: 0 0 30px 0 #fff;
+    box-shadow: 0 0 13px 0 #fff;
     padding: 40px;
     position: fixed;
     font-family: $fira-medium;
     top: 25%;
     left: 50%;
-    margin-left: -250px;
-    width: 20%;
+    margin-left: -320px;
+    width: 30%;
     z-index: 101;
     .close{
       background: url("../img/icons/close.png") no-repeat center center;
@@ -46,56 +51,85 @@ $size: 1366px;
       }
     }
     h2{
+      color: #3f3f3f;
+      font-weight: 100;
       text-align: center;
+      float: right;
+      width: 89%;
     }
     form {
       label {
         color: #3c3c3c;
         float: left;
         text-align: right;
-        padding: 11px 0;
+        padding: 11px 14px 11px 0px;
         font-size: 1.1em;
-        width: 100px;
+        width: 130px;
         &:hover {
           cursor: pointer;
         }
       }
       input {
         border-radius: 3px;
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
         color: #b1b1b1;
         height: 35px;
-        float: right;
+        float: left;
         padding-left: 10px;
         margin: 6px 0;
         font-size: 1em;
-        width: 62%;
+        width: 60%;
+      }
+      textarea {
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        color: #b1b1b1;
+        float: left;
+        height: 150px;
+        width: 60%;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .number-l{
+        padding: 2px 15px 2px 0;
+      }
+      .additionally-l{
+        padding: 0px 0;
+        margin-right: 15px;
       }
       .phone {
         background: url("../img/icons/number.png") no-repeat;
         background-position: 10px;
         padding-left: 45px;
-        width: 52.5%;
+        margin-bottom: 12px;
+        width: 54%;
       }
       .btn {
         background: #a9a9a9;
         border-radius: 5px;
+        border: none;
+        cursor: pointer;
         color: #fff;
         margin: 24px auto;
+        margin-bottom: 0;
         position: relative;
-        left: 9%;
+        left: 42%;
         float: none;
         padding: 1px 0;
         font-size: 1em;
         text-transform: uppercase;
         height: 57px;
-        width: 40%;
+        width: 32%;
           &.true{
             background: #e6b41d;
         }
       }
       p{
         text-align: center;
+        float: right;
+        width: 84%;
       }
       .red {
         color: #ca272f;
@@ -109,13 +143,18 @@ $size: 1366px;
   position: relative;
   height: 100%;
   z-index: 105;
-  min-width: $size;
+
+  #next{
+    position: absolute;
+    left:49%;
+    bottom: 0;
+  }
 
   table .center-td {
     vertical-align: middle;
     position: absolute;
     padding-top: 15%;
-    left: 50%;
+    left: 47.3%;
     right: 50%;
     margin-left: -150px;
     width: 400px;
@@ -132,7 +171,7 @@ $size: 1366px;
   }
   table {
     border-collapse: collapse;
-    height: 59.7em;
+    height: 100%;
   }
   h1 {
     margin: 0;
@@ -143,16 +182,31 @@ $size: 1366px;
   #bg2 {
     background: url("../img/bg2.png") no-repeat center center;
     background-size: cover;
-    animation: logo 4s ease-in 1;
+    height: 100%;
+    position: relative;
+    animation: bg 4s ease-in 1;
+    &.bg2-speed{
+      animation: bg 1s ease-in 1;
+    }
   }
-  #logo {
+
+  .logo {
     background: url("../img/logo.png") no-repeat center center;
     background-size: 100%;
     position: relative;
-    animation: logo 4s ease-in 1;
+    animation: logo 5s ease-in 5s 1;
     margin: 0 auto;
     height: 421px;
     width: 400px;
+    z-index: 200;
+
+    &.logo-speed{
+      animation: logo-speed 1s ease-in 1;
+
+      &:before{
+        animation: shine 1s linear 1;
+      }
+    }
 
     &:before {
       content: "";
@@ -164,14 +218,56 @@ $size: 1366px;
       top: 0;
       left: 0;
       transform: translate(60px, 110px);
-       width: 0%;
+      opacity: 0;
+      width: 0;
     }
   }
+
+}
+
+.width1920{
+  transform: translate(0px, -465px) scale(0.1);
+}
+
+.width1366{
+  transform: translate(0px, -235px) scale(0.1);
 }
 
 ///*Animation*/
 // 
 @keyframes logo {
+  0% {
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+  }
+  70%{
+    transform: translate(0, 0px);
+  }
+  90%{
+
+  }
+  95%{
+
+  }
+  100% {
+    transform: translate(0px, -460px) scale(0.1);
+  }
+}
+@keyframes logo-speed {
+  0% {
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, -460px) scale(0.1);
+  }
+}
+
+@keyframes bg {
   0% {
     opacity: 0;
   }
@@ -181,7 +277,8 @@ $size: 1366px;
 }
 
 @keyframes shine {
-  0% {    
+  0% {
+    opacity: 1;
     transform: translate(-10px, -120px);
     width: 40%;
   }
@@ -220,9 +317,11 @@ $size: 1366px;
   90% {
     transform: translate(0px, 130px);
     width: 40%;
+    opacity: 1;
   }
   100% {
     transform: translate(15px, 110px);
+    opacity: 0;
     width: 0%;
   }
 }
@@ -245,8 +344,6 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  min-width: $size;
-  min-width: $size;
 }
 
 #menu {
@@ -255,8 +352,13 @@ html, body {
   background-size: cover;
   height: 73px;
   width: 100%;
+  opacity: 0;
   z-index: 99;
-  min-width: $size;
+
+  #logoAnim{
+    width: 40px;
+    transition: width 2s;
+  }
 
   nav {
     margin: 0 auto;
@@ -265,6 +367,7 @@ html, body {
       float: left;
       padding: 0;
       &.left {
+        opacity: 0;
         li {
           &.center-v {
             margin-left: 5px;
@@ -295,6 +398,7 @@ html, body {
         }
       }
       &.right {
+        opacity: 0;
         li {
           &.center-v {
             padding-top: 5px;
@@ -314,17 +418,25 @@ html, body {
           }
         }
         li.btn-yellow {
-          background: #d0a114;
+          background: #e6b41d;
           border-radius: 3px;
-          padding: 3% 0;
+          padding: 6% 0;
           margin-left: 10px;
+          position: relative;
           text-align: center;
-          width: 200px;
-          &:hover {
-            cursor: pointer;
-            background: url("../img/light-lang.png") no-repeat center center #d0a114;
-            background-size: cover;
+          width: 140px;
+          &.active {
+            background: url("../img/light-lang.png") no-repeat center center #e6b41d;
+            background-size: 150%;
           }
+          &:focus {
+            background: #d0a114;
+          }
+          &:hover {
+            background: url("../img/light-lang.png") no-repeat center center #e6b41d;
+            background-size: 150%;
+          }
+
           a {
             &:hover {
               background: none;
@@ -335,15 +447,21 @@ html, body {
       li {
         color: #fff;
         float: left;
-        font-family: $fira-regular;
-        font-size: 16px;
+        font-family: $blogger;
+        font-size: 14px;
         list-style: none;
         margin-left: 15px;
+        &.number-v{
+          padding-top: 1px;
+        }
         &.center-v {
-          padding-top: 5px;
+          opacity: 0;
+          padding-top: 2px;
         }
         &.logo-min {
-          margin-top: -8px;
+          margin-top: 0;
+          opacity: 0;
+          margin-left: 20px;
         }
         a {
           color: #fff;
@@ -367,23 +485,36 @@ html, body {
       left: 38%;
     }
   }
+
+  @keyframes fadeInMenu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 }
 
 #section0 {
   background: url("../img/bg-2.jpg") no-repeat center center #111519;
   background-size: cover;
+  background-position: -186px -59px;
   //display: none;
-  position: relative;
-  top: 140px;
+  //position: relative;
+  top: 0;
   height: 92.4%;
   width: 100%;
   z-index: 1;
-  min-width: $size;
+  
 
   section {
     position: relative;
-    top: 65px;
+    top: 0;
     text-align: center;
+    height: 100%;
+    padding-top: 40px;
     color: #fff;
     margin: 0 auto;
     width: 50%;
@@ -406,15 +537,18 @@ html, body {
       margin-bottom: 0;
       &.yellow-text {
         position: relative;
-        padding-top: 45%;
+        padding-top: 460px;
         bottom: 0;
+      }
+      &#img-bottom{
+        margin: 0;
       }
     }
     #bisnesman-1 {
       background: url("../img/bisnesman-1.png") no-repeat center center;
       position: absolute;
       left: 50px;
-      bottom: 0;
+      bottom: 110px;
       text-align: center;
       height: 530px;
       width: 343px;
@@ -468,8 +602,8 @@ html, body {
     #bisnesman-2 {
       background: url("../img/bisnesman-2.png") no-repeat center center;
       position: absolute;
-      right: 50px;
-      bottom: 10px;
+      right: 80px;
+      bottom: 110px;
       height: 518px;
       width: 257px;
 
@@ -566,10 +700,10 @@ html, body {
   position: relative;
   width: 100%;
   top: 73px;
-  min-width: $size;
+
 
   section {
-    padding-top: 60px;
+    padding-top: 0;
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -579,10 +713,9 @@ html, body {
       color: #2e2e2f;
       font-family: $fira-semi-bold;
       text-transform: uppercase;
+      margin: 33px 0;
       font-weight: 100;
       font-size: 36px;
-      margin: 0;
-      margin-bottom: 35px;
     }
     #wrapper {
       .tabs-line {
@@ -668,14 +801,18 @@ html, body {
     .tab1, .tab2, .tab3 {
       .description {
         float: right;
-        padding: 30px 0;
-        padding-right: 90px;
-        width: 28%;
-        h4 {
+        padding: 0;
+        padding-right: 55px;
+        width: 30%;
+        .block{
+          position: relative;
+          top: -80px;
+        }
+        .h4 {
           color: #65b5de;
-          font-size: 24px;
+          font-size: 2em;
           font-weight: 100;
-          font-family: $fira-medium;
+          font-family: $fira-medium,sans-serif;
           margin: 0;
           text-transform: uppercase;
         }
@@ -685,15 +822,20 @@ html, body {
           img {
             float: left;
             margin-right: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 27px;
+            width: 41px;
           }
           p {
             font-family: $fira-medium;
+            font-size: 1.1em;
             margin: 0;
           }
           small {
             font-family: $fira-book;
-            font-size: 12px;
+            font-size: 16px;
+          }
+          #last-img{
+            margin-bottom: 38px;
           }
         }
       }
@@ -702,14 +844,14 @@ html, body {
       .description {
         float: left;
         padding-left: 160px;
-        h4 {
+        .h4 {
           color: #e6b41d;
         }
       }
     }
     .tab3 {
       .description {
-        h4 {
+        .h4 {
           color: #8dad40;
         }
       }
@@ -721,23 +863,26 @@ html, body {
 }
 
 #section2 {
-  background: url("../img/car_park.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../img/car_park.jpg") no-repeat center #020204;
+  background-size: 110%;
+  background-position: 50% -130px;
   position: relative;
-  top: 73px;
+  top: 0;
   height: 100%;
   width: 100%;
-  min-width: $size;
+  
   section {
     margin: 0 auto;
     height: 100%;
     width: 80%;
     #wrapper2 {
       text-align: center;
+      position: relative;
+      height: 100%;
       .tabs-line {
         display: inline-block;
         margin-bottom: 50px;
-        margin-top: 120px;
+        margin-top: 40px;
       }
       h3 {
         background: #a9a9a9;
@@ -756,12 +901,11 @@ html, body {
           cursor: pointer;
         }
       }
-      .tab1 {
-        #gallery_avto{
+      .tab1, .tab2, .tab3, .tab4 {
+        .gallery_avto{
           height: 100%;
           width:100%;
           .panel{
-            position: relative;
             height: 100%;
             width:100%;
             .status-description{
@@ -770,12 +914,12 @@ html, body {
               width: 25%;
               h2{
                 color: #fff;
-                font-family: $fira-semi-bold;
+                font-family: $fira-ultra-light;
                 font-size: 1.6em;
                 margin: 0;
               }
               p{
-                font-family: $fira-eight;
+                font-family: $fira-ultra-light;
                 color: #fff;
                 margin: 0;
                 line-height: 180%;
@@ -784,7 +928,16 @@ html, body {
             .big_transport{
               float: left;
               width: 40%;
-              padding: 65px 40px;
+              padding: 135px 40px;
+              img{
+                width: 100%;
+              }
+              &.jeep-big{
+                padding: 75px 40px;
+              }
+              &.cars-big{
+                padding: 135px 40px;
+              }
             }
             .description_transport{
               float: left;
@@ -795,10 +948,12 @@ html, body {
                 font-family: $fira-semi-bold;
                 font-size: 1.6em;
                 font-weight: 100;
+                text-shadow: 1px -1px 14px #fff;
                 margin: 0;
+                margin-bottom: 5px;
               }
               .line-info {
-                border-bottom: 2px solid #666d7b;
+                border-bottom: 1px solid #666d7b;
                 padding-top: 8px;
                 color: #fff;
                 font-size: 1em;
@@ -816,21 +971,24 @@ html, body {
                 }
                 .left {
                   float: left;
-                  font-size: 0.9em;
-                  font-family: $blogger-medium;
+                  font-size: 1em;
+                  font-family: $fira-book;
+                  font-weight: bold;
                 }
                 .red{
-                    color: #ca272f;
+                    color: #fff;
                     padding-top: 0px;
-                    font-size: 2em;
-                    font-family: $blogger-medium;
-                    font-weight: bold;
+                    font-size: 1.3em;
+                    font-family: $fira-book;
                   }
                 .right {
-                  font-size: 0.9em;
-                  font-family: $fira-eight;
+                  font-size: 1em;
+                  font-family: $fira-ultra-light;
                   float: right;
-                  width: 250px;
+                  width: 230px;
+                  &.last{
+                    padding-top: 10px;
+                  }
                   a {
                     color: #2e79cc;
                     text-decoration: none;
@@ -840,10 +998,12 @@ html, body {
             }
              
             .bottom_panel{
-              position: relative;
-              bottom: 0;
+              position: absolute;
+              bottom: 50px;
               width: 100%;
-
+              &.gruz{
+                padding-top: 40px;
+              }
               .box_transport{
                 border-radius: 8px;
                 background: #fff;
@@ -854,10 +1014,19 @@ html, body {
                 transition: background 0.8s, box-shadow 0.8s;
                 width: 100%;
 
+                  &.active{
+                      box-shadow: 0 0 20px 0 #fff;
+                      background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
+                      cursor: pointer;
+                    }
+
                 .des-small{
                   padding: 5px 15px;
+                  .regular{
+                    font-family: $fira-regular;
+                    font-weight: 100;
+                  }
                 }
-
                 .status_transport{
                   color: #fff;
                   font-weight: 100;
@@ -876,15 +1045,11 @@ html, body {
                 }
 
                 &:hover{
-                  box-shadow: 0 0 30px 0 #fff;
+                  box-shadow: 0 0 20px 0 #fff;
                   background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
                   cursor: pointer;
                 }
-                //&.active{
-                //   box-shadow: 0 0 30px 0 #fff;
-                //  background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
-                //  cursor: pointer;
-                //}
+
                 h4{
                   text-align: left;
                   margin: 0;
@@ -905,6 +1070,7 @@ html, body {
                   padding: 0;
                   li{
                     list-style: none;
+                    font-weight: 100;
                   }
                   .red{
                     color: #ca272f;
@@ -940,6 +1106,10 @@ html, body {
       display: block;
       width: 100%;
     }
+    #wrapper2 h3{
+      box-shadow: 1px 3px 15px -2px rgba(0,0,0,0.75);
+      text-shadow: 0px 2px 0px rgba(150, 150, 150, 1);
+    }
     #wrapper2.tab1 .tab1 h3 {
       background: #c62b30;
     }
@@ -959,10 +1129,9 @@ html, body {
   position: relative;
   height: 100%;
   width: 100%;
-  min-width: $size;
   #form-left-bg {
     background: url("../img/bid.png") no-repeat;
-    background-position: center 380px;
+    background-position: center 450px;
     position: absolute;
     top: 0;
     left: -500px;
@@ -983,12 +1152,12 @@ html, body {
   #form {
     background: #ffffff;
     border-radius: 5px;
-    box-shadow: 0px 0px 33px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.51);
     position: relative;
     margin: 0 auto;
     font-family: $blogger;
     padding: 3% 6%;
-    top: 30px;
+    top: 160px;
     width: 25%;
     z-index: 2;
     h2 {
@@ -996,7 +1165,7 @@ html, body {
       text-align: center;
       font-family: $blogger;
       float: right;
-      width: 340px;
+      width: 397px;
     }
     form {
       display: inline-block;
@@ -1013,7 +1182,7 @@ html, body {
       }
       input {
         border-radius: 3px;
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
         color: #b1b1b1;
         height: 35px;
         float: right;
@@ -1022,26 +1191,41 @@ html, body {
         font-size: 1em;
         width: 68%;
       }
+      .number-l{
+        padding: 2px 0;
+      }
+      .additionally-l{
+        padding: 0px 0;
+      }
       .phone {
         background: url("../img/icons/number.png") no-repeat;
         background-position: 10px;
         padding-left: 45px;
-        width: 60.4%;
+        margin-bottom: 12px;
+        width: 60.3%;
+      }
+
+      #text-p{
+        position: relative;
+        right: -21px;
       }
       textarea {
         border-radius: 3px;
-        border: 2px solid #ccc;
+        border: 1px solid #ccc;
         padding-left: 10px;
         color: #b1b1b1;
         float: right;
         height: 150px;
-        width: 67.4%;
+        width: 67.7%;
       }
       .btn {
         background: #a9a9a9;
         border-radius: 5px;
+        border: none;
+        cursor: pointer;
         color: #fff;
         margin: 24px auto;
+        margin-bottom: 0;
         position: relative;
         left: 49%;
         float: none;
@@ -1076,18 +1260,25 @@ html, body {
   background-size: cover;
   height: 100%;
   width: 100%;
-  min-width: $size;
 
   #car {
     background: url("../img/car.png") no-repeat center bottom;
     background-size: 100%;
+    position: relative;
     margin: 0 auto;
     height: 100%;
     width: 50%;
 
+    #block-adress{
+      position: absolute;
+      left: 50%;
+      margin-left: -270px;
+      bottom: 225px;
+      width: 60%;
+    }
+
     #description-contact, #description-contact-2 {
-      padding: 17%;
-      padding-top: 25%;
+      padding: 0;
       font-family: $blogger;
       color: #fff;
       h2 {
@@ -1096,7 +1287,7 @@ html, body {
         margin: 0;
         margin-bottom: 10px;
         font-family: $blogger-medium;
-        font-size: 1.8em;
+        font-size: 1.6em;
         font-weight: 100;
       }
       .line-info {
@@ -1120,10 +1311,14 @@ html, body {
         .right {
           font-size: 0.9em;
           font-family: $blogger;
+          text-align: right;
           float: right;
-          width: 250px;
+          width: 280px;
           a {
             color: #2e79cc;
+            &:last-child{
+              margin-left: 15px;
+            }
           }
         }
       }
@@ -1151,12 +1346,16 @@ html, body {
   position: fixed;
   bottom: 15px;
   right: 100px;
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
   z-index: 3;
   &:hover {
     cursor: pointer;
   }
 }
 
+<<<<<<< HEAD
 @import "media"; 
+=======
+// @import "media";
+>>>>>>> 7bc251a48b09825874d7561a3b3f4742beb99be0
