@@ -1497,6 +1497,549 @@ html, body {
     width: 50px;
     z-index: 3; } }
 
+@media only screen and (max-width: 1280px) and (max-height: 1024px) {
+  #section0 {
+    background: url("../img/bg-2.jpg") no-repeat 50% 33px #111519;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
+    #section0 section {
+      position: relative;
+      top: 0;
+      text-align: center;
+      color: #fff;
+      margin: 0 auto;
+      width: 50%; }
+      #section0 section h2 {
+        margin: 0;
+        font-family: "FiraSans-SemiBold", sans-serif;
+        font-weight: 100;
+        font-size: 2.25em;
+        text-transform: uppercase; }
+      #section0 section .yellow-text {
+        margin: 0;
+        color: #e6b41d;
+        margin-bottom: 67px; }
+      #section0 section p {
+        font-family: "FiraSans-UltraLight", sans-serif;
+        font-size: 1.125em;
+        margin-bottom: 0; }
+        #section0 section p.yellow-text {
+          position: absolute;
+          padding-top: 0px;
+          bottom: 0px;
+          left: 0;
+          margin: 0;
+          width: 100%;
+          z-index: 2; }
+        #section0 section p#img-bottom {
+          margin: 0;
+          position: absolute;
+          bottom: -50px;
+          left: 50%;
+          right: 50%;
+          margin-left: -12px;
+          width: 29px;
+          z-index: 2; }
+          #section0 section p#img-bottom img {
+            width: 29px; }
+      #section0 section #luxe {
+        position: absolute;
+        left: 0;
+        right: 50%;
+        bottom: -4%;
+        text-align: center;
+        z-index: 1;
+        width: 100%; }
+        #section0 section #luxe img {
+          width: 65.833333%; }
+      #section0 section #bisnesman-1 {
+        position: relative;
+        float: left;
+        left: 10%;
+        bottom: 0;
+        text-align: center;
+        padding: 0;
+        height: 100%;
+        margin: 0 auto;
+        width: 33%;
+        z-index: 2; }
+        #section0 section #bisnesman-1 img {
+          height: 100%;
+          width: 100%; }
+        #section0 section #bisnesman-1 .punkt-1, #section0 section #bisnesman-1 .punkt-2, #section0 section #bisnesman-1 .punkt-3 {
+          animation: punkt 3s ease-in-out;
+          background: url("../img/puncts/punkt-1.png") no-repeat right;
+          position: absolute;
+          top: 0;
+          right: 60%;
+          overflow: hidden;
+          height: 115px;
+          width: 453px; }
+          #section0 section #bisnesman-1 .punkt-1 h3, #section0 section #bisnesman-1 .punkt-2 h3, #section0 section #bisnesman-1 .punkt-3 h3 {
+            animation: punkt-text 3s ease-in-out 3s;
+            font-family: "FiraSans-Medium", sans-serif;
+            font-weight: 100;
+            opacity: 0;
+            text-transform: uppercase;
+            font-size: 1.375em;
+            margin: 15px 0; }
+          #section0 section #bisnesman-1 .punkt-1 span, #section0 section #bisnesman-1 .punkt-2 span, #section0 section #bisnesman-1 .punkt-3 span {
+            animation: punkt-text 3s ease-in-out 3s;
+            font-size: 1em;
+            opacity: 0;
+            font-family: "FiraSans-Book", sans-serif; }
+        #section0 section #bisnesman-1 .punkt-2 {
+          background: url("../img/puncts/punkt-2.png") no-repeat right;
+          top: 40%;
+          right: 62%; }
+          #section0 section #bisnesman-1 .punkt-2 h3 {
+            margin: 5px 0;
+            margin-top: 30px; }
+        #section0 section #bisnesman-1 .punkt-3 {
+          background: url("../img/puncts/punkt-3.png") no-repeat right;
+          top: 65%;
+          right: 65%; }
+          #section0 section #bisnesman-1 .punkt-3 h3 {
+            margin: 5px 0;
+            margin-top: 59px;
+            margin-left: -100px; }
+          #section0 section #bisnesman-1 .punkt-3 span {
+            margin-left: -100px; }
+      #section0 section #bisnesman-2 {
+        position: relative;
+        float: right;
+        right: 13%;
+        bottom: 0;
+        margin: 0 auto;
+        height: 100%;
+        width: 25%;
+        z-index: 2; }
+        #section0 section #bisnesman-2 img {
+          height: 100%;
+          width: 100%; }
+        #section0 section #bisnesman-2 .punkt-1, #section0 section #bisnesman-2 .punkt-2 {
+          animation: punkt 3s ease-in-out;
+          background: url("../img/puncts/punkt-4.png") no-repeat left;
+          position: absolute;
+          left: 72%;
+          top: 10%;
+          overflow: hidden;
+          height: 115px;
+          width: 430px; }
+          #section0 section #bisnesman-2 .punkt-1 h3, #section0 section #bisnesman-2 .punkt-2 h3 {
+            animation: punkt-text 3s ease-in-out 3s;
+            font-family: "FiraSans-Medium", sans-serif;
+            font-weight: 100;
+            opacity: 0;
+            text-transform: uppercase;
+            font-size: 1.375em;
+            margin: 15px 0; }
+          #section0 section #bisnesman-2 .punkt-1 span, #section0 section #bisnesman-2 .punkt-2 span {
+            animation: punkt-text 3s ease-in-out 3s;
+            font-size: 1em;
+            opacity: 0;
+            font-family: "FiraSans-Book", sans-serif; }
+        #section0 section #bisnesman-2 .punkt-2 {
+          background: url("../img/puncts/punkt-5.png") no-repeat left;
+          top: 48%;
+          left: 63%; }
+          #section0 section #bisnesman-2 .punkt-2 h3 {
+            margin: 5px 0;
+            margin-top: 30px; }
+      #section0 section #img-bottom img {
+        animation: arrow-bottom 1s ease-in-out infinite; }
+  #section1 {
+    background: #fbfbfb;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
+    #section1 section {
+      text-align: center;
+      padding-top: 1%;
+      margin: 0 auto;
+      height: 100%;
+      width: 100%;
+      max-width: 1440px; }
+      #section1 section h2 {
+        text-align: center;
+        color: #2e2e2f;
+        font-family: "FiraSans-SemiBold", sans-serif;
+        text-transform: uppercase;
+        margin: 33px 0;
+        margin-top: 0;
+        font-weight: 100;
+        font-size: 2.25em; }
+      #section1 section #wrapper .tabs-line {
+        display: inline-block;
+        margin-bottom: 50px; }
+      #section1 section #wrapper h3 {
+        background: #a9a9a9;
+        border-radius: 5px;
+        padding: 5px 50px;
+        margin: 0 10px;
+        text-align: center;
+        color: #fff;
+        font-family: "FiraSans-Medium", sans-serif;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 2.25em;
+        transition: background .8s; }
+      #section1 section #wrapper #bisness h3:hover {
+        cursor: pointer;
+        background: #65b5de; }
+      #section1 section #wrapper #bisness h3.active-services {
+        background: #65b5de; }
+      #section1 section #wrapper #family h3:hover {
+        cursor: pointer;
+        background: #e6b41d; }
+      #section1 section #wrapper #family h3.active-services {
+        background: #e6b41d; }
+      #section1 section #wrapper #turism h3:hover {
+        cursor: pointer;
+        background: #8dad40; }
+      #section1 section #wrapper #turism h3.active-services {
+        background: #8dad40; }
+      #section1 section #wrapper .none {
+        display: none; }
+      #section1 section #wrapper.tab1 div.tab1 {
+        background: url("../img/bisness.png") no-repeat left top;
+        background-size: 60%;
+        display: block;
+        width: 100%; }
+      #section1 section #wrapper.tab2 div.tab2 {
+        background: url("../img/family.png") no-repeat right top;
+        display: block;
+        width: 100%; }
+      #section1 section #wrapper.tab3 div.tab3 {
+        background: url("../img/turism.png") no-repeat left top;
+        display: block;
+        width: 100%; }
+      #section1 section #wrapper.tab1 .tab1 h3 {
+        background: #65b5de; }
+      #section1 section #wrapper.tab2 .tab2 h3 {
+        background: #e6b41d; }
+      #section1 section #wrapper.tab3 .tab3 h3 {
+        background: #8dad40; }
+      #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
+        float: right;
+        padding: 0;
+        padding-right: 55px;
+        width: 30%; }
+        #section1 section .tab1 .description .block, #section1 section .tab2 .description .block, #section1 section .tab3 .description .block {
+          position: relative;
+          top: -80px; }
+        #section1 section .tab1 .description .h4, #section1 section .tab2 .description .h4, #section1 section .tab3 .description .h4 {
+          color: #65b5de;
+          font-size: 2em;
+          font-weight: 100;
+          font-family: "FiraSans-Medium", sans-serif, sans-serif;
+          margin: 0;
+          text-transform: uppercase; }
+        #section1 section .tab1 .description .description-item, #section1 section .tab2 .description .description-item, #section1 section .tab3 .description .description-item {
+          text-align: left;
+          padding-bottom: 20px; }
+          #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 40px;
+            height: 36px;
+            width: 40px; }
+          #section1 section .tab1 .description .description-item p, #section1 section .tab2 .description .description-item p, #section1 section .tab3 .description .description-item p {
+            font-family: "FiraSans-Medium", sans-serif;
+            font-size: 1.1em;
+            margin: 0; }
+          #section1 section .tab1 .description .description-item small, #section1 section .tab2 .description .description-item small, #section1 section .tab3 .description .description-item small {
+            font-family: "FiraSans-Book", sans-serif;
+            font-size: 1em; }
+          #section1 section .tab1 .description .description-item #last-img, #section1 section .tab2 .description .description-item #last-img, #section1 section .tab3 .description .description-item #last-img {
+            margin-bottom: 38px; }
+      #section1 section .tab2 .description {
+        float: left;
+        padding-left: 160px; }
+        #section1 section .tab2 .description .h4 {
+          color: #e6b41d; }
+      #section1 section .tab3 .description .h4 {
+        color: #8dad40; }
+      #section1 section .clearfix {
+        clear: both; }
+  #section2 {
+    background: url("../img/car_park.jpg") no-repeat center #020204;
+    background-size: 110%;
+    background-position: 50% -130px;
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%; }
+    #section2 section {
+      margin: 0 auto;
+      height: 100%;
+      width: 100%; }
+      #section2 section #wrapper2 {
+        text-align: center;
+        position: relative;
+        left: 0;
+        top: 0%;
+        height: 100%;
+        margin: 0 auto;
+        max-width: 1920px; }
+        #section2 section #wrapper2 .tabs-line {
+          display: inline-block;
+          margin-bottom: 50px; }
+        #section2 section #wrapper2 h3 {
+          background: #a9a9a9;
+          border-radius: 5px;
+          padding: 10px 20px;
+          margin: 0 10px;
+          text-align: center;
+          color: #fff;
+          font-family: "FiraSans-Medium", sans-serif;
+          text-transform: uppercase;
+          font-weight: 100;
+          font-size: 1.7em;
+          transition: background .8s; }
+          #section2 section #wrapper2 h3:hover {
+            background: #c62b30;
+            cursor: pointer; }
+        #section2 section #wrapper2 .tab1 .gallery_avto, #section2 section #wrapper2 .tab2 .gallery_avto, #section2 section #wrapper2 .tab3 .gallery_avto, #section2 section #wrapper2 .tab4 .gallery_avto {
+          height: 100%;
+          margin: 0 auto;
+          width: 85%; }
+          #section2 section #wrapper2 .tab1 .gallery_avto .panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel {
+            height: 100%;
+            width: 100%; }
+            #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description {
+              float: left;
+              text-align: left;
+              width: 25%; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description h2 {
+                color: #fff;
+                font-family: "FiraSans-UltraLight", sans-serif;
+                font-size: 1.6em;
+                margin: 0; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .status-description p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .status-description p {
+                font-family: "FiraSans-UltraLight", sans-serif;
+                color: #fff;
+                margin: 0;
+                line-height: 180%; }
+            #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport {
+              float: left;
+              width: 40%;
+              padding: 90px 40px; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport img {
+                width: 100%; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.jeep-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.jeep-big {
+                padding: 20px 40px; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab2 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab3 .gallery_avto .panel .big_transport.cars-big, #section2 section #wrapper2 .tab4 .gallery_avto .panel .big_transport.cars-big {
+                padding: 90px 40px; }
+            #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport {
+              float: left;
+              width: 25%; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport h2 {
+                text-align: left;
+                color: #fff;
+                font-family: "FiraSans-SemiBold", sans-serif;
+                font-size: 1.6em;
+                font-weight: 100;
+                text-shadow: 1px -1px 14px #fff;
+                margin: 0;
+                margin-bottom: 5px; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info {
+                border-bottom: 1px solid #666d7b;
+                padding-top: 8px;
+                color: #fff;
+                font-size: 1em;
+                text-align: left;
+                width: 100%; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info.none-line, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info.none-line, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info.none-line, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info.none-line {
+                  border-bottom: none;
+                  padding: 0; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info.none-line .left, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info.none-line .left, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info.none-line .left, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info.none-line .left {
+                    padding-top: 8px; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info p, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info p, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info p, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info p {
+                  color: #fff;
+                  height: 25px; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .left, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .left, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .left, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .left {
+                  float: left;
+                  font-size: 1em;
+                  font-family: "FiraSans-Book", sans-serif;
+                  font-weight: bold; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .red, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .red, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .red, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .red {
+                  color: #fff;
+                  padding-top: 0px;
+                  font-size: 1.3em;
+                  font-weight: bold;
+                  font-family: "FiraSans-Book", sans-serif; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right {
+                  font-size: 1em;
+                  font-family: "FiraSans-UltraLight", sans-serif;
+                  float: right;
+                  width: 43%; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right.last, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right.last {
+                    padding-top: 10px; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .description_transport .line-info .right a, #section2 section #wrapper2 .tab2 .gallery_avto .panel .description_transport .line-info .right a, #section2 section #wrapper2 .tab3 .gallery_avto .panel .description_transport .line-info .right a, #section2 section #wrapper2 .tab4 .gallery_avto .panel .description_transport .line-info .right a {
+                    color: #2e79cc;
+                    text-decoration: none; }
+            #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel {
+              position: absolute;
+              bottom: 8%;
+              width: 81%; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel.gruz, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel.gruz {
+                padding-top: 15%; }
+              #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport {
+                border-radius: 8px;
+                background: #fff;
+                background: -webkit-linear-gradient(top, #ffffff 14%, #868ea1 100%);
+                box-shadow: 0 0 0 0 #fff;
+                font-family: "BloggerSans-Medium", sans-serif;
+                float: left;
+                transition: background 0.8s, box-shadow 0.8s;
+                width: 100%; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport.active, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport.active, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport.active, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport.active {
+                  box-shadow: 0 0 20px 0 #fff;
+                  background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
+                  cursor: pointer; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .des-small, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .des-small {
+                  padding: 5px 15px; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .des-small .regular, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .des-small .regular, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .des-small .regular, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .des-small .regular {
+                    font-family: "FiraSans-Regular", sans-serif;
+                    font-weight: 100; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .status_transport, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .status_transport, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .status_transport, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .status_transport {
+                  color: #fff;
+                  font-weight: 100;
+                  padding: 10px 10px;
+                  border-top-left-radius: 8px;
+                  border-top-right-radius: 8px; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .status_transport.econom, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .status_transport.econom, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .status_transport.econom, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .status_transport.econom {
+                    background: #e6b41d; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .status_transport.bisnes, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .status_transport.bisnes, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .status_transport.bisnes, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .status_transport.bisnes {
+                    background: #3a67ba; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport .status_transport.representative, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport .status_transport.representative, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport .status_transport.representative, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport .status_transport.representative {
+                    background: #171c23; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport:hover, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport:hover, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport:hover, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport:hover {
+                  box-shadow: 0 0 20px 0 #fff;
+                  background: -webkit-linear-gradient(top, #ffffff 14%, #ffffff 100%);
+                  cursor: pointer; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport h4, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport h4, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport h4, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport h4 {
+                  text-align: left;
+                  margin: 0; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport img, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport img, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport img, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport img {
+                  text-align: center; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport h2, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport h2, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport h2, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport h2 {
+                  text-align: left;
+                  margin: 0;
+                  font-size: 1.2em;
+                  font-weight: 100;
+                  border-bottom: 2px solid #9da1aa;
+                  padding-bottom: 5px; }
+                #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport ul, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport ul, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport ul, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport ul {
+                  text-align: left;
+                  padding: 0; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport ul li, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport ul li, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport ul li, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport ul li {
+                    list-style: none;
+                    font-weight: 100; }
+                  #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel .box_transport ul .red, #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel .box_transport ul .red, #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel .box_transport ul .red, #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport ul .red {
+                    color: #ca272f;
+                    font-size: 1.2em;
+                    font-weight: bold; }
+        #section2 section #wrapper2 .clearfix {
+          clear: both; }
+      #section2 section #wrapper2 .none {
+        display: none; }
+      #section2 section #wrapper2.tab1 div.tab1 {
+        display: block;
+        width: 100%; }
+      #section2 section #wrapper2.tab2 div.tab2 {
+        display: block;
+        width: 100%; }
+      #section2 section #wrapper2.tab3 div.tab3 {
+        display: block;
+        width: 100%; }
+      #section2 section #wrapper2.tab4 div.tab4 {
+        display: block;
+        width: 100%; }
+      #section2 section #wrapper2 h3 {
+        box-shadow: 1px 3px 15px -2px rgba(0, 0, 0, 0.75);
+        text-shadow: 0px 2px 0px #969696; }
+      #section2 section #wrapper2.tab1 .tab1 h3 {
+        background: #c62b30; }
+      #section2 section #wrapper2.tab2 .tab2 h3 {
+        background: #c62b30; }
+      #section2 section #wrapper2.tab3 .tab3 h3 {
+        background: #c62b30; }
+      #section2 section #wrapper2.tab4 .tab4 h3 {
+        background: #c62b30; }
+  #section3 {
+    background: url("../img/bid-s.png") 0% 60% no-repeat, url("../img/bid-right-s.png") 100% 62% no-repeat; }
+  #section4 {
+    background: url("../img/contact.png") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative; }
+    #section4 #car {
+      background: url("../img/car.png") no-repeat center bottom;
+      background-size: 100%;
+      position: relative;
+      margin: 0 auto;
+      height: 100%;
+      width: 960px;
+      margin: 0 auto;
+      max-width: 1920px; }
+      #section4 #car #block-adress {
+        position: absolute;
+        left: 50%;
+        margin-left: -270px;
+        bottom: 225px;
+        width: 60%; }
+      #section4 #car #description-contact, #section4 #car #description-contact-2 {
+        padding: 0;
+        font-family: "BloggerSans", sans-serif;
+        color: #fff; }
+        #section4 #car #description-contact h2, #section4 #car #description-contact-2 h2 {
+          color: #fff;
+          text-align: center;
+          margin: 0;
+          margin-bottom: 10px;
+          font-family: "BloggerSans-Medium", sans-serif;
+          font-size: 1.6em;
+          font-weight: 100; }
+        #section4 #car #description-contact .line-info, #section4 #car #description-contact-2 .line-info {
+          border-bottom: 1px solid #4e4e4e;
+          padding: 8px 0;
+          color: #fff;
+          font-size: 1.1em;
+          text-align: left;
+          width: 100%; }
+          #section4 #car #description-contact .line-info.none-line, #section4 #car #description-contact-2 .line-info.none-line {
+            border-bottom: none;
+            padding-top: 8px; }
+            #section4 #car #description-contact .line-info.none-line .left, #section4 #car #description-contact-2 .line-info.none-line .left {
+              padding-top: 8px; }
+          #section4 #car #description-contact .line-info .left, #section4 #car #description-contact-2 .line-info .left {
+            float: left;
+            font-size: 1em;
+            font-family: "BloggerSans", sans-serif; }
+          #section4 #car #description-contact .line-info .right, #section4 #car #description-contact-2 .line-info .right {
+            font-size: 0.9em;
+            font-family: "BloggerSans", sans-serif;
+            text-align: right;
+            float: right;
+            width: 70%; }
+            #section4 #car #description-contact .line-info .right a, #section4 #car #description-contact-2 .line-info .right a {
+              color: #2e79cc; }
+              #section4 #car #description-contact .line-info .right a:last-child, #section4 #car #description-contact-2 .line-info .right a:last-child {
+                margin-left: 15px; }
+      #section4 #car #description-contact-2 {
+        padding: 0 5%;
+        padding-top: 15px; }
+        #section4 #car #description-contact-2 .line-info .right {
+          width: 40%; }
+      #section4 #car .clearfix {
+        clear: both; } }
+
 @media only screen and (max-width: 1024px) {
   #menu nav {
     width: 99%; }
