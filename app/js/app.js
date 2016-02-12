@@ -88,7 +88,7 @@ var pages = function() {
             }
         }
 
-        if ($(this).val().length >= 10) {
+        if ($(this).val().length >= 9) {
             btn.removeAttr('disabled', 'disabled');
             btn.addClass('true');
         } else {

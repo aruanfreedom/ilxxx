@@ -1,12 +1,34 @@
 var animateTextDelay = 200,
     hideAnimDelay = 4500,
     menuHideDelay = 4500,
-    speedmenuHide = 500,
-    speedHome = 1000,
+    speedmenuHide = 1000,
+    speedHome = 1900,
     animMenuLogoDelay = 1500,
     animMenuDelay = 2000,
     speedTextAnim = 5000,
     animLoadStopDelay = 4000;
+
+
+
+var speedAnim = function(){
+        $("#bg2").click(function(){
+            $(this).addClass("bg2-speed");
+            $(".logo").addClass("logo-speed");
+            animateTextDelay = 5;
+            hideAnimDelay = 500;
+            menuHideDelay = 450;
+            speedmenuHide = 500;
+            speedHome = 500;
+            animMenuLogoDelay = 500;
+            animMenuDelay = 200;
+            //speedTextAnim = 10;
+            animLoadStopDelay = 40;
+
+            delete animLoad();
+            clearTimeout(timer) ;
+    });
+};
+
 
 
 var pages = function() {
@@ -66,7 +88,7 @@ var pages = function() {
             }
         }
 
-        if ($(this).val().length >= 10) {
+        if ($(this).val().length >= 9) {
             btn.removeAttr('disabled', 'disabled');
             btn.addClass('true');
         } else {
@@ -136,17 +158,17 @@ var animLoad = function () {
 
 };
 
-var  hideAnim = function () {
+function hideAnim() {
 
     if( parseInt( $(window).width() ) >= 1366) {
         $("#home").animate({
-            "height": "0px"
+            "height": "40px"
         }, speedHome, function() {
             $("#bg2").css({"display": "none"});
         });
     }else{
         $("#home").animate({
-            "height": "0px"
+            "height": "40px"
         }, speedHome, function() {
             $("#bg2").css({"display": "none"});
         });
@@ -260,7 +282,13 @@ var machineSelection = function() {
 
         function camera(){
            $(function() {
-                if( parseInt( $(window).width() ) <= 1366) {
+               if( parseInt( $(window).width() ) <= 1280 && parseInt( $(window).height() ) >= 1024) {
+                   $("#section2").animate({ //camera mikroautobus
+                       "backgroundSize": "100% 100%"
+                   }, delay);
+                   console.log(1280)
+               }
+                else if( parseInt( $(window).width() ) <= 1366) {
                     $("#section2").animate({ //camera mikroautobus
                         "backgroundSize": "110%"
                     }, delay);
@@ -346,7 +374,13 @@ var machineSelection = function() {
 
             function camera(){
                 $(function() {
-                    if( parseInt( $(window).width() ) <= 1366) {
+                    if( parseInt( $(window).width() ) <= 1280 && parseInt( $(window).height() ) >= 1024) {
+                        $("#section2").animate({ //camera mikroautobus
+                            "backgroundSize": "100% 100%"
+                        }, delay);
+                        console.log(1280)
+                    }
+                    else if( parseInt( $(window).width() ) <= 1366) {
                         $("#section2").animate({ //camera mikroautobus
                             "backgroundSize": "100%"
                         }, delay);
@@ -399,6 +433,7 @@ var machineSelection = function() {
         $('.description_transport .salon').html("Велюр");
         $('.description_transport .equipment').html("Климат контроль, регулируемые сиденья с ремнями безопасности, общее освещение, индивидуальный обдув");
         $('.description_transport .price').html("3 000");//Characteristic tab2
+        // $('.description_transport .price2').html("");
     });
 
     $("#tab3").on("click", function() {
@@ -416,7 +451,13 @@ var machineSelection = function() {
 
         function camera(){
 
-            if( parseInt( $(window).width() ) <= 1366) {
+            if( parseInt( $(window).width() ) <= 1280 && parseInt( $(window).height() ) >= 1024) {
+                $("#section2").animate({ //camera mikroautobus
+                    "backgroundSize": "100% 100%"
+                }, delay);
+                console.log(1280)
+            }
+            else if( parseInt( $(window).width() ) <= 1366) {
                 $("#section2").animate({ //camera mikroautobus
                     "backgroundSize": "100%"
                 }, delay);
@@ -486,7 +527,13 @@ var machineSelection = function() {
 
         function camera(){
 
-            if( parseInt( $(window).width() ) <= 1366) {
+            if( parseInt( $(window).width() ) <= 1280 && parseInt( $(window).height() ) >= 1024) {
+                $("#section2").animate({ //camera mikroautobus
+                    "backgroundSize": "100% 100%"
+                }, delay);
+                console.log(1280)
+            }
+            else if( parseInt( $(window).width() ) <= 1366) {
                 $("#section2").animate({ //camera mikroautobus
                     "backgroundSize": "100%"
                 }, delay);
@@ -568,27 +615,24 @@ $(function () {
 
 });
 
-$("#bg2").click(function(){
-    $(this).addClass("bg2-speed");
-    $(".logo").addClass("logo-speed");
-    animateTextDelay = 5;
-    hideAnimDelay = 500;
-    menuHideDelay = 450;
-    speedmenuHide = 500;
-    speedHome = 500;
-    animMenuLogoDelay = 500;
-    animMenuDelay = 200;
-    //speedTextAnim = 10;
-    animLoadStopDelay = 40;
+speedAnim();
 
-    //delete animLoad();
+if( parseInt( $(window).width() ) <= 600 || $(window).height()  <= 600 ){
+        $('#bg2').css('display', 'none');
+        $(".logo").css('display', 'none');
+        animateTextDelay = 5;
+        hideAnimDelay = 500;
+        menuHideDelay = 450;
+        speedmenuHide = 500;
+        speedHome = 500;
+        animMenuLogoDelay = 500;
+        animMenuDelay = 200;
+        //speedTextAnim = 10;
+        animLoadStopDelay = 40;
 
-
-    delete animLoad();
-    clearTimeout(timer) ;
-
-
-});
+        delete animLoad();
+        clearTimeout(timer) ;
+}
 
 
 

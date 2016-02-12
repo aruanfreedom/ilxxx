@@ -129,32 +129,32 @@
         <h2>Заполняйте заявку и поехали!</h2>
 
         <div class="clearfix"></div>
-        <form action="#" method="post">
+        <form action="javascript:void(0);" name="myform2" id="myform2">
             <label for="name2">Имя</label>
-            <input type="text" name="name2" id="name2"/>
+            <input type="text" name="name2" id="name2" class="vvod"/>
 
             <div class="clearfix"></div>
             <label for="email2">Email</label>
-            <input type="email" name="email2" id="email2"/>
+            <input type="email" name="email2" id="email2" class="vvod"/>
 
             <div class="clearfix"></div>
             <label for="phone2" class="number-l">Номер
                 <br/> телефона<span class="red">*</span></label>
-            <input type="text" name="phone2" class="phone" maxlength="11" id="phone2"/>
+            <input type="text" name="phone2" class="phone" maxlength="10" id="phone2" class="vvod"/>
 
             <div class="clearfix"></div>
             <label for="message2" class="additionally-l">Дополнительно</label>
-                <textarea placeholder="Например: тип авто, время, пункт назначения" name="message"
-                          id="message2"></textarea>
+                <textarea placeholder="Например: тип авто, время, пункт назначения" name="message2" id="message2" class="vvod"></textarea>
 
             <div class="clearfix"></div>
-            <input type="submit" name="button" class="btn" value="Отправить" disabled>
+            <input type="submit" name="button" class="btn" value="Отправить" disabled onclick="sendform2();">
 
             <p id="text">Мы ответим на все Ваши вопросы
                 <br/> в удобное для Вас время!</p>
 
             <div class="clearfix"></div>
         </form>
+        <div class="divError" id="error2"></div>
         <div class="close"></div>
     </div>
 </div>
@@ -1092,32 +1092,32 @@
         <div id="form">
             <h2>Заполняйте заявку и поехали!</h2>
 
-            <form action="#" method="post">
+            <form action="javascript:void(0);" name="myform" id="myform">
                 <label for="name">Имя</label>
-                <input type="text" name="name2" id="name"/>
+                <input type="text" name="name" placeholder="Вaшe имя" id="name"/>
 
                 <div class="clearfix"></div>
                 <label for="email">Email</label>
-                <input type="email" name="email2" id="email"/>
+                <input type="email" name="email" placeholder="Вaш email" id="email"/>
 
                 <div class="clearfix"></div>
                 <label for="phone" class="number-l">Номер
                     <br/> телефона<span class="red">*</span></label>
-                <input type="text" name="phone2" class="phone" maxlength="11" id="phone"/>
+                <input type="text" name="phone" placeholder="Телефон" class="phone" maxlength="10" id="phone"/>
 
                 <div class="clearfix"></div>
                 <label for="message" class="additionally-l">Дополнительно</label>
-                <textarea placeholder="Например: тип авто, время, пункт назначения" name="message"
-                          id="message"></textarea>
+                <textarea placeholder="Например: тип авто, время, пункт назначения" name="message" id="message"></textarea>
 
                 <div class="clearfix"></div>
-                <input type="submit" name="button" class="btn" value="Отправить" disabled>
+                <input type="submit" name="button" class="btn" value="Отправить" disabled onclick="sendform();">
 
                 <p id="text-p">Мы ответим на все Ваши вопросы
                     <br/> в удобное для Вас время!</p>
 
                 <div class="clearfix"></div>
             </form>
+            <div class="divError" id="error"></div>
         </div>
         <div id="form-left-bg"></div>
         <div id="form-right-bg"></div>
@@ -1206,6 +1206,7 @@
 <script src="jss/jquery.smoothDivScroll-1.3.js"></script>
 <script src="js/app.js"></script>
 <script src="js/tabs.js"></script>
+<script src="js/ajax.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("div#makeMeScrollable").smoothDivScroll({
@@ -1269,7 +1270,18 @@
     });
 </script>
 
+    
+<script> 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+
+ga('create', 'UA-73418491-1', 'auto'); 
+ga('send', 'pageview'); 
+
+</script>
+
 </body>
 
 </html>
-                                 
