@@ -1291,7 +1291,7 @@
         #section2 section #wrapper2 .tab4 .gallery_avto .panel .bottom_panel .box_transport ul .red {
           font-size: 1.2em; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   #menu nav {
     width: 99%; }
     #menu nav ul.center li.center-v {
@@ -1306,6 +1306,9 @@
     padding-top: 50%; }
   #section0 section {
     width: 100%; }
+    #section0 section .yellow-text {
+      bottom: -5%;
+      margin: 10px; }
     #section0 section p.yellow-text {
       bottom: -5%;
       left: 15%;
@@ -1313,9 +1316,9 @@
     #section0 section p#img-bottom {
       bottom: -12%; }
     #section0 section #luxe img {
-      width: 45%; }
+      width: 35%; }
     #section0 section #bisnesman-1 {
-      left: 15%;
+      left: 25%;
       width: 20%; }
       #section0 section #bisnesman-1 .punkt-1,
       #section0 section #bisnesman-1 .punkt-2,
@@ -1358,7 +1361,7 @@
           font-size: 0.7em;
           margin-left: -50px; }
     #section0 section #bisnesman-2 {
-      right: 18%;
+      right: 25%;
       bottom: 0;
       width: 15%; }
       #section0 section #bisnesman-2 .punkt-1,
@@ -1391,25 +1394,44 @@
           margin-left: 10px; }
   #section1 section {
     width: 100%; }
-  #section1 section #wrapper.tab1 div.tab1 {
-    background: url("../img/bisness.png") no-repeat left top;
-    background-size: 45%; }
-  #section1 section #wrapper.tab2 div.tab2 {
-    background: url("../img/family.png") no-repeat 90% top;
-    background-size: 60%; }
-  #section1 section #wrapper.tab3 div.tab3 {
-    background: url("../img/turism.png") no-repeat 8% top;
-    background-size: 42%; }
-  #section1 section .tab2 .description {
-    float: left;
-    padding-left: 30px; }
-  #section1 section .tab1 .description, #section1 section .tab2 .description, #section1 section .tab3 .description {
-    padding-right: 10px;
-    width: 387px; }
-    #section1 section .tab1 .description .description-item img, #section1 section .tab2 .description .description-item img, #section1 section .tab3 .description .description-item img {
-      margin-bottom: 40px; }
+    #section1 section h2 {
+      margin: 12px 0; }
+    #section1 section #wrapper.tab1 div.tab1 {
+      background: url("../img/bisness.png") no-repeat 10% top;
+      background-size: 35%; }
+    #section1 section #wrapper.tab2 div.tab2 {
+      background: url("../img/family.png") no-repeat 80% top;
+      background-size: 35%; }
+    #section1 section #wrapper.tab3 div.tab3 {
+      background: url("../img/turism.png") no-repeat 12% top;
+      background-size: 35%; }
+    #section1 section .tab2 .description {
+      float: left;
+      padding-left: 30px; }
+    #section1 section #wrapper h3 {
+      padding: 5px 15px;
+      font-size: 1.5em; }
+    #section1 section #wrapper .tabs-line {
+      margin-bottom: 13px; }
+    #section1 section .tab1 .description,
+    #section1 section .tab2 .description,
+    #section1 section .tab3 .description {
+      padding-right: 10px;
+      width: 387px; }
+      #section1 section .tab1 .description .description-item img,
+      #section1 section .tab2 .description .description-item img,
+      #section1 section .tab3 .description .description-item img {
+        margin-bottom: 40px; }
+      #section1 section .tab1 .description .description-item p,
+      #section1 section .tab2 .description .description-item p,
+      #section1 section .tab3 .description .description-item p {
+        font-size: 1em; }
   #section2 {
     background: #020204; }
+    #section2 section #wrapper2 h3 {
+      padding: 10px 7px; }
+    #section2 section #wrapper2 .tabs-line {
+      margin-bottom: 5%; }
     #section2 section #wrapper2 .tab1 .gallery_avto .panel .bottom_panel,
     #section2 section #wrapper2 .tab2 .gallery_avto .panel .bottom_panel,
     #section2 section #wrapper2 .tab3 .gallery_avto .panel .bottom_panel,
@@ -1449,17 +1471,27 @@
     position: relative;
     margin: 0 auto;
     height: 100%;
-    width: 788px;
+    width: 710px;
     margin: 0 auto;
     max-width: 1920px; }
     #section4 #car #block-adress {
       position: absolute;
       left: 50%;
-      margin-left: -253px;
-      bottom: 182px;
-      width: 66%; }
+      margin-left: -234px;
+      bottom: 153px;
+      width: 65%; }
+    #section4 #car #description-contact h2 {
+      font-size: 1em; }
     #section4 #car #description-contact .line-info {
       padding: 3px 0; }
+      #section4 #car #description-contact .line-info .right {
+        width: 55%; }
+    #section4 #car #description-contact-2 h2 {
+      font-size: 1em; }
+    #section4 #car #description-contact-2 .line-info {
+      padding: 3px 0; }
+      #section4 #car #description-contact-2 .line-info .right {
+        width: 30%; }
   #tel-icon {
     right: 5%; } }
 

@@ -1431,7 +1431,7 @@ $size: 1366px;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     #menu {
         nav {
             width: 99%;
@@ -1455,16 +1455,20 @@ $size: 1366px;
             }
         }
     }
-  #home{
-    table{
-      .center-td{
-        padding-top: 50%;
-      }
+    #home {
+        table {
+            .center-td {
+                padding-top: 50%;
+            }
+        }
     }
-  }
     #section0 {
         section {
             width: 100%;
+            .yellow-text {
+                bottom: -5%;
+                margin: 10px;
+            }
             p {
                 &.yellow-text {
                     bottom: -5%;
@@ -1477,11 +1481,11 @@ $size: 1366px;
             }
             #luxe {
                 img {
-                    width: 45%;
+                    width: 35%;
                 }
             }
             #bisnesman-1 {
-                left: 15%;
+                left: 25%;
                 width: 20%;
                 .punkt-1,
                 .punkt-2,
@@ -1530,7 +1534,7 @@ $size: 1366px;
                 }
             }
             #bisnesman-2 {
-                right: 18%;
+                right: 25%;
                 bottom: 0;
                 width: 15%;
                 .punkt-1,
@@ -1569,26 +1573,28 @@ $size: 1366px;
         }
     }
     #section1 {
+
         section {
-            width: 100%;
-        }
-        section {
+             width: 100%;
+             h2{
+                margin: 12px 0
+            }
             #wrapper.tab1 {
                 div.tab1 {
-                    background: url("../img/bisness.png") no-repeat left top;
-                    background-size: 45%;
+                    background: url("../img/bisness.png") no-repeat 10% top;
+                    background-size: 35%;
                 }
             }
             #wrapper.tab2 {
                 div.tab2 {
-                    background: url("../img/family.png") no-repeat 90% top;
-                    background-size: 60%;
+                    background: url("../img/family.png") no-repeat 80% top;
+                    background-size: 35%;
                 }
             }
             #wrapper.tab3 {
                 div.tab3 {
-                    background: url("../img/turism.png") no-repeat 8% top;
-                    background-size: 42%;
+                    background: url("../img/turism.png") no-repeat 12% top;
+                    background-size: 35%;
                 }
             }
             .tab2 {
@@ -1597,32 +1603,52 @@ $size: 1366px;
                     padding-left: 30px;
                 }
             }
-          .tab1, .tab2, .tab3{
-            .description{
-              padding-right: 10px;
-              width: 387px;
-              .description-item{
-                img{
-                  margin-bottom: 40px;
+            #wrapper {
+                h3 {
+                    padding: 5px 15px;
+                    font-size: 1.5em;
                 }
-              }
+                .tabs-line{
+                    margin-bottom: 13px;
+                }
             }
-          }
+            .tab1,
+            .tab2,
+            .tab3 {
+                .description {
+                    padding-right: 10px;
+                    width: 387px;
+                    .description-item {
+                        img {
+                            margin-bottom: 40px;
+                        }
+                        p{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
         }
     }
     #section2 {
         background: #020204;
         section {
             #wrapper2 {
+                h3{
+                    padding: 10px 7px;
+                }
+                .tabs-line{
+                    margin-bottom: 5%;
+                }
                 .tab1,
                 .tab2,
                 .tab3,
                 .tab4 {
                     .gallery_avto {
                         .panel {
-                          .bottom_panel{
-                            bottom: 5%;
-                          }
+                            .bottom_panel {
+                                bottom: 5%;
+                            }
                             .description_transport {
                                 width: 27%;
                                 .line-info {
@@ -1654,25 +1680,42 @@ $size: 1366px;
     }
     #section4 {
         #car {
-          background: url("../img/car.png") no-repeat center bottom;
-    background-size: 100%;
-    position: relative;
-    margin: 0 auto;
-    height: 100%;
-    width: 788px;
-    margin: 0 auto;
-    max-width: 1920px;
+            background: url("../img/car.png") no-repeat center bottom;
+            background-size: 100%;
+            position: relative;
+            margin: 0 auto;
+            height: 100%;
+            width: 710px;
+            margin: 0 auto;
+            max-width: 1920px;
             #block-adress {
-                position: absolute;
-                left: 50%;
-                margin-left: -253px;
-                bottom: 182px;
-                width: 66%;
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -234px;
+                    bottom: 153px;
+                    width: 65%;
             }
-            #description-contact{
-              .line-info{
+            #description-contact {
+                h2{
+                    font-size: 1em;
+                }
+                .line-info {
                     padding: 3px 0;
-              }
+                    .right{
+                            width: 55%;
+                    }
+                }
+            }
+            #description-contact-2 {
+                h2{
+                    font-size: 1em;
+                }
+                .line-info {
+                    padding: 3px 0;
+                    .right{
+                            width: 30%;
+                    }
+                }
             }
         }
     }
